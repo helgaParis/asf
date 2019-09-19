@@ -1,0 +1,34 @@
+extends ../../templates/layout-sans-footer.pug
+block main
+    h3 #{title} 2019
+    div
+        section
+        header
+            h1 Le site de l'association se transforme 
+        p 
+        | Notre équipe dispose maintenant des services de développeurs Javascript 
+        | et nous avons commencé à migrer les sites de l'association vers de nouvelles technologies radicalement différentes des anciennes.
+        br
+        | Le changement comprendra plusieurs étapes:
+        ul
+            li 
+            | Le site que vous voyez est réactif, il réagit à la taille de votre écran, du telephone portable à un très grand écran.
+            | Cette partie prendra un peu de temps - nous avons produit plus de dix mille fichiers au fil des années. Vous verrez re-apparaître tous les sites des artistes d'abord en version ancienne. 
+            | , en version neuve, un à un avant la fin de l'année. Les évenements des années antérieures apparaîtront en ordre inverse jusqu'à nos debuts en 2001.
+            li 
+            | Le back-end, la structure invisible du site, est techniquement plus copliqué, mais moins long à réaliser. Les détails pour les téchnophiles:
+            br
+            | Migratin du VPS à deux VPS plus rapides, migration d'Apache à Nginx, configuration et sécurisation 
+            br
+            | Installation d'une base de données (MongoDB) sur un VPS et sécurisation d'accès et des données. Les données sensibles entrées dans un formulaire sur nos sites, comme vos données personnelles dans un formulaire de contact, seront cryptés. 
+            br
+            | Création des serveurs Node - Express, qui servent les pages des sites.
+            br
+            | Sites en https: Vous voyez un petit verrou dans la barre d'adresse, car la connexion entre votre ordinateur et notre serveur est cryptée. 
+            | Cela vous protège, si vous regardez le site dans un réseau wifi publique: un autre utilisateur du même réseau wifi ne peut pas suivre votre activité ni injecter du code nocif dans la connexion. 
+            | Google donne un plus haut ranking aux sites en https pour cette raison. 
+            li  
+            | Le front-end, les pages que vous voyez affichées à l'écran, montrent des éléments dynamiques. 
+
+
+    block aside
