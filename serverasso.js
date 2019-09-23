@@ -6,7 +6,7 @@ const path = require('path');
 //dynamic routes via router
 const site = require('./routes/site');
 const galerie = require('./routes/galerie');
-const past = require('./routes/archive');
+const archive = require('./routes/archive');
 
 const http = require('http').Server(app);
 
@@ -25,8 +25,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/css', express.static(__dirname + '/sources/css'));
 app.use('/js', express.static(__dirname + '/sources/js'));
 app.use('/images', express.static(__dirname + '/sources/images'));
+app.use('/images-galerie', express.static(path.join(__dirname +'/sources/images-galerie')));
+app.use('/images-news', express.static(path.join(__dirname +'/sources/images-news')));
 app.use('/photos', express.static(path.join(__dirname +'/sources/photos')));
 app.use('/pdf', express.static(path.join(__dirname +'/sources/pdf')));
+
 
 //View engine for pug files
 app.set('view engine', 'pug');
@@ -50,7 +53,7 @@ app.get('/index.html' , function (req, res) {
 // Routers for dynamic files (site=everything asso, gallery=artists, past=archive)
 
 app.use('/galerie', galerie);
-app.use ('/news', past);
+app.use ('/archive', archive);
 app.use('/',site);
 
 app.use(express.static(path.join(__dirname, './public/html/')));

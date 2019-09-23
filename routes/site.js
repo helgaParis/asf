@@ -13,7 +13,7 @@ const router = express.Router();
     //pugs en views/asso/...
 
     router.get('/buts',function(req,res,next) {
-        res.render('asso/buts',{title:'Les buts de l\'association AsF'});
+        res.render('asso/buts',{title:'Les objéctifs de l\'association AsF'});
     });
     router.get('/nous',function(req,res,next) {
         res.render('asso/nous',{title:'Artistes sans Frontières - notre histoire'});
