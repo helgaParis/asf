@@ -6,11 +6,11 @@ var targets=[ 'adzak', 'amorim', 'bazencir', 'champagne', 'delaney', 'erguy',
             'merle',  'mohsen', 'mtm', 'nicolas','p.plazanet','paquetrobert', 'pillas',
             'pluvinage','quarterone','rahs', 'rasmussen', 'schwertfeger','stoulig',
             'silviaartdeco', 'tajuddin','valgallard' , 'wright' ];
-var ownsite=['doug', 'strobl', 'carbone', 'ara', 
+var ownsite=['doug', 'strobl', 'carbone', 
             'artistessansfric', 'clownauguste', 'imformatix', 'vitefaitbienfait',];
 var exmembers=['motor', 'ada-villa', 'laurentloizeau', 'moduss', 'joachimbelz'];
 //à reflechir: screenshots from former websites ? page with logos? page with publicity?
-var references=['joachimbelz', 'mhh', 'detective?', 'pub', 'logos'];
+var references=['ara','joachimbelz', 'mhh', 'detective?', 'pub', 'logos'];
 
 
 
