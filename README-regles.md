@@ -4,7 +4,7 @@
 
 Helga, chef de projet
 Saloum, dev Js, 
-Zubeir, dev JS
+Zoubeir, dev JS
 Isabelle, graphiste : contribution au look
 Marine : correctrice du français, textes littéraires 
 Edith : correctrice du français, textes commerciaux et légaux 
@@ -101,7 +101,7 @@ Ajout de fichier css distinct possible
 - Sites de de taille plus importante : ces sites peuvent être créés en d'autres langues et avec d'autres bibliothèques et frameworks, totalement indépendant du site principal - intégration à définir, structure de dossiers à définir
 - Sites censés être indépendants: structure indépendante à définir
 
-**Zubeir : chapitre Archive**
+**Zoubeir : chapitre Archive**
 
 **Working directory: Intervention uniquement à l'intérieur des**
 
