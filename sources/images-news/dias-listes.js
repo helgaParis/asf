@@ -1,20 +1,19 @@
 //url list, one list per show.
 
 var photos=[
-    "url('../../../files/photos/voyages/0.jpg')",
-    "url('../../../files/photos/voyages/1.jpg')",
-    "url('../../../files/photos/voyages/2.jpg')",
-    "url('../../../files/photos/voyages/3.jpg')",
-    "url('../../../files/photos/voyages/4.jpg')",
-    "url('../../../files/photos/voyages/5.jpg')",
-    "url('../../../files/photos/voyages/6.jpg')",
-    "url('../../../files/photos/voyages/7.jpg')",
-    "url('../../../files/photos/voyages/8.jpg')",
-    "url('../../../files/photos/voyages/9.jpg')",
-    "url('../../../files/photos/voyages/10.jpg')",
-    "url('../../../files/photos/voyages/11.jpg')",
-    "url('../../../files/photos/voyages/12.jpg')",
-    "url('../../../files/photos/voyages/13.jpg')",
+    "url('./1.jpg')",
+    "url('./2.jpg')",
+    "url('./3.jpg')",
+    "url('./4.jpg')",
+    "url('./5.jpg')",
+    "url('./6.jpg')",
+    "url('./7.jpg')",
+    "url('./8.jpg')",
+    "url('./9.jpg')",
+    "url('./10.jpg')",
+    "url('./11.jpg')",
+    "url('./12.jpg')",
+    "url('./13.jpg')",
 ];
 // sans titre: mettre ''
 var legendes = [

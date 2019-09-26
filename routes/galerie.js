@@ -2,15 +2,15 @@ const express = require('express');
 const router = express.Router();
 // valid routes for galerie - add new navlink names here
 var targets=[ 'adzak', 'amorim', 'bazencir', 'champagne', 'delaney', 'erguy', 
-            'frevarias', 'gebka', 'gruyters', 'jalila','kouassi','krive', 'lepaquet',
+            'frevarias', 'gebka',  'gruyters', 'jalila','kouassi','krive', 'lepaquet',
             'merle',  'mohsen', 'mtm', 'nicolas','p.plazanet','paquetrobert', 'pillas',
             'pluvinage','quarterone','rahs', 'rasmussen', 'schwertfeger','stoulig',
             'silviaartdeco', 'tajuddin','valgallard' , 'wright' ];
-var ownsite=['doug', 'strobl', 'carbone', 
-            'artistessansfric', 'clownauguste', 'imformatix', 'vitefaitbienfait',];
+var ownsite=['doug', 'strobl', 'carbone', 'gietl', 'yorgos',
+            'artistessansfric', 'clownauguste', 'imformatix', 'vitefaitbienfait'];
 var exmembers=['motor', 'ada-villa', 'laurentloizeau', 'moduss', 'joachimbelz'];
 //à reflechir: screenshots from former websites ? page with logos? page with publicity?
-var references=['ara','joachimbelz', 'mhh', 'detective?', 'pub', 'logos'];
+var references=['ara','joachimbelz', 'mhh', 'sdc', 'pub', 'logos'];
 
 
 

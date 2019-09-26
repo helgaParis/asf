@@ -62,6 +62,7 @@ app.use(express.static(path.join(__dirname, './public/html/')));
 app.get('*',function (req, res, next) {
 	return res.status(404).sendFile('404.html', {root:'./public/html/err/'});
 });
+
 app.listen(8080,function() {   
     console.log('serveur http disponible port 8080');
 });
