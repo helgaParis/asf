@@ -42,10 +42,7 @@ nav a {
     text-decoration: none;
     font-weight: 600;
 }
-nav a:hover {
-    text-decoration : none;
-    color : #ffff00;
-}
+
 nav a:active {
     color: #0000CC;
     font-weight: 400;
@@ -56,6 +53,12 @@ nav a:visited{
     font-weight: 400;
     color :white;
     }
+nav a:hover {
+    text-decoration : none;
+    color : #ffff00;
+}
+
+
 /******* General styles that do not change with screen size */
 main {
     padding : 3%;
