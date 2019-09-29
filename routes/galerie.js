@@ -4,8 +4,8 @@ const router = express.Router();
 var targets=[ 'adzak', 'amorim', 'bazencir', 'champagne', 'delaney', 'erguy', 
             'frevarias', 'gebka',  'gruyters', 'jalila','kouassi','krive', 'lepaquet',
             'merle',  'mohsen', 'mtm', 'nicolas','p.plazanet','paquetrobert', 'pillas',
-            'pluvinage','quarterone','rahs', 'rasmussen', 'schwertfeger','stoulig',
-            'silviaartdeco', 'tajuddin','valgallard' , 'wright' ];
+            'pluvinage','p-plazanet','quartarone','rahs', 'rasmussen', 'schwertfeger','stoulig',
+            'sylviaartdeco', 'tajuddin','valgallard' , 'wright' ];
 var ownsite=['doug', 'strobl', 'carbone', 'gietl', 'yorgos',
             'artistessansfric', 'clownauguste', 'imformatix', 'vitefaitbienfait'];
 var exmembers=['motor', 'ada-villa', 'laurentloizeau', 'moduss', 'joachimbelz'];
