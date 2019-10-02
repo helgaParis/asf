@@ -17,6 +17,7 @@ a:hover{
 /*************** navigation + nav links */
 nav {
     background-color : #009edb;
+    min-height: 44px;
 }
 .menu1 {
 text-align : left;
@@ -34,7 +35,7 @@ nav > div > ul > li:hover .menu2 {
     background-color : #009edb;
     position : absolute;
     display : none;
-    min-width : 120px;
+    min-width : 140px;
     z-index : 3;
     }        
 nav a {
@@ -57,7 +58,12 @@ nav a:hover {
     text-decoration : none;
     color : #ffff00;
 }
-
+nav hr {
+	width: 60%;
+	margin-left:10%;
+	color: white;
+	height:1;
+}
 
 /******* General styles that do not change with screen size */
 main {
@@ -99,14 +105,23 @@ aside{
 /**********  reactive styles*/
 
 @media only screen and (max-width:400px) {
+	body{
+		font-size: 0.7rem;
+	}
     nav span {
         position : absolute;
         top : 17px;
         right : 9px;
     }
+    nav hr {
+	    display: none;
+    }
 }
 
 @media only screen and (min-width:400px) and (max-width:600px) {
+	body{
+		font-size: 0.8rem;
+	}
     nav ul {
         display : inline;
         margin-left : 5px;
@@ -138,8 +153,13 @@ aside{
         border-radius : 0 0 10px 10px;
         top : 25px;
         left : 30px;
-        right : 30px;
-        font-size: 0.8rem;
+        right : 30px;       
+        background-color : #4f75c1;
+        font-size: 0.7rem;
+
+    }
+    nav hr {
+	    display: none;
     }
     main {
         display: flex;
@@ -157,6 +177,9 @@ aside{
 }
 
 @media only screen and (min-width:600px) {
+		body {
+		font-size: 0.8rem;
+	}
     nav div {
         margin : 3px 5px;
     }
@@ -193,7 +216,11 @@ aside{
         top : 25px;
         left : 30px;
         right : 30px;
-        font-size: 0.8rem;
+        background-color : #4f75c1;
+        font-size: 0.7rem;
+         }
+    nav hr {
+	    display: none;
     }
     main {
         display: flex;
@@ -214,6 +241,9 @@ aside{
 /***** menu on the left side from this size on  ****/
 
 @media only screen and (min-width:768px) {
+		body{
+		font-size: 0.9rem;
+	}
     nav {
         position : absolute;
         display : block;
@@ -247,8 +277,10 @@ aside{
     .menu2 {
         padding : 2px;
         border-radius : 0 10px 10px 0;
-        top : 75px;
+        top :75px;
         left : 105px;
+         background-color : #009edb;
+         min-height: 320px;
     }
     main {
         position : absolute;

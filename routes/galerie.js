@@ -3,14 +3,14 @@ const router = express.Router();
 // valid routes for galerie - add new navlink names here
 var targets=[ 'adzak', 'amorim', 'bazencir', 'champagne', 'delaney', 'erguy', 
             'frevarias', 'gebka',  'gruyters', 'jalila','kouassi','krive', 'lepaquet',
-            'merle',  'mohsen', 'mtm', 'nicolas','p.plazanet','paquetrobert', 'pillas',
+            'merle',  'mohsen', 'mtm', 'nicolas','plazanet','paquetrobert', 'pillas',
             'pluvinage','p-plazanet','quartarone','rahs', 'rasmussen', 'schwertfeger','stoulig',
-            'sylviaartdeco', 'tajuddin','valgallard' , 'wright' ];
+            'sylviaartdeco', 'tajuddin','valgallard', 'villaada', 'wright' ];
 var ownsite=['doug', 'strobl', 'carbone', 'gietl', 'yorgos',
             'artistessansfric', 'clownauguste', 'imformatix', 'vitefaitbienfait'];
-var exmembers=['motor', 'ada-villa', 'laurentloizeau', 'moduss', 'joachimbelz'];
+var exmembers=['motor', 'ada-villa', 'belz','laurentloizeau', 'moduss', 'joachimbelz'];
 //à reflechir: screenshots from former websites ? page with logos? page with publicity?
-var references=['ara','joachimbelz', 'mhh', 'sdc', 'pub', 'logos'];
+var references=['ara', 'asfric','joachimbelz', 'clown','informatix', 'mhh', 'sdc', 'pub', 'logos',  'vite'];
 
 
 
@@ -44,13 +44,18 @@ router.get('/*',function(req,res) {
                         {title:'Artistes sans Frontières - La galerie des membres', 
                          message: artist + ' n\'est plus membre de l\'association'   });
                     } else {
-                        res.render('galerie/index',
-                        {title:'Artistes sans Frontières - La galerie des membres', 
-                         message: artist + ' n\'est pas membre de l\'association'   });
+                        if (references.includes(artist)){
+                            res.render('galerie/index',
+                            {title:'Artistes sans Frontières - Autres réferences', 
+                            message: 'Vous retrouverez ici bientôt un aperçu du site '+ artist    } );
+                            } else {
+                                res.render('galerie/index',
+                                {title:'Artistes sans Frontières - La galerie des membres', 
+                                message: artist + ' n\'est pas membre de l\'association'   });
+                            }
+                        }
                     }
-                }
             }
-
 });
 
 
