@@ -1,10 +1,11 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/layout-artistes.pug
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-            a(href="https://art.artistes-sf.org/adzak/index.html", target="_blank") Ancien site 
-    block aside
+	section
+		#logoartist
+			h1 Roy ADZAK
+			img(src='/images-galerie/artists/adzak-logo.gif' alt='Roy Adzak, impression for a logo, by Doug')
+	section
+		#imageartist
+			img(src='/images-galerie/artists/adzak1.jpg' alt='Roy Adzak, lithographie')
+			#legende Roy Adzak, lithographie
+		block aside

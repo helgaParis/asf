@@ -1,10 +1,19 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/layout-artistes.pug
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-         a(href="https://art.artistes-sf.org/stoulig/index.html", target="_blank") Ancien site 
-    block aside
+		style.
+			body{background: #dddddd;}
+		section
+				#logoartist
+						#legende 
+							h1 Fabienne Stoulig
+							p "Ne bougez plus"
+							p 
+							| 205 x 90 cm
+							br
+							| Acrylique sur toile,
+							br
+							| encadrement tissé de fil doré
+		section
+			#imageartist
+				img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig, "Ne bougez plus"')
+		block aside

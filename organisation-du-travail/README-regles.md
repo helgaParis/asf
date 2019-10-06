@@ -12,49 +12,48 @@ Shannon : version anglaise, correction orthographe et conseils Adaption marketin
 Astrid: correction de la version allemande et conseils marketing
 Ferdinand, président : validation des étapes, contenue d'une page Ventes à créer
 
-
 **Serveurs Linux:**
 
-1.  Sites
-2.  Données et actions: MongoDB et email Server
+1. Sites
+2. Données et actions: MongoDB et email Server
 
 **Migration en étapes:**
 
-1.  Nouveau hébergement: installation Linux, Nginx, Node, MongoDB, sécurité, server email etc
-2.  Anciens sites en html4, parfois html5 transférés tel quel
-3.  Certification https des domaines et sous-domaines
-4.  Projets de test et utilisation MongoDB
-5.  - en cours: Création du site principal en Express / JS / Pug / css
-6.  - mise en ligne et tests de structure avec contenu représentatif
-7.  - Adaption des CSS
-8.  - Définition et création de la base de données du site, (structure (utilité?, urls des nombreuses photos - combien à usage multiple?) / collecte de données (usage?) / CNIL, revoir disclaimer multi-langues (loi actuel) )
-9.  - Selon les decisions en étape 8, adaptation des diaporamas, création de cookies 
-10.  - Création des JS pour es embellissements (animations, variations de diaporamas, page d'accueil, nav ou header de la galerie animé, decor ou annonces dans les asides de quelques pages)
-11.  - Futurs sites - pages à venir : Faire le point de l'expérience, ajouter des fonctionnalités comme sites culturels en forme d'app (React ?) le site principal en forme de native app, avec usage de gps, paiement, gestures (React Native)
+1. Nouveau hébergement: installation Linux, Nginx, Node, MongoDB, sécurité, server email etc
+2. Anciens sites en html4, parfois html5 transférés tel quel
+3. Certification https des domaines et sous-domaines
+4. Projets de test et utilisation MongoDB
+5. - en cours: Création du site principal en Express / JS / Pug / css
+6. - mise en ligne et tests de structure avec contenu représentatif
+7. - Adaption des CSS
+8. - Définition et création de la base de données du site, (structure (utilité?, urls des nombreuses photos - combien à usage multiple?) / collecte de données (usage?) / CNIL, revoir disclaimer multi-langues (loi actuel) )
+9. - Selon les decisions en étape 8, adaptation des diaporamas, création de cookies 
+10. - Création des JS pour es embellissements (animations, variations de diaporamas, page d'accueil, nav ou header de la galerie animé, decor ou annonces dans les asides de quelques pages)
+11. - Futurs sites - pages à venir : Faire le point de l'expérience, ajouter des fonctionnalités comme sites culturels en forme d'app (React ?) le site principal en forme de native app, avec usage de gps, paiement, gestures (React Native)
 
 **La structure :**
 
 **Fichiers statiques dans /sources/...**
 
--   /css : asso.css et dias.css jusqu'à l'étape 7.\
+- /css : asso.css et dias.css jusqu'à l'étape 7.\
      Pour des tests, nécessités, créer un fichier css par dev, bien documenté
--   /image-news : toutes les photos et graphiques, en sous-dossiers annuels
--   /images : les images du site principal, icons, logo, fonds...
--   /images-galerie: les images des artistes - voir plus pas pour le tri
--   /js : dias-code.js pour le code d'un diaporama, d'autres à suivre, pages.js  (à faire)
--   pour formulaires, animations etc créer des fichiers js ici
--   /pdf tous les pdf du site, archive et affiches des petits sites des artistes
--   /photos en case de besoin en étape 10, photos du site global
+- /image-news : toutes les photos et graphiques, en sous-dossiers annuels
+- /images : les images du site principal, icons, logo, fonds...
+- /images-galerie: les images des artistes - voir plus pas pour le tri
+- /js : dias-code.js pour le code d'un diaporama, d'autres à suivre, pages.js  (à faire)
+- pour formulaires, animations etc créer des fichiers js ici
+- /pdf tous les pdf du site, archive et affiches des petits sites des artistes
+- /photos en case de besoin en étape 10, photos du site global
 
 **/public/**
 
--   /html : ne pas toucher, contient les fichiers erreur de Nginx, en cas de plantage de Node
--   /templates : tous les templates ici. layout et layout-sans-footer pour le site global, à créer des layout-xy  (xy = nom du chapitre ou de layout distinct, ex layout-archives, layout-galerie, logout-artistexy) et un fichier nav-xy.\
+- /html : ne pas toucher, contient les fichiers erreur de Nginx, en cas de plantage de Node
+- /templates : tous les templates ici. layout et layout-sans-footer pour le site global, à créer des layout-xy  (xy = nom du chapitre ou de layout distinct, ex layout-archives, layout-galerie, logout-artistexy) et un fichier nav-xy.\
     Baser tous les layout-xy sur layout-sans-footer.\
     Utiliser nam-galerie pour la galerie, mini sites, à créer des nav-galeriexy pour les grands sites\
     Utiliser nav-archive pour tout l'archive\
     J'ai copié des liens qui fonctionnent dedans - à ajouter d'autres
--   /views contient le index du site global (page temporaire), le 404.pug pour des erreurs après reponse du server Node (d'autres error pages à créer)\
+- /views contient le index du site global (page temporaire), le 404.pug pour des erreurs après reponse du server Node (d'autres error pages à créer)\
     /asso et /services : site global = Helga\
     /archives : Zubeir et Helga. Page actuel=index du chapitre News/Archives. Nommer les pug avec l'année et le numéro chronologique de l'événement. Le premier événement de l'année est 1, le deuxième 2 etc. No Zero est réservé pour l'ajout de rapports annuels ou autres\
     /galerie : Saloum et Helga, contient le index du chapitre Galerie et les fichier pug des mini-sites. Créer des sous-dossiers pour des sites plus importants
@@ -78,7 +77,7 @@ Credits for: contribution dans la phase de conception du projet et création du 
 *Tâches en cours:* 
 migration / création de sites des artistes
 
-**Working directory: Intervention uniquement à l'intérieur des **
+**Working directory: Intervention uniquement à l'intérieur des**
 
 dossiers views/galerie
 

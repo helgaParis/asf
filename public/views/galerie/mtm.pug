@@ -1,10 +1,13 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/layout-artistes.pug
 block main
+    style. 
+        body{background:#d7d7d7;}
     section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-         a(href="https://art.artistes-sf.org/mtm/index.html", target="_blank") Ancien site 
+        #logoartist
+            h1 Marie-Thérèse Masias
+            p Photo: Marie-Thérèse Masias, 2007
+    section
+        #imageartist
+            img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, sculpture email sur cuivre')
+            #legende Marie-Thérèse Masias, sculpture email sur cuivre, 60 cm
     block aside

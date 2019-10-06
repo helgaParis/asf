@@ -1,10 +1,12 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/layout-artistes.pug
 block main
+    style.
+        body{background: #bbbbbb;}
     section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-            a(href="https://art.artistes-sf.org/bazencir/index.html", target="_blank") Ancien site 
+        #logoartist
+            h1 Halit Bazencir
+    section
+        #imageartist
+            img(src='/images-galerie/artists/bazencir.jpg' alt='Halit Baencir, 2008')
+            #legende Halit Baencir, sans titre, 2008
     block aside

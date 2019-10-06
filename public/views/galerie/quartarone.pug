@@ -1,10 +1,15 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/layout-artistes.pug
 block main
+    style.
+        body{background: #cccccc;}
     section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-            a(href="https://art.artistes-sf.org/quartarone/index.html", target="_blank") Ancien site 
+        #logoartist
+            h1 Mary Quartarone
+            img(src='/images-galerie/base/quartarone/blue-woman.jpg' alt='Mary Quartarone, blue woman')
+            #legende Mary Quartarone, "Blue Woman"
+            
+    section
+        #imageartist
+            img(src='/images-galerie/base/quartarone/creation.jpg' alt='Mary Quartarone,creation')
+            #legende Mary Quartarone, Creation
     block aside
