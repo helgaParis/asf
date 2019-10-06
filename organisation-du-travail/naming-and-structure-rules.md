@@ -11,6 +11,7 @@ Last change: 4/10/2019
   asso.css and dias.css archive photo report
   to change styles: create archive.css and nav-archive.css if needed
 - styles main pages:  main.css and nav.css
+
 - styles gallery
   galerie.css and nav-galerie.css for the gallery itself
   artistes.css for the single pages with single photo
@@ -33,7 +34,7 @@ Last change: 4/10/2019
 - /year/ : loose pictures for text pages of that year
   /year/subfolder for the photo reports, one folder per report, all files in the folder
 
-### /js 
+### /js
 
 - dias-code.js : general code for a diashow.
 - variations of dias-code to be created 
@@ -63,7 +64,7 @@ in case of need in step 10
 - layout, layout-sans-footer, nav : main site 
 - layout-archive, layout-archive-dias, nav-archive : archive pages
 - layout-galerie and nav-galerie: gallery
--layout-artistes : sites "business card", one or two pictures
+- layout-artistes : sites "business card", one or two pictures
 - layout-galerie-base: basic websites
 - layout-artistxy and nav-artistxy: create a layout for larger websites, xy = name used in routes/galerie.js
 
@@ -93,3 +94,4 @@ in case of need in step 10
 - db.js : not uploaded, api call to db on second server
 - contact.js : code for backend of contact form
 - others to follow for other forms
+

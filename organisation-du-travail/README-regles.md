@@ -131,7 +131,7 @@ Les pages de photo reportage d'un événement contiennent surtout de photos et p
 
 Lors de la migration, tous les reportages sont à mettre dans le même diaporama fournis.
 
-**Tâches coté front: **
+**Tâches coté front:**
 
 - Créer les layouts
 - Créer les pugs

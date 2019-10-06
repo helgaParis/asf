@@ -1,63 +1,21 @@
 extends ../../templates/layout-archive.pug
+extends ../../templates/layoutdias.pug
 block main
     div
         section
         header 
         div
-            p
-                b
-                    | Portes 
-                    | Ouvertes des ateliers du 14ème arrondissement
-                    br
-                    |     le
-                    |     15 et 16 mai 2004
-            p  
-            div
-                p  
-                p
-                br
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_innen3.jpg" width="300" height="206")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_innen2.jpg" width="300" height="225")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_innen1.jpg" width="300" height="249")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_haus1.jpg" width="300" height="225")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_haus2.jpg" width="300" height="225")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_haus3.jpg" width="300" height="225")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_haus4.jpg" width="300" height="225" alt="portes ouvertes - patientez s.v.p.")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_besucherin2.JP.jpg" width="300" height="249")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_gruppe2.jpg" width="300" height="225")
-            div
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_innen4.jpg" width="201" height="300")
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/po2004_erwartung.jpg" width="300" height="225")
-            p
-                b Exposition
-                | :
+            | Portes 
+            | Ouvertes des ateliers du 14ème arrondissement
+            br
+            |     
+            | le 15 et 16 mai 2004
+             
+block script
+    script(src='images-news/2004/dias-listes.js')
+
+                b Exposition:
+                | 
             p
                 | Tableaux et sculptures
                 | de
@@ -67,15 +25,11 @@ block main
                 a(href="http://art.artistes-sf.org/krive/index.html" target="_blank")
                     b
                     | Eveline Krischan
-                | et de
-                | 10 autres artistes autrichiens.
+                    | et de
+                    | 10 autres artistes autrichiens.
             p  
             p
                 a(href="../../index.html" target="_top")
-                    | Afficher
-                    | la page complète d'Artistes sans Frontières: www.artistes-sf.org
-            div
-                p  
-                p
-                img(src="http://image.artistes-sf.org/news/pomai04/neugierige.jpg" width="300" height="238")
+                    | Afficher la page complète d'Artistes sans Frontières: www.artistes-sf.org
+            
     block aside            
