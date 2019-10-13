@@ -1,0 +1,63 @@
+//url list, one list per show.
+
+var photos=[
+    "url('/images-news/2016/1.jpg')",
+    "url('/images-news/2016/2.jpg')",
+    "url('/images-news/2016/3.jpg')",
+    "url('/images-news/2016/4.jpg')",
+    "url('/images-news/2016/5.jpg')",
+    "url('/images-news/2016/6.jpg')",
+    "url('/images-news/2016/7.jpg')",
+    "url('/images-news/2016/8.jpg')",
+    "url('/images-news/2016/9.jpg')",
+    "url('/images-news/2016/10.jpg')",
+    "url('/images-news/2016/11.jpg')",
+    "url('/images-news/2016/12.jpg')",
+    "url('/images-news/2016/13.jpg')",
+    "url('/images-news/2016/14.jpg')",
+    "url('/images-news/2016/15.jpg')",
+    "url('/images-news/2016/16.jpg')",
+    "url('/images-news/2016/17.jpg')",
+    "url('/images-news/2016/18.jpg')",
+    "url('/images-news/2016/19.jpg')",
+    "url('/images-news/2016/20.jpg')",
+    "url('/images-news/2016/21.jpg')",
+    "url('/images-news/2016/22.jpg')",
+    "url('/images-news/2016/23.jpg')",
+    "url('/images-news/2016/24.jpg')",
+    "url('/images-news/2016/25.jpg')",
+    "url('/images-news/2016/26.jpg')",
+    "url('/images-news/2016/27.jpg')"
+];
+// sans titre: mettre ''
+var legendes = [
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016',
+    'Portes Ouvertes 2016'
+];
+
+var delai = 2500; // delai between pictures in ms

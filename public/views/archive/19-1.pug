@@ -1,0 +1,63 @@
+extends ../../templates/layout-archive.pug
+block main
+    div
+        p #{title} Actualités 2019
+        section
+            header
+                h1 Une équipe diverse et engagé
+            section
+            p 
+            | Nous revenons à notre principe fondateur: Offrir à nos artistes membres des moyens de presentation de leurs oeuvres, 
+            | digne des oeuvres d'art. Cela veut dire, des sites Internet et maintenant des applications mobiles à la pointe de la technologie, 
+            | créés par des pros et adaptés à l'oeuvre de chaque artiste. 
+            p 
+            | Pour mener à bien cette demarche, notre webmaster de longue date, Helga Petrovic, est devenu "dévéloppeur Full Stack" 
+            | et elle a amené des collegues de formation avec elle. 
+            | Saloum Sylla a participé à la création du serveur de l'association pendant un stage et il continue à travailler sur les sites des artistes.
+            | Zoubeir Marouf a joint l'équipe pour un stage en septembre.
+            p Voir les détails sur la transition plus bas
+        section
+            header
+                h1 Le sol se dérobe
+            p 
+            | Malheureusement, cela n'est pas une expression poétique, mais une description factuelle. 
+            br
+            | En juin, le parquet du bureau semblait plus souple par endroits. Cet effet s'aggravait et deveneait inquiétant. 
+            | A Paris, non loin des catacombes, c'est toujours possible qu'un trou s'ouvre jusqu'à une carrière ancienne. 
+            | Des voisins avaient des histoires amusantes à raconter sur ce sujet, comme l'occasion dans les années 50,
+            | quand l'ancien concierge était tombé dans un goufffre apparu dans la cour d'où les pompiers l'ont secouru tout abrasé. 
+            | Ou le chantier recent en face, qui faisait découvrir des trous béants sous le sol. 
+            p 
+            | Les fouilles exploratives sous le parquet ont éclairci le mystère: une grande fuite de quelques ateliers plus loin a inondé l'atelier d'en bas. 
+            | Nous devons changer du sol jusqu'aux fondations. Et changer le sol necessite enlever tout qui se trouve dans l'atelier. 
+            p Pendant les travaux, l'association ne reçoit pas de visiteurs dans nos lieux et n'a pas d'horaires fixes. Sur rendez-vous, nous venons à votre rencontre ailleurs.
+        section
+            header
+                h1 Le site de l'association se transforme 
+            p 
+            | Notre équipe de développeurs Javascript a commencé à migrer les sites de l'association vers de nouvelles technologies.
+            br
+            | Le changement comprendra plusieurs étapes:
+            ul
+                li Le site que vous voyez est réactif, il s'adapte à la taille de votre écran, du telephone portable à un très grand écran.
+                | Cette phase prendra un peu de temps - nous avons produit plus de dix mille fichiers au fil des années. Les sites des artistes-membres réapparaitront d'abord en version ancienne. 
+                | Les versions neuves s'afficheront site par site avant la fin de l'année. 
+                | Dans le chapitire Actualités, les événements des années antérieures apparaîtront en ordre inversé jusqu'à nos debuts en 2001.
+                li Le back-end, la structure invisible du site, est techniquement plus compliqué, mais c'est moins long à réaliser. Les détails pour les technophiles:
+                    ul Migration du VPS à deux VPS plus rapides, migration d'Apache à Nginx, configuration et sécurisation des serveurs.
+                    ul Installation d'une base de données (MongoDB) sur un VPS et sécurisation d'accès et des données. 
+                    ul Les données sensibles, que vous nous confiez via un formulaire sur nos sites, comme vos données personnelles, seront cryptées. 
+                    ul Création des serveurs Node - Express, qui servent les pages des sites.
+                    ul Sites en https: Vous voyez un petit verrou dans la barre d'adresse, car la connexion entre votre ordinateur et notre serveur est cryptée. 
+                    ul Cela vous protège, si vous regardez le site dans un réseau wifi publique: un autre utilisateur du même réseau wifi ne peut ni suivre votre activité ni injecter du code nocif dans la connexion. 
+                    ul Google donne un plus haut ranking aux sites en https pour cette raison. 
+                li Le front-end, les pages que vous voyez affichées à l'écran, comporte des éléments dynamiques. 
+                | Pour ce faire, les pages sont réécrites dans un nouveau langage de code : nous devons les reprendre, page après page, lien par lien. 
+                
+                p 
+                | La version antérieure et la nouvelle version ne sont pas compatibles. 
+                | Nous avons fait le choix de faire apparaitre le nouveau site par étapes, ainsi vous pouvez suivre la progression presque en temps réel. 
+                | Veuillez nous excuser pour d'éventuels petits bugs pendant cette période. Appelons cela des libertés artistiques.
+
+
+    block aside

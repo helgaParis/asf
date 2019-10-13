@@ -1,0 +1,284 @@
+/*only the nav-styles common to all sizes */
+
+
+/*************** navigation + nav links */
+nav {
+    background-color : #009edb;
+    min-height: 44px;
+}
+.menu1 {
+text-align : left;
+}
+nav li {
+    list-style-type : none;
+    }
+nav > ul > li {
+    position : relative;
+    }
+nav > div > ul > li:hover .menu2 {
+    display : block;
+    line-height: normal
+    }
+.menu2 {
+    background-color : #009edb;
+    position : absolute;
+    display : none;
+    min-width : 140px;
+    z-index : 3;
+
+    }        
+nav a {
+    color : #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:active {
+    color: #0000CC;
+    font-weight: 400;
+    text-decoration : underline;
+    }
+nav a:visited{
+    text-decoration : none;
+    font-weight: 400;
+    color :white;
+    }
+nav a:hover {
+    text-decoration : none;
+    color : #ffff00;
+}
+nav hr {
+	width: 60%;
+	margin-left:10%;
+	color: white;
+	height:1;
+}
+
+/**********  reactive styles*/
+
+@media only screen and (max-width:400px) {
+	
+    nav span {
+        position : absolute;
+        top : 17px;
+        right : 9px;
+    }
+    .menu2 {
+        background-color : #4f75c1;  
+    }
+    nav hr {
+	    display: none;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:600px) {
+	
+    nav ul {
+        display : inline;
+        margin-left : 5px;
+        margin-right: 30px;
+        padding : 2px;
+    }
+    nav li {
+        display : inline;
+        padding : 3px;
+    }
+    nav span {
+        position : absolute;
+        top : 9px;
+        right : 9px;
+    }
+    #logo {
+        width : 41px;
+        height : 29px;
+    }
+    nav {
+        border-bottom : 1px dotted #A90101;
+        height : 30px;
+    }
+    .menu1 {
+        line-height: 22px;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 0 10px 10px;
+        top : 25px;
+        left : 30px;
+        right : 30px;       
+        background-color : #4f75c1;
+        font-size: 0.7rem;
+    }
+    nav hr {
+	    display: none;
+    }
+}
+
+@media only screen and (min-width:600px) {
+		
+    nav div {
+        margin : 3px 5px;
+    }
+    nav ul {
+        display : inline;
+        margin-left : 5px;
+        margin-right: 40px;
+        padding : 5px;
+    }
+    nav li {
+        display : inline;
+        padding : 5px;
+    }
+    nav span {
+        position : absolute;
+        top : 9px;
+        right : 9px;
+    }
+    #logo {
+        width : 59px;
+        height : 41px;
+    }
+    nav {
+        border-bottom : 1px solid #A90101;
+        height : 42px;
+    }
+    .menu1 {
+        padding-top: 2px;
+        line-height: 25px;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 0 10px 10px;
+        top : 25px;
+        left : 30px;
+        right : 30px;
+        background-color : #4f75c1;
+        font-size: 0.7rem;
+         }
+    nav hr {
+	    display: none;
+    }
+}
+
+/***** menu on the left side from this size on  ****/
+
+@media only screen and (min-width:768px) {
+		
+    nav {
+        position : absolute;
+        display : block;
+        height : 100%;
+        left : 0;
+        width : 130px;
+    }
+    nav div {
+        display : block;
+        left : 12px;
+        padding : 3px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        min-height : 800px;
+    }
+    .menu1 {
+        text-align : left;
+    }
+    nav li {
+        display : list-item;
+    }
+    nav span {
+        display : block;
+        text-align : center;
+        position : inherit;
+    }
+    #logo {
+        width : 71px;
+        height : 50px;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top :75px;
+        left : 105px;
+        background-color : #009edb;
+        min-height: 320px;
+    }
+}
+
+/*** aside on the left from here on **/
+
+@media only screen and (min-width:992px) {
+    nav {
+        position : absolute;
+        display : block;
+        height : 100%;
+        left : 0;
+        width : 180px;
+    }
+    nav div {
+        position : relative;
+        display : block;
+        left : 30px;
+        padding : 10px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        height : 100%;
+    }
+        .menu1 {
+        text-align : left;
+    }
+        nav li {
+        display : list-item;
+    }
+    nav span {
+        display : block;
+        position : inherit;
+        left : -15px;
+    }
+        #logo {
+        width : 106px;
+        height : 75px;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top : 105px;
+        left : 105px;
+    }
+}
+@media only screen and (min-width:1200px) {
+    nav {
+        position : absolute;
+        display : block;
+        min-height : 1000px;
+        left : 0;
+        width : 210px;
+    }
+        nav div {
+        position : relative;
+        display : block;
+        left : 60px;
+        padding : 10px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        min-height : 1000px;
+    }
+        .menu1 {
+        text-align : left;
+    }
+    nav li {
+        display : list-item;
+    }
+    nav span {
+        display : block;
+        position : inherit;
+        left : -30px;
+    }
+        #logo {
+            width : 106px;
+            height : 75px;
+    }
+        .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top : 105px;
+        left : 110px;
+    }
+}

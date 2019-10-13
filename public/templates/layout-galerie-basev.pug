@@ -1,0 +1,28 @@
+doctype html
+html(lang='fr')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='robots', content='index, follow')
+        meta(name='revisit-after', content='7 days')
+        meta(name='author', content='helga strobl petrovic, paris')
+        meta(name='copyright', content='artistes sans frontières, paris')
+        meta(http-equiv='Content-Language', content='fr')
+        script(src='../js/pages.js')
+        link(rel='stylesheet', href='../css/galerie.css')
+        link(rel='stylesheet', href='../css/galerie-nav.css')
+        link(rel='stylesheet', href='../css/artistes-base.css')
+        link(rel="shortcut icon" href="../images/favicon.ico")
+        title=title
+    body
+        nav
+            include ./nav-galerie.pug
+        main
+            block main
+            #diacontainer
+                #dias
+                #legende
+            button#icons  <-  courte pause 
+                block script 
+        footer
+            include ./footer.pug

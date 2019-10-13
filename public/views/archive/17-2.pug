@@ -1,0 +1,26 @@
+extends ../../templates/layout-archive-dias-l.pug
+block main
+    section
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes à Paris
+            .row
+                .column
+                    h3  Exposition : 
+                    p Dimanche 2 juillet 2017
+                    p
+                        a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                        | , peinture et sculptures 
+                        br
+                        a(href="/galerie/rasmussen")  Suzan Rasmussen
+                        | , peinture, gravure
+                        br
+                        a(href="https://www.hstrobl.info") Helga Strobl
+                        |  , photographie 
+                .column
+                    a(href='../pdf/po2017.pdf', target='_blank')
+                        img(src='../images-news/2017/po2017-2.jpg', alt='pdf: plan des ateliers ouverts 2017')
+        section
+            div         
+                block script
+                    script(src='../images-news/2017/dias-listes.js')

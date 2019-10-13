@@ -1,0 +1,21 @@
+/*  Styles to add to the gallery stiles - "business card" page (single picture mostly) */
+
+/* #logoartist{} = container for name, logo, links...*/
+#logoartist img {
+	padding: 20px 30px 20px 0px;
+}
+#imageartist {
+	text-align: center;
+}
+
+#imageartist img{
+padding-bottom: 15px;
+border:0;
+}
+
+#legende{
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.1rem;
+	padding-bottom: 40px;
+}

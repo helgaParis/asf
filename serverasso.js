@@ -16,6 +16,7 @@ const uuidv1 = require('uuid/v1');
 
 const bodyParser = require('body-parser');
 
+const db = require('./db/db.js');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));

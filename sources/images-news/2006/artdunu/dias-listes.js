@@ -1,0 +1,63 @@
+//url list, one list per show.
+
+var photos=[
+    "url('/images-news/2006/artdunu/1.jpg')",
+    "url('/images-news/2006/artdunu/2.jpg')",
+    "url('/images-news/2006/artdunu/3.jpg')",
+    "url('/images-news/2006/artdunu/4.jpg')",
+    "url('/images-news/2006/artdunu/5.jpg')",
+    "url('/images-news/2006/artdunu/6.jpg')",
+    "url('/images-news/2006/artdunu/7.jpg')",
+    "url('/images-news/2006/artdunu/8.jpg')",
+    "url('/images-news/2006/artdunu/9.jpg')",
+    "url('/images-news/2006/artdunu/10.jpg')",
+    "url('/images-news/2006/artdunu/11.jpg')",
+    "url('/images-news/2006/artdunu/12.jpg')",
+    "url('/images-news/2006/artdunu/13.jpg')",
+    "url('/images-news/2006/artdunu/14.jpg')",
+    "url('/images-news/2006/artdunu/15.jpg')",
+    "url('/images-news/2006/artdunu/16.jpg')",
+    "url('/images-news/2006/artdunu/17.jpg')",
+    "url('/images-news/2006/artdunu/18.jpg')",
+    "url('/images-news/2006/artdunu/19.jpg')",
+    "url('/images-news/2006/artdunu/20.jpg')",
+    "url('/images-news/2006/artdunu/21.jpg')",
+    "url('/images-news/2006/artdunu/22.jpg')",
+    "url('/images-news/2006/artdunu/23.jpg')",
+    "url('/images-news/2006/artdunu/24.jpg')",
+    "url('/images-news/2006/artdunu/25.jpg')",
+    "url('/images-news/2006/artdunu/26.jpg')", 
+    "url('/images-news/2006/artdunu/27.jpg')"
+];
+// sans titre: mettre ''
+var legendes = [
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle',
+    'Salon Art du Nu 2006 - Douglas Petrovic, Suzan Rasmussen , Airelle'
+];
+
+var delai = 3000; // delai between pictures in ms
