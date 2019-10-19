@@ -1,9 +1,36 @@
 extends ../../templates/layout-archive.pug
 block main
     div
-        p  L'évenement 20#{event} sera bientôt disponible
+        section
+            #textgauche
+                header
+                    h1 Artiste en résidence : Shannon Reggaro
+                .row
+                    .column
+                        p
+                        | Shannon Reggaro était l'artiste en résidence de l'association,
+                        br
+                        | en mars et avril 2016, à Paris et à Sète.
+                        p Les oeuvres seront présentés lors des portes ouvertes en juin
+                    .column
+                        img#imagefull(src="/images-news/2016/shannon-painting.jpg" alt="Shannon Reggaro peint dans l'atelier de l'association à Sète") 
+                        | Shannon Reggaro peint dans l'atelier de l'association à Sète
         section
             header
-                h1 Annonces 20#{event}
-            section
-            p à suivre (annonces)
+                h1 Annonces d'expositions
+            h2 Portes Ouvertes des ateliers d'artistes à Paris
+            p Dimanche 12 juin 2016
+            p 
+            | Rick Emory: photographie
+            br
+            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+            | , peinture, sculpture
+            br
+            a(href="/galerie/rasmussen")  Suzan Rasmussen
+            | , peinture, gravure
+            br
+            a(href="galerie/reggaro") Shannon Reggaro
+            | , peinture
+            br
+            a(href="https://www.hstrobl.info") Helga Strobl
+            | , photographie

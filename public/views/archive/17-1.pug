@@ -1,9 +1,19 @@
 extends ../../templates/layout-archive.pug
 block main
     div
-        p  L'évenement 20#{event} sera bientôt disponible
         section
             header
-                h1 Annonces 20#{event}
-            section
-            p à suivre (annonces salon de la photo)
+                h1 Mois de la photo
+            h2 Salon des Photographes
+            .row
+                .column
+                    p Helga Strobl participe au Salon des Photographes du 14e arrondissement
+                    p Annexe de la Mairie du 14e, 12 rue Pierre Castagnou,
+                    p du 08.03 au 19.03: 11-19h, me 15.03 11-21
+                .column
+                    img#imagefull(src="/images-news/2017/mois-photo-2017.png" alt="affiche pour le mois de la photo 2017")
+                    a(href="/pdf/mdlp17.pdf" alt="le programme en pdf")  Le programme de la Mairie en pdf
+        section
+            h2 Helga Strobl: "Inspirations"
+            p du 24 avril au 26 mai, expo au bar restaurant Le Daudet
+

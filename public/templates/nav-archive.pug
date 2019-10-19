@@ -1,3 +1,4 @@
+
 div
     span
         a(href='/')
@@ -6,13 +7,20 @@ div
         li
             a(href='actuel') Actuel
         li
-            a(href='17-2') 2019 - 2015
+            a(href='actuel') 2019 - 2015
             ul.menu2 
                 li 2019
                 li 
-                    a(href='19-0')  2019-0
+                    a(href='19-1')  Annonces
                 li
-                    a(href='19-1')  Eté 
+                    a(href='19-2')  Nouveau site
+                li
+                    a(href="19-3") Portes Ouvertes
+                li
+                    a(href='19-4')  Eté 
+                li
+                    a(href='19-5')  Mois de la Photo 
+
                 li 2018
                 li 
                     a(href='18-1')  Hommage
@@ -20,19 +28,19 @@ div
                     a(href='18-2')  Portes Ouvertes
                 li 2017
                 li
-                    a(href='17-1')  2017-1 
+                    a(href='17-1') Mois de la Photo
                 li
                     a(href='17-2')  Portes Ouvertes
                 li 2016
                 li 
-                    a(href='16-3')  2016-3 
+                    a(href='16-3')  Expo Rencontres 
                 li
                     a(href='16-2')  Portes Ouvertes
                 li
-                    a(href='16-1')  2016-1
+                    a(href='16-1')  Artiste en résidence 
                 li 2015
                 li
-                    a(href='15-1')  2015-1
+                    a(href='15-1')  Invitation PO
                 li
                     a(href='15-2')  Portes Ouvertes
         li
@@ -40,32 +48,32 @@ div
             ul.menu2 
                 li 2014
                 li
-                    a(href='14-3')  2014-3 
+                    a(href='14-3')   Mois de la Photo
                 li
                     a(href='14-2')  Portes Ouvertes
                 li
-                    a(href='14-1')  2014-1 
+                    a(href='14-1')  Annonces
                 li 2013
                 li
-                    a(href='13-1')  2013-1
+                    a(href='13-1')  Annonces
                 li 
                     a(href='13-2')  Portes Ouvertes 
                 li 2012
                 li
-                    a(href='12-4')  2012-4
+                    a(href='12-4')  Mois de la Photo
                 li
                     a(href='12-3')  Portes Ouvertes
                 li
-                    a(href='12-2')  2012-2
+                    a(href='12-2')  Annonces
                 li
-                    a(href='12-1')  2012-1 
+                    a(href='12-1')  Changements
                 li 2011
                 li
-                    a(href='11-4')  2011-4 
+                    a(href='11-4')  Decès Doug
                 li
                     a(href='11-3')  Portes Ouvertes
                 li
-                    a(href='11-2')  2011-2
+                    a(href='11-2')  Annonces, Mohsen
                 li
                     a(href='11-1')  Expo Doug Petrovic
                 li 2010
@@ -107,11 +115,11 @@ div
                     a(href='09-1')  2009-1 
                 li 2008
                 li
-                   a(href='08-4')  Portes Ouvertes
+                    a(href='08-4')  Portes Ouvertes
                 li
-                   a(href='08-3')  2008-3 
+                    a(href='08-3')  2008-3 
                 li
-                   a(href='08-2')  2008-2 
+                    a(href='08-2')  2008-2 
                 li
                     a(href='08-1')  2008-1  
                 li 2007
@@ -187,3 +195,14 @@ div
                     a(href='01')  2001
                 li 
                     a(href='00')  2000
+    hr
+    ul.menu1
+        li
+            a(href='/archive/'+past) 
+                img.fleche(src="/images/pfeil-r.png", alt="vers le passé")
+                | passé
+        li    
+            a(href='/archive/'+future) futur 
+            a(href='/archive/'+future)
+                img.fleche(src="/images/pfeil-l.png", alt="vers le futur")
+

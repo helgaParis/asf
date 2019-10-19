@@ -1,0 +1,83 @@
+/* image sizes */
+
+
+#imagefull{
+    width:100%;
+    padding: 5% 0;
+}
+#imagehalf{
+    width:45%;
+    padding: 5% 0;
+}
+#image90{
+    width: 90%;
+    margin: auto;
+    padding: 5% 0;
+}
+#image30{
+    width: 30%;
+    margin: auto;
+    padding: 5% 0;
+}
+
+/* place 2 or more columns in a row, 
+  use image 90 if images are touching each other */
+
+.row{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+}
+.row1-2{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+    flex:  1 2 auto; 
+}
+.columndouble{
+flex: 60%;
+max-width: 60%;
+align-self: center;
+}
+
+.column {
+flex: 50%;
+max-width: 47%;
+align-self: center;
+padding-right:3%;
+}
+
+.column3 {
+flex: 30%;
+max-width: 30%;
+align-self: center;
+padding-left: 3%;
+}
+.column4 {
+flex: 25%;
+max-width: 25%;
+align-self: center;
+}
+.column img {
+margin-top: 8px;
+
+}
+
+
+
+
+
+@media only screen and (max-width:600px) {
+    .column, .column3, .column4 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:768) {
+    .column4, .column3 {
+        flex: 50%;
+        max-width: 50%;
+        align-self: center;
+      }
+}

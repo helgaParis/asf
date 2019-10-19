@@ -3,56 +3,60 @@ block main
     div
         p #{title} Actualités 2019
         section
-            header
-                h1 Une équipe diverse et engagé
-            section
-            p  Nous offrons à nos artistes membres artistes une presentation qualitative et facilement accésible de leurs oeuvres. 
-            p Créés par des professionnels, les sites que nous offrons peuvent désormais être assortis de fonctions dynamiques et des applications. 
-            p 
-            | Plusieurs collègues de formation ont pris part aux recents développements du site.
-            | Après avoir contribué à la création du serveur de l'association lors de son stage, Saloum Sylla travaille actuellement sur les sites des artistes.
-            | Zoubeir Marouf a joint l'équipe en septembre pour un stage de quelques mois. Il s'occupe du chapitre Archive. 
-            | Helga Petrovic gère le projet et c'est Marine, qui transforme mes textes parfois étranges en phrases françaises.
-        section
-            header
-                h1 Le sol se dérobe 
-            p 
-            | Malheureusement - et ce n'est  pas une expression poétique - le sol se désintègre actuellement sous nos pieds. 
-            | En juin, le parquet du bureau de l'association a commencé à montrer des inquiétantes signes de faiblesse.
-            | A Paris, non loin des catacombes, il est possible que le sol s'affaisse. 
-            p 
-            | Des semaines plus tard, le mystère s'est enfin éclairci: Les fouilles ont mis à jour une fuite d'eau colossale dans la copropriété. 
-            | Les sols ont été endommagés par capillarité, il est donc indispensable de changer du sol jusqu'aux fondations.
-            | Cela nécessite d'enlever tout qui se trouve dans l'atelier. 
-            p Pendant les travaux, l'association ne reçoit pas de visiteurs dans nos lieux et n'a pas d'horaires fixes. Sur rendez-vous, nous venons à votre rencontre ailleurs.
-        section
-            header
-                h1 Le site de l'association se transforme 
-            p 
-            | Notre équipe de développeurs Javascript a commencé à migrer les sites de l'association vers de nouvelles technologies.
-            br
-            | Le changement comprendra plusieurs étapes:
-            ul
-                li Le site que vous voyez est réactif, il s'adapte à la taille de votre écran, du telephone portable à un très grand écran.
-                | Cette phase prendra un peu de temps - nous avons produit plus de dix mille fichiers au fil des années. Les sites des artistes-membres réapparaitront d'abord en version ancienne. 
-                | Les versions neuves s'afficheront site par site avant la fin de l'année. 
-                | Dans le chapitire Actualités, les événements des années antérieures apparaîtront en ordre inversé jusqu'à nos debuts en 2001.
-                li Le back-end, la structure invisible du site, est techniquement plus compliqué, mais c'est moins long à réaliser. Les détails pour les technophiles:
-                    ul Migration du VPS à deux VPS plus rapides, migration d'Apache à Nginx, configuration et sécurisation des serveurs.
-                    ul Installation d'une base de données (MongoDB) sur un VPS et sécurisation d'accès et des données. 
-                    ul Les données sensibles, que vous nous confiez via un formulaire sur nos sites, comme vos données personnelles, seront cryptées. 
-                    ul Création des serveurs Node - Express, qui servent les pages des sites.
-                    ul Sites en https: Vous voyez un petit verrou dans la barre d'adresse, car la connexion entre votre ordinateur et notre serveur est cryptée. 
-                    ul Cela vous protège, si vous regardez le site dans un réseau wifi publique: un autre utilisateur du même réseau wifi ne peut ni suivre votre activité ni injecter du code nocif dans la connexion. 
-                    ul Google donne un plus haut ranking aux sites en https pour cette raison. 
-                li Le front-end, les pages que vous voyez affichées à l'écran, comporte des éléments dynamiques. 
-                | Pour ce faire, les pages sont réécrites dans un nouveau langage de code : nous devons les reprendre, page après page, lien par lien. 
-                
+        header
+            h1 Progrès 
+        .row
+            .column
+                h3 Nouveau site - nouveau  stagiaire
                 p 
-                | La version antérieure et la nouvelle version ne sont pas compatibles. 
-                | Nous avons fait le choix de faire apparaitre le nouveau site par étapes, ainsi vous pouvez suivre la progression presque en temps réel. 
-                | Veuillez nous excuser pour d'éventuels petits bugs pendant cette période. Appelons cela des libertés artistiques.
+                | Le nouveau site prend forme, la version francaise est déjà partiellement en ligne 
+                | et remplacera l'ancien site dans la nuit du 20 au 21 octobre. 
+                br
+                | L'archive est complet pour les années 2011 à aujourd'hui et montre les photos des expositions depuis 2004. 
+                | Le reste des pages suivra progressivement.
+                p
+                | En octobre et novembre, les sites individuelles des artistes seront remplacés l'un après l'autre. Dans la galerie, vous verrez parfois un lien vers l'ancien site, qu'il faut cliquer. 
+                br
+                | Note pour les membres avec un site de base: vos anciens noms de domaine resteront actifs. 
+                p Saloum Sylla a terminé son stage et réjoint son ancien entreprise mais continue à contribuer aux projets de Artistes sans Frontières
+                p 
+                |Zoubeir Marouf a rejoint l'équipe et travaille sur un projet de site individuel pour membres.
+            .column
+                img#imagefull(src="/images-news/2019/remise-diplome.jpg", alt="la fête après la remise des diplômes")
+                | Formation officillement terminée pour Saloum et Helga (les deux à droite) - la fête après la remise des diplômes
+        section
+            header
+                h1 Pas de Progrès pour notre atelier
+            p 
+            | Nous attendons toujours l'accord des assurances pour changer le sol.  
+            | En préparation du chantier, les oeuvres d'art et la plupart des meubles sont partis pendant l'été, 
+            | mais le dossier prend son temps. 
+            br
+            | Et encore plus de temps... 
+            br
+            | Des nouvelles expertises auront lieu le 6 et 7 novembre. 
+            p 
+            | Entre-temps, nous ne pouvons pas accueillir du public. Un trou béant immédiatement après le seuil, 
+            | cela n'est pas le bon moyen de captiver les visiteurs.  
+            | De l'autre coté, nous ne pouvons plus accéder aux oeuvres à exposer, aux cadres et au matériel necessaire,
+            | car l'endroit de stockage est rempli de meubles et de materiel de bureau.
+            | C'est avec grand régret, que nous devons annuler les expositions de cet automne.
+            p Nous espérons pouvoir terminer le chantier en 2019 pour vous accueillir de nouveau debut 2020.
+            .row
+                .column3
+                    img#imagefull(src="/images-news/2019/depart1.jpg", alt="Les oeuvres sont parties")
+                    p Les oeuvres sont parties en juillet ...
+                .column3
+                    img#imagefull(src="/images-news/2019/depart2.jpg", alt="Ces oeuvres aussi")
+                    p ces gouaches et photos aussi ...
+                .column3
+                    img#imagefull(src="/images-news/2019/depart3.jpg", alt="Un autre depart")
+                    p et les huiles également
 
-
+        section
+            header
+                h1 Mois de la Photo en novembre - notre participation est annulée
+            p Exposition photo dans le cadre du Mois de la Photo
+            p Exposition collective en Automne - annulée
 
     block aside

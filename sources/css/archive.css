@@ -64,6 +64,10 @@ footer hr{
 #imagehalf{
     width:45%;
 }
+#image90{
+    width: 90%;
+    margin: auto;
+}
 .row{
     display: flex;
     display: -webkit-flex; /* Safari */

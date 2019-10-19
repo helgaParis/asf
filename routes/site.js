@@ -11,6 +11,7 @@ const router = express.Router();
     });
 
     //pugs en views/asso/...
+   
 
     router.get('/buts',function(req,res,next) {
         res.render('asso/buts',{title:'Les objéctifs de l\'association AsF'});
@@ -51,16 +52,6 @@ const router = express.Router();
     router.get('/terms',function(req,res,next) {
         res.render('services/terms',{title:'AsF - conditions générales et tarifs'});
     });
-
-//routes archive - à mettre sur fichier separé
-// router.get('/actuel',function(req,res,next) {
-//     res.render('archive/actuel',{title:'Artistes sans Frontières - Actualités '});
-// });
-// router.get('/2019-1',function(req,res,next) {
-//     res.render('archive/2019-1',{title:'AsF Evenements en 2019 - Portes Ouvertes'});
-// });
-
-
 
 
 

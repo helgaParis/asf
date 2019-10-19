@@ -1,9 +1,60 @@
 extends ../../templates/layout-archive.pug
 block main
-    div
-        p  L'évenement 20#{event} sera bientôt disponible
-        section
-            header
-                h1 Annonces 20#{event}
-            section
-            p à suivre (annonces)
+    section
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes à Paris
+            p 14 et 15 juin 2014
+            p Samedi et dimanche : 11h - 19h
+            .row
+                .column
+                    h3  Exposition : 
+                    p 
+                        a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                        | , peinture et sculptures 
+                        br
+                        a(href="/galerie/quartarone")  Mary Quartarone
+                        | , peinture
+                        br
+                        a(href="/galerie/rasmussen")  Suzan Rasmussen
+                        | , peinture, gravure
+                        br
+                        a(href="https://www.hstrobl.info") Helga Strobl
+                        |  , photographie
+                        br
+                        a(href="/galerie/zamoum") Fatma-Zohra Zamoum
+                        |  , film
+                    p et hors compétition le clown Auguste, le perroquet qui sait voler mais ne se sauve pas.
+                .column
+                    h(ref="/pdf/po14.pdf")
+                        img#imagehalf(src="/images-news/2014/programme-po-2014.jpg" alt="Entrez dans le cadre - programme Portes Ouvertes")
+    section
+        h3 Doug, huiles
+        .row
+            .column
+                img#image90(src="/images-news/2014/doug_blau.png", alt="Doug Petrovic, huile bleu, 2010") 
+            .column
+                img#image90(src="/images-news/2014/doug_gelb.png", alt="Doug Petrovic, huile jaune, 2010")
+        .row    
+            .column
+                img#image90(src="/images-news/2014/quartarone_blue-woman.jpg", alt="Mary Quartarone, Blue Woman") 
+            .column
+                h3 Mary Quartarone "Blue Woman"
+                P L’art de Marie Quartarone a ses racines dans sa spiritualité. Ses images sont tirées de visions profondes qui reflètent l'âme et le cœur de son monde intérieur. Mary vit avec un cancer du sein métastatique et elle peint souvent son avenir comme elle poursuit son chemin avec cette maladie. Ses inspirations viennent des couleurs et des formes de la nature et de l'intelligence instinctive. En outre, elle fait souvent des portraits des âmes. Mary vit à Mississauga, Ontario Canada avec son mari de 34 ans et périodiquement à Paris. Elle a deux fils adultes.
+        .row    
+            .column
+                h3 Suzan Rasmussen
+                p l'artiste sera présente pendant les Portes Ouvertes
+                img#image90(src="/images-news/2014/rasmussen.jpg", alt="Suzan Rasmussen") 
+            .column
+                h3 Helga Strobl, Vue du Ciel
+                p présente pendant les Portes Ouvertes
+                img#image90(src="/images-news/2014/vue-du-ciel.png", alt="Helga Strobl, Vue du Ciel") 
+        .row
+            .column
+                h3 Fatma Zohra Zamoum : Azib Zamoum, une histoire de terres
+                p Film
+                p Nous présenterons des extraits et des court-métrages à l'intérieur. Si le temps le permet, des films seront visibles dans la cour.
+                p Fatma Zohra Zamoum sera présente pendant une partie des Portes Ouvertes (susceptibles à modification)
+            .column
+                img#image90(src="/images-news/2014/fatma-zohra-zamoum_azib-zamoum .jpg", alt="fatma-Zohra Zamoum, Azib Zamoum, affiche du film") 

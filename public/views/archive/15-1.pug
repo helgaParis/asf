@@ -1,9 +1,39 @@
 extends ../../templates/layout-archive.pug
 block main
     div
-        p  L'évenement 20#{event} sera bientôt disponible
+        p  Annonces d'expos
         section
             header
-                h1 Annonces 20#{event}
-            section
-            p à suivre (annonces)
+                h1 Portes Ouvertes des ateliers d'artistes à Paris:
+            p 6 et 7 juin 2015
+            br
+            | Samedi et dimanche: 11h - 19h
+            p  
+            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+            | , peinture, sculpture
+            br
+            a(href="galerie/quartarone") Mary Quartarone
+            | , peinture
+            br
+            a(href="/galerie/rasmussen") Suzan Rasmussen
+            | , peinture, gravure
+            br
+            a(href="https://www.hstrobl.info") Helga Strobl
+            | , photographie
+
+        .row
+            .column
+                img#image90(src="/images-news/2015/helga-strobl0909train_5.jpg" alt='Helga Strobl "Arrêt de train", photo')
+                p Helga Strobl "Arrêt de train", photo
+            .column
+                img#image90(src="/images-news/2015/suzan-rasmussen_milburn-heights.jpg" alt='Suzan Rasmussen: "Milburn Heights", aquarelle')
+                p Suzan Rasmussen: Milburn Heights, aquarelle
+        .row
+            .column
+                img#image90(src="/images-galerie/base/quartarone/creation.jpg" alt='Mary Quartarone: "Creation", aquarelle')
+                p Mary Quartarone: Creation, aquarelle
+            .column    
+                img#image90(src="/images-news/2015/douglas-petrovic-sans-titre.jpg" alt='Douglas "Doug" Petrovic, sans titre, huile sur toile')
+                p Douglas "Doug" Petrovic, sans titre, huile sur toile
+
+
