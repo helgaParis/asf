@@ -52,9 +52,14 @@ nav>hr {
 	color: white;
 	height:1;
 }
-.fleche{
-    width: 4%;
-    padding: 0 1%;
+
+.language {
+    border:0;
+}
+.drapeau {
+    width:38%;
+    margin:auto;
+    padding:2%;
 }
 
 /**********  reactive styles*/
@@ -75,6 +80,13 @@ nav>hr {
     .fleche{
         width: 2%;
         padding: 0 1%;
+    }
+    .language {
+        position : absolute;
+        top : 13px;
+        right : 55px;
+        width:70px;
+       
     }
 }
 
@@ -121,6 +133,12 @@ nav>hr {
     .fleche{
         width: 2%;
         padding: 0 1%;
+    }
+    .language {
+        position : absolute;
+        top : 55px;
+        right : 1px;
+        width:70px;
     }
 }
 
@@ -169,8 +187,18 @@ nav>hr {
 	    display: none;
     }
     .fleche{
-        width: 3%;
+        height: 20px;
+        vertical-align: middle;
         padding: 0 1%;
+    }
+    hr{
+        display: none;
+    }
+    .language {
+        position : absolute;
+        top : 58px;
+        right : 2px;
+        width:80px;
     }
 }
 
@@ -201,7 +229,7 @@ nav>hr {
     }
     nav span {
         display : block;
-        text-align : center;
+        padding-left:3%;
         position : inherit;
     }
     #logo {
@@ -217,8 +245,16 @@ nav>hr {
         min-height: 320px;
     }
     .fleche{
-        width: 15%;
-        padding: 0 4%;
+        width: 12%;
+        padding: 0 4% 0 2%;
+        vertical-align: text-bottom;
+    }
+    .language {
+        position : relative;
+        left : 3%;
+        width:80px;
+        border-top: 1px ridge white;
+        padding-top:3%;
     }
 }
 
@@ -241,7 +277,7 @@ nav>hr {
         border-color : #A90101;
         height : 100%;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
         nav li {
@@ -250,11 +286,11 @@ nav>hr {
     nav span {
         display : block;
         position : inherit;
-        left : -15px;
+        padding-left : 7%;
     }
-        #logo {
-        width : 106px;
-        height : 75px;
+    #logo {
+        width : 78px;
+        height : 55px;
     }
     .menu2 {
         padding : 2px;
@@ -263,8 +299,9 @@ nav>hr {
         left : 105px;
     }
     .fleche{
-        width: 15%;
-        padding: 0 4%;
+        width: 10%;
+        padding: 0 4% 0 2%;
+        vertical-align: text-bottom;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -275,7 +312,7 @@ nav>hr {
         left : 0;
         width : 210px;
     }
-        nav div {
+    nav div {
         position : relative;
         display : block;
         left : 60px;
@@ -284,7 +321,7 @@ nav>hr {
         border-color : #A90101;
         min-height : 1000px;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
     nav li {
@@ -293,16 +330,17 @@ nav>hr {
     nav span {
         display : block;
         position : inherit;
-        left : -30px;
+        padding-left:8%;
     }
-        #logo {
-            width : 106px;
-            height : 75px;
-    }
-        .menu2 {
+    .menu2 {
         padding : 2px;
         border-radius : 0 10px 10px 0;
         top : 105px;
         left : 110px;
+    }
+    .fleche{
+        width: 8%;
+        padding: 0 4% 0 1%;
+        vertical-align: text-bottom;
     }
 }

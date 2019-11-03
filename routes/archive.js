@@ -1,6 +1,8 @@
 
 const express = require('express');
 const router = express.Router();
+const path = require('path');
+const bodyParser = require('body-parser');
 
 //targets = pages to showw (if called as archive/target)
 //file names: year-eventNumberThatYear, add recent on top
@@ -20,37 +22,42 @@ var current=targets[0];
 
 
 router.get('/actuel',function(req,res,next) {
-    // get the name of the archive page from the link clicked on nav-archive or typed in url or search
-    var event = (req.params[0]) 
-    res.render('archive/'+current,{
+    
+    res.render('f-archive/'+current,{
                                 title:'Artistes sans Frontières - Actualités ',
-                                event:event ,
-                                past: targets[targets.indexOf(event)+1],
+                                event:targets[0],
+                                past: targets[1],
                                 future:  targets[0],
                               });
 });
 
 
-router.get('/*',function(req,res) {
+router.get('/*/',function(req,res) {
     // get the name of the archive page from the link clicked on nav-archive or typed in url or search
-    var event = (req.params[0]);
-   
+  
+   var eventUrl= req.params[0] ;
+   var event = path.basename(eventUrl);
+
+
+
     if( targets.includes(event) ) {
-        res.render('archive/'+event, {               
-                        title:'Artistes sans Frontières - Les événements passés en 20'+event, 
+        res.render('f-archive/'+event, {               
+                        title: 'Artistes sans Frontières - Les événements passés en 20'+event, 
                         message: 'Le contenu de la page '+event+' sera bientôt visible ',
-                        event:event ,
+                        event: event,
                         past: targets[targets.indexOf(event)+1],
                         future: targets[targets.indexOf(event)-1] || current
                     });
-        } else {
-            res.render('archive/'+current,
-                                {title:'Artistes sans Frontières - Actualités', 
-                                message: 'pas d\'événement enregisté pour archive/'+event+ '. Vérifiéz l\'écriture de l\'adresse!'  });
-        }
+        } 
+    });
+
+    router.use(function(req, res, next){
+        res.status(404).render('404', {title: "Site: Sorry, page not found"});
 });
 
-
-
+router.use(function(error, req, res, next) {
+    res.status(500);
+  res.render('505', {title:'500: Internal Server Error on ', error: error});
+});
 
 module.exports = router;

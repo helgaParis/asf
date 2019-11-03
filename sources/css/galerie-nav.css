@@ -50,6 +50,14 @@ nav hr {
 	color: white;
 	height:1;
 }
+.language {
+    border:0;
+}
+.drapeau {
+    width:38%;
+    margin:auto;
+    padding:2%;
+}
 
 /**********  reactive styles*/
 
@@ -65,6 +73,13 @@ nav hr {
     }
     nav hr {
 	    display: none;
+    }
+    .language {
+        position : absolute;
+        top : 13px;
+        right : 55px;
+        width:70px;
+       
     }
 }
 
@@ -107,6 +122,12 @@ nav hr {
     }
     nav hr {
 	    display: none;
+    }
+    .language {
+        position : absolute;
+        top : 13px;
+        right : 55px;
+        width:70px;
     }
 }
 
@@ -154,6 +175,12 @@ nav hr {
     nav hr {
 	    display: none;
     }
+    .language {
+        position : absolute;
+        top : 15px;
+        right : 65px;
+        width:80px;
+    }
 }
 
 /***** menu on the left side from this size on  ****/
@@ -183,7 +210,7 @@ nav hr {
     }
     nav span {
         display : block;
-        text-align : center;
+        padding-left:3%;
         position : inherit;
     }
     #logo {
@@ -197,6 +224,14 @@ nav hr {
         left : 105px;
         background-color : #009edb;
         min-height: 320px;
+    }
+    .language {
+        position : relative;
+        left : 15px;
+        width:80px;
+        border-top: 1px ridge white;
+        padding-top:3%;
+      
     }
 }
 
@@ -219,20 +254,20 @@ nav hr {
         border-color : #A90101;
         height : 100%;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
-        nav li {
+    nav li {
         display : list-item;
     }
     nav span {
         display : block;
         position : inherit;
-        left : -15px;
+        padding-left:7%;
     }
-        #logo {
-        width : 106px;
-        height : 75px;
+    #logo {
+        width : 78px;
+        height : 55px;
     }
     .menu2 {
         padding : 2px;
@@ -258,7 +293,7 @@ nav hr {
         border-color : #A90101;
         min-height : 1000px;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
     nav li {
@@ -267,13 +302,9 @@ nav hr {
     nav span {
         display : block;
         position : inherit;
-        left : -30px;
+        padding-left:8%;
     }
-        #logo {
-            width : 106px;
-            height : 75px;
-    }
-        .menu2 {
+    .menu2 {
         padding : 2px;
         border-radius : 0 10px 10px 0;
         top : 105px;

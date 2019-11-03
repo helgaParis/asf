@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const bodyParser = require('body-parser');
 //dynamic routes via router
 const site = require('./routes/site');
 const galerie = require('./routes/galerie');
@@ -14,22 +15,27 @@ const http = require('http').Server(app);
 const session = require('express-session');
 const uuidv1 = require('uuid/v1');
 
-const bodyParser = require('body-parser');
 
-const db = require('./db/db.js');
+
+//const db = require('./db/db.js');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-// Gestion des fichiers statiques
-app.use('/css', express.static(__dirname + '/sources/css'));
-app.use('/js', express.static(__dirname + '/sources/js'));
-app.use('/images', express.static(__dirname + '/sources/images'));
-app.use('/images-galerie', express.static(path.join(__dirname +'/sources/images-galerie')));
-app.use('/images-news', express.static(path.join(__dirname +'/sources/images-news')));
-app.use('/photos', express.static(path.join(__dirname +'/sources/photos')));
-app.use('/pdf', express.static(path.join(__dirname +'/sources/pdf')));
+// Gestion des fichiers statiques - 
+app.use(express.static('sources'));
+app.use(express.static('public'));
+
+app.use('/css', express.static('/sources/css'));
+app.use('/js', express.static('/sources/js'));
+app.use('/images', express.static('/sources/images'));
+app.use('/images-galerie', express.static('/sources/images-galerie'));
+app.use('/images-news', express.static('/sources/images-news'));
+app.use('/photos', express.static('/sources/photos'));
+app.use('/pdf', express.static('/sources/pdf'));
+app.use('/html', express.static(path.join(__dirname, 'public/html')));
+
 
 
 //View engine for pug files
@@ -37,31 +43,35 @@ app.set('view engine', 'pug');
 app.set('views',  './public/views');
 
 
+
+
 //////  les reponses /////
-// Gestion des routes /…
+// Gestion des routes 
 
-//une route pour la periode de transit pour la partie ancienne (graffel=bric à brac)
-app.get('/graffel' , function (req, res,next) {
-    res.sendFile('node-index.html', {root:'./public/html/'}); //marche avec le point, pas sans
-  });
-
- /*
-app.get('/index.html' , function (req, res) {
-    res.sendFile('node-index.html', {root:'./public/html/'});
-  });
-*/
 
 // Routers for dynamic files (site=everything asso, gallery=artists, past=archive)
 
 app.use('/galerie', galerie);
 app.use ('/archive', archive);
-app.use('/',site);
+app.use('/site',site);
 
-app.use(express.static(path.join(__dirname, './public/html/')));
 
-//le fichier 404
-app.get('*',function (req, res, next) {
-	return res.status(404).sendFile('404.html', {root:'./public/html/err/'});
+
+
+app.get('/',function(req,res,next) {
+    res.render('index',{title:'Artistes sans Frontières - bienvenue - welcome!'});
+  });
+app.get('/index',function(req,res,next) {
+  res.render('index',{title:'Artistes sans Frontières - bienvenue - welcome !'});
+});
+
+
+app.use(function(req, res, next){
+    res.status(404).render('404', {title: "Sorry, page not found" });
+});
+app.use(function(error, req, res, next) {
+    res.status(500);
+    res.render('505', {title:'500: Internal Server Error', error: error});
 });
 
 app.listen(8080,function() {   

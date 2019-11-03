@@ -5,9 +5,9 @@ html(lang='fr')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='robots', content='index, follow')
     meta(name='revisit-after', content='7 days')
-    meta(name='author', content='helga strobl petrovic, paris')
+    meta(name='author', content='helga strobl-petrovic, paris')
     meta(name='copyright', content='artistes sans frontières, paris')
-    meta(http-equiv='Content-Language', content='fr')
+    meta(http-equiv='Content-Language', content=target.lang ||'fr')
     script(src='../js/pages.js')
     link(rel='stylesheet', href='../css/main.css')
     link(rel='stylesheet', href='../css/main-nav.css')
@@ -16,7 +16,8 @@ html(lang='fr')
     title=title
   body
     nav
-      include ./nav.pug
+      include ./nav-site.pug
     main
         block main
+
     

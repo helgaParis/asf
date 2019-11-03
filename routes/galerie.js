@@ -21,7 +21,7 @@ var references=['ara', 'asfric','joachimbelz', 'clown','informatix', 'mhh', 'sdc
 // +++ routes for the gallery   
    
 router.get('/index',function(req,res,next) {
-    res.render('galerie/index',{title:'Artistes sans Frontières - La galerie des membres'});
+    res.render('f-galerie/index',{title:'Artistes sans Frontières - La galerie des membres'});
 });
 
 // all else, check against variables above (will simplify to two variables at a later stage )
@@ -34,23 +34,23 @@ router.get('/*',function(req,res) {
    // members with own site link with code 301,
    // former members or members late on fees and nonsense text
     if( targets.includes(artist) ) {
-        res.render('galerie/'+artist, {               
+        res.render('f-galerie/'+artist, {               
                         title:'Artistes sans Frontières - La galerie des membres', 
                         message: 'Artistes sans Frontières presente ' + artist,
                         artist:artist });
         } else {
           //  console.log('in else of targets');
             if (exmembers.includes(artist)) {
-                res.render('galerie/index',
+                res.render('f-galerie/index',
                 {title:'Artistes sans Frontières - La galerie des membres', 
                  message: artist + ' n\'est plus membre de l\'association'   });
             } else {
                 if (references.includes(artist)){
-                    res.render('galerie/index',
+                    res.render('f-galerie/index',
                     {title:'Artistes sans Frontières - Autres réferences', 
                     message: 'Vous retrouverez ici bientôt un aperçu du site '+ artist    } );
                     } else {
-                        res.render('galerie/index',
+                        res.render('f-galerie/index',
                         {title:'Artistes sans Frontières - La galerie des membres', 
                         message: artist + ' n\'est pas membre de l\'association'   });
                     }

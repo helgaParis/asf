@@ -51,7 +51,14 @@ nav hr {
 	color: white;
 	height:1;
 }
-
+.language {
+    border:0;
+}
+.drapeau {
+    width:38%;
+    margin:auto;
+    padding:2%;
+}
 /**********  reactive styles*/
 
 @media only screen and (max-width:400px) {
@@ -64,6 +71,18 @@ nav hr {
     nav hr {
 	    display: none;
     }
+    .fleche{
+        width: 2%;
+        padding: 0 1%;
+    }
+    .language {
+        position : absolute;
+        top : 13px;
+        right : 55px;
+        width:70px;
+       
+    }
+    
 }
 
 @media only screen and (min-width:400px) and (max-width:600px) {
@@ -105,6 +124,17 @@ nav hr {
     nav hr {
 	    display: none;
     }
+    .fleche{
+        width: 2%;
+        padding: 0 1%;
+    }
+    .language {
+        position : absolute;
+        top : 13px;
+        right : 55px;
+        width:70px;
+    }
+    
 }
 
 @media only screen and (min-width:600px) {
@@ -128,8 +158,8 @@ nav hr {
         right : 9px;
     }
     #logo {
-        width : 59px;
-        height : 41px;
+        width : 50px;
+        height : 33px;
     }
     nav {
         border-bottom : 1px solid #A90101;
@@ -152,6 +182,16 @@ nav hr {
          }
     nav hr {
 	    display: none;
+    }
+    .fleche{
+        width: 3%;
+        padding: 0 1%;
+    }
+    .language {
+        position : absolute;
+        top : 15px;
+        right : 65px;
+        width:80px;
     }
 }
 
@@ -182,7 +222,7 @@ nav hr {
     }
     nav span {
         display : block;
-        text-align : center;
+        padding-left:3%;
         position : inherit;
     }
     #logo {
@@ -196,6 +236,17 @@ nav hr {
         left : 105px;
         background-color : #009edb;
         min-height: 195px;  
+    }
+    .fleche{
+        width: 12%;
+        padding: 0 4%;
+    }
+    .language {
+        position : relative;
+        left : 15px;
+        width:80px;
+        border-top: 1px ridge white;
+        padding-top:3%;
     }
 }
 
@@ -218,26 +269,31 @@ nav hr {
         border-color : #A90101;
         height : 100%;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
-        nav li {
+    nav li {
         display : list-item;
     }
     nav span {
         display : block;
         position : inherit;
-        left : -15px;
+        padding-left:7%;
     }
-        #logo {
-        width : 106px;
-        height : 75px;
+    #logo {
+        width : 78px;
+        height : 55px;
     }
     .menu2 {
         padding : 2px;
         border-radius : 0 10px 10px 0;
         top : 130px;
         left : 105px;
+    }
+    .fleche{
+        width: 10%;
+        padding: 0 4%;
+        
     }
 }
 @media only screen and (min-width:1200px) {
@@ -248,7 +304,7 @@ nav hr {
         left : 0;
         width : 210px;
     }
-        nav div {
+    nav div {
         position : relative;
         display : block;
         left : 60px;
@@ -257,7 +313,7 @@ nav hr {
         border-color : #A90101;
         min-height : 1000px;
     }
-        .menu1 {
+    .menu1 {
         text-align : left;
     }
     nav li {
@@ -266,13 +322,9 @@ nav hr {
     nav span {
         display : block;
         position : inherit;
-        left : -30px;
+        padding-left:8%;
     }
-        #logo {
-            width : 106px;
-            height : 75px;
-    }
-        .menu2 {
+    .menu2 {
         padding : 2px;
         border-radius : 0 10px 10px 0;
         top : 128px;

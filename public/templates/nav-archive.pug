@@ -2,7 +2,7 @@
 div
     span
         a(href='/')
-            img#logo(src='../images/logo_asf.jpg' alt='logo Artistes sans Frontières')
+            img#logo(src='/images/logo_asf.jpg' alt='logo Artistes sans Frontières')
     ul.menu1
         li
             a(href='actuel') Actuel
@@ -144,11 +144,11 @@ div
             ul.menu2     
                 li 2006
                 li
-                    a(href='06-13')  Expo Pluvinage   
+                    a(href='06-12')  Expo Pluvinage   
                 li   
-                    a(href='06-11')  Art du Nu
+                    a(href='06-10')  Art du Nu
                 li
-                    a(href='06-10')  Salon d'Automne   
+                    a(href='06-9')  Salon d'Automne   
                 li   
                     a(href='06-8')  Expo Loft 
                 li
@@ -197,12 +197,17 @@ div
                     a(href='00')  2000
     hr
     ul.menu1
-        li
-            a(href='/archive/'+past) 
-                img.fleche(src="/images/pfeil-r.png", alt="vers le passé")
-                | passé
         li    
             a(href='/archive/'+future) futur 
             a(href='/archive/'+future)
-                img.fleche(src="/images/pfeil-l.png", alt="vers le futur")
+                img.fleche(src="/images/pfeil-o.png", alt="vers le futur")
+        li
+            a(href='/archive/'+past) 
+                img.fleche(src="/images/pfeil-u.png", alt="vers le passé")
+                | passé
+    span.language
+        a(href="target.ciblee") 
+            img.drapeau(src="/images/drapeau-en.png", alt='English Version')
+        a(href="target.cibled") 
+            img.drapeau(src="/images/drapeau-de.png", alt='Deutsche Version')
 
