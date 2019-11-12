@@ -1,3 +1,21 @@
+/***** What this router does:
+ * (This is not yet the final version)
+ * 
+ * The router handles calls for /site
+ * The files are organised in 3 folders, f-site, e-site, d-site. The French version is the main version, 
+ * content in the other pages may vary. (Next step: not all pages may exist in all languages)
+ * 
+ * The valid urls are defined in 3 arrays of objects, the objects giving individual url targets (cible) and page titles
+ * 
+ * The router compares all calls to the targets in the 3 arrays and renders the matching page. 
+ * It defines the position of the page in the array and uses this position to define the matching pages in other languages. 
+ * If no position is defined, the page does not exist in the arrays of allowed targets, a 404 page is rendered. 
+ * Till the translations go online, the other languages just render the correct title and a message to look up the existing page on the old website.
+ * 
+ * 
+ *****/
+
+
 'use strict';
 const express = require('express');
 const router = express.Router();
