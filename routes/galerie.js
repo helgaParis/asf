@@ -7,7 +7,7 @@ const router = express.Router();
 var targets=[ 'adzak', 'amorim', 'bazencir', 'champagne', 'delaney', 'emory','erguy', 
             'frevarias', 'gebka',  'gruyters', 'jalila','kouassi','krive', 'lepaquet',
             'merle',  'mohsen', 'mtm', 'nicolas','plazanet','paquetrobert', 'pillas',
-            'pluvinage','p-plazanet','quartarone','rahs', 'rasmussen','reggaro', 'schwertfeger','stoulig',
+            'pluvinage','p-plazanet','quartarone','rahs', 'rasmussen','reggaro', 'schwertfeger', 'souche', 'stoulig',
             'sylviaartdeco', 'tajuddin','valgallard', 'villaada', 'wright' ];
 
 var exmembers=['motor', 'ada-villa', 'belz','laurentloizeau', 'moduss'];
@@ -22,6 +22,12 @@ var references=['ara', 'asfric','joachimbelz', 'clown','informatix', 'mhh', 'sdc
    
 router.get('/index',function(req,res,next) {
     res.render('f-galerie/index',{title:'Artistes sans Frontières - La galerie des membres'});
+});
+router.get('/d-index',function(req,res,next) {
+    res.render('d-galerie/index',{title:'Artistes sans Frontières - Galerie'});
+});
+router.get('/e-index',function(req,res,next) {
+    res.render('e-galerie/index',{title:'Artistes sans Frontières - The Gallery'});
 });
 
 // all else, check against variables above (will simplify to two variables at a later stage )

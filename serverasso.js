@@ -60,14 +60,20 @@ app.use('/site',site);
 
 app.get('/',function(req,res,next) {
     res.render('index',{title:'Artistes sans Frontières - bienvenue - welcome!'});
-  });
-app.get('/index',function(req,res,next) {
-  res.render('index',{title:'Artistes sans Frontières - bienvenue - welcome !'});
+});
+app.get('/d-index',function(req,res,next) {
+  res.render('d-index',{title:'Artistes sans Frontières - Willkommen !'});
+});
+app.get('/e-index',function(req,res,next) {
+    res.render('e-index',{title:'Artistes sans Frontières - Welcome !'});
+});
+  app.get('/index',function(req,res,next) {
+    res.render('index',{title:'Artistes sans Frontières - Bienvenue !'});
 });
 
 
 app.use(function(req, res, next){
-    res.status(404).render('404', {title: "Sorry, page not found" });
+    res.status(404).render('404', {title: "Sorry, page not found -  page introuvable" });
 });
 app.use(function(error, req, res, next) {
     res.status(500);

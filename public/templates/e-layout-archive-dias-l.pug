@@ -1,0 +1,31 @@
+doctype html
+html(lang='fr')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='robots', content='index, follow')
+    meta(name='revisit-after', content='7 days')
+    meta(name='author', content='helga strobl petrovic, paris')
+    meta(name='copyright', content='helga strobl petrovic')
+    meta(http-equiv='Content-Language', content='en')
+    script(src='../../js/dias-code.js')
+    script(src='../js/pages.js')
+    link(rel='stylesheet', href='../css/archive.css')
+    link(rel='stylesheet', href='../css/archive-nav.css')
+    link(rel='stylesheet', href='../css/archive-dias-large.css')
+    link(rel="shortcut icon" href="../images/favicon.ico")
+    title=title
+  body
+    nav
+        include ./e-nav-archive.pug
+    main
+        block main  
+        #diacontainer
+            #dias
+            #legende
+        button#icons  <-  courte pause 
+            block script
+        footer
+            hr
+            include ./footer.pug
+      

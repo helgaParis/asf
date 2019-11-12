@@ -1,0 +1,30 @@
+extends ../../templates/d-layout-archive-dias.pug
+block main
+    div
+        h3=message
+        section
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes du 14e à Paris
+            p 27 et 28 septembre 2008
+            p 
+                | Peintures de 
+                a(href="/galerie/kouassi") Germain Kouassi
+                | , 
+                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                | , 
+                a(href="/galerie/schwertfeger") Jochen Schwertfeger
+                | , 
+                br
+                | sculptures de 
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                br
+                | photos de  
+                a(href="https://www.hstrobl.info") Helga Strobl
+                br
+                |  court-métrages de 
+                a(href="/galerie/zamoum") Fatma-Zohra Zamoum
+
+            block script
+                script(src='../images-news/2008/po/dias-listes.js')

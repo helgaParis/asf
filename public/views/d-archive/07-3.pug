@@ -1,0 +1,37 @@
+extends ../../templates/d-layout-archive-dias.pug
+block main
+    div
+        h3=message
+        section
+            header
+                h1=title
+        section
+        #textgauche
+            header 
+                h3  Annonce d'exposition :
+            p 
+                a(href="/galerie/villaada") Ada Villa 
+                    | : 'Ritagle di Memorie' du 26 mai au 4 juin
+                    br
+                    | Galleria dea Borgo Pinti 42/r 50121 Firenze
+                    br
+                    | Vernissage 26 mai 18h
+            hr
+    section
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes du 14e à Paris
+            p 12 et 13 mai 2007, chez Artistes sans Frontières
+            p 
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="/galerie/valgallard") Val Gallard
+                | , 
+                a(href="/galerie/nicolas") Nicolas Ganter
+                | , 
+                a(href="/galerie/gruytrs") Dirk Gruyters
+                | , 
+                a(href="https://www.dougpetrovic.info" target="_blank") Douglas de Petrovic
+
+            block script
+                script(src='../images-news/2007/po/dias-listes.js')

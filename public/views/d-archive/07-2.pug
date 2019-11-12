@@ -1,0 +1,27 @@
+extends ../../templates/d-layout-archive-dias.pug
+block main
+    div
+        h3=message
+        section
+            header
+                h1=title
+        section
+        #textgauche
+            header 
+                h3  Annonce d'exposition :
+            p  
+                a(href="/galerie/gebka") Gabriel Gebka
+                |  expose à la Galerie Thuillier,
+                br
+                | 13 rue de Thorigny, 75003 Paris, jusqu'au 23 avril 2007.   
+            hr
+    section
+        #textgauche
+            header 
+                h1  
+                | Exposition  
+                a(href="/galerie/frevarias") Frevarias
+            p jusqu'au 22 avril 2007, Galerie 3F, 58 rue des 3 Frères, 75018 Paris
+
+            block script
+                script(src='../images-news/2007/freva/dias-listes.js')

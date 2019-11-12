@@ -62,24 +62,57 @@ nav hr {
 /**********  reactive styles*/
 
 @media only screen and (max-width:400px) {
-	
+	nav {
+        border-bottom : 1px dotted #A90101;
+        height : 30px;
+    }
     nav span {
         position : absolute;
-        top : 17px;
+        top : 9px;
         right : 9px;
-    }
-    .menu2 {
-        background-color : #4f75c1;  
     }
     nav hr {
 	    display: none;
     }
+    nav ul {
+        display : inline;
+        /* margin-left : 2px; */
+        /* margin-right: 10px; */
+        padding : 2px;
+    }
+    nav li {
+        display : inline;
+        padding : 3px;
+    }
+    .menu1 {
+        line-height: 22px;
+    }
+    .menu2 {
+        background-color : #4f75c1;  
+        padding : 2px;
+        border-radius :  0 0px 10px 0;
+        top : 25px;
+        left : 15px;
+        min-width: 100px;
+        font-size: 0.7rem;
+        line-height: 17px;
+    }
+    /* .menu2 li{
+         display: list-item; 
+    }  */
+    #logo {
+        width : 41px;
+        height : 29px;
+    }
+    .fleche{
+        width: 2%;
+        padding: 0 1%;
+    }
     .language {
         position : absolute;
-        top : 13px;
-        right : 55px;
-        width:70px;
-       
+        top : 40px;
+        right : 1px;
+        width:55px;       
     }
 }
 
@@ -88,7 +121,7 @@ nav hr {
     nav ul {
         display : inline;
         margin-left : 5px;
-        margin-right: 30px;
+        margin-right: 10px;
         padding : 2px;
     }
     nav li {
@@ -125,21 +158,24 @@ nav hr {
     }
     .language {
         position : absolute;
-        top : 13px;
-        right : 55px;
+        top : 39px;
+        right : -2px;
         width:70px;
     }
 }
 
 @media only screen and (min-width:600px) {
-		
+	nav {
+        border-bottom : 1px solid #A90101;
+        height : 35px;
+    }
     nav div {
         margin : 3px 5px;
     }
     nav ul {
         display : inline;
         margin-left : 5px;
-        margin-right: 40px;
+        margin-right: 10px;
         padding : 5px;
     }
     nav li {
@@ -152,12 +188,8 @@ nav hr {
         right : 9px;
     }
     #logo {
-        width : 59px;
-        height : 41px;
-    }
-    nav {
-        border-bottom : 1px solid #A90101;
-        height : 42px;
+        width : 50px;
+        height : 33px;
     }
     .menu1 {
         padding-top: 2px;
@@ -175,11 +207,18 @@ nav hr {
     nav hr {
 	    display: none;
     }
+    .fleche{
+        width: 3%;
+        padding: 0 1%;
+    }
     .language {
         position : absolute;
-        top : 15px;
-        right : 65px;
+        top : 44px;
+        right : -2px;
         width:80px;
+    }
+    .mini{
+        display:none;
     }
 }
 
