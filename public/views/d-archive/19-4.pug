@@ -1,66 +1,64 @@
 extends ../../templates/d-layout-archive.pug
 block main
     div
-        h3=message
         section
             header
                 h1=title
         section
             header
-                h1 Une équipe diverse et engagé
+                h1 Ein vielfältiges und engagiertes Team
             section
             p 
-            | Nous revenons à notre principe fondateur: Offrir à nos artistes membres des moyens de presentation de leurs oeuvres, 
-            | digne des oeuvres d'art. Cela veut dire, des sites Internet et maintenant des applications mobiles à la pointe de la technologie, 
-            | créés par des pros et adaptés à l'oeuvre de chaque artiste. 
+            | Wir kehren zu unserem Gründungsprinzip zurück: Wir wollen unseren Mitgliedskünstlern die Möglichkeit bieten, ihre Werke so gut zu präsentieren,
+            | wie Kunstwerke das verdienen. Das heißt, Websites und jetzt hochmoderne mobile Apps,
+            | erstellt von Profis und angepasst an die Arbeit jedes Künstlers.
             p 
-            | Pour mener à bien cette démarche, notre webmaster de longue date, Helga Petrovic, est devenu "développeur Full Stack" 
-            | et elle a amené des collègues de formation avec elle. 
-            | Saloum Sylla a participé à la création du serveur de l'association pendant un stage et il continue à travailler sur les sites des artistes.
-            | Zoubeir Marouf a joint l'équipe pour un stage en septembre.
-            p Voir les détails sur la transition plus bas
+            | Für diesen Zweck machte unsere langjährige Webmasterin Helga Petrovic eine "Full Stack Developer" Ausbildung
+            | und sie brachte Schulungskollegen zur Unterstützung mit.
+            | Saloum Sylla war während eines Praktikums an der Erstellung des Servers des Vereins beteiligt und arbeitet weiterhin an den individuellen Webseiten der Künstler.
+            | Zoubeir Marouf trat dem Team im September für ein Praktikum bei.
+            p Siehe Details zur Transition weiter unten
         section
             header
-                h1 Le sol se dérobe
+                h1 Der Boden versinkt unter uns
             p 
-            | Malheureusement, cela n'est pas une expression poétique, mais une description factuelle. 
+            | Leider ist dies kein poetischer Ausdruck, sondern eine sachliche Beschreibung.
             br
-            | En juin, le parquet du bureau semblait plus souple par endroits. Cet effet s'aggravait et devenait inquiétant. 
-            | A Paris, non loin des catacombes, c'est toujours possible qu'un trou s'ouvre jusqu'à une carrière ancienne. 
-            | Des voisins avaient des histoires amusantes à raconter sur ce sujet, comme l'occasion dans les années 50,
-            | quand l'ancien concierge était tombé dans un gouffre apparu dans la cour d'où les pompiers l'ont secouru tout abrasé. 
-            | Ou le chantier recent en face, qui faisait découvrir des trous béants sous le sol. 
-            p 
-            | Les fouilles exploratoires sous le parquet ont éclairci le mystère: une grande fuite de quelques ateliers plus loin a inondé l'atelier d'en bas. 
-            | Nous devons changer du sol jusqu'aux fondations. Et changer le sol nécessite enlever tout qui se trouve dans l'atelier. 
-            p Pendant les travaux, l'association ne reçoit pas de visiteurs dans nos lieux et n'a pas d'horaires fixes. Sur rendez-vous, nous venons à votre rencontre ailleurs.
+            | m Juni wirkte der Büroboden stellenweise flexibler. Dieser Effekt verschlechterte sich und wurde besorgniserregend.
+            | In Paris, nicht weit von den Katakomben entfernt, ist es immer möglich, dass sich ein Sinkloch zu einem alten Steinbruch öffnet.
+            | Die Nachbarn hatten lustige Geschichten zu erzählen, wie den Fall in den 50er Jahren,
+            | als der ehemalige Hausmeister in ein Sinkloch gefallen war, das über Nacht im Hof ​​aufgetaucht war. Die Feuerwehrleute hatte ihn schliesslich ziemlich zerschürft aber sonst unversehrt herausgezogen.
+            | Oder die Baustelle in einer Erdgeschoss Wohnung gegenüber, die vor zwei Jahren klaffende Löcher im Boden enthüllte.
+            p
+            | Erkundungsgrabungen unter dem Boden haben das Rätsel geklärt: Ein riesiges Wasserleck 20 m weiter unter dem Hof überschwemmte das Atelier von unten.
+            | Wir müssen den Boden bis zum Fundament hinunter austauschen. Und um den Boden auszutauschen, muss alles entfernt werden, was sich im Raum befindet.
+            p Während der Arbeiten empfängt der Verein keine Besucher in unseren Räumen und hat keine festen Termine. Nach Vereinbarung treffen wir uns an anderer Stelle.
+
         section
             header
-                h1 Le site de l'association se transforme 
+                h1 Die Webseite des Vereins verändert sich 
             p 
-            | Notre équipe de développeurs Javascript a commencé à migrer les sites de l'association vers de nouvelles technologies.
+            | Unser Team von Javascript-Entwicklern hat begonnen, die Websites der Vereinigung auf neue Technologien zu umzustellen.
             br
-            | Le changement comprendra plusieurs étapes:
+            | Die Änderung umfasst mehrere Schritte:
             ul
-                li Le site que vous voyez est réactif, il s'adapte à la taille de votre écran, du telephone portable à un très grand écran.
-                | Cette phase prendra un peu de temps - nous avons produit plus de dix mille fichiers au fil des années. Les sites des artistes-membres réapparaitront d'abord en version ancienne. 
-                | Les versions neuves s'afficheront site par site avant la fin de l'année. 
-                | Dans le chapitre Actualités, les événements des années antérieures apparaîtront en ordre inversé jusqu'à nos debuts en 2001.
-                li Le back-end, la structure invisible du site, est techniquement plus compliqué, mais c'est moins long à réaliser. Les détails pour les technophiles:
-                    ul Migration du VPS à deux VPS plus rapides, migration d'Apache à Nginx, configuration et sécurisation des serveurs.
-                    ul Installation d'une base de données (MongoDB) sur un VPS et sécurisation d'accès et des données. 
-                    ul Les données sensibles, que vous nous confiez via un formulaire sur nos sites, comme vos données personnelles, seront cryptées. 
-                    ul Création des serveurs Node - Express, qui servent les pages des sites.
-                    ul Sites en https: Vous voyez un petit verrou dans la barre d'adresse, car la connexion entre votre ordinateur et notre serveur est cryptée. 
-                    ul Cela vous protège, si vous regardez le site dans un réseau wifi publique: un autre utilisateur du même réseau wifi ne peut ni suivre votre activité ni injecter du code nocif dans la connexion. 
-                    ul Google donne un plus haut ranking aux sites en https pour cette raison. 
-                li Le front-end, les pages que vous voyez affichées à l'écran, comporte des éléments dynamiques. 
-                | Pour ce faire, les pages sont réécrites dans un nouveau langage de code : nous devons les reprendre, page après page, lien par lien. 
-                
-                p 
-                | La version antérieure et la nouvelle version ne sont pas compatibles. 
-                | Nous avons fait le choix de faire apparaitre le nouveau site par étapes, ainsi vous pouvez suivre la progression presque en temps réel. 
-                | Veuillez nous excuser pour d'éventuels petits bugs pendant cette période. Appelons cela des libertés artistiques.
+                li Die Seite, auf der Sie sich befinden, ist reaktiv, sie passt sich an die Größe Ihres Bildschirms an, vom Mobiltelefon bis zum sehr großen Bildschirm.
+                | Diese Phase fertigzustellen wird einige Zeit in Anspruch nehmen - wir haben im Laufe der Jahre über zehntausend Dateien erstellt. Die Seiten der Künstler werden zuerst in einer alten Version wieder angezeigt.
+                | Neue Versionen werden vor Jahresende Seite für Seite angezeigt.
+                | Im News-Kapitel werden die Ereignisse der Vorjahre bis zu unserem Debüt im Jahr 2001 in umgekehrter Reihenfolge aufgeführt.
 
-
+                li Das Back-End, die unsichtbare Struktur der Website, ist technisch komplizierter, erfordert jedoch weniger Zeit. Die Details für die Technikfreaks:
+                    ul Migration des Servers VPS auf zwei schnellere VPS, Migration von Apache zu Nginx, Konfiguration und Sicherung der Server.
+                    ul Installation einer Datenbank (MongoDB) auf einem VPS und Sicherung von Zugriff und Daten.
+                    ul Sensible Daten, die Sie uns über ein Formular auf unseren Websites anvertrauen, wie z. B. Ihre persönlichen Daten, werden verschlüsselt.
+                    ul Erstellung der Node-Express-Server, die die Seiten der Website liefern.
+                    ul Sites in https: In der Adressleiste wird eine kleines Schloss angezeigt, da die Verbindung zwischen Ihrem Computer und unserem Server verschlüsselt ist.
+                    ul Dies schützt Sie, wenn Sie sich die Site in einem öffentlichen WLAN-Netzwerk ansehen: Ein anderer Benutzer desselben WLAN-Netzwerks kann weder Ihre Aktivität überwachen noch schädlichen Code in die Verbindung einfügen.
+                    ul Google verleiht aus diesem Grund https-Websites ein höheres Ranking.
+                li Das Front-End, die Seiten, die Sie auf dem Bildschirm sehen, enthalten dynamische Elemente.
+                | Dazu müssen die alten Seiten in eine neue Codesprache umschreiben: Wir müssen sie Seite für Seite, Link für Link übertragen.    
+                p
+                | Die vorherige Version und die neue Version sind nicht kompatibel.
+                | Wir haben uns dafür entschieden, die neue Website schrittweise zu erstellen, sodass Sie den Fortschritt nahezu in Echtzeit verfolgen können.
+                | Wir entschuldigen uns für kleine Fehler in dieser Zeit. Nennen wir es künstlerische Freiheit.
     block aside

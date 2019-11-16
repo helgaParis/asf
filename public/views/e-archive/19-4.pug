@@ -1,66 +1,61 @@
 extends ../../templates/e-layout-archive.pug
 block main
     div
-        h3=message
         section
             header
                 h1=title
         section
             header
-                h1 Une équipe diverse et engagé
+                h1 A diverse and committed team
             section
             p 
-            | Nous revenons à notre principe fondateur: Offrir à nos artistes membres des moyens de presentation de leurs oeuvres, 
-            | digne des oeuvres d'art. Cela veut dire, des sites Internet et maintenant des applications mobiles à la pointe de la technologie, 
-            | créés par des pros et adaptés à l'oeuvre de chaque artiste. 
+            | We return to our founding principle: To offer our member artists means of presentation of their works
+            | worthy of works of art. That means, websites and now state-of-the-art mobile apps,
+            | created by professionals and adapted to the work of each artist.
             p 
-            | Pour mener à bien cette démarche, notre webmaster de longue date, Helga Petrovic, est devenu "développeur Full Stack" 
-            | et elle a amené des collègues de formation avec elle. 
-            | Saloum Sylla a participé à la création du serveur de l'association pendant un stage et il continue à travailler sur les sites des artistes.
-            | Zoubeir Marouf a joint l'équipe pour un stage en septembre.
-            p Voir les détails sur la transition plus bas
+            | To carry out this process, our longtime webmaster, Helga Petrovic, became "Full Stack Developer"
+            | and she brought fellow developpers with her.
+            | Saloum Sylla participated in the creation of the association's server during an internship and he continues to work on the sites of the artists.
+            | Zoubeir Marouf joined the team for an internship in September.
+            p See details further down
         section
             header
-                h1 Le sol se dérobe
+                h1 The ground is sinking
             p 
-            | Malheureusement, cela n'est pas une expression poétique, mais une description factuelle. 
+            | Unfortunately, this is not a poetic expression, but a factual description.
             br
-            | En juin, le parquet du bureau semblait plus souple par endroits. Cet effet s'aggravait et devenait inquiétant. 
-            | A Paris, non loin des catacombes, c'est toujours possible qu'un trou s'ouvre jusqu'à une carrière ancienne. 
-            | Des voisins avaient des histoires amusantes à raconter sur ce sujet, comme l'occasion dans les années 50,
-            | quand l'ancien concierge était tombé dans un gouffre apparu dans la cour d'où les pompiers l'ont secouru tout abrasé. 
-            | Ou le chantier recent en face, qui faisait découvrir des trous béants sous le sol. 
+            | In June, the office floor seemed more flexible in places. This effect worsened and became worrying.
+            | In Paris, not far from the catacombs, it is always possible that a sink hole opens appears from an old quarry.
+            | Neighbors had fun stories to tell about this, like the incident in the 50s,
+            | when the former concierge had fallen into an abyss that had appeared in the yard, from which the firefighters had rescued him with abrasions but otherwise unharmed.
+            | Or the recent renovation of a ground floor atelier in the building accross the courtyard, which revealed gaping holes under the ground. 
             p 
-            | Les fouilles exploratoires sous le parquet ont éclairci le mystère: une grande fuite de quelques ateliers plus loin a inondé l'atelier d'en bas. 
-            | Nous devons changer du sol jusqu'aux fondations. Et changer le sol nécessite enlever tout qui se trouve dans l'atelier. 
-            p Pendant les travaux, l'association ne reçoit pas de visiteurs dans nos lieux et n'a pas d'horaires fixes. Sur rendez-vous, nous venons à votre rencontre ailleurs.
+            | Exploratory excavations under the floor have shed light on the mystery: a great water leak from some ateliers further on flooded our workshop from below.
+            | We have to change the floor from the ground earth under the foundations up. And changing the floor requires removing everything that is in the workshop.
+            p During the works, the association does not receive visitors in our space and does not have fixed schedules. By appointment, we come to meet you elsewhere.
         section
             header
-                h1 Le site de l'association se transforme 
+                h1 The website of the association is changing
             p 
-            | Notre équipe de développeurs Javascript a commencé à migrer les sites de l'association vers de nouvelles technologies.
+            | Our team of Javascript developers has started to migrate the association's sites to new technologies.
             br
-            | Le changement comprendra plusieurs étapes:
+            | The change will include several steps:
             ul
-                li Le site que vous voyez est réactif, il s'adapte à la taille de votre écran, du telephone portable à un très grand écran.
-                | Cette phase prendra un peu de temps - nous avons produit plus de dix mille fichiers au fil des années. Les sites des artistes-membres réapparaitront d'abord en version ancienne. 
-                | Les versions neuves s'afficheront site par site avant la fin de l'année. 
-                | Dans le chapitre Actualités, les événements des années antérieures apparaîtront en ordre inversé jusqu'à nos debuts en 2001.
-                li Le back-end, la structure invisible du site, est techniquement plus compliqué, mais c'est moins long à réaliser. Les détails pour les technophiles:
-                    ul Migration du VPS à deux VPS plus rapides, migration d'Apache à Nginx, configuration et sécurisation des serveurs.
-                    ul Installation d'une base de données (MongoDB) sur un VPS et sécurisation d'accès et des données. 
-                    ul Les données sensibles, que vous nous confiez via un formulaire sur nos sites, comme vos données personnelles, seront cryptées. 
-                    ul Création des serveurs Node - Express, qui servent les pages des sites.
-                    ul Sites en https: Vous voyez un petit verrou dans la barre d'adresse, car la connexion entre votre ordinateur et notre serveur est cryptée. 
-                    ul Cela vous protège, si vous regardez le site dans un réseau wifi publique: un autre utilisateur du même réseau wifi ne peut ni suivre votre activité ni injecter du code nocif dans la connexion. 
-                    ul Google donne un plus haut ranking aux sites en https pour cette raison. 
-                li Le front-end, les pages que vous voyez affichées à l'écran, comporte des éléments dynamiques. 
-                | Pour ce faire, les pages sont réécrites dans un nouveau langage de code : nous devons les reprendre, page après page, lien par lien. 
-                
+                li The site you see is responsive, it adapts to the size of your screen, from mobile phones to very large screens.
+                | This phase will take a little time - we have produced over ten thousand files over the years. The sites of the artist-members will reappear first in an old version.
+                | New versions will be displayed site by site before the end of the year.
+                | In the News chapter, events from previous years will appear in reverse order until reaching our beginnings in 2001.
+                li The back-end, the invisible structure of the site, is technically more complicated, but it takes less time to achieve. The details for the techies:
+                    ul Migration from one VPS to two faster VPS, migration from Apache to Nginx, configuration and securing of the servers.
+                    ul Installation of a database (MongoDB) on a VPS and securing access and data.
+                    ul Sensitive data, which you entrust to us via a form on our sites, such as your personal data, will be encrypted.
+                    ul Creation of the Node - Express servers, which serve the pages of the sites.
+                    ul Sites in https: You see a small lock in the address bar because the connection between your computer and our server is encrypted.
+                    ul This protects you, if you look at the site in a public wifi network: another user of the same wifi network can neither monitor your activity nor inject harmful code into the connection.
+                    ul Google gives higher ranking to https sites for this reason.
+                li The front-end, the pages you see on the screen, contain dynamic elements.
+                | To do this, the pages are rewritten in a new code language: we must work on them, page after page, link by link.                
                 p 
-                | La version antérieure et la nouvelle version ne sont pas compatibles. 
-                | Nous avons fait le choix de faire apparaitre le nouveau site par étapes, ainsi vous pouvez suivre la progression presque en temps réel. 
-                | Veuillez nous excuser pour d'éventuels petits bugs pendant cette période. Appelons cela des libertés artistiques.
-
-
-    block aside
+                | The previous version and the new version are not compatible.
+                | We have chosen to have the new site appear in stages, so you can follow the progress almost in real time.
+                | We apologize for any small bugs during this time. Let's call it artistic freedom.
