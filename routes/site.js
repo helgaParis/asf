@@ -1,16 +1,26 @@
 /***** What this router does:
- * (This is not yet the final version)
+ * (This is not yet the final version, but close)
  * 
  * The router handles calls for /site
  * The files are organised in 3 folders, f-site, e-site, d-site. The French version is the main version, 
- * content in the other pages may vary. (Next step: not all pages may exist in all languages)
+ * content in the other pages may vary. Not all pages may exist in all languages.
  * 
  * The valid urls are defined in 3 arrays of objects, the objects giving individual url targets (cible) and page titles
  * 
  * The router compares all calls to the targets in the 3 arrays and renders the matching page. 
  * It defines the position of the page in the array and uses this position to define the matching pages in other languages. 
  * If no position is defined, the page does not exist in the arrays of allowed targets, a 404 page is rendered. 
- * Till the translations go online, the other languages just render the correct title and a message to look up the existing page on the old website.
+ * 
+ * The content of the index pages, the chapter landing page is not yet defined. 
+ * For the moment it's just a short sommary and an indicator of the latest article written in the news chapters. 
+ * This indicator, the url of the latest archive file, is extracted by the router archive.js. 
+ * I call it here from archive.js to add it to the variables handed over to index.pug
+ * It is a helpful indicator to regular visitors, to decide if they should click on the news link first or go straigt to
+ * the gallery or the information they searched. 
+ * (It avoids updating the 3 index files after writing new news files, but mostly it's here,
+ * because I wanted to test how to export a function from a router plus the router itself and to use the result of the
+ * function in another router and pass it on to the view.).
+ * 
  * 
  * 
  *****/
@@ -22,15 +32,21 @@ const router = express.Router();
 const path = require('path');
 const bodyParser = require('body-parser');
 
+// defining the latest news page as the actuel one with help of archive.js
+var archive = require('./archive.js');
+var actu=archive.current;
+//console.log(actu);
+
+
 //dynamic routes via router, existing links in 3 languages
 
 var ftargets = [
                 {c:'index',t:'Artistes sans Frontières - notre offre'},
                 {c:'buts'  , t:'Les objéctifs de l\'association AsF'  },{c: 'nous' , t: 'Artistes sans Frontières - Notre Histoire' },
                 {c: 'contact', t: 'AsF - contactez-nous' },{c:'join', t:  'Devenez membre de l\'association AsF' },
-                {c: 'mentions' , t:'AsF - mentions légales'  },{c: 'services' , t:  'Artistes sans Frontières - services' },
-                {c: 'expos' , t: 'Exposez vos oeuvres avec Artistes sans Frontières'  },{c: 'sites' , t: 'AsF publie votre site Internet personnalisé' },
-                {c: 'apps' , t:  'AsF crée votre application mobile personnalisée' },{c:'stages'  , t:  'AsF - notre offre de formations' },
+                {c: 'mentions', t:'AsF - mentions légales'  },{c: 'services' , t:  'Artistes sans Frontières - services' },
+                {c: 'expos', t: 'Exposez vos oeuvres avec Artistes sans Frontières'  },{c: 'sites' , t: 'AsF publie votre site Internet personnalisé' },
+                {c: 'apps', t: 'AsF crée votre application mobile personnalisée' },{c:'stages'  , t:  'AsF - notre offre de formations' },
                 {c: 'divers' , t: 'AsF - services locaux - pour membres' },{c:'terms',t: 'AsF - conditions générales et tarifs'}
                 ];
 
@@ -65,7 +81,7 @@ router.get('/*', function(req,res,next){
   
     //  site/index or site/ This page will be an animation. For now it's a news page.
     if(cible ==='' || cible === 'index.html') {
-        target= {t:'index',  c:'index', t:'Bienvenue sur le site AsF', lang:"f"};   
+        target= {t:'index',  c:'index', t:'Bienvenue sur le site AsF', lang:"f", actu:actu};   
         folder= 'f-site/';
         var pos=0;
         target.pos=pos;
@@ -73,7 +89,7 @@ router.get('/*', function(req,res,next){
         target.cibled=dtargets[pos].c;
         target.lang='fr'; 
         var page=target.c ;
-       // console.log(' call for / or /index target', target);
+       //console.log(' call for / or /index target', target);
     }
 
     //if link from the French website
@@ -86,6 +102,7 @@ router.get('/*', function(req,res,next){
         target.ciblee=etargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='fr'; 
+        target.actu=actu;
         var page=target.c ;
     }  
 
@@ -99,7 +116,8 @@ router.get('/*', function(req,res,next){
         target.ciblef=ftargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='en';   
-        var page='index';
+        target.actu=actu;
+        var page=cible.slice(1);
     }
     if (dtargets.find( ({c}) => c ===cible) ){
         var target=dtargets.find( ({c}) => c ===cible);
@@ -109,7 +127,8 @@ router.get('/*', function(req,res,next){
         target.ciblee=etargets[pos].c;
         target.ciblef=ftargets[pos].c;
         target.lang='de';    
-        var page='index';     
+        target.actu=actu;
+        var page=cible.slice(1);  
     }
 
     //not allowed link, as page not in the allowed targets
@@ -125,7 +144,7 @@ router.get('/*', function(req,res,next){
    // console.log( 'target :  ',target);    
    // console.log('cible : ',cible);
    // console.log('page :  ', page);
-   // console.log(folder+page);
+  //  console.log(folder+page);
 })
 
 

@@ -52,7 +52,7 @@ app.set('views',  './public/views');
 // Routers for dynamic files (site=everything asso, gallery=artists, past=archive)
 
 app.use('/galerie', galerie);
-app.use ('/archive', archive);
+app.use ('/archive', archive.router);
 app.use('/site',site);
 
 

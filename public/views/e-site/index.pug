@@ -1,11 +1,16 @@
 extends ../../templates/e-layout-site.pug
 block main
-    section
-        header
-            h1=title
-        h3  
-            |We are working on the new website. This page is not yet translated, 
-            br
-            |please visit the existent english version or choose from the French menu 
-        h2
-            a(href="/html/en/index.html", target="_blank") Artistes sans Frontieres - current english version
+    div
+        h2 #{title} 
+        section
+        p 
+        | On the new web site you find information on
+        | our artists' association (a few pages still in preparation), on our services,
+        | the members gallery and events of the past years.
+        p Events since the foundation will be added gradually.
+        h3
+        | Most recent news (year - publication number)
+        a(href='/archive/eactuel') :  20#{target.actu}
+    footer
+        hr
+        include ../../templates/footer.pug

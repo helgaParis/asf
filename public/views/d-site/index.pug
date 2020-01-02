@@ -1,11 +1,16 @@
 extends ../../templates/d-layout-site.pug
 block main
-    section
-        header
-            h1=title
-        h3 
-            |Webseite im Umbau - diese Seite ist noch nicht uebersetzt. 
-            br
-            | Bitte besuchen Sie die existierende deutsche Version oder verwenden Sie das französische Menu.
-        h2
-            a(href="/html/de/index.html", target="_blank") bisherige deutsche Version
+    div
+        h2 #{title} 
+        section
+            p 
+            | Auf unserer neuen Website finden Sie Informationen zu
+            | unserem Kunstverein (einige Seiten noch in Vorbereitung), über unsere Serviceleistungen,
+            | die Mitgliedergalerie und die Veranstaltungen der letzten Jahre.
+            p Ereignisse seit der Gründung werden schrittweise hinzugefügt.
+            h3
+            | Jüngster Newsbeitrag (Jahr - Beitragsnummer)
+            a(href='/archive/dactuel') :  20#{target.actu}
+            footer
+                hr
+                include ../../templates/footer.pug

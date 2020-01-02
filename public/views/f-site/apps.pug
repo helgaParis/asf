@@ -1,25 +1,22 @@
 extends ../../templates/layout-site.pug
 block main
-        div
-            section
-                header
-                    h1=title
-                h3 Une application mobile pour un événement d'art contemporain 
-                p Une application mobile consacrée à votre événement vous offre de nouvelles possibilités :
-                ul
-                    li Accès facilité pour vos visiteurs via leur smartphone (géolocalisation, tickets)
-                    li Diversification du contenu selon les étapes
-                    li Système de récompenses pour vos plus fidèles visiteurs
-                    li Système d'options pendant les visites
-                p Une application mobile spécifique, ce sera le standard de demain pour un grand événement d'art - nous offrons l'avant-garde dès aujourd'hui !
-                section
-                header
-                    h3 Une application mobile commerciale ?
-                p 
-                | Si vous cherchez la dernière technologie, un design personnalisé, 
-                | un interface utilisateur pour un public de tout âge, parlez-nous de votre projet !
-           
-        footer        
-            hr
-            include ./footer.pug   
-        block aside
+    section
+        header
+            h1=title
+        h3 Une application mobile pour un événement d'art contemporain 
+        p Une application mobile consacrée à votre événement vous offre de nouvelles possibilités :
+        ul
+            li Accès facilité pour vos visiteurs via leur smartphone (géolocalisation, tickets)
+            li Diversification du contenu selon les étapes
+            li Système de récompenses pour vos plus fidèles visiteurs
+            li Système d'options pendant les visites
+        p Une application mobile spécifique, ce sera le standard de demain pour un grand événement d'art - nous offrons l'avant-garde dès aujourd'hui !
+    section
+        header
+            h3 Une application mobile commerciale 
+        p 
+        | Si vous cherchez la dernière technologie, un design personnalisé, 
+        | un interface utilisateur pour un public de tout âge, parlez-nous de votre projet !
+    footer        
+        hr
+        include ../../templates/footer.pug

@@ -32,6 +32,9 @@
  * if the the call is coming from the French pages (19-5) or from the German or English pages (d19-5 or e19-5) 
  * Therefore "event" gets sometimes a letter added or the first letter sliced of. 
  *
+ * Last feature: the router exports itself and also the function to know which is the current page. 
+ * This is used (for the moment only) by the site.js router to indicate it on site/index.
+ * 
  *****/
 
 
@@ -47,7 +50,7 @@ const bodyParser = require('body-parser');
 //file names: year-eventNumberThatYear, add recent on top
 //current: to define the most recent as the page "actuel" on the main site
 var targets= [
-            '19-5','19-4','19-3','19-2','19-1',    "18-3",'18-2','18-1',
+            '19-6','19-5','19-4','19-3','19-2','19-1',    '18-3','18-2','18-1',
             '17-2','17-1',   '16-3','16-2','16-1',  '15-2','15-1',   '14-3','14-2','14-1',
             '13-2', '13-1',   '12-4','12-3','12-2','12-1',  '11-4','11-3', '11-2', '11-1', 
             '10-7','10-6','10-5','10-4','10-3','10-2','10-1',   '09-9','09-8','09-7','09-6','09-5','09-4','09-3','09-2','09-1', 
@@ -169,7 +172,10 @@ router.use(function(req, res, next){
 
 router.use(function(error, req, res, next) {
     res.status(500);
-  res.render('505', {title:'500: Internal Server Error on ', error: error});
+  res.render('505', {title:'500: Internal Server Error on archive', error: error});
 });
 
-module.exports = router;
+module.exports = {
+    router:router,
+    current:current
+}
