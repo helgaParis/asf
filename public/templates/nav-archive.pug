@@ -2,14 +2,14 @@
 div
     span
         a(href='/site/index')
-            img#logo(src='/images/logo_asf.jpg' alt='logo Artistes sans Frontières')
+            img#logo(src='/images/asf20.png' alt='logo Artistes sans Frontières  tabindex="0" role="button" aria-labelledby="logo A S F et retour à la page d\'accueil')
             br
             | Accueil
     ul.menu1
         li
             a(href='actuel') Actuel
         li
-            a(href='actuel') 2019 - 2015
+            a(href='actuel') 2020 - 2015
             ul.menu2 
                 li 2019
                 li 
@@ -46,7 +46,7 @@ div
                 li
                     a(href='15-2')  Portes Ouvertes
         li
-            a(href='14-2') 2014 - 2010
+            a(href='14-2') 2014 - 2009
             ul.menu2 
                 li 2014
                 li
@@ -92,10 +92,7 @@ div
                 li
                     a(href='10-2')  2010-2 
                 li
-                    a(href='10-1')  2010-1 
-        li
-            a(href='09-8') 2009 - 2007
-            ul.menu2 
+                    a(href='10-1')  2010-1
                 li 2009
                 li
                     a(href='09-9')  2009-9 
@@ -114,7 +111,10 @@ div
                 li
                     a(href='09-2')  Expo Carbone
                 li
-                    a(href='09-1')  2009-1 
+                    a(href='09-1')  2009-1              
+        li
+            a(href='06-11') 2008 - 2000
+            ul.menu2   
                 li 2008
                 li
                     a(href='08-4')  Portes Ouvertes
@@ -140,10 +140,7 @@ div
                 li
                     a(href='07-2')  Expo Freva
                 li
-                    a(href='07-1')  2007-1
-        li
-            a(href='06-11') 2006 - 2000
-            ul.menu2     
+                    a(href='07-1')  2007-1  
                 li 2006
                 li
                     a(href='06-12')  Expo Pluvinage   
@@ -197,18 +194,17 @@ div
                     a(href='01')  2001
                 li 
                     a(href='00')  2000
-
-
     hr
-    ul.smenu1
-        li    
-            a(href='/archive/'+future) futur 
-            a(href='/archive/'+future)
-                img.fleche(src="/images/pfeil-o.png", alt="vers le futur")
-        li
-            a(href='/archive/'+past) 
-                img.fleche(src="/images/pfeil-u.png", alt="vers le passé")
-                | passé
+    span.defilee
+        ul.smenu3
+            li    
+                a(href='/archive/'+future) futur 
+                a(href='/archive/'+future)
+                    img.fleche(src="/images/fleche-haut.png", alt="vers le futur")
+            li
+                a(href='/archive/'+past) 
+                    img.fleche(src="/images/fleche-bas.png", alt="vers le passé")
+                    | passé
     span.language
         a(href=eevent) 
             img.drapeau(src="/images/drapeau-en.png", alt='English Version')
