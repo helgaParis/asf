@@ -33,10 +33,12 @@ const path = require('path');
 const bodyParser = require('body-parser');
 
 // defining the latest news page as the actuel one with help of archive.js
-var archive = require('./archive.js');
-var actu=archive.current;
+const archive = require('./archive.js');
+let actu=archive.current;
 //console.log(actu);
 
+router.get('/*', function(req,res,next){
+    // console.log('dans site/*');   
 
 //dynamic routes via router, existing links in 3 languages
 
@@ -68,27 +70,24 @@ var dtargets = [
                 {c:'dterms', t:'AsF - Geschäftsbedingungen für Service Angebote' }
                 ];
 
-//Routes of the main website = chaper Site, folders f-site, d-site, e-site
+//Routes of the main website = chapter Site, folders f-site, d-site, e-site
 
-    
-router.get('/*', function(req,res,next){
-   // console.log('dans site/*');    
-    var incoming = req.params[0];
-    var cible= path.basename(incoming); 
-    var target ={c:'index', t:'erreur de route dans /site', lang:"f"};      
-    var folder='';
-    var page;  //needed till all translations made, then render(cible )
+    let incoming = req.params[0];
+    let cible= path.basename(incoming); 
+    let target ={c:'index', t:'erreur de route dans /site', lang:"f"};      
+    let folder='';
+    let page;  //needed till all translations made, then render(cible )
   
     //  site/index or site/ This page will be an animation. For now it's a news page.
     if(cible ==='' || cible === 'index.html') {
         target= {t:'index',  c:'index', t:'Bienvenue sur le site AsF', lang:"f", actu:actu};   
         folder= 'f-site/';
-        var pos=0;
+        let pos=0;
         target.pos=pos;
         target.ciblee=etargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='fr'; 
-        var page=target.c ;
+        page=target.c ;
        //console.log(' call for / or /index target', target);
     }
 
@@ -97,13 +96,13 @@ router.get('/*', function(req,res,next){
     if (ftargets.find( ({c}) => c ===cible)){
         target=ftargets.find( ({c}) => c ===cible);
         folder= 'f-site/';
-        var pos=ftargets.indexOf(target);
+        let pos=ftargets.indexOf(target);
         target.pos=pos;
         target.ciblee=etargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='fr'; 
         target.actu=actu;
-        var page=target.c ;
+        page=target.c ;
     }  
 
     //English and German links: no texts yet, serve English or German index with specific title
@@ -111,24 +110,24 @@ router.get('/*', function(req,res,next){
     if (etargets.find( ({c}) => c ===cible) ){
         target = etargets.find( ({c}) => c ===cible);
         folder= 'e-site/';
-        var pos= etargets.indexOf(target);
+        let pos= etargets.indexOf(target);
         target.pos=pos;
         target.ciblef=ftargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='en';   
         target.actu=actu;
-        var page=cible.slice(1);
+        page=cible.slice(1);
     }
     if (dtargets.find( ({c}) => c ===cible) ){
-        var target=dtargets.find( ({c}) => c ===cible);
+        let target=dtargets.find( ({c}) => c ===cible);
         folder= 'd-site/';
-        var pos= dtargets.indexOf(target);
+        let pos= dtargets.indexOf(target);
         target.pos=pos;
         target.ciblee=etargets[pos].c;
         target.ciblef=ftargets[pos].c;
         target.lang='de';    
         target.actu=actu;
-        var page=cible.slice(1);  
+        page=cible.slice(1);  
     }
 
     //not allowed link, as page not in the allowed targets

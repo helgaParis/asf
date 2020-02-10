@@ -33,14 +33,14 @@
  * Therefore "event" gets sometimes a letter added or the first letter sliced of. 
  *
  * Last feature: the router exports itself and also the function to know which is the current page. 
- * This is used (for the moment only) by the site.js router to indicate it on site/index.
+ * This is used by the site.js router to indicate it on site/index.
  * 
  *****/
 
 
 
 
-
+'use strict';
 const express = require('express');
 const router = express.Router();
 const path = require('path');
@@ -49,7 +49,8 @@ const bodyParser = require('body-parser');
 //targets = pages to showw (if called as archive/target)
 //file names: year-eventNumberThatYear, add recent on top
 //current: to define the most recent as the page "actuel" on the main site
-var targets= [
+
+let targets= [
             '19-6','19-5','19-4','19-3','19-2','19-1',    '18-3','18-2','18-1',
             '17-2','17-1',   '16-3','16-2','16-1',  '15-2','15-1',   '14-3','14-2','14-1',
             '13-2', '13-1',   '12-4','12-3','12-2','12-1',  '11-4','11-3', '11-2', '11-1', 
@@ -59,12 +60,14 @@ var targets= [
             '05-10','05-9','05-8','05-7','05-6','05-5','05-4','05-3','05-2','05-1',
             '04-2', '04-1',  '01',  '00'  
 ];
-var current=targets[0];
+let current=targets[0];
+let foundation=targets[targets.length-1]; //the first event ever, to avoid going further past
 
 const etargets = targets.map(x =>'e'+x);
-var ecurrent= etargets[0];
+let ecurrent= etargets[0];
 const dtargets = targets.map(x =>'d'+x);
-var dcurrent=dtargets[0];
+let dcurrent=dtargets[0];
+
 
 // Current news = last entry for the target list, form the default page, called actuel / eactual  dactual
 router.get('/actuel',function(req,res,next) {
@@ -118,12 +121,11 @@ router.get('/*/',function(req,res) {
                         title: 'Artistes sans Frontières - Les événements passés en 20'+event, 
                         message: 'Le contenu de la page '+event+' sera bientôt visible ',
                         event: event,
-                       // pos:targets.indexOf(event),
-                        past: targets[targets.indexOf(event)+1],
+                        past: targets[targets.indexOf(event)+1] || foundation,
                         future: targets[targets.indexOf(event)-1] || current,
-                       eevent:'e'+event,
-                       devent:'d'+event, 
-                       fevent:event,                    
+                        eevent:'e'+event,
+                        devent:'d'+event, 
+                        fevent:event,                    
                     });
             
         } 
@@ -136,7 +138,7 @@ router.get('/*/',function(req,res) {
                         title: 'Artistes sans Frontières - event from 20'+event.slice(1), 
                         message: 'The page 20'+event.slice(1)+' will be available shortly in English ',
                         event: event,
-                        past: etargets[etargets.indexOf(event)+1],
+                        past: etargets[etargets.indexOf(event)+1] || foundation,
                         future: etargets[etargets.indexOf(event)-1] || ecurrent,
                         eevent:eevent,
                         fevent:fevent,
@@ -152,16 +154,13 @@ router.get('/*/',function(req,res) {
                         title: 'Artistes sans Frontières - Ereignisse in 20'+event.slice(1), 
                         message: 'Die Seite 20'+event.slice(1)+' wird bald in deutscher Sprache erscheinen ',
                         event: event,
-                        past: dtargets[dtargets.indexOf(event)+1],
+                        past: dtargets[dtargets.indexOf(event)+1] || foundation,
                         future: dtargets[dtargets.indexOf(event)-1] || dcurrent,
                         devent:devent,
                         fevent:fevent,
                         eevent:eevent
                     });
-    } 
-        
-    
-    
+    }    
 });
 
 
