@@ -80,7 +80,7 @@ var dtargets = [
   
     //  site/index or site/ This page will be an animation. For now it's a news page.
     if(cible ==='' || cible === 'index.html') {
-        target= {t:'index',  c:'index', t:'Bienvenue sur le site AsF', lang:"f", actu:actu};   
+        target= { c:'index', t:'Bienvenue sur le site AsF', actu:actu};   
         folder= 'f-site/';
         let pos=0;
         target.pos=pos;
@@ -119,7 +119,7 @@ var dtargets = [
         page=cible.slice(1);
     }
     if (dtargets.find( ({c}) => c ===cible) ){
-        let target=dtargets.find( ({c}) => c ===cible);
+        target=dtargets.find( ({c}) => c ===cible);
         folder= 'd-site/';
         let pos= dtargets.indexOf(target);
         target.pos=pos;
@@ -140,10 +140,10 @@ var dtargets = [
                         target:target
                         });
      
-   // console.log( 'target :  ',target);    
-   // console.log('cible : ',cible);
-   // console.log('page :  ', page);
-  //  console.log(folder+page);
+   //console.log( 'target :  ',target);    
+   //console.log('cible : ',cible);
+   //console.log('page :  ', page);
+   //console.log(folder+page);
 })
 
 
