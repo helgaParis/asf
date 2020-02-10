@@ -8,10 +8,9 @@ div
             a(href='galerie/dindex') Galerie
         li
             a(href='archive/dactuel') Neuigkeiten
-       
+
     span.language
-        a(href='e-index') 
-            img.drapeau(src="/images/drapeau-en.png", alt='English version')
-        a(href="index") 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française')
-               
+        a(aria-label="Englische Version der Startseite" href='e-index' role="button" tabindex="0") 
+            img.drapeau(src="/images/drapeau-en.png", title="Englische Fahne", alt='English version')
+        a(aria-label="Französische Version der Startseite" href="index" role="button" tabindex="0") 
+            img.drapeau(src="/images/drapeau-fr.png", title="Französische Fahne", alt='Version française')

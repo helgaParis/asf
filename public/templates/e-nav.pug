@@ -10,7 +10,7 @@ div
             a(href='archive/eactuel') News
 
     span.language
-        a(href='d-index') 
-            img.drapeau(src="/images/drapeau-de.png", alt='Deutsche Version')
-        a(href="index") 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française')
+        a(aria-label="German version of the start site" href='d-index' role="button" tabindex="0") 
+            img.drapeau(src="/images/drapeau-de.png", title="German flag"  alt='Deutsche Version')
+        a(aria-label="French version of the start site" href="index" role="button" tabindex="0") 
+            img.drapeau(src="/images/drapeau-fr.png", title="French flag" alt='Version française')
