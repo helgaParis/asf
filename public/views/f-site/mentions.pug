@@ -1,4 +1,6 @@
 extends ../../templates/layout-site.pug
+block extrameta
+    meta(name='description' content='Page de mentions légales : qui est en charge, auprès de qui se plaindre et les droits d\'auteur pour tout' )
 block main
     section
         div
@@ -45,7 +47,7 @@ block main
             br
             |   À ce titre, toute reproduction, représentation, utilisation, adaptation, modification, incorporation, traduction, commercialisation, partielles ou intégrales par quelque procédé et sur quelque support que ce soit (papier, numérique…) est interdite, sans l’autorisation écrite préalable de l’associations Artistes sans Frontières, sauf les exceptions prévues par l’article L 122.5 du Code de Propriété Intellectuelle, sous peine de constituer un délit de contrefaçon de droit d’auteur et/ou de dessins et modèles et/ou de marque.
             p Pour toute question, demande ou complément d’information, écrire à :
-             a(href='mailto:bureau.asso@artistes-sf.org?subject=page mentions, droits') E-mail: bureau.asso@artistes-sf.org
+                a(href='mailto:bureau.asso@artistes-sf.org?subject=page mentions, droits') E-mail: bureau.asso@artistes-sf.org
 
 
     block aside

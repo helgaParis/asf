@@ -1,14 +1,17 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/d-layout-artistes.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières stellt Frevarias vor')
+    meta(name='robots', content='index, follow')
 block main
     style. 
         body{background: black;color:white;}
     section
         #logoartist
             h1 C. Frevarias
-            img(src='/images-galerie/artists/freva-aff.jpg' alt='C.Frevarias, affiche d\'exposition 2007')
-            #legende C.Frevarias, affiche d'exposition
+            img(src='/images-galerie/artists/freva-aff.jpg' alt='C.Frevarias, Ausstellungsplakat 2007')
+            #legende C.Frevarias, Plakat einer Ausstellung
     section
         #imageartist
-            img(src='/images-galerie/artists/freva1.jpg' alt='C.Frevarias, portrait, 2007')
-            #legende C.Frevarias, portrait
+            img(src='/images-galerie/artists/freva1.jpg' alt='C.Frevarias, Portrait, 2007')
+            #legende C.Frevarias, Portrait
         block aside

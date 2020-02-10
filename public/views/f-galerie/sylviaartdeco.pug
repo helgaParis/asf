@@ -1,4 +1,7 @@
 extends ../../templates/layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presente Silvia, art deco')
+    meta(name='robots', content='index, follow')
 block main
     section
     h3=message
@@ -6,5 +9,5 @@ block main
     div
         p Retrouvez ici bientôt le site de #{artist}
         p
-         a(href="https://art.artistes-sf.org/sylviaartdeco/index.html", target="_blank") Ancien site 
+         a(href="https://art.artistes-sf.org/sylviaartdeco/index.html" rel="noopener" target="_blank") Ancien site 
     block aside

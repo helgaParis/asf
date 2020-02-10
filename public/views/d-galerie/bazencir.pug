@@ -1,4 +1,7 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/d-layout-artistes.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières stellt Halit Bazencir vor')
+    meta(name='robots', content='index, follow')
 block main
     style.
         body{background: #bbbbbb;}
@@ -8,5 +11,5 @@ block main
     section
         #imageartist
             img(src='/images-galerie/artists/bazencir.jpg' alt='Halit Baencir, 2008')
-            #legende Halit Baencir, sans titre, 2008
+            #legende Halit Baencir, ohne Titel, 2008
     block aside

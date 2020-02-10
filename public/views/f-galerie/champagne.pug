@@ -1,4 +1,7 @@
 extends ../../templates/layout-artistes.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presente Pierrette Champagne, peintre')
+    meta(name='robots', content='index, follow')
 block main
     style.
         body{background: #bccada;}
@@ -9,5 +12,5 @@ block main
     section
         #imageartist
             img(src='/images-galerie/artists/champagne1009.jpg' alt='Pierrette Champagne, 2010')
-            #legende Pierrette Champagne, still life, 2010
+            #legende Pierrette Champagne, nature morte, 2010
     block aside

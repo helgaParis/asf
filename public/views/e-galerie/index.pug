@@ -1,14 +1,11 @@
 extends ../../templates/e-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières , the gallery')
+    meta(name='robots', content='index, follow')
 block main
-        div
-            section
-                #message
-                    h3=message
-                h1=title
-            h3  
-                |We are working on the new website. This page is not yet translated, 
-                br
-                |please visit the existent english version or choose from the French menu 
-
-            h2
-                a(href="/html/en/index.html", target="_blank") Artistes sans Frontieres - english
+    div
+        section
+            #message
+                h3=message
+            h1=title
+        p Discover our artists !

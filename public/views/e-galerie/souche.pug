@@ -1,8 +1,11 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/e-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presents Elisa Souche')
+    meta(name='robots', content='index, follow')
 block main
     section
     h3=message
     h1=title
     div
-        p Retrouvez ici bientôt le site de #{artist}
+        p You will find here shortly the updated website of  #{artist}
     block aside

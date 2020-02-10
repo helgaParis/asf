@@ -1,4 +1,7 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/d-layout-artistes.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières stellt Robert Paquet vor')
+    meta(name='robots', content='index, follow')
 block main
     style.
         body{background: #dddddd;}
@@ -6,17 +9,17 @@ block main
         #logoartist
             h1 Robert Paquet
             #legende  
-                p "Songeuse"
-                p sculpture,
+                p "Träumerin"
+                p Skulptur,
                 br
-                | bronze, patine bleue,
+                | Bronze, blaue Patina,
                 br
-                | 19 cm de haut
+                | 19 cm hoch
                 br
                 | 2008
                 p Photo : Morteyrolle
     section
         #imageartist
-            img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", sculpture bleue')
+            img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", blaue Skulptur')
            
     block aside

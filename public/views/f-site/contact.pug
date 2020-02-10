@@ -1,12 +1,16 @@
 extends ../../templates/layout-site.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, 7 impasse du Rouet, 75014 Paris. Accueil téléphonique : +33 (0)1 40 44 77 41, email: bureau.asso@artistes-sf.org')
 block main
     section
     h1=title
     div
-        p Suite à un sinistre, nos lieux sont fermés pour travaux. 
+        p 
+        | Suite à un sinistre, nos lieux sont fermés pour travaux jusqu'au 14 février 2020.  
+        | Accueil du publique : sur rdv, de préférence de lundi à samedi, à partir de 13h.
         p Accueil téléphonique, de lundi à samedi, entre 11h et 19h : +33 (0)1 40 44 77 41.
         p
-             a(href='mailto:bureau.asso@artistes-sf.org?subject=page contact, fr') E-mail: bureau.asso@artistes-sf.org
+            a(href='mailto:bureau.asso@artistes-sf.org?subject=page contact, fr') E-mail: bureau.asso@artistes-sf.org
     footer
         hr
         include ../../templates/footer.pug         

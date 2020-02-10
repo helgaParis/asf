@@ -1,4 +1,7 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/e-layout-artistes.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presents Marie-Thérèse Masias')
+    meta(name='robots', content='index, follow')
 block main
     style. 
         body{background:#d7d7d7;}
@@ -8,6 +11,6 @@ block main
             p Photo: Marie-Thérèse Masias, 2007
     section
         #imageartist
-            img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, sculpture email sur cuivre')
-            #legende Marie-Thérèse Masias, sculpture email sur cuivre, 60 cm
+            img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, sculpture enamel on copper')
+            #legende Marie-Thérèse Masias, sculpture, enamel on copper, 60 cm
     block aside

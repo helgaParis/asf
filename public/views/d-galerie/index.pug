@@ -1,13 +1,11 @@
 extends ../../templates/d-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières - die Galerie')
+    meta(name='robots', content='index, follow')
 block main
     div
         section
             #message
                 h3=message
             h1=title
-        h3 
-            | Webseite im Umbau - diese Seite ist noch nicht uebersetzt. 
-            | Bitte besuchen Sie die existierende deutsche Version oder verwenden Sie das französische Menu.
-        h2
-            a(href="/html/de/index.html", target="_blank") bisherige deutsche Version
-        
+            p Entdecken Sie unsere Künstler !

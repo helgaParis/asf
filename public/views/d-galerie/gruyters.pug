@@ -1,8 +1,11 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/d-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières stellt Gruyters vor')
+    meta(name='robots', content='noindex, nofollow')
 block main
     section
     h3=message
     h1=title
     div
-        p Retrouvez ici bientôt le site de #{artist}
+        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
     block aside

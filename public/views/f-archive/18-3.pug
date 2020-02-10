@@ -1,11 +1,13 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, le plan des ateliers ouverts et évenements lors des Arts 14 de 2018')
 block main
     p=title
     div
         section
             header
                 h1 Les 14 ARTS 2018 - plan
-        
+
         img#imagefull(src="/images-news/2018/po2018recto.png" alt="Les 14 Arts 2018, recto")
         | Les 14 Arts 2018, plan recto
         img#imagefull(src="/images-news/2018/po2018verso.png" alt="Les 14 Arts 2018, verso")

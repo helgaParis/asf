@@ -1,0 +1,20 @@
+extends ../../templates/layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presente ... pourquoi pas Vous ?')
+    meta(name='robots', content='index, follow')
+block main
+    section
+    h3=message
+    h1=title
+    div
+        h3 Retrouvez ici bientôt le site de #{artist} - Vous ?
+        p Cette page pourrait être la vôtre 
+        h3 Service pour artistes, galeries, acteurs culturels
+            p 
+            | Nous créons pour chacun de nos membres un site unique, adapté à sa personnalité et à ses besoins.
+            br
+            | ...
+        p Lire plus dans le chapitre Services, pages Sites ou Apps
+        a(href='/site/sites')  Notre service de création de sites Internet
+
+    block aside

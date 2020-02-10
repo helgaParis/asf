@@ -1,10 +1,13 @@
-extends ../../templates/layout-galerie.pug
+extends ../../templates/d-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières stellt Catherine Pillas vor')
+    meta(name='robots', content='index, follow')
 block main
     section
     h3=message
     h1=title
     div
-        p Retrouvez ici bientôt le site de #{artist}
+        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
         p
-         a(href="https://art.artistes-sf.org/pillas/index.html", target="_blank") Ancien site 
+         a(href="https://art.artistes-sf.org/pillas/index.html" rel="noopener" target="_blank") Bisherige Website 
     block aside

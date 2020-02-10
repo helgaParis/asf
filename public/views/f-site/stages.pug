@@ -1,18 +1,25 @@
 extends ../../templates/layout-site.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières et des membres artistes offrent des stages et formations individuelles. Nous accueillons également des stagiaires de la formation publique.')
 block main
-        div
-            section
-                header
-                    h1=title
-                div
-                    h3 A venir 
-                    p 
-                    | Stages de pratique artistique (peinture, litho, photo ...) organisés par nos membres artistes,
-                    | dans la mésure des places disponibles. Local offer.
-                    p ---
-                    
+    div
+        section
+            header
+                h1=title
+            div
+                h2 Stage à l'association 
+                p Si vous cherchez un stage dans le cadre d'une formation publique, contactez-nous.
 
-        block aside
-        footer
-            hr
-            include ../../templates/footer.pug
+
+            div
+                h3 Stages publiques - A venir 
+                p 
+                | Stages de pratique artistique (peinture, litho, photo ...) organisés par nos membres artistes,
+                | dans la mésure des places disponibles. 
+                p ---
+
+
+    block aside
+    footer
+        hr
+        include ../../templates/footer.pug

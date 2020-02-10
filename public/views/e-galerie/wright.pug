@@ -1,0 +1,13 @@
+extends ../../templates/e-layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presents Nicholas Wright')
+    meta(name='robots', content='index, follow')
+block main
+    section
+    h3=message
+    h1=title
+    div
+        p You will find here shortly the updated website of #{artist}
+        p
+         a(href="https://art.artistes-sf.org/wright/index.html" rel="noopener" target="_blank") Current site 
+    block aside

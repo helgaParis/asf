@@ -1,15 +1,14 @@
 extends ../../templates/layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières - la galerie ')
+    meta(name='robots', content='index, follow')
 block main
     div
         section
             #message
                 h3=message
             h1=title
-            p Vous retrouverez dans ce chapitre bientôt également : 
-
-            h3 Des liens vers des sites non artistiques créés par AsF
-            p ...
-
+            p Decouvrez nos artistes !
 
 
         block aside

@@ -1,4 +1,7 @@
 extends ../../templates/layout-galerie.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières presente Roland Erguy, sculpteur')
+    meta(name='robots', content='index, follow')
 block main
     section
     h3=message
@@ -6,6 +9,6 @@ block main
     div
         p Retrouvez ici bientôt le site refait de #{artist}
         p 
-            a(href="https://art.artistes-sf.org/erguy/index.html", target="_blank") Ancien site 
+            a(href="https://art.artistes-sf.org/erguy/index.html" rel="noopener" target="_blank") Ancien site 
 
     block aside
