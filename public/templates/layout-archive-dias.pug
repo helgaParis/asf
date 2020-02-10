@@ -1,5 +1,5 @@
 doctype html
-html(lang='fr')
+html(lang="fr")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -7,14 +7,15 @@ html(lang='fr')
     meta(name='revisit-after', content='7 days')
     meta(name='author', content='helga strobl petrovic, paris')
     meta(name='copyright', content='helga strobl petrovic')
-    meta(http-equiv='Content-Language', content='fr')
+    meta(name="theme-color" content='#118cff') 
     script(src='../../js/dias-code.js')
-    script(src='../js/pages.js')
+    //- script(src='../js/pages.js')
     link(rel='stylesheet', href='../css/archive.css')
     link(rel='stylesheet', href='../css/archive-nav.css')
     link(rel='stylesheet', href='../css/dias-archive.css')
     link(rel="shortcut icon" href="../images/favicon.ico")
     title=title
+    block extrameta  
   body
     nav
         include ./nav-archive.pug

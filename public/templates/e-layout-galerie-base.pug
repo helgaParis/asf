@@ -1,5 +1,5 @@
 doctype html
-html(lang="fr")
+html(lang="en")
     head
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -9,7 +9,6 @@ html(lang="fr")
         meta(name='copyright', content='artistes sans frontières, paris')
         meta(name="theme-color" content='#118cff') 
         link(rel='stylesheet', href='../css/archive.css') 
-        link(rel='stylesheet', href='../css/colonnes.css') 
         link(rel='stylesheet', href='../css/galerie-nav.css')
         link(rel='stylesheet', href='../css/artistes-base.css')
         link(rel="shortcut icon" href="../images/favicon.ico")
@@ -18,7 +17,7 @@ html(lang="fr")
         block extrameta  
     body
         nav
-            include ./nav-galerie.pug
+            include ./e-nav-galerie.pug
         main
             block main
                 #diacontainer

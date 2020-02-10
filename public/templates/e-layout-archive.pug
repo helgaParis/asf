@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(lang="en")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -7,13 +7,14 @@ html(lang='en')
     meta(name='revisit-after', content='7 days')
     meta(name='author', content='helga strobl petrovic, paris')
     meta(name='copyright', content='artistes sans frontières, paris')
-    meta(http-equiv='Content-Language', content='en')
-    script(src='../js/pages.js')
+    meta(name="theme-color" content='#118cff') 
+    //- script(src='../js/pages.js')
     link(rel='stylesheet', href='../css/archive.css')
     link(rel='stylesheet', href='../css/colonnes.css')
     link(rel='stylesheet', href='../css/archive-nav.css')
     link(rel="shortcut icon" href="../images/favicon.png")
     title=title
+    block extrameta  
   body
     nav
       include ./e-nav-archive.pug
