@@ -1,4 +1,7 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, map of the ARTS 14 and Open Doors 2018')
+
 block main
     div
         section
@@ -8,7 +11,7 @@ block main
         section
             header
                 h1 14 ARTS 2018 - map of events
-        
+
         img#imagefull(src="/images-news/2018/po2018recto.png" alt="Les 14 Arts 2018, recto")
         | Les 14 Arts 2018, map recto
         img#imagefull(src="/images-news/2018/po2018verso.png" alt="Les 14 Arts 2018, verso")

@@ -1,17 +1,17 @@
 div
     span
-        a(href='/site/index')
-            img#logo(src='/images/logo_asf.jpg' alt='logo Artistes sans Frontières' tabindex="0" role="button" aria-labelledby="logo A S F et retour à la page d'accueil")
+        a(aria-labelledby="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
+            img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button" aria-labelledby="logo A S F et retour à la page d'accueil")
             br
             | Accueil
     span.defilee
         p
             p
                 a(aria-label="feuilleter la galerie en arrière : "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-                    img.fleche(src="/images/pfeil-l.png", alt="voir l'artiste d'avant" )
+                    img.fleche(src="/images/arrow-back.png", title="flèche gauche", alt="voir l'artiste d'avant" )
                 |  
                 a( aria-label="feuilleter la galerie en avant : "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-                    img.fleche(src="/images/arrow.png", alt="voir le prochain artiste") 
+                    img.fleche(src="/images/arrow.png", title="flèche droite", alt="voir le prochain artiste") 
                     br
                     | parcourir la galerie                
     ul.menu1
@@ -25,7 +25,7 @@ div
                 li
                     a(href='bazencir') Bazencir Halit  
                 li
-                    a(href='champagne') Champagne Pierrette 
+                    a(href='champagne') Champagne Pierrette                    
                 li
                     a(href='delaney') Delaney Beauford
                 li

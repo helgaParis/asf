@@ -1,6 +1,6 @@
 div
     span
-        img#logo(src='/images/logo_asf.jpg' alt='logo Artistes sans Frontières')
+        img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
     ul.menu1
         li
             a(href='dbuts') Verein...
@@ -35,8 +35,8 @@ div
         li
             a(href='/archive/dactuel') Neuigkeiten
     span.language
-        a(href=target.ciblee) 
-            img.drapeau(src="/images/drapeau-en.png", alt='English Version')
-        a(href=target.ciblef) 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française')
-       
+        a(aria-label="Englishe Version dieser Seite" href=target.ciblee) 
+            img.drapeau(src="/images/drapeau-en.png", alt='English version' role="button"  tabindex="0")
+        a(aria-label="Französische Version dieser Seite" href=target.ciblef) 
+            img.drapeau(src="/images/drapeau-fr.png", alt='Version française' role="button"  tabindex="0")
+   
