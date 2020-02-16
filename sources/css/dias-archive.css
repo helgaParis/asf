@@ -46,40 +46,19 @@ margin-left: 12px;;
     height: 90%;
 }
 
+/*   Reactive: < 767 px           */
 
-
-/* ###########  Valide pour tailles larger que 1200 px  ########### */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width:1200px) {
-    #diacontainer{
-        width: 75%;
-        height: 70%;
-    
-    }
-    #legende {
-        font-size: 1.2rem;
-        margin-bottom: 0;
-        padding: 0;
-    }
-  
-    
-}
-/* ####### Valide pour tailles entre 992 et 1200 px########### */
-/* Large devices (laptops/desktops, 992px and up) */
-
-@media only screen and (min-width:992px) and (max-width:1199px) {
-    #diacontainer{
-        width: 75%;
-
+@media only screen and (max-width:767px) {
  
+    #diacontainer{
+        width: 98%;       
     }
     #legende {
-        font-size: 1.2rem;
-        margin-bottom: 0;
-        padding: 0;
+        padding: 10px 0;
+        font-size: 1rem;
+        margin-bottom: 2%;
     }
 }
-
 
 /* ######## Valide pour tailles  entre 768 et 992 px ############ */
 /* Medium devices (landscape tablets, 768px and up) */
@@ -87,7 +66,6 @@ margin-left: 12px;;
 
     #diacontainer{
         width: 80%;
-   
     }
     #legende {
         font-size: 1.2rem;
@@ -96,17 +74,32 @@ margin-left: 12px;;
         margin-bottom: 2%;
     }
 }
+/* ####### Valide pour tailles entre 992 et 1200 px########### */
+/* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (max-width:767px) {
- 
+@media only screen and (min-width:992px) and (max-width:1199px) {
     #diacontainer{
-        width: 98%;    
-   
-    
+        width: 75%; 
     }
     #legende {
-        padding: 10px 0;
-        font-size: 1rem;
-        margin-bottom: 2%;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        padding: 0;
     }
 }
+
+
+/* ###########  Valide pour tailles larger que 1200 px  ########### */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width:1200px) {
+    #diacontainer{
+        width: 75%;
+        height: 70%;    
+    }
+    #legende {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        padding: 0;
+    }    
+}
+

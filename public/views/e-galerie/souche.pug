@@ -1,11 +1,14 @@
-extends ../../templates/e-layout-galerie.pug
+extends ../../templates/e-layout-artistes.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presents Elisa Souche')
     meta(name='robots', content='index, follow')
 block main
+    style.
+        main{background: #bbbbbb;}
     section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
+        #logoartist
+            h1 Elisa Souche
+                img(src='/images-news/2012/daudet-affiche-1210.jpg', alt='Elisa Souche, show poster 2012')
+                #legende Elisa Souche, show pster 2012
+
     block aside

@@ -1,15 +1,38 @@
 
 div
-    span
-        a(aria-labelledby="retour à la page d'accueil" href='/site/index' tabindex="0" role="button" )
-            img#logo(src='/images/asf20.png',  title="logo A S F", alt="logo Artistes sans Frontières")
+    span.mobile.home
+        a(aria-labelledby="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
+            | Accueil 
+            img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
+
+    span.desktop.home
+        a(aria-labelledby="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
+            img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
             br
             | Accueil
+    span.mobil.defilee
+        a(aria-label="feuilleter l'archive du passé vers le present : " href='/archive/'+future role="button"  tabindex="0")
+            img.flecheup(src="/images/fleche-haut.png", title="flèche haut" alt="vers le present")
+        |
+        a(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past role="button"  tabindex="0") 
+            img.flecheup(src="/images/fleche-bas.png", title="flèche bas" alt="vers le passé")
+    span.desktp.defilee
+        a(href='/archive/'+future) futur 
+        a(aria-label="feuilleter l'archive du passé vers le present " href='/archive/'+future role="button"  tabindex="0")
+            img.flecheup(src="/images/fleche-haut.png", title="flèche haut" alt="next more recent event")
+        |
+        a(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past role="button"  tabindex="0") 
+            img.flecheup(src="/images/fleche-bas.png", title="flèche bas" alt="vers le passé")
+            | passé
     ul.menu1
         li
             a(href='actuel') Actuel
         li
-            a(href='actuel') 2020 - 2015
+            a(href='actuel') 2020 - 
+                span.mini
+                    |20
+                span.see
+                    |15
             ul.menu2 
                 li 2019
                 li 
@@ -46,7 +69,15 @@ div
                 li
                     a(href='15-2')  Portes Ouvertes
         li
-            a(href='14-2') 2014 - 2009
+            a(href='14-2')
+                span.mini 
+                    |20
+                span.see
+                    |14 - 
+                span.mini
+                    |20
+                span.see
+                    |09
             ul.menu2 
                 li 2014
                 li
@@ -113,7 +144,15 @@ div
                 li
                     a(href='09-1')  2009-1              
         li
-            a(href='08-4') 2008 - 2000
+            a(href='08-4')
+                span.mini 
+                    |20
+                span.see
+                    |08 - 
+                span.mini
+                    |20
+                span.see
+                    |00  
             ul.menu2   
                 li 2008
                 li
@@ -194,17 +233,6 @@ div
                     a(href='01')  2001
                 li 
                     a(href='00')  2000
-    hr
-    span.defilee
-        ul.smenu3
-            li 
-                a(href='/archive/'+future) futur  
-                a(aria-label="feuilleter l'archive du passé vers le present : "+future href='/archive/'+future role="button"  tabindex="0")
-                    img.fleche(src="/images/fleche-haut.png", title="flèche haut" alt="vers le futur")
-            li
-                a(aria-label="feuilleter l'archive du present vers le passé : "+past href='/archive/'+past role="button"  tabindex="0") 
-                    img.fleche(src="/images/fleche-bas.png", title="flèche bas", alt="vers le passé")
-                    | passé
     span.language
         a(aria-label="Version anglaise de cette page" href=eevent role="button" tabindex="0") 
             img.drapeau(src="/images/drapeau-en.png", title="drapeau anglais", alt='English Version')

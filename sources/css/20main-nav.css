@@ -1,0 +1,478 @@
+/*only the nav-styles common to all sizes */
+
+
+/*************** navigation + nav links */
+nav {
+    background-color : #118cff60;
+  /*  min-height: 44px;*/
+}
+.menu1 {
+text-align : left;
+}
+nav li {
+    list-style-type : none;
+    }
+nav > ul > li {
+    position : relative;
+    }
+nav > div > ul > li:hover .menu2 {
+    display : block;
+    }
+.menu2 {
+    background-color :  #118cffcc; 
+    position : absolute;
+    display : none;
+    min-width : 140px;
+    z-index : 3;
+    max-width: 300px;
+    min-width: 100px;
+    }        
+.menu2 li{
+    display: list-item;
+}  
+nav a {
+    color : #A90101;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:active {
+    color: #0000CC;
+    font-weight: 400;
+    text-decoration : underline;
+    }
+nav a:visited{
+    text-decoration : none;
+   
+    }
+nav a:hover, 
+nav a:focus {
+    text-decoration : none;
+    background-color :white;
+    outline: #A90101 1px ridge;
+    padding: 2px;
+}
+nav hr {
+	width: 60%;
+	margin-left:10%;
+	color: white;
+	height:1;
+}
+/* .language contains drapeux, .home the logo, .defilee the arrows */
+.language,
+.defilee,
+.home {
+    border:0;
+}
+.drapeau {
+    width:30%;
+    /* margin:auto; */
+    padding:5%;
+}
+a.see{
+    display:inline;
+}
+/*********block accessibility ************/
+.fleche:focus, .fleche:hover, 
+.drapeau:focus, .drapeau:hover{
+    outline: #A90101 1px ridge;
+}
+/**********  reactive styles
+** hidden on small screens: 
+** deco elements on nav bar: .mini (line breaks) and nav hr
+** additional text link on arrows and text under the logo
+++ showing with the menu left side: 
+desktp for the arrows with text link and desktop for the alternative logo 
+**************/
+
+/*          < 400              */
+
+@media only screen and (max-width:400px) {
+	nav {
+        border-bottom : 1px dotted #A90101;
+        height : 30px;
+    }
+    nav hr, 
+    .desktp,
+    .desktop,
+    .mini {
+	    display: none;
+    }
+    nav ul {
+        display : inline;
+        margin-left : 2px;
+        margin-right: 45px;
+        padding : 2px;
+    }
+    nav li {
+        display : inline;
+        padding : 3px;
+        padding-right: 4px;
+    }
+    .menu1 {
+        line-height: 25px;
+        font-size: 0.8rem;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius :  0 0px 10px 0;
+        top : 25px;
+        left : 0px;
+        min-width: 100px;
+        font-size: 0.8rem;
+        line-height: 17px;
+    }
+    
+    .home {
+        position : absolute;
+        top : 9px;
+        right : 9px;
+    }
+    #logo {
+        width : 41px;
+        height : 29px;
+    }
+    .language {
+        position : absolute;
+        top : 42px;
+        right : -1px;
+        width:75px;  
+    }
+    .defilee {   
+        position : absolute;
+        top : 40px;
+        left : 10;
+        width:80px;
+        text-align: left;
+    }
+    .fleche{
+        width: 25%;
+        padding: 0 4%;
+        background-color: #118cff60;
+    }
+    .flecheup{
+        width: 20%;
+        padding: 0 4%;
+        background-color: #118cff60;
+    }
+}
+/*************    400 - 600   *************/
+
+@media only screen and (min-width:400px) and (max-width:600px) {
+    nav {
+        border-bottom : 1px dotted #A90101;
+        height : 33px;
+    }
+    nav ul {
+        /* display : inline; */
+        margin-left : 5px;
+        margin-right: 30px;
+        padding : 2px;
+    }
+    nav li {
+        display : inline;
+        padding : 3px;
+        padding-right: 8px;
+    }
+    .menu1 {
+        line-height: 26px;
+        font-size: 0.9rem;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 0 10px 10px;
+        top : 25px;
+        left : 30px;
+        right : 45px;       
+        font-size: 0.9rem;
+    }
+    nav hr,
+    .mini,
+    .desktop,
+    .desktp {
+	    display: none;
+    }
+    .home {
+        position : absolute;
+        top : 9px;
+        right : 9px;
+    }
+    #logo {
+        width : 50px;
+        height : 33px;
+    }
+    .defilee{
+        position : absolute;
+        top :53px;
+        left : 10px;
+        width:80px;
+        text-align: left;
+    }
+    .fleche{
+        width: 26%;
+        padding: 0 6%;
+        background-color: #118cff60;
+    }
+    .language {
+        position : absolute;
+        top : 48px;
+        right : -1px;
+        width:75px;
+    }
+    .flecheup{
+        width: 21%;
+        padding: 0 6%;
+        background-color: #118cff60;
+    }
+}
+/********************* 600 - 792    *********************/
+
+@media only screen and (min-width:600px) {
+	nav {
+        border-bottom : 1px solid #A90101;
+        height : 35px;
+    }
+    nav div {
+        margin : 3px 5px;
+    }
+    nav ul {
+        display : inline;
+        margin-left : 5px;
+        margin-right: 40px;
+        padding : 5px;
+    }
+    nav li {
+        display : inline;
+        padding : 5px;
+        padding-right: 10px;
+    }
+    .menu1 {
+        padding-top: 2px;
+        line-height: 35px;font-size: 0.9rem;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 0 10px 10px;
+        line-height: 22px;
+        top : 33px;
+        left : 30px;
+        right : 45px;
+        font-size: 0.9rem;
+         }
+    nav hr,
+    .mini,
+    .desktop,
+    .desktp {
+        display: none;
+    }
+    .home {
+        position : absolute;
+        top : 9px;
+        right : 9px;
+    }
+    #logo {
+        width : 50px;
+        height : 33px;
+    }
+    .defilee{
+        position : relative;
+        
+    }
+    .fleche{
+        width: 3%;
+        padding: 0 2px;
+        background-color:none;
+    }
+    .flecheup{
+        width: 2%;
+        padding: 0 2px;
+        background-color:none;
+    }
+    .language {
+        position : absolute;
+        top : 58px;
+        right : 7px;
+        width:80px;
+    }
+}
+
+/***** menu on the left side from this size on  ****/
+
+@media only screen and (min-width:768px) {
+    .mobile.home, 
+    .mobil.defilee{
+        display: none;
+    }
+    .mini{
+        display: inline;
+    }
+    nav {
+        position : absolute;
+        display : block;
+        height : 100%;
+        left : 0;
+        width : 130px;
+    }
+    nav div {
+        display : block;
+        left : 12px;
+        padding : 3px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        min-height : 800px;
+    }
+    .menu1 {
+        text-align : left;
+        font-size: 0.9rem;
+    }
+    nav li {
+        display : list-item;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top :100px;
+        left : 105px;
+        min-height: 195px;  
+        font-size: 0.9rem;
+    }
+    .home {
+        display : block;
+        padding-left:3%;
+        position : inherit;
+    }
+    #logo {
+        width : 71px;
+        height : 50px;
+    }
+    .defilee{
+        position : relative;
+        display:block;
+        left:2%;
+        width: 110px;
+        text-align: left;
+        top: 5px; 
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    .fleche{
+        width: 22%;
+        padding: 12% 15% 3% 2%;
+    }
+    .flecheup{
+        width: 18%;
+        padding: 12% 15% 3% 2%;
+    }
+    .language {
+        position : relative;
+        display:block;
+        left : 15px;
+        width:95px;
+        border-top: 1px ridge white;
+        padding-top:3%;
+        text-align: right;
+    }
+}
+
+/*** aside on the right from here on **/
+
+@media only screen and (min-width:992px) {
+    nav {
+        position : absolute;
+        display : block;
+        height : 100%;
+        left : 0;
+        width : 180px;
+    }
+    nav div {
+        position : relative;
+        display : block;
+        left : 30px;
+        padding : 10px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        height : 100%;
+    } 
+    nav li {
+        display : list-item;
+    } 
+    .menu1 {
+        text-align : left;
+    }
+   .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top : 130px;
+        left : 105px;
+    }
+    .home {
+        display : block;
+        position : inherit;
+        padding-left:7%;
+    }
+    #logo {
+        width : 72px;
+        height : 48px;
+    }
+    .language{
+        width:120px;
+        left: 5px;
+        text-align: right;
+    }
+    .defilee{
+        position : relative;
+        left:2%;
+        text-align: left;
+        top: 10px;
+        width: 110px;
+        padding-left: 0;
+    }
+    .fleche{
+        width: 22%;
+        padding: 12% 15% 3% 2%;
+        
+    }
+    .flecheup{
+        width: 18%;
+        padding: 12% 15% 3% 2%;
+        
+    }
+}
+@media only screen and (min-width:1200px) {
+    nav {
+        position : absolute;
+        display : block;
+        min-height : 1000px;
+        left : 0;
+        width : 210px;
+    }
+    nav div {
+        position : relative;
+        display : block;
+        left : 60px;
+        padding : 10px;
+        border-left : 2px solid;
+        border-color : #A90101;
+        min-height : 1000px;
+    }
+    nav li {
+        display : list-item;
+    }
+    .menu1 {
+        text-align : left;
+        font-size: 1rem;
+    }
+    .menu2 {
+        padding : 2px;
+        border-radius : 0 10px 10px 0;
+        top : 128px;
+        left : 110px;
+        font-size: 0.9rem;
+    }
+    .home {
+        display : block;
+        position : inherit;
+        padding-left:8%;
+    }
+    
+}

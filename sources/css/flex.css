@@ -1,0 +1,67 @@
+/* Main stylesheets are 20main (and 20main-nav)
+The chapter site needs a flex flow on the main part  */
+
+main {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-flow: row wrap; 
+    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+}
+/**********  reactive styles*/
+
+/********* < 400 ***************/
+
+@media only screen and (max-width:400px) {
+    main {
+        display: flex;
+        display: -webkit-flex; /* Safari */
+        flex-wrap: row wrap; 
+        
+    }
+}
+/*************    400 - 600   *************/
+
+@media only screen and (min-width:400px) and (max-width:600px) {
+	main {
+        display: flex;
+        display: -webkit-flex; 
+        flex-wrap: row wrap;
+    }  
+}
+/********************* 600 - 792    *********************/
+@media only screen and (min-width:600px) {
+    main {
+        display: flex;
+        flex-wrap: row wrap;
+        display: -webkit-flex; /* Safari */
+    }  
+}
+/***** menu on the left side from this size on  ****/
+
+@media only screen and (min-width:768px) {
+    main {
+        display : flex;
+        display: -webkit-flex;
+        flex-flow: column wrap;
+        -webkit-flex-flow: column wrap; /* Safari 6.1+ */    
+    }    
+}
+/*** aside on the right from here on **/
+
+@media only screen and (min-width:992px) {   
+    main {
+        display : flex;
+        display: -webkit-flex; /* Safari */
+        flex-flow: column wrap;
+        -webkit-flex-flow: column wrap; /* Safari 6.1+ */
+    }
+}
+/**********     > 1200 px   ***********/
+@media only screen and (min-width:1200px) {
+    main {
+        display : flex;
+        display: -webkit-flex; /* Safari */
+        flex-flow: column wrap;
+        -webkit-flex-flow: column wrap; /* Safari 6.1+ */
+    }       
+}

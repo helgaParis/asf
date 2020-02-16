@@ -1,11 +1,14 @@
-extends ../../templates/d-layout-galerie.pug
+extends ../../templates/d-layout-artistes.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières stellt Elisa Souche vor')
     meta(name='robots', content='index, follow')
 block main
+    style.
+        main{background: #bbbbbb;}
     section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
+        #logoartist
+            h1 Elisa Souche
+                img(src='/images-news/2012/daudet-affiche-1210.jpg', alt='Elisa Souche, Ausstellungs Plakat, 2012')
+                #legende Elisa Souche, Ausstellungs Plakat, 2012
+
     block aside

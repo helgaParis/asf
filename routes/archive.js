@@ -84,7 +84,6 @@ router.get('/actuel',function(req,res,next) {
 
 router.get('/eactuel',function(req,res,next) {
   
-    
     res.render('e-archive/'+current,{
                                 title:'Artistes sans Frontières - News ',
                                 event: etargets[0],

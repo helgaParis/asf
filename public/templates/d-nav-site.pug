@@ -1,6 +1,12 @@
 div
-    span
-        img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
+    span.mobile.home
+        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
+            img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
+    span.desktop.home
+        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
+            img#logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
+            br
+            | Home 
     ul.menu1
         li
             a(href='dbuts') Verein...
@@ -39,4 +45,4 @@ div
             img.drapeau(src="/images/drapeau-en.png", alt='English version' role="button"  tabindex="0")
         a(aria-label="Französische Version dieser Seite" href=target.ciblef) 
             img.drapeau(src="/images/drapeau-fr.png", alt='Version française' role="button"  tabindex="0")
-   
+

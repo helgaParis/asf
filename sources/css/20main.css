@@ -1,33 +1,48 @@
-/*only the styles  without nav, first styles common to all sizes */
+/* ++++++++++ Styles common to all sizes +++++++++++ */
 
 body {
     font-family : 'Arial', sans-serif;
     margin : 5;
     font-size: 1em;
 }
-/** server message in red- usually standard page with error Message **/
+/** server message in red-error message or temporary content during migration **/
 #message{
     color: #A90101;
     font-size: 1.1rem;
 }
-/********* links in text and elsewhere but nav  */
+
+/********* LINKS in text and elsewhere but nav  ************/
 a {
     color :#A90101;
     text-decoration: none;
 }
-a:hover{
+a:hover,
+a:focus{
     text-decoration: underline;
 }
 
+/******* General styles that do not change with screen size *****/
 
-/******* General styles that do not change with screen size */
-main {
-    padding : 3%;
-    display: flex;
-    display: -webkit-flex; /* Safari */
-    flex-flow: row wrap; 
-    -webkit-flex-flow: row wrap; /* Safari 6.1+ */
+/******* titles and deco elements ***********/
+h1 {
+    margin-bottom: 5px;
 }
+h2{
+    border-bottom: 1px solid #118cff66; 
+    border-radius: 8px;
+    padding-left: 15px;
+    margin-right:10%;
+    margin-left: 5%;
+}
+
+/******* Containers ***********/
+
+/* 
+*  (Blue nav, #118cff66 and #118cffcc, on top or left, on extra css), footer on the bootom, aside bottom or right only on some pages,
+*  main= zone handled by single pages, contains main div as (inline style colored) zone for text and images
+*  main div may have sections with headers if several h1 titels are needed
+*/
+
 main div {
     max-width: 90%;
 }
@@ -39,58 +54,67 @@ header{
     border-radius: 12px;
     padding-left: 15px;
 }
-h1 {
-    margin-bottom: 5px;
-}
-h2{
-    border-bottom: 1px solid #009edb; ;
-    border-radius: 8px;
-    padding-left: 15px;
-    margin-right:10%;
-    margin-left: 5%;
-}
 footer{
     text-align: center;
-    font-size: 0.8rem;
+    background-color: white;
+    font-size: 0.8em;
+}
+footer hr{
+    border-bottom-color:#118cff66;
+    border-style:ridge;
+    height: 1px;
+    width: 400px;
+    text-align: center;
 }
 aside{
-    background-color: lightgrey;
+    background-color: #118cff07;
 }
+
+
 /**********  reactive styles*/
 
-@media only screen and (max-width:400px) {
-	body{
-		font-size: 0.7rem;
-	}
-}
+/********* < 400 ***************/
 
-@media only screen and (min-width:400px) and (max-width:600px) {
-	body{
-		font-size: 0.8rem;
-	}
+@media only screen and (max-width:400px) {
+	/* body{
+		font-size: 0.8em;
+    } */
     main {
-        display: flex;
-        display: -webkit-flex; /* Safari */
-        flex-wrap: row wrap;
         margin : 0 20px;
     }  
     section {
        font-size: 0.9rem;
        width: 100%;
     }
-    aside{
-        font-size: 0.8 rem;
+    aside {
+	    display: none;
     }
 }
 
-@media only screen and (min-width:600px) {
-		body {
+/*************    400 - 600   *************/
+
+@media only screen and (min-width:400px) and (max-width:600px) {
+	body{
 		font-size: 0.8rem;
 	}
     main {
-        display: flex;
-        flex-wrap: row wrap;
-        display: -webkit-flex; /* Safari */
+        margin : 0 14px;
+    }  
+    section {
+       font-size: 0.9rem;
+       width: 100%;
+    }
+    aside {
+	    display: none;
+    }
+}
+
+/********************* 600 - 792    *********************/
+@media only screen and (min-width:600px) {
+	body {
+		font-size: 0.8rem;
+	}
+    main {
         margin : 0 20px;
     }  
     section {
@@ -105,22 +129,16 @@ aside{
 /***** menu on the left side from this size on  ****/
 
 @media only screen and (min-width:768px) {
-		body{
+	body{
 		font-size: 0.9rem;
 	}
-    
     main {
         position : absolute;
-        display : flex;
-        display: -webkit-flex; /* Safari */
-        flex-flow: column wrap;
-        -webkit-flex-flow: column wrap; /* Safari 6.1+ */
         margin : 15px;
         left : 130px;
         height : 90%;
         min-width : 80%;
         box-sizing : border-box;
-       
     }
     section {
         font-stretch: semi-expanded;
@@ -136,13 +154,11 @@ aside{
         width : 82%;
         bottom : 0;
     }
-    
 }
 
-/*** aside on the left from here on **/
+/*** aside on the right from here on **/
 
-@media only screen and (min-width:992px) {
-    
+@media only screen and (min-width:992px) {   
     main {
         position : absolute;
         display : block;
@@ -151,11 +167,7 @@ aside{
         min-width : 77%;
         height : 90%;
         box-sizing : border-box;
-        display : flex;
-        display: -webkit-flex; /* Safari */
-        flex-flow: column wrap;
-        -webkit-flex-flow: column wrap; /* Safari 6.1+ */
-    }
+        }
     section {
         font-stretch: semi-expanded;
     }
@@ -173,21 +185,16 @@ aside{
         bottom : 0;
     }
 }
+/**********     > 1200 px   ***********/
 @media only screen and (min-width:1200px) {
-    
     main {
         position : absolute;
-        display : flex;
-        display: -webkit-flex; /* Safari */
-        flex-flow: column wrap;
-        -webkit-flex-flow: column wrap; /* Safari 6.1+ */
         margin : 20px;
         left : 210px;
         min-width : 78%;
         height : 90%;
         box-sizing : border-box;
-    }
-        
+    }       
     section {
         font-stretch: semi-expanded;
     }
@@ -203,5 +210,5 @@ aside{
         left:210px;
         width : 80%;
         bottom : 0;
-    }
+    }  
 }
