@@ -10,7 +10,8 @@ html(lang="en")
         meta(name="theme-color" content='#118cff') 
         link(rel='stylesheet', href='../css/20main.css') 
         link(rel='stylesheet', href='../css/20main-nav.css')
-        link(rel='stylesheet', href='../css/flex.css')
+        link(rel='stylesheet', href='../css/colonnes.css') 
+        link(rel='stylesheet', href='../css/flex.css') 
         link(rel='stylesheet', href='../css/artistes-base.css')
         link(rel="shortcut icon" href="../images/favicon.ico")
         script(src='../js/dias-code-base.js')
@@ -21,10 +22,7 @@ html(lang="en")
             include ./e-nav-galerie.pug
         main
             block main
-                #diacontainer
-                    #dias
-                    #legende
-            button#icons  <-  courte pause 
                 block script 
         footer
+            hr
             include ./footer.pug

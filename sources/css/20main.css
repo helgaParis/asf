@@ -79,6 +79,9 @@ aside{
 	/* body{
 		font-size: 0.8em;
     } */
+    #message{
+        margin-top: 22px;
+    }
     main {
         margin : 0 20px;
     }  
@@ -96,7 +99,10 @@ aside{
 @media only screen and (min-width:400px) and (max-width:600px) {
 	body{
 		font-size: 0.8rem;
-	}
+    }
+    #message{
+        margin-top:28px;
+    }
     main {
         margin : 0 14px;
     }  
@@ -113,7 +119,10 @@ aside{
 @media only screen and (min-width:600px) {
 	body {
 		font-size: 0.8rem;
-	}
+    }
+    #message{
+        margin-top:0;
+    }
     main {
         margin : 0 20px;
     }  

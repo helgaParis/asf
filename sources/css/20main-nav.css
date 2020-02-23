@@ -61,7 +61,8 @@ nav hr {
 /* .language contains drapeux, .home the logo, .defilee the arrows */
 .language,
 .defilee,
-.home {
+.home,
+.logo {
     border:0;
 }
 .drapeau {
