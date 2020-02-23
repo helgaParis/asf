@@ -1,13 +1,26 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Lihidheb Mohsen, installations environnementales')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-            a(href="https://art.artistes-sf.org/mohsen/index.html" rel="noopener" target="_blank") Ancien site 
-    block aside
+    div.fond
+        style. 
+            div.fond{background-color: #ff6633;}
+            #icons {  background-color:#298D82;color:#ff6633;;}
+        section
+            .row-artists
+                .column35
+                    #logoartist 
+                        h1 Mohsen Lihidheb
+                        img(src='/images-galerie/base/mohsen/lihidheb-mohsen.gif' alt='Lihidheb Mohsen, logo')
+                        p Photos: Mohsen Lihidheb
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                        block script
+                            style.
+                                legende{background:white;}
+                                dias{background-position: left top, center, right top;}
+                            script(src='../images-galerie/base/mohsen/dias-listes.js')
+            button#icons  courte pause   

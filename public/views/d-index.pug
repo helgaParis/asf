@@ -1,27 +1,51 @@
 extends ../templates/d-layout.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières - Entdecken Sie unseren Verein, die Galerie der Künstler Mitglieder, unser Angebot und 20 Jahre Vereinsgeschichte!')
 block main
     div
-        p #{title}  
-        section
-        header
-            h1 Fester Boden unter den Füßen
-        section
-        .row
-            .column
-                p Nach dem Wasserschaden im Sommer klärte sich die Situation endgültig und die Arbeiten konnten Ende November beginnen.
-                p
-                | 60 cm unter dem Niveau des Hofes erreichten die Arbeiter festen Grund und begannen mit dem Wiederaufbau der verschiedenen Schichten
-                | des Bodens.
-                p
-                | Eines Abends fand ich diese Arbeitskleidung und Tasche eines Arbeiters in sicherer Höhe über dem
-                | frisch gegossener Beton.
-                p Nach den Tagen des Trocknens kamen die Parkettleger, Wandmonteure, die Maler ... und die Streiks.
-                p
-                | Bei alledem ging die Arbeit an der Website langsamer als geplant voran.
-                | Die Migration und die Übersetzungen der Hauptseite ins Englische und Deutsche sind fast abgeschlossen, jedoch arbeiten wir noch an 
-                | den unabhängigen Websites der Künstler.
-                p Der Termin für die Eröffnung des Pariser Büros für den Empfang von Besuchern steht noch nicht fest, voraussichtliche wird es der 15. Januar 2020 werden.
-            .column
-                img#image90(src="/images-news/2019/concrete-funny.jpg", alt="Kleidung und Tasche verbringen das Wochenende in sicherer Höhe")
-                br
-                | Arbeitskleidung und Tasche in trockener Höhe               
+    section
+        p#message #{title} 
+        #textgauche
+            header 
+                h1  Erste Ausstellung im Jahr 2020: Neues Atelier und Werke von Doug Petrovic
+            .row
+                .column
+                    h2 Das Atelier
+                    p
+                    | Wir haben unseren Raum wieder gefunden, schöner als zuvor,
+                    | auch größer, aber das liegt am Verlust der Möbel.
+                    | In Wirklichkeit ist der Raum dank der neuen Wand um einige Zentimeter geschrumpft.
+                    p
+                    | Der Neuanfang ermöglichte es, den Raum neu zu definieren, mit Dougs großem Tisch als Arbeitstisch,
+                    | einer lange Bar vor dem Fenster zum Arbeiten oder zum Abstellen der Gläser bei Vereinstreffen oder Ausstellungen.
+                    p Und die Wände ...  mehr Wände als zuvor mit Platz für sehr große Gemälde, wie dieses Ölbild von Doug mit 250 x 75 cm.
+                    h3 Eröffnung des Vereinslokals
+                    p
+                    | Unser Büro ist wieder für die Öffentlichkeit zugänglich,  nur nach Termin Vereinbarung.
+                    br
+                    | Terminbuchung: täglich zwischen 11 und 19 Uhr
+                    br
+                    | Besucherempfang : Nachmittag oder Abend, Montag bis Samstag.
+                    img#image90(src="/images-news/2020/atelier2.jpg", title="Doug Petrovic, Bilder und Tisch" alt="Doug Petrovic, Bilder und Arbeitstisch")
+                    br
+                    | Doug Petrovic, Tisch, Ölbilder, Gouachen                    
+                .column
+                    img#image90(src="/images-news/2020/atelier1.jpg", title="Doug Petrovic, Kunstwerke und der Arbeitsplatz des Entwicklers" alt="Doug Petrovic, Ölbild als Rahmen des Arbeitsplatzes")
+                    br
+                    |  Ölbild als Rahmen des Arbeitsplatzes
+                    h3 Die Ausstellung
+                    p Bis zu den  Arts 14 2020 wird die Ausstellung von Dougs Werken nach Vereinbarung und bei öffentlichen Veranstaltungen sichtbar sein.
+            div
+                h2 Kommende Veranstaltungen
+                    h3 Frühlingsfest
+                    p
+                    | Besuchen Sie diese Seite wieder, um das Datum der Einweihungsparty zu erfahren!
+                    br
+                    | Es wird im Frühling sein, wenn das Wetter schön genug ist, um ein Fest zu veranstalten, das vom Atelier in den Garten übergehen kann.
+                    br
+                    | Senden Sie uns eine E-Mail, wenn Sie eine Einladung erhalten möchten. 
+                    a(href = 'mailto: bureau.asso@artistes-sf.org? subject = Vereinsfest') E-Mail: bureau.asso@artistes-sf.org
+                    h3 Offene Türen - 14 Arts
+                    p
+                    | Das Datum wurde von der Stadt noch nicht festgelegt, aber die Veranstaltung wird voraussichtlich Ende Juni oder Juli stattfinden.
+                    | Wir akzeptieren weiterhin Bewerbungen zu einer Gruppenausstellung in unseren Räumlichkeiten. 

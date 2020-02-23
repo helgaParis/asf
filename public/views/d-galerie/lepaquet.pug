@@ -1,13 +1,31 @@
-extends ../../templates/d-layout-artistes.pug
+extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt "Le Paquet" vor')
+    meta(name='description' content='Artistes sans Frontières stellt "Le Paquet" vor - Theaterdekor')
     meta(name='robots', content='index, follow')
 block main
+
     section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-            a(href="https://art.artistes-sf.org/lepaquet/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+        
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Alain Pasquier "Le Paquet"
+                    img(src='/images-galerie/base/lepaquet/alain-pasquier-3.jpg' alt='Alain Pasquier 1991')
+                    h3 Werke
+                    #artistmenu
+                        a(href='dlepaquet') Theaterdekor 
+                        br
+                        a(href='dlepaquet2') Bar
+                        br
+                        a(href='dlepaquet3') Caseieur
+                    p © Photos: Marie Renée Burrin (théâtre), Alain Pasquier
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    block script
+                    style.
+                        dias{background: #bccada;}
+                    script(src='../images-galerie/base/lepaquet/dias-listes.js')
+        button#icons  Kurze Pause    
+   

@@ -37,7 +37,7 @@ router.get('/*',function(req,res) {
                 'rahs','rasmussen','reggaro','schwertfeger','souche','stoulig','sylviaartdeco',
                 'tajuddin','valgallard','villaada','wright',
                 'you',
-                'refweb', 'reflogos', 'refpub', 'refsdc', 'refmhh'
+                'refweb', 'reflogos', 'refpub', 'refsdc', 'refmhh', 'lepaquet2','lepaquet3'
             ];
 
     //the navlinks for other languages are calculated
@@ -51,7 +51,7 @@ router.get('/*',function(req,res) {
     It will revert to destinations[0] after the last valid destination
     (idea under discussion: integrate the new independant AsF créated websites in this scroll, by adding an extra index page to them with a small gallery menu)
     */
-    let lastPos=destinations.length-6; //-(1 + number of non-artist pages at the end)
+    let lastPos=destinations.length-8; //-(1 + number of non-artist pages at the end)
     let firstPos=0; 
 
     // get the name of the artist from the link clicked on nav-galerie or typed in url or search
@@ -112,6 +112,7 @@ router.get('/*',function(req,res) {
         if(destinations.indexOf(next)>lastPos)next=destinations[firstPos];
         lastseen= destinations[destinations.indexOf(artist)-1] //|| destinations[firstPos];
         if(lastseen===undefined)lastseen=destinations[lastPos];
+        if(destinations.indexOf(lastseen)>lastPos)lastseen=destinations[firstPos];
         dartist='d'+artist;
         eartist='e'+artist;
         fartist=artist; 
@@ -127,6 +128,7 @@ router.get('/*',function(req,res) {
         if(edestinations.indexOf(next)>lastPos)next=edestinations[firstPos];
         lastseen= edestinations[edestinations.indexOf(artist)-1] //|| edestinations[firstPos];
         if(lastseen===undefined)lastseen=edestinations[lastPos];
+        if(edestinations.indexOf(lastseen)>lastPos)lastseen=edestinations[firstPos];
         dartist='d'+artist.slice(1);
         eartist=artist;
         fartist=artist.slice(1); 
@@ -143,6 +145,7 @@ router.get('/*',function(req,res) {
         if(ddestinations.indexOf(next)>lastPos)next=ddestinations[firstPos];
         lastseen= ddestinations[ddestinations.indexOf(artist)-1] //|| ddestinations[firstPos];
         if(lastseen===undefined){lastseen=ddestinations[lastPos]};
+        if(ddestinations.indexOf(lastseen)>lastPos)lastseen=ddestinations[firstPos];
         eartist='e'+artist.slice(1);
         dartist=artist;
         fartist=artist.slice(1); 
@@ -162,7 +165,7 @@ router.get('/*',function(req,res) {
     }
 
     res.render(storage+'/'+showpage, {
-                                title:title, 
+                                title:title + ', '+fartist, 
                                 message: message,
                                 artist:artist.toUpperCase(),
                                 next:next,

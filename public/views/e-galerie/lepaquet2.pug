@@ -1,24 +1,24 @@
-extends ../../templates/layout-galerie-base.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presente Le Paquet, théâtre, menuserie')
+    meta(name='description' content='Artistes sans Frontières presents "Le Paquet", construction of a bar')
     meta(name='robots', content='index, follow')
 block main
 
     section
-        
+        //- p#message=title
         .row-artists
             .column35
                 #logoartist
                     h1 Alain Pasquier "Le Paquet"
                     img(src='/images-galerie/base/lepaquet/alain-pasquier-3.jpg' alt='Alain Pasquier 1991')
-                    h3 Réalisations
+                    h3 Realisations
                     #artistmenu
-                        a(href='lepaquet') Décor de théâtre
+                        a(href='elepaquet') Theater
                         br
-                        a(href='lepaquet2') Bar
+                        a(href='elepaquet2') Bar
                         br
-                        a(href='lepaquet3') Caseieur
-                    p © Photos: Marie Renée Burrin (théâtre), Alain Pasquier
+                        a(href='elepaquet3') Caseieur
+                    p © Photos: Marie Renée Burrin (theater), Alain Pasquier
             .column65
                 #diacontainer
                     #dias
@@ -26,6 +26,6 @@ block main
                     block script
                     style.
                         dias{background: #bccada;}
-                    script(src='../images-galerie/base/lepaquet/dias-listes.js')
-        button#icons  courte pause    
+                    script(src='../images-galerie/base/lepaquet/dias-listes2.js')
+        button#icons short break    
         

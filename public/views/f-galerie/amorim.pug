@@ -4,16 +4,18 @@ block extrameta
     meta(name='robots', content='index, follow')
 block main
     section
-        #logoartist
-            h1 Rangel Amorim
-            img(src='/images-galerie/base/amorim/rangel-amorim-logo.gif' alt='Rangel Amorim, logo')
-            p © Photos: Rangel Amorim, 2007
-    section
-        #diacontainer
-            #dias
-            #legende
-        button#icons  courte pause 
-            block script
-            style.
-                dias{background: #bccada;}
-            script(src='../images-galerie/base/amorim/dias-listes.js')
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Rangel Amorim
+                    img(src='/images-galerie/base/amorim/rangel-amorim-logo.gif' alt='Rangel Amorim, logo')
+                    p © Photos: Rangel Amorim, 2007
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    block script
+                    style.
+                        dias{background: #bccada;}
+                    script(src='../images-galerie/base/amorim/dias-listes.js')
+        button#icons  courte pause                 

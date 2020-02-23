@@ -5,20 +5,22 @@ block extrameta
 block main
 
     section
-        
+        //- p#message=title
         .row-artists
             .column35
                 #logoartist
                     h1 Alain Pasquier "Le Paquet"
                     img(src='/images-galerie/base/lepaquet/alain-pasquier-3.jpg' alt='Alain Pasquier 1991')
-                    h3 Réalisations
+                    h3 Réalisations:
                     #artistmenu
                         a(href='lepaquet') Décor de théâtre
                         br
                         a(href='lepaquet2') Bar
                         br
                         a(href='lepaquet3') Caseieur
+
                     p © Photos: Marie Renée Burrin (théâtre), Alain Pasquier
+                    
             .column65
                 #diacontainer
                     #dias
@@ -26,6 +28,7 @@ block main
                     block script
                     style.
                         dias{background: #bccada;}
-                    script(src='../images-galerie/base/lepaquet/dias-listes.js')
+                    script(src='../images-galerie/base/lepaquet/dias-listes3.js')
         button#icons  courte pause    
-        
+        //- p
+        //-     a(href="https://art.artistes-sf.org/lepaquet/index.html" rel="noopener" target="_blank") Ancien site 
