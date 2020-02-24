@@ -1,18 +1,24 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Mary Quartarone')
     meta(name='robots', content='index, follow')
 block main
-    style.
-        main{background: #cccccc;}
-    section
-        #logoartist
-            h1 Mary Quartarone
-            img(src='/images-galerie/base/quartarone/blue-woman.jpg' alt='Mary Quartarone, blue woman')
-            #legende Mary Quartarone, "Blue Woman"
-            
-    section
-        #imageartist
-            img(src='/images-galerie/base/quartarone/creation.jpg' alt='Mary Quartarone,creation')
-            #legende Mary Quartarone, Creation
-    block aside
+    .fond
+        style.
+            .fond{background: #e8e8e8;}
+            #legende{font-weight:600;}
+
+        section
+            .row-artists
+                .column35
+                    #logoartist
+                        h1 Mary Quartarone
+                        p © Photos : Mary Quartarone, Canada
+
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                        block script
+                        script(src='../images-galerie/base/quartarone/dias-listes.js')
+            button#icons  courte pause    

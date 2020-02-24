@@ -1,13 +1,18 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Pillas, peintre')
     meta(name='robots', content='index, follow')
 block main
     section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-            a(href="https://art.artistes-sf.org/pillas/index.html" rel="noopener" target="_blank") Ancien site 
-    block aside
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/pillas/catherine-pillas-logo.gif' alt='Catherine Pillas, logo')
+                    h1 Catherine Pillas
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    block script
+                    script(src='../images-galerie/base/pillas/dias-listes.js')
+        button#icons  courte pause    

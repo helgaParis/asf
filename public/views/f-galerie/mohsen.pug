@@ -5,12 +5,14 @@ block extrameta
 block main
     div.fond
         style. 
-            div.fond{background-color: #ff6633;}
+            .fond{background-color: #ff6633;}
             #icons {  background-color:#298D82;color:#ff6633;;}
         section
             .row-artists
                 .column35
                     #logoartist 
+                        style. 
+                            #logoartist{background-color: #0099ff}
                         h1 Mohsen Lihidheb
                         img(src='/images-galerie/base/mohsen/lihidheb-mohsen.gif' alt='Lihidheb Mohsen, logo')
                         p Photos: Mohsen Lihidheb
@@ -20,7 +22,9 @@ block main
                         #legende
                         block script
                             style.
-                                legende{background:white;}
-                                dias{background-position: left top, center, right top;}
+                                #legende{background:white;padding:2px;}
+                                #dias{background-position: left top, center, right top;}
                             script(src='../images-galerie/base/mohsen/dias-listes.js')
             button#icons  courte pause   
+                style. 
+                    #icons{background-color:white;color: #0066ff}
