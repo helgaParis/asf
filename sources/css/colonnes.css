@@ -48,7 +48,6 @@
     align-self: center;
 }
 
-
 .column {
 flex: 50%;
 max-width: 47%;
@@ -64,14 +63,16 @@ padding-left: 3%;
 }
 .column35 {
     flex: 30%;
-    max-width: 30%;
+    /* max-width: 30%; */
     align-self: center;
-    padding-left: 3%;
+    /* padding-left: 3%; */
+    /* border: 1px solid red; */
     }
 .column65{
     flex: 65%;
-    max-width: 65%;
+    /* max-width: 65%; */
     align-self: center;
+    /* background-color: gold; */
    
     }
 .column4 {
@@ -88,24 +89,47 @@ margin-top: 8px;
 
 
 @media only screen and (max-width:600px) {
-    .column, .column3, .column4, .column65 {
+   
+    .column, .column3, .column4, .column65, .column35 {
         flex: 100%;
         max-width: 100%;
     }
+    .column35{
+        padding-left: 3%;
+        /* background-color: lightpink; */
+    }
 }
 
-@media only screen and (max-width:768) {
+@media only screen and  (min-width:600) {
+   
     .column4, .column3, .column35 {
         flex: 50%;
         max-width: 50%;
         align-self: center;
       }
     .column65 {
-        flex: 65%;
-        width: 65%;
+        flex: 100%;
+        /* width: 65%; */
+        padding:0;
+        margin: auto;
       }
       .column35{
         flex: 32%;
-        width: 35%; 
+        /* width: 35%;  */
+        max-width: 32%;
+        padding-left: 0;
+      }
+}
+
+@media only screen and (min-width:768px) {
+    
+    .column65 {
+        flex: 65%;
+        max-width: 65%;
+      }
+      .column35{
+       flex: 32%;
+       max-width: 32%; 
+       padding-right: 2%;
       }
 }

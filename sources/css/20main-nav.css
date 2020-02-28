@@ -64,11 +64,18 @@ nav hr {
 .home,
 .logo {
     border:0;
+
 }
 .drapeau {
     width:30%;
     /* margin:auto; */
     padding:5%;
+    border-color: transparent;
+    border-style: solid;
+}
+.fleche{
+    border-color: transparent;
+    border-style: solid;
 }
 a.see{
     display:inline;
@@ -136,8 +143,8 @@ desktp for the arrows with text link and desktop for the alternative logo
     .language {
         position : absolute;
         top : 42px;
-        right : -1px;
-        width:75px;  
+        right : -10px;
+        width:100px;  
     }
     .defilee {   
         position : absolute;
@@ -145,16 +152,21 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 10;
         width:80px;
         text-align: left;
+       
     }
     .fleche{
         width: 25%;
         padding: 0 4%;
         background-color: #118cff60;
+        border-width: 8px ;
     }
     .flecheup{
         width: 20%;
         padding: 0 4%;
         background-color: #118cff60;
+    }
+    .drapeau{
+        border-width: 4px;
     }
 }
 /*************    400 - 600   *************/
@@ -213,12 +225,15 @@ desktp for the arrows with text link and desktop for the alternative logo
         width: 26%;
         padding: 0 6%;
         background-color: #118cff60;
+        border-width: 8px;
     }
     .language {
         position : absolute;
         top : 48px;
         right : -1px;
         width:75px;
+        border-width: 6px;
+        
     }
     .flecheup{
         width: 21%;
@@ -283,6 +298,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         width: 3%;
         padding: 0 2px;
         background-color:none;
+        border-width: 8px;
     }
     .flecheup{
         width: 2%;
@@ -294,6 +310,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         top : 58px;
         right : 7px;
         width:80px;
+        border-width: 6px;
     }
 }
 
@@ -359,6 +376,7 @@ desktp for the arrows with text link and desktop for the alternative logo
     .fleche{
         width: 22%;
         padding: 12% 15% 3% 2%;
+        border:none;
     }
     .flecheup{
         width: 18%;
@@ -372,6 +390,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         border-top: 1px ridge white;
         padding-top:3%;
         text-align: right;
+        border:none;
     }
 }
 

@@ -6,47 +6,68 @@
 ** flex.css (on main), 
 ** colonnes.css
 **
+*  There are two types of basic websites: with a diashow and without. 
+
 *  The basic websites have some inline styles to create individual designs. 
 *  The construction is 
 *  .fond (option) a div with .fond for backgrounds of the whole dedicated space 
 *  .rowartists (could be another row) with flex wrap
 *  two columns, mostly column35 with style logoartist as container for the logo of the artist and some text, links
 *  and column 65 with the diashow
-Note: the # diacontainer, dias, legende and icons are use by the JS 
-
+*  # diacontainer contains #dias and #legende
+*  #icons is the stop button (more functions to come) and can be placed freely or hidden 
+*  !!! Note: the # diacontainer, dias, legende and icons are used by the JS, don't change the names
+*  #bio, #philo and #extratext are containers for texts, which can replace the diacontainer
  *******/
 
-/* #logoartist = container for name, logo, links, 
-on the left side or top on mobile */
+/* #logoartist = container for name, logo, links, left on screen, upper half on mobile */
+
+#logoartist{
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-bottom:1%;
+}
+
+
 #logoartist img {
     padding: 20px 30px 20px 0px;
 }
-/* #imageartist {
-    text-align: center;
-    background-color: rosybrown;
-} */
-
-/* #imageartist img{
-padding-bottom: 15px;
-border:0;
-} */
 
 /* container where the js will place the dias
-** the function calls element by ID */
-#diacontainer{
+   and containers for texts
+** the functions call elements by ID !!!  */
+#diacontainer, 
+#bio, #philo, #extratext{
     position: relative;
     display: block;
     /* background-color: antiquewhite; */
     width:98%;   
     margin:auto; 
+    max-height: 700px; 
+}
+#diacontainer{
+    /* display:none; */
     text-align: center;
-    max-height: 700px;
-    
+    /* background-color: darkkhaki; */
+}
+#bio{
+    display:none;
+}
+#philo{
+    display:none;
+}
+#extratext{
+    display:none;
 }
 
-/* the id of the element where the js will write the titles under the dias
-** the function calls element by ID */
-#legende{
+/*    #legende = the id of the element where the js will write the dias' subtitles 
+**    the function calls element by ID -do not rename
+**    #legendes can get additional inline styles on pages with a diashow (background-color)
+
+**    .legendes = class for the subtitles of individual images on pages without a diaporama.
+**    if there are several images, check / style position inline
+*/
+#legende, .legendes{
 	text-align: center;
 	font-weight: 500;
 	font-size: 0.9rem;
@@ -56,10 +77,8 @@ border:0;
     width: 100%;
     z-index: 2;
     vertical-align: bottom;
-    /* background-color: rgba(161, 75, 75, 0.3); */
-    
+    /* background-color: rgba(161, 75, 75, 0.3); */  
 }
-
 
 #dias {
     background-position-y: top;
@@ -79,33 +98,52 @@ border:0;
     color:white;
     z-index: 4;
 }
+/* Optional: for the menu within the multipage artist's sites.
+   style colors inline */
 #artistmenu a{
     font-weight: 600;
     text-decoration:  underline #118cffcc;
     font-size: 1rem;
     line-height: 1.4rem;    
-
-
 }
+
+
+
+/* **********   Responsive styles  ************** */
+
 /* small screens under 762 */
 @media only screen and (max-width:767px) {
- 
+    main, 
+    main div{
+        width: 100%;
+    }
+    .fond{
+        width: 98%;
+        max-width: 100%;
+        margin-top: 5px;
+       
+    }
    
-    #diacontainer{
-        /* width: 98%;     */
+    #diacontainer, 
+    #bio, #philo, #extratext{
         margin: auto auto auto 40px;
         min-height: 410px;
-
     }
     #logoartist  {
        min-width: 170px; 
        padding-left: 4%;
        padding-top: 6px;
+       margin:auto;
+       /* border: 1px dotted blue; */
     }
-    #legende {
-        
+    #logoartist  {
+        margin-bottom:2%;
+    }
+    #logoartist img {
+        max-height: 200px;
+    }
+    #legende, .legendes{
         font-size: 0.9rem;
-        
     }
     #titre h1{
         padding-left:250px;
@@ -120,7 +158,7 @@ border:0;
     }
     .fond{
         width: 98%;
-        margin-top: 5px;
+        margin-top: 3px;
     }
 }
 
@@ -130,29 +168,31 @@ border:0;
     .fond{
         width: 95%;
         margin: 0 auto;
+        /* background-color: magenta; */
     }
-    #diacontainer{
+    #diacontainer, 
+    #bio, #philo, #extratext{
+        
         width: 96%;
-        min-height: 450px;
-        
-        
+        min-height: 450px;  
+        right: 0px;
     }
     #logoartist{
         min-height: 450px; 
         padding-left: 3%;
         padding-top: 12px;
+        margin-bottom:none;
+    }
+    #logoartist img {
+        max-width: 95%;
+        max-height: 300px;
     }
     #dias{
         max-height: 500px;;
     }
-    #legende {
-        /* font-size: 1.2rem; */
-        /* paddi$ng: 10px 0; */
+    #legende, .legendes {
          font-size: 1rem; 
-        /* margin-bottom: 2%; */
-        
     }    
-
     #icons {
         margin-left: 250px;
         margin-top:2%;
@@ -165,28 +205,31 @@ border:0;
 /* Large devices, laptops/desktops, between 992px and 1200px */
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
-    #diacontainer{
+    .fond{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #diacontainer, 
+    #bio, #philo, #extratext{
         width: 100%;
         min-height: 450px;
-        /* margin-left:250px; */
     }
     #logoartist{
         width: 100%;
         min-height: 450px;
         padding-left: 5%;
-        padding-top: 16px;
-        
+        padding-top: 16px;    
     }
-
+    #logoartist img {
+        max-width: 95%;
+    }
     #legende {
-        /* font-size: 1.2rem; */
         margin-bottom: 0;
         padding: 0;
     }
     #titre h1{
         padding-left: 250px;
-     }
-
+    }
     #icons {
         margin-left: 250px;
         margin-top: 0;
@@ -198,7 +241,8 @@ border:0;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width:1200px) {
-    #diacontainer{
+    #diacontainer,
+    #bio, #philo, #extratext{
         /* width: 75%; */
         min-height: 640px;
         height: 70%;
@@ -209,26 +253,18 @@ border:0;
         min-height: 640px;
         padding-left: 5%;
         padding-top: 20px;
-
     }
-    #legende {
-        /* font-size: 1.2rem; */
+    #legende, .legendes {
         margin-bottom: 0;
         padding: 0;
-        text-align: center;
-        /* top: -60px; */
-       
+        text-align: center;       
     }
     #titre h1{
         padding-left: 300px;
     }
-
     #icons {
-        /* margin-left:300px; */
         margin-top: 0;
-        /* position: fixed; */
         right: 7%;
         bottom: 40px;
-
     }
 }
