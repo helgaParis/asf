@@ -2,11 +2,15 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Silvia, art deco')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/sylviaartdeco/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
     style. 
         .fond{background-color: #FFcc66;}
         #icons{background-color: #6666ff; color:#FFcc66;font-weight:500;}
         #logoartist{background-color:#6666ff;}
+        .am{background-color: #6666ff; color:#FFcc66;font-weight:400;border-color:#FFcc66;margin:1px;}
         
         img{border-right:1px ridge rgba(255, 255, 255, 0.07);border-bottom:1px ridge rgba(255, 255, 255, 0.04);border-top:1px ridge rgba(255, 255, 255, 0.07);}
     
@@ -16,11 +20,24 @@ block main
                 #logoartist
                     h1 Silvia Simoncelli
                     img(src='/images-galerie/base/sylviaartdeco/sylvia-art-deco.gif' alt='Logo Silvia Simoncelli')
+                    #artistmenu
+                        a(aria-label="Réalisations" href='sylviaartdeco' title="Réalisations") 
+                            button.am Réalisations
+                        br
+                        button#goToPhilo.am(aria-label="L'artiste sur son art" type='submit' title="L'artiste sur son art") Sur mon art
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit' title="voir la biographie")  Biographie           
+        
                     p Photos: Silvia Simoncelli
             .column65
                 #diacontainer
                     #dias
                     #legende
-                    script(src='../js/dias-code-base.js')
-                    script(src='../images-galerie/base/sylviaartdeco/dias-listes.js')
+                #bio
+                    h2 Biographie
+                    p à suivre
+                #philo
+                    h2 Feng Shui
+                    p  à suivre                    
+                    
         button#icons  courte pause   

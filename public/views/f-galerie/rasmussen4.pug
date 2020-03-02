@@ -2,9 +2,14 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Suzan Rasmussen, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/rasmussen/dias-listes4.js') 
+    script(src='../js/galerie.js')
 block main
-    style.            
+    style.
         #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;}
+
     .fond
         .row-artists
             .column35
@@ -13,24 +18,41 @@ block main
                     img(src='/images-galerie/base/rasmussen/suzan-rasmussen-logo.gif' alt='Logo Suzan Rasmussen')
                     h3 Réalisations
                     #artistmenu
-                        a(href='rasmussen') The ancestors speak
+                        a(aria-label="voir 'The ancestors speak' de nouveau" href='rasmussen' title="redemarrer le diaporama Ancètres") 
+                            button.am The ancestors speak
                         br
-                        a(href='rasmussen2') Cancer series
+                        a(aria-label="voir 'Cancer series' de nouveau" href='rasmussen2' title="redemarrer le diaporama series Cancer") 
+                            button.am  Cancer series
                         br
-                        a(href='rasmussen3') Landscapes
+                        a(aria-label="voir Paysages de nouveau" href='rasmussen3' title="redemarrer le diaporama Paysages") 
+                            button.am  Landscapes
                         br
-                        a(href='rasmussen4') Nudes
+                        a(aria-label="voir 'Nudes' de nouveau" href='rasmussen4' title="redemarrer le diaporama Nus") 
+                            button.am  Nudes
                         br
-                        a(href='rasmussen5') Portraits
+                        a(aria-label="voir les Portraits de nouveau" href='rasmussen5' title="redemarrer le diaporama Portraits") 
+                            button.am  Portraits
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit' title="voir la biographie")  Biographie           
+                        br
+                        button#goToPhilo.am(aria-label="l'artistes sur son art" type='submit' title="Suzan sur Suzan") Mon art          
+                        br
+                        button#goToExtratext.am(aria-label="Les poèmes" type='submit' title="Poésie") Exposition
+                       
                         
                     p © Photos : Suzan Rasmussen et Helga Strobl
             .column65
                 #diacontainer
                     #dias
                     #legende
-                    style.
-                        dias{background: #bccada;}
-                    script(src='../js/dias-code-base.js')
-                    script(src='../images-galerie/base/rasmussen/dias-listes4.js')
+                        
+                #bio
+                    h2 Biographie
+                    p à suivre
+                #philo
+                    h2 Artist's statement
+                    p à suivre
+                #extratext
+                    h2  à suivre
         button#icons  courte pause    
         

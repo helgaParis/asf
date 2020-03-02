@@ -2,17 +2,43 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Pillas, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/pillas/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4); color:#A90101; background-color: white;margin:1px;}
+
     .fond
         .row-artists
             .column35
                 #logoartist
                     img(src='/images-galerie/base/pillas/catherine-pillas-logo.gif' alt='Catherine Pillas, logo')
                     h1 Catherine Pillas
+                    #artistmenu                        
+                        a(aria-label="voir les photos de nouveau" href='pillas' title="redemarrer le diaporama") 
+                            button.am Oeuvres
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+                        br
+                        button#goToPhilo.am(aria-label="L'artiste sur son art" type='submit' title="Mon art")  Mon art
+                        br
+                        button#goToExtratext.am(aria-label="la technique de l'artiste" type='submit' title="La technique")  Collage           
+
             .column65
                 #diacontainer
                     #dias
-                    #legende
-                    script(src='../js/dias-code-base.js')
-                    script(src='../images-galerie/base/pillas/dias-listes.js')
-        button#icons  courte pause    
+                    #legende          
+                #bio
+                    h2 Biographie
+                    p à suivre
+                #philo
+                    h2 Parcours d'une artiste indépendante et autodidacte
+                    p à suivre
+                #extratext
+                    h2 "Le classique revisité" 
+                    p à suivre
+
+        button#icons  courte pause

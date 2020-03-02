@@ -2,9 +2,15 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Valgallard, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/val-gallard/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
     style.
         #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;}
+
     .fond
         .row-artists
             .column35
@@ -13,19 +19,27 @@ block main
                     h1 Val-Gallard
                     h3 Peintures
                     #artistmenu
-                        a(href='valgallard') Galerie 1
+                        a(aria-label="Galerie 1" href='valgallard' title="Galerie 1") 
+                            button.am  Galerie 1
                         br
-                        a(href='valgallard2') Galerie 2
+                        a(aria-label="Galerie 2" href='valgallard2' title="Galerie 2") 
+                            button.am  Galerie 2
                         br
-                        a(href='valgallard3') Galerie 3
+                        a(aria-label="Galerie 3" href='valgallard3' title="Galerie 3") 
+                            button.am  Galerie 3
                         br
-                        a(href="valgallard4") Galerie 4
+                        a(aria-label="Galerie 4" href='valgallard4' title="Galerie 4") 
+                            button.am  Galerie 4
                         br
-                        a(href='valgallard5') Galerie 5
+                        a(aria-label="Galerie 5" href='valgallard5' title="Galerie 5") 
+                            button.am  Galerie 5
                         br
-                        a(href="valgallard6") Galerie 6
+                        a(aria-label="Galerie6 " href='valgallard6' title="Galerie 6") 
+                            button.am  Galerie 6
                         br
-                        | Note: Site en préparation
+                        button#goToPhilo.am(aria-label="L'artiste sur son art" type='submit' title="L'artiste sur son art") Sur mon art
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit' title="voir la biographie")  Biographie           
 
                     p © Photos : Valerie Gallard
 
@@ -33,6 +47,10 @@ block main
                 #diacontainer
                     #dias
                     #legende
-                    script(src='../js/dias-code-base.js')
-                    script(src='../images-galerie/base/val-gallard/dias-listes.js')
+                #bio
+                    h2 Biographie
+                    p à suivre
+                #philo
+                    h2 à suivre              
+
         button#icons  courte pause    

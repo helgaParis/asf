@@ -2,22 +2,34 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Mary Quartarone')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/quartarone/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
     style.
         .fond{background: #e6e6e6;}
         #legende{font-weight:600;}
+        .am{background-color: #e6e6e6; border-color:rgba(255, 0, 0, 0.4);color:blue;margin:1px; }
+
     .fond
         section
             .row-artists
                 .column35
                     #logoartist
                         h1 Mary Quartarone
+                        h3 Oeuvres
+                        #artistmenu
+                            a(aria-label="Oeuvres" href='quartarone' title="peintures") 
+                                button.am Oeuvres
+                            br
+                            button#goToPhilo.am(aria-label="L'artiste sur son art" type='submit' title="L'artiste sur son art") Sur mon art
+                          
                         p © Photos : Mary Quartarone, Canada
 
                 .column65
                     #diacontainer
                         #dias
                         #legende
-                        script(src='../js/dias-code-base.js')
-                        script(src='../images-galerie/base/quartarone/dias-listes.js')
+                    #philo
+                        h2 à suivre    
             button#icons  courte pause    

@@ -2,21 +2,33 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Ahmed Tajuddin, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/tajuddin/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
     style.
         #legende{font-weight:600;}
+        .am{border-color:rgba(189, 121, 35, 0.71);color:#990000; background-color: white;margin:1px;}
     .fond
         .row-artists
             .column35
                 #logoartist
                     img(src='/images-galerie/base/tajuddin/tajuddin.gif' alt='Logo Ahmed Tajuddin')
                     h1 Ahmed Tajuddin
+                    #artistmenu
+                        a(aria-label="peintures" href='tajuddin' title="peintures") 
+                            button.am Peintures
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+                        
                     p © Photos : Ahmed Tajuddin
 
             .column65
                 #diacontainer
                     #dias
                     #legende
-                    script(src='../js/dias-code-base.js')
-                    script(src='../images-galerie/base/tajuddin/dias-listes.js')
+                #bio
+                    h2 Biographie
+                    p à suivre    
+                    
         button#icons  courte pause    
