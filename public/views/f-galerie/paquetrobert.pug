@@ -1,25 +1,28 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Robert Paquet, sculpture')
     meta(name='robots', content='index, follow')
 block main
     style.
         main{background: #dddddd;}
-    section
-        #logoartist
-            h1 Robert Paquet
-            #legende  
-                p "Songeuse"
-                p sculpture,
-                br
-                | bronze, patine bleue,
-                br
-                | 19 cm de haut
-                br
-                | 2008
-                p Photo : Morteyrolle
-    section
-        #imageartist
-            img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", sculpture bleue')
-           
-    block aside
+        #sculpture{font-weight:600; padding:5%;line-height:1.3rem;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Robert Paquet
+                    #sculpture
+                        p "Songeuse"
+                        p 
+                        | sculpture
+                        br
+                        | bronze, patine bleue
+                        br
+                        | 19 cm de haut
+                        br
+                        | 2008
+                    p Photo : Morteyrolle
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", sculpture bleue')

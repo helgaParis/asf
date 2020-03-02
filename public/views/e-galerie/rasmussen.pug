@@ -1,13 +1,36 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Suzan Rasmussen')
+    meta(name='description' content='Artistes sans Frontières presents Suzan Rasmussen, a painter from Utah')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-         a(href="https://art.artistes-sf.org/rasmussen/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    .fond
+        section
+            .fond   
+                .row-artists
+                    .column35
+                        #logoartist
+                            h1 Suzan Rasmussen
+                            img(src='/images-galerie/base/rasmussen/suzan-rasmussen-logo.gif' alt='Logo Suzan Rasmussen')
+                            h3 Réalisations
+                            #artistmenu
+                                a(href='rasmussen') The ancestors speak
+                                br
+                                a(href='rasmussen2') Cancer series
+                                br
+                                a(href='rasmussen3') Landscapes
+                                br
+                                a(href='rasmussen4') Nudes
+                                br
+                                a(href='rasmussen5') Portraits
+                                
+                            p © Photos : Suzan Rasmussen and Helga Strobl
+                    .column65
+                        #diacontainer
+                            #dias
+                            #legende
+                            block script
+                            style.
+                                dias{background: #bccada;}
+                            script(src='../images-galerie/base/rasmussen/dias-listes.js')
+                button#icons  courte pause    
+                

@@ -1,15 +1,18 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Jalila Rezine, art textile')
     meta(name='robots', content='index, follow')
 block main
-    style. 
-        main{background:#118cffCC;color:#8B0000;}
-    section
-        #logoartist
-            h1 Jalila Rezine
-    section
-        #imageartist
-            img(src='/images-galerie/artists/jalila-rezine.jpg' alt='Jalila Rezine, art textile')
-            #legende Jalila Rezine, art textile
-    block aside
+    style.
+        .legendes{font-weight:600;}
+        .fond{background:#118cffCC;color:#8B0000;}
+    .fond
+        .row-artists
+            .column35    
+                #logoartist
+                    h1 Jalila Rezine
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/jalila-rezine.jpg' alt='Jalila Rezine, art textile')
+                        .legendes Jalila Rezine, art textile

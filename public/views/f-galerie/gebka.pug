@@ -2,25 +2,36 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Gabriel Gebka')
     meta(name='robots', content='noindex, nofollow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/gebka/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    div.fond
-        style. 
-            div.fond{background-color: black; color:white;}
-            #icons {  background-color:#298D82;color:white;}
-        section
-            .row-artists
-                .column35
-                    #logoartist 
-                        style. 
-                            #logoartist{background-color: #298D82; color:#ff7722;}
-                        h1 Gabriel Gebka
-                        img(src='/images-galerie/base/gebka/gabriel-gebka.gif' alt='Gabriel Gebka, logo')
-                        p Photos: Gabriel Gebka
-                .column65
-                    #diacontainer
-                        #dias
-                        #legende
-                        block script
-                            script(src='../images-galerie/base/gebka/dias-listes.js')
-            button#icons  courte pause                 
-            block aside
+    style.
+        .fond{background-color: black; color:white;}
+        #logoartist{background-color: #298D82; color:#ff7722;}
+        #icons {  background-color:#298D82;color:#ff7722;}
+        .am{background-color:white; border-color:#ff7722;color:#ff7722;margin:1px;}
+   
+    .fond
+        .row-artists
+            .column35
+                #logoartist 
+                    h1 Gabriel Gebka
+                    img(src='/images-galerie/base/gebka/gabriel-gebka.gif' alt='Gabriel Gebka, logo')
+                    #artistmenu
+                        a(aria-label="peintures" href='gebka' title="peintures") 
+                            button.am Peintures
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+
+                            
+                    p Photos: Gabriel Gebka
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 à suivre                
+                    
+        button#icons  courte pause                 
+        

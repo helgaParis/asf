@@ -2,23 +2,32 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Krive, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/krive/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
+    style.
+        #legende{font-weight:600;}
+        #icons{background-color: #ff6600;}
+        .am{border-color:rgba(189, 121, 35, 0.71);color:#ff6600; background-color: white;font-weight:600;margin:1px;}
+
+    .fond
         .row-artists
             .column35
                 #logoartist
                     h1 Evelyne Krischan
                     img(src='/images-galerie/base/krive/eveline-krischan-logo.gif' alt='Krive, logo')
+                    #artistmenu
+                        a(aria-label="peintures" href='krive' title="peintures") 
+                            button.am Peintures
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+
                     p © Photos: E.Krischan
             .column65
                 #diacontainer
                     #dias
                     #legende
-                    block script
-                    style.
-                        dias{background: none;}
-                    script(src='../images-galerie/base/krive/dias-listes.js')
+                #bio
+                    h2 à suivre     
         button#icons  courte pause                 
-
-        a(href="https://art.artistes-sf.org/krive/index.html" rel="noopener" target="_blank") Ancien site 
-

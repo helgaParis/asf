@@ -3,10 +3,11 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières presente Wolfgang Rahs, bijoux')
     meta(name='robots', content='index, follow')
 block main
-    section
+    .fond
         .row-artists
             .column35
                 #logoartist
+                    img(src='/images-galerie/base/rahs/logo-rahs.gif' alt='Logo Wolfgang Rahs')
                     h1 Wolfgang Rahs
                     p © Photos : W. Rahs
 
@@ -14,6 +15,6 @@ block main
                 #diacontainer
                     #dias
                     #legende
-                    block script
+                    script(src='../js/dias-code-base.js')
                     script(src='../images-galerie/base/rahs/dias-listes.js')
         button#icons  courte pause    

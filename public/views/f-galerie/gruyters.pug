@@ -1,11 +1,18 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Gruyters, peintre')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-    block aside
+    style.
+        .fond{background: #cccccc;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    #message=message
+                    p Retrouvez ici bientôt le site de #{artist}
+            .column65
+                #diacontainer
+                    #dias                        
+                        img(src='/images-news/2007/po/8.jpg' alt='photo expo Gruyters') 
+                        .legendes photo d'exposition "Portes Ouvertes"

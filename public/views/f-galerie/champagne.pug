@@ -1,16 +1,19 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Pierrette Champagne, peintre')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #bccada;}
-    section
-        #logoartist
-            h1 Pierrette Champagne
-            p Canada
-    section
-        #imageartist
-            img(src='/images-galerie/artists/champagne1009.jpg' alt='Pierrette Champagne, 2010')
-            #legende Pierrette Champagne, nature morte, 2010
-    block aside
+        .fond{background: #bccada;}
+    .fond        
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Pierrette Champagne
+                    p Canada
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/champagne1009.jpg' alt='Pierrette Champagne, 2010')
+                        .legendes Pierrette Champagne, nature morte, 2010
+            

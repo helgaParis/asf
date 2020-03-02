@@ -2,8 +2,16 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Roland Erguy, sculpteur')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/erguy/dias-listes3.js')
+    script(src='../js/galerie.js')
+
 block main
-    section
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;}
+
+    .fond
         .row-artists
             .column35
                 #logoartist
@@ -11,20 +19,31 @@ block main
                     img(src='/images-galerie/base/erguy/erguy_logo.gif' alt='Logo Roland Erguy')
                     h3 Oeuvres
                     #artistmenu
-                        a(href='erguy') Métal
+                        a(aria-label="Oeuvres en métal" href='erguy' title="oeuvres en métal") 
+                            button.am Métal
                         br
-                        a(href='erguy2') Bois
+                        a(aria-label="Oeuvres en bois" href='erguy2' title="oeuvres en bois") 
+                            button.am Bois
                         br
-                        a(href='erguy3') Matériel mixte
+                        a(aria-label="Oeuvres en matériel mixte" href='erguy3' title="oeuvres en matériel mixte") 
+                            button.am Matériel mixte
                         br
-                        a(href="erguy4") Pierre
+                        a(aria-label="Oeuvres en pierre" href='erguy4' title="pierre") 
+                            button.am  Pierre
+                        br
+                        button#goToPhilo.am(aria-label="L'artiste sur son art" type='submit' title="L'artiste sur son art") Sur mon art
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+
                     p © Photos: Roland Erguy, Helga Strobl
                     p Note: Textes en préparation
             .column65
                 #diacontainer
                     #dias
-                    #legende
-                    block script
-                    script(src='../images-galerie/base/erguy/dias-listes3.js')
+                    #legende          
+                #bio
+                    h2 à suivre
+                #philo
+                    h2 à suivre              
+
         button#icons  courte pause    
-        

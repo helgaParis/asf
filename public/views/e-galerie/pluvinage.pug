@@ -1,13 +1,22 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Pluvinage')
+    meta(name='description' content='Artistes sans Frontières presents Claire')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-            a(href="https://art.artistes-sf.org/pluvinage/index.html" rel="noopener noreferrer nofollow" target="_blank") Current site 
-    block aside
+    .fond
+        section
+            style.
+                #legende{font-weight:600;}
+            .row-artists
+                .column35
+                    #logoartist
+                        img(src='/images-galerie/base/pluvinage/pluvinage-logo.gif' alt='Logo Claire')
+                        p © Photos : C. Pluvinage
+
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                        block script
+                        script(src='../images-galerie/base/pluvinage/dias-listes.js')
+            button#icons  short break    

@@ -3,11 +3,10 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières presente Mary Quartarone')
     meta(name='robots', content='index, follow')
 block main
+    style.
+        .fond{background: #e6e6e6;}
+        #legende{font-weight:600;}
     .fond
-        style.
-            .fond{background: #e8e8e8;}
-            #legende{font-weight:600;}
-
         section
             .row-artists
                 .column35
@@ -19,6 +18,6 @@ block main
                     #diacontainer
                         #dias
                         #legende
-                        block script
+                        script(src='../js/dias-code-base.js')
                         script(src='../images-galerie/base/quartarone/dias-listes.js')
             button#icons  courte pause    

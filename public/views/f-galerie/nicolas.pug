@@ -1,12 +1,13 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Nicolas, litho')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        
-    block aside
+    .fond
+        section
+        h3=message
+        h1=title
+        div
+            p Retrouvez ici bientôt le site de #{artist}
+            
+        block aside

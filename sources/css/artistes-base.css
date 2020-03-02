@@ -55,6 +55,7 @@
 }
 #philo{
     display:none;
+    background-color: white;
 }
 #extratext{
     display:none;
@@ -106,7 +107,20 @@
     font-size: 1rem;
     line-height: 1.4rem;    
 }
-
+.am{
+    border-radius:8px;
+    border: 1px dotted;
+    padding: 3px 8px;
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+.am:hover, .am:focus {
+    background-color: #118cffcc;
+    color:#A90101;
+    border-style: solid;
+  }
 
 
 /* **********   Responsive styles  ************** */

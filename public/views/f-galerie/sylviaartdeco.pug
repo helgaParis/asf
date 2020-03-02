@@ -1,13 +1,26 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Silvia, art deco')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p Retrouvez ici bientôt le site de #{artist}
-        p
-         a(href="https://art.artistes-sf.org/sylviaartdeco/index.html" rel="noopener" target="_blank") Ancien site 
-    block aside
+    style. 
+        .fond{background-color: #FFcc66;}
+        #icons{background-color: #6666ff; color:#FFcc66;font-weight:500;}
+        #logoartist{background-color:#6666ff;}
+        
+        img{border-right:1px ridge rgba(255, 255, 255, 0.07);border-bottom:1px ridge rgba(255, 255, 255, 0.04);border-top:1px ridge rgba(255, 255, 255, 0.07);}
+    
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Silvia Simoncelli
+                    img(src='/images-galerie/base/sylviaartdeco/sylvia-art-deco.gif' alt='Logo Silvia Simoncelli')
+                    p Photos: Silvia Simoncelli
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    script(src='../js/dias-code-base.js')
+                    script(src='../images-galerie/base/sylviaartdeco/dias-listes.js')
+        button#icons  courte pause   

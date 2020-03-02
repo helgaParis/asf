@@ -1,13 +1,23 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presents Pascal Plazanet')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of #{artist}
-        p
-            a(href="https://art.artistes-sf.org/p.plazanet/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    .fond
+        section
+            .row-artists
+                .column35
+                    #logoartist
+                        img(src='/images-galerie/base/plazanet/pascal-plazanet-logo.gif' alt='Pascal Plazanet, logo')
+                        h1 Pascal Plazanet
+                        #artistmenu
+                                a(href='plazanet') Galerie 1
+                                br
+                                a(href='plazanet2') Galerie 2
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                        block script
+                        script(src='../images-galerie/base/plazanet/dias-listes.js')
+            button#icons  courte pause    

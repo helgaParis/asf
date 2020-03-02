@@ -1,22 +1,26 @@
-extends ../../templates/layout-artistes.pug
+extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières presente Fabienne Stoulig, peintre')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #dddddd;}
-    section
-        #logoartist
-            #legende 
-                h1 Fabienne Stoulig
-                p "Ne bougez plus"
-                p 
-                | 205 x 90 cm
-                br
-                | Acrylique sur toile,
-                br
-                | encadrement tissé de fil doré
-    section
-        #imageartist
-            img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig, "Ne bougez plus"')
-    block aside
+        .fond{background: #dddddd;}
+        #peinture{font-weight:600; padding:5%;line-height:1.3rem;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Fabienne Stoulig
+                    #peinture
+                        p "Ne bougez plus"
+                        p 
+                        | 205 x 90 cm
+                        br
+                        | Acrylique sur toile,
+                        br
+                        | encadrement tissé de fil doré
+                    p Photo : Fabienne Stoulig                
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig, "Ne bougez plus"')

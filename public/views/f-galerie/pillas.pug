@@ -3,7 +3,7 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières presente Pillas, peintre')
     meta(name='robots', content='index, follow')
 block main
-    section
+    .fond
         .row-artists
             .column35
                 #logoartist
@@ -13,6 +13,6 @@ block main
                 #diacontainer
                     #dias
                     #legende
-                    block script
+                    script(src='../js/dias-code-base.js')
                     script(src='../images-galerie/base/pillas/dias-listes.js')
         button#icons  courte pause    
