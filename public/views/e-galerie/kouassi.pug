@@ -1,13 +1,34 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presente Germain Kouassi')
+    meta(name='description' content='Artistes sans Frontières presents Germain Kouassi, painter')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/kouassi/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-            a(href="https://art.artistes-sf.org/kouassi/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(189, 121, 35, 0.71);color:#990000; background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/kouassi/kouassi.gif' alt='Logo Germain Kouassi')
+                    h1 Germain Kouassi
+                    #artistmenu
+                        a(aria-label="see Paintings" href='ekouassi' title="Paintings") 
+                            button.am Paintings
+                        br
+                        button#goToBio.am(aria-label="see biography" type='submit title="see biography')  Biography           
+                        
+                    p © Photos : Helga Strobl
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    
+                #bio
+                    h2 Biography
+                    p to be followed
+        button#icons  short break

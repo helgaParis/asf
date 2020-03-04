@@ -1,32 +1,57 @@
 extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Valgallard')
+    meta(name='description' content='Artistes sans Frontières presents Valgallard, painter')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/val-gallard/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;}
+
     .fond
-        style.
-            #legende{font-weight:600;}
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/val-gallard/valgallard1.gif' alt='Logo Valgallard')
+                    h1 Val-Gallard
+                    h3 Paintings
+                    #artistmenu
+                        a(aria-label="Gallery 1" href='evalgallard' title="Gallery 1") 
+                            button.am  Gallery 1
+                        br
+                        a(aria-label="Gallery 2" href='evalgallard2' title="Gallery 2") 
+                            button.am  Gallery 2
+                        br
+                        a(aria-label="Gallery 3" href='evalgallard3' title="Gallery 3") 
+                            button.am  Gallery 3
+                        br
+                        a(aria-label="Gallery 4" href='evalgallard4' title="Gallery 4") 
+                            button.am  Gallery 4
+                        br
+                        a(aria-label="Gallery 5" href='evalgallard5' title="Gallery 5") 
+                            button.am  Gallery 5
+                        br
+                        a(aria-label="Gallery 6 " href='evalgallard6' title="Gallery 6") 
+                            button.am  Gallery 6
+                        br
+                        button#goToPhilo.am(aria-label="Artist's statement" type='submit' title="Artist's statement") Artist's statement
+                        br
+                        button#goToBio.am(aria-label="see the Biography" type='submit' title="Biography")  Biography           
+        
 
-        section
-            .row-artists
-                .column35
-                    #logoartist
-                        img(src='/images-galerie/base/val-gallard/valgallard1.gif' alt='Logo Valgallard')
-                        h1 Val-Gallard
-                        #artistmenu
-                            a(href='valgallard') Galerie 1
-                            br
-                            a(href='valgallard2') Galerie 2
-                            br
-                            | ... 
-                            br
-                            | Note: working on this site, more content to follow
-                        p © Photos : Valerie Gallard
+                    p © Photos : Valerie Gallard
 
-                .column65
-                    #diacontainer
-                        #dias
-                        #legende
-                        block script
-                        script(src='../images-galerie/base/val-gallard/dias-listes.js')
-            button#icons  short break  
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 Biography
+                    p to be followed
+                #philo
+                    h2 to be followed 
+
+        button#icons  short break 

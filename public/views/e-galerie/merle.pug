@@ -1,13 +1,40 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Merle')
+    meta(name='description' content='Artistes sans Frontières presents Jean-CharlesMerle, painter')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/merle/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-            a(href="https://art.artistes-sf.org/merle/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgb(210, 209, 209);color:#803000; background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/merle/jean-charles-merle-logo.gif' alt='Jean Charles Merle, logo')
+                    h1 Jean Charles Merle
+                    #artistmenu
+                        a(aria-label="Paintings" href='emerle' title="Paintings") 
+                            button.am Paintings
+                        br
+                        button#goToExtratext.am(aria-label="about the painter, French article" type='submit title="French art critic')  The adventurer        
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #extratext
+                    h2 Baroudeur de l'Art
+                    p Le regard entre passé et devenir, Jean-Charles Merle fait partie des hommes qu'on oublie difficilement. Une présence qui laisse des traces comme les toiles qu'il signe.
+                    p " Mes tableaux se résument à une petite histoire de graphisme, une cuisine singulière qui a pour sujet l'universalité. La couleur intervient de façon aléatoire, en fait, elle ne m'intéresse pas vraiment ", énonce nonchalamment Jean-Charles Merle. Ce peintre s'attache à parler une langue comprise du plus grand nombre. Il mêle les influences venues d'Afrique ou de la Grèce antique, réinvente à sa façon les arts premiers. La simplicité est le principe qu'il érige en loi pour nous conter les vieilles histoires qui cimentent l'humanité. Dans ses toiles, la ligne reste maîtresse du jeu avec un dessin travaillé en creux, au couteau. Des formes stylisées de danseurs, poissons, lunes, femmes, astres et autres allégories naissent de la géographie du lieu. Des plages de couleurs éclatantes serties de noir servent de tremplin au sujet. Ronds, carrés, rectangles s'installent naturellement, comme les mots d'une langue ancienne pour décrire la femme, la maternité, l'amour ou encore la mort.
+                    p " On devine Ie sens d'un tableau sans être pour autant un connaisseur L'émotion naît de la vie même, de l'amour, de la guerre, de la naissance, des sentiments, etc. Avant de parler, les hommes faisaient des signes ancestraux pour dire leur présence au monde. Rien n'a véritablement changé. "
+                    p Né à Sète en 1942, Jean-Charles a fait des études à l'école d'architecture moderne de Nancy. Et les a abandonnées pour construire sa vie comme une úuvre d'art. Jean-Charles a été maçon, initiateur d'expéditions pour botanistes au Zaïre, animateur et encore marchand d'art et mécène.
+                    p Une vie d'aventurier dont le vécu reste le matériau de ses créations.
+                    p " Inventer une cheminée, un bâtiment ou un tableau relève de la même nécessité, du même besoin d'évasion, de liberté. Créer c'est construire sa vie. La mienne se résume à ça. " On est quelque peu remué par la personnalité de ce baroudeur qui peint comme il respire. Avec instinct et concision. Un profil rare, impressionnant.
+                    p Nadia Ben, avril 2001
+            
+        button#icons  short break    

@@ -1,19 +1,35 @@
 extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Rangel Amorim')
+    meta(name='description' content='Artistes sans Frontières presente Rangel Amorim, peintre')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/amorim/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
-    section
-        #logoartist
-            h1 Rangel Amorim
-            img(src='/images-galerie/base/amorim/rangel-amorim-logo.gif' alt='Rangel Amorim, logo')
-            p © Photos: Rangel Amorim, 2007
-    section
-        #diacontainer
-            #dias
-            #legende
-        button#icons  courte pause 
-            block script
-            style.
-                dias{background: #bccada;}
-            script(src='../images-galerie/base/amorim/dias-listes.js')
+    style.
+        #legende{font-weight:600;}       
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Rangel Amorim
+                    img(src='/images-galerie/base/amorim/rangel-amorim-logo.gif' alt='Rangel Amorim, logo')
+                    #artistmenu
+                        a(aria-label="voir les photos de nouveau" href='eamorim' title="redemarrer le diaporama") 
+                            button.am Photos
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biography           
+
+                    p © Photos: Rangel Amorim, 2007
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 Biography
+                    p to be followed
+
+        button#icons  short break                 

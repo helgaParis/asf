@@ -1,25 +1,28 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presente Robert Paquet')
+    meta(name='description' content='Artistes sans Frontières presents Robert Paquet, sculptor')
     meta(name='robots', content='index, follow')
 block main
     style.
         main{background: #dddddd;}
-    section
-        #logoartist
-            h1 Robert Paquet
-            #legende  
-                p "Songeuse" (she is dreaming)
-                p sculpture,
-                br
-                | bronze, blue sheen,
-                br
-                | 19 cm high
-                br
-                | 2008
-                p Photo : Morteyrolle
-    section
-        #imageartist
-            img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", blue sculpture')
-           
-    block aside
+        #sculpture{font-weight:600; padding:5%;line-height:1.3rem;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Robert Paquet
+                    #sculpture
+                        p "Songeuse" (she is dreaming)
+                        p 
+                        | sculpture
+                        br
+                        | bronze, blue sheen,
+                        br
+                        | 19 cm high
+                        br
+                        | 2008
+                    p Photo : Morteyrolle
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/paquetrobert-sculpture-bleue.jpg' alt='Robert Paquet, "Songeuse", blue sculpture')

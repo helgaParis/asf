@@ -3,20 +3,19 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières presents Claire')
     meta(name='robots', content='noindex, nofollow')
 block main
+    style.
+        #legende{font-weight:600;}
     .fond
-        section
-            style.
-                #legende{font-weight:600;}
-            .row-artists
-                .column35
-                    #logoartist
-                        img(src='/images-galerie/base/pluvinage/pluvinage-logo.gif' alt='Logo Claire')
-                        p © Photos : C. Pluvinage
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/pluvinage/pluvinage-logo.gif' alt='Logo Claire')
+                    p © Photos : C. Pluvinage
 
-                .column65
-                    #diacontainer
-                        #dias
-                        #legende
-                        block script
-                        script(src='../images-galerie/base/pluvinage/dias-listes.js')
-            button#icons  short break    
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    script(src='../js/dias-code-base.js')
+                    script(src='../images-galerie/base/pluvinage/dias-listes.js')
+        button#icons  short break   

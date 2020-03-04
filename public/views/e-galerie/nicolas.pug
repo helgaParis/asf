@@ -1,12 +1,13 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Nicolas')
+    meta(name='description' content='Artistes sans Frontières presents Nicolas, litho')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        
-    block aside
+    .fond
+        section
+        h3=message
+        h1=title
+        div
+            p You will find here shortly the website of #{artist}
+            
+        block aside

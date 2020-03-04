@@ -1,31 +1,52 @@
 extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Roland Erguy')
+    meta(name='description' content='Artistes sans Frontières presents Roland Erguy, sculptor')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/erguy/dias-listes3.js')
+    script(src='../js/galerie.js')
+
 block main
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;}
+
     .fond
-        section
-            .row-artists
-                .column35
-                    #logoartist
-                        h1 Roland Erguy
-                        img(src='/images-galerie/base/erguy/erguy_logo.gif' alt='Logo Roland Erguy')
-                        h3 Oeuvres
-                        #artistmenu
-                            a(href='erguy') Metal
-                            br
-                            a(href='erguy2') Wood
-                            br
-                            a(href='erguy3') Mixte Materials
-                            br
-                            a(href="erguy4") Stone
-                        p © Photos: Roland Erguy, Helga Strobl
-                        p Note: Texts in preparation
-                .column65
-                    #diacontainer
-                        #dias
-                        #legende
-                        block script
-                        script(src='../images-galerie/base/erguy/dias-listes3.js')
-            button#icons  short break    
-            
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Roland Erguy
+                    img(src='/images-galerie/base/erguy/erguy_logo.gif' alt='Logo Roland Erguy')
+                    h3 Oeuvres
+                    #artistmenu
+                        a(aria-label="Oeuvres en métal" href='eerguy' title="Metal sculptures") 
+                            button.am Métal
+                        br
+                        a(aria-label="Oeuvres en bois" href='eerguy2' title="Wood sculptures") 
+                            button.am Bois
+                        br
+                        a(aria-label="Oeuvres en matériel mixte" href='eerguy3' title="Mixte Materials") 
+                            button.am Matériel mixte
+                        br
+                        a(aria-label="Oeuvres en pierre" href='eerguy4' title="Stone sculptures") 
+                            button.am  Pierre
+                        br
+                        button#goToPhilo.am(aria-label="Artist's statement" type='submit' title="The artist on his work") Artist's statement
+                        br
+                        button#goToBio.am(aria-label="see biography" type='submit' title="see biography")  Biography           
+
+                    p © Photos: Roland Erguy, Helga Strobl
+
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende          
+                #bio
+                    h2 Biography 
+                    p to be followed
+                #philo
+                    h2 Artist's statement
+                    p to be followed          
+
+        button#icons  short break    

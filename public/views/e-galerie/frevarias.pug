@@ -1,17 +1,20 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Frevarias')
+    meta(name='description' content='Artistes sans Frontières presents Frevarias, painter')
     meta(name='robots', content='index, follow')
 block main
     style. 
-        main{background: black;color:white;}
-    section
-        #logoartist
-            h1 C. Frevarias
-            img(src='/images-galerie/artists/freva-aff.jpg' alt='C.Frevarias, affiche d\'exposition 2007')
-            #legende C.Frevarias, exhibition poster
-    section
-        #imageartist
-            img(src='/images-galerie/artists/freva1.jpg' alt='C.Frevarias, portrait, 2007')
-            #legende C.Frevarias, portrait
-        block aside
+        .fond{background: black;color:white;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 C. Frevarias
+                    img(src='/images-galerie/artists/freva-aff.jpg' alt='C.Frevarias, exhibition poster, 2007')
+                    #legende C.Frevarias, exhibition poster
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/freva1.jpg' alt='C.Frevarias, portrait, 2007')
+                        .legendes C.Frevarias, portrait
+                

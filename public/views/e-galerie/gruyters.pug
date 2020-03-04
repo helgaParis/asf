@@ -1,11 +1,18 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presente Gruyters')
+    meta(name='description' content='Artistes sans Frontières presente Gruyters, peintre')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of #{artist}
-    block aside
+    style.
+        .fond{background: #cccccc;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    #message=message
+                    p   #{artist}'s website will be visible shortly
+            .column65
+                #diacontainer
+                    #dias                        
+                        img(src='/images-news/2007/po/8.jpg' alt='photo exhibition Gruyters') 
+                        .legendes photo of paintings shown during AsF "Open Doors" exhibition

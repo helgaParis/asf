@@ -1,22 +1,26 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Fabienne Stoulig')
+    meta(name='description' content='Artistes sans Frontières presents Fabienne Stoulig, painter')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #dddddd;}
-    section
-        #logoartist
-            #legende 
-                h1 Fabienne Stoulig
-                p "Don't move"
-                p 
-                | 205 x 90 cm
-                br
-                | Acrylic on canvas,
-                br
-                | frame woven of golden thread
-    section
-        #imageartist
-            img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig, "Stop moving"')
-    block aside
+        .fond{background: #dddddd;}
+        #peinture{font-weight:600; padding:5%;line-height:1.3rem;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Fabienne Stoulig
+                    #peinture
+                        p "Ne bougez plus" (Don't move)
+                        p 
+                        | 205 x 90 cm
+                        br
+                        | Acrylic on canvas,
+                        br
+                        | frame woven of golden thread
+                    p Photo : Fabienne Stoulig                
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig' title="Don't move")

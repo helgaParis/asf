@@ -1,13 +1,15 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents - why not You ?')
+    meta(name='description' content='Artistes sans Frontières presents - why not You ??')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        h3 You will find here shortly the updated website of  #{artist}
-        p This could be your website - contact us !
-        a(href='mailto:bureau.asso@artistes-sf.org?subject=page Your Site') E-mail: bureau.asso@artistes-sf.org
-    block aside
+    .fond
+        section
+            h3=message
+            h1=title
+            div
+                h3 You will find here shortly the updated website of  #{artist}
+            p This could be your website - contact us !
+            a(href='mailto:bureau.asso@artistes-sf.org?subject=page Your Site') E-mail: bureau.asso@artistes-sf.org
+
+

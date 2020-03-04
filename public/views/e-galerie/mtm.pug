@@ -1,16 +1,18 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Marie-Thérèse Masias')
+    meta(name='description' content='Artistes sans Frontières presents Marie-Thérèse Massias, enamel')
     meta(name='robots', content='index, follow')
 block main
     style. 
-        main{background:#d7d7d7;}
-    section
-        #logoartist
-            h1 Marie-Thérèse Masias
-            p Photo: Marie-Thérèse Masias, 2007
-    section
-        #imageartist
-            img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, sculpture enamel on copper')
-            #legende Marie-Thérèse Masias, sculpture, enamel on copper, 60 cm
-    block aside
+        .fond{background:#d7d7d7;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Marie-Thérèse Masias
+                    p Photo: Marie-Thérèse Masias, 2007
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, sculpture enamel on copper,')
+                        .legendes Marie-Thérèse Masias, sculpture, enamel on copper, 60 cm

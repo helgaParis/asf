@@ -1,13 +1,42 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Lihidheb Mohsen')
+    meta(name='description' content='Artistes sans Frontières presents Lihidheb Mohsen, Ecologic art Installations')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/mohsen/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-            a(href="https://art.artistes-sf.org/mohsen/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    style.
+        #legende{background-color:white;padding:2px;}
+        .fond{background-color: #ff6633;}
+        #icons{background-color:white;color: #0066ff;font-weight:600;}
+        #dias{background-position: left top, center, right top;}
+        .am{border-color:rgba(255, 102, 51, 0.4);color: #0066ff;font-weight:600;background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist 
+                    style. 
+                        #logoartist{background-color: #0099ff}
+                    h1 Mohsen Lihidheb
+                    img(src='/images-galerie/base/mohsen/lihidheb-mohsen.gif' alt='Lihidheb Mohsen, logo')
+                    #artistmenu
+                        a(aria-label="Ecologic art Installations" href='emohsen' title="Ecologic art Installations") 
+                            button.am Installations
+                        br
+                        button#goToExtratext.am(aria-label="Poetry, in French" type='submit' title="Poetry, in French") Poetry
+                        br
+                        button#goToBio.am(aria-label="voir la biographie" type='submit title="voir la biographie')  Biographie           
+                        
+                    p Photos: Mohsen Lihidheb
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+
+                #bio
+                    h2 to be followed
+                #extratext
+                    h2 Poèmes - to be followed
+        button#icons  short break   

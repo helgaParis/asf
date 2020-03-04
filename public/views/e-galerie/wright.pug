@@ -1,13 +1,25 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Nicholas Wright')
+    meta(name='description' content='Artistes sans Frontières presents Nicholas Wright, sculpture')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/wright/dias-listes.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of #{artist}
-        p
-         a(href="https://art.artistes-sf.org/wright/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    style.
+        .fond{background: #d8d8d8;}
+        #legende{font-weight:600;}
+        #icons{background:#FD0837;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/wright/nicholas-wright-logo.gif' alt='Nicholas Wright, logo')
+                    h1 Nicholas Wright
+                    p © Photos : Nicholas Wright
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    
+        button#icons  short break  

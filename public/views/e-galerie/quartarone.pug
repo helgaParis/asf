@@ -1,18 +1,36 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Mary Quartarone, peintre')
+    meta(name='description' content='Artistes sans Frontières presents Mary Quartarone, painter')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/quartarone/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
     style.
-        main{background: #cccccc;}
-    section
-        #logoartist
-            h1 Mary Quartarone
-            img(src='/images-galerie/base/quartarone/blue-woman.jpg' alt='Mary Quartarone, blue woman')
-            #legende Mary Quartarone, "Blue Woman"
-            
-    section
-        #imageartist
-            img(src='/images-galerie/base/quartarone/creation.jpg' alt='Mary Quartarone,creation')
-            #legende Mary Quartarone, Creation
-    block aside
+        .fond{background: #e6e6e6;}
+        #legende{font-weight:600;}
+        .am{background-color: #e6e6e6; border-color:rgba(255, 0, 0, 0.4);color:blue;margin:1px; }
+
+    .fond
+        section
+            .row-artists
+                .column35
+                    #logoartist
+                        h1 Mary Quartarone
+                        h3 Oeuvres
+                        #artistmenu
+                            a(aria-label="Paintings" href='equartarone' title="Paintings") 
+                                button.am Paintings
+                            br
+                            button#goToPhilo.am(aria-label="Artist's statement" type='submit' title="Artist's statement") Artist's statement
+                          
+                        p © Photos : Mary Quartarone, Canada
+
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                    #philo
+                        h2 Artist's statement
+                        p to be followed
+            button#icons  short break    

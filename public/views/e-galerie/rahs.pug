@@ -1,13 +1,20 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Wolfgang Rahs')
+    meta(name='description' content='Artistes sans Frontières presents Wolfgang Rahs, Jewellery')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-            a(href="https://art.artistes-sf.org/rahs/index.html" rel="noopener" target="_blank") Current site 
-    block aside
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/rahs/logo-rahs.gif' alt='Logo Wolfgang Rahs')
+                    h1 Wolfgang Rahs
+                    p © Photos : W. Rahs
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    script(src='../js/dias-code-base.js')
+                    script(src='../images-galerie/base/rahs/dias-listes.js')
+        button#icons  short break 

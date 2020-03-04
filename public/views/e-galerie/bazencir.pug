@@ -1,15 +1,17 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presents Halit Bazencir')
+    meta(name='description' content='Artistes sans Frontières presents Halit Bazencir, painter')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #bbbbbb;}
-    section
-        #logoartist
-            h1 Halit Bazencir
-    section
-        #imageartist
-            img(src='/images-galerie/artists/bazencir.jpg' alt='Halit Bazencir, 2008')
-            #legende Halit Bazencir, untitled, 2008
-    block aside
+        .fond{background: #bbbbbb;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Halit Bazencir
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/bazencir.jpg' alt='Halit Bazencir, 2008')
+                        .legendes Halit Bazencir, untitled, 2008

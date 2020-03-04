@@ -79,11 +79,12 @@ router.get('/*',function(req,res) {
     ** and language used, 
     ** otherwise send to default
     */
-    if ('index'===artist){
-        next= destinations[firstPos];
+    if ('index'===artist || ''===artist){
+        next= destinations[0];
         lastseen= destinations[lastPos];
         eartist='eindex';
         dartist='dindex';
+        fartist='index'
         message=''; //no message, as default for unvalid destination is "unknown artist"
         next=destinations[0]; 
         lastseen=destinations[lastPos];

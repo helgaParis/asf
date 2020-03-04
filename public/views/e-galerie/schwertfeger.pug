@@ -1,13 +1,34 @@
-extends ../../templates/e-layout-artistes.pug
+extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières presente Schwertfeger')
+    meta(name='description' content='Artistes sans Frontières presents Joachen')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p You will find here shortly the updated website of  #{artist}
-        p
-         a(href="https://art.artistes-sf.org/schwertfeger/index.html" rel="noopener noreferrer nofollow" target="_blank") Current site 
-    block aside
+    style. 
+        .fond{border: 5px ridge #999999;}
+        #icons{background-color:#333333; color:#ffcc00;font-weight:500;}
+        #logoartist{background-color:#333333; color:#ffcc00;}
+        #diacontainer{background-color:white;}
+        #legende{font-weight:600;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist 
+                    style. 
+                        #logoartist{background-color:#333333; color:#ffcc00;}
+                    img(src='/images-galerie/base/schwertfeger/logo.gif' alt='Logo Jochen')
+                    p
+                    | © Textes, photos : 
+                    br
+                    | J. Schwertfeger et
+                    br
+                    | H. Strobl (photos 1,2,5,10)
+
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    script(src='../js/dias-code-base.js')
+                    script(src='../images-galerie/base/schwertfeger/dias-listes.js')
+        button#icons  short break 
