@@ -1,13 +1,43 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Silvia, art deco, vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor Silvia, art deco')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/sylviaartdeco/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-         a(href="https://art.artistes-sf.org/sylviaartdeco/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+    style. 
+        .fond{background-color: #FFcc66;}
+        #icons{background-color: #6666ff; color:#FFcc66;font-weight:500;}
+        #logoartist{background-color:#6666ff;}
+        .am{background-color: #6666ff; color:#FFcc66;font-weight:400;border-color:#FFcc66;margin:1px;}
+        
+        img{border-right:1px ridge rgba(255, 255, 255, 0.07);border-bottom:1px ridge rgba(255, 255, 255, 0.04);border-top:1px ridge rgba(255, 255, 255, 0.07);}
+    
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Silvia Simoncelli
+                    img(src='/images-galerie/base/sylviaartdeco/sylvia-art-deco.gif' alt='Logo Silvia Simoncelli')
+                    #artistmenu
+                        a(aria-label="Realisations" href='dsylviaartdeco' title="Realisations") 
+                            button.am Realisationen
+                        br
+                        button#goToPhilo.am(aria-label="Die Künstlerin über ihre Kunst" type='submit' title="Die Künstlerin über ihre Kunst") Meine Arbeit
+                        br
+                        button#goToBio.am(aria-label="Biografie" type='submit' title="Biografie")  Biografie           
+        
+                    p Fotos: Silvia Simoncelli
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 Biografie
+                    p in Vorbereitung
+                #philo
+                    h2 Feng Shui - Die Künstlerin über ihre Kunst
+                    p  in Vorbereitung                
+                    
+        button#icons  Kurze Pause

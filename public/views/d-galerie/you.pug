@@ -1,13 +1,13 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt vor - warum nicht Sie ?')
+    meta(name='description' content='Artistes sans Frontières stellt vor - warum nicht Sie?')
     meta(name='robots', content='index, follow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        h3 Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
+    .fond
+        section
+            h3=message
+            h1=title
+            div
+                h3 Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
         p Hier könnte Ihre Webseite erscheinen - nehmen Sie Kontakt mit uns auf !
         a(href='mailto:bureau.asso@artistes-sf.org?subject=page Meine Website') E-mail: bureau.asso@artistes-sf.org
-    block aside

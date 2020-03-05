@@ -1,11 +1,14 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières - die Galerie')
+    meta(name='description' content='Artistes sans Frontières - die Galerie ')
     meta(name='robots', content='index, follow')
 block main
-    div
+    .fond
         section
             #message
                 h3=message
             h1=title
             p Entdecken Sie unsere Künstler !
+
+
+        block aside

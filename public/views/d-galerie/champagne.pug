@@ -1,16 +1,19 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Pierrette Champagne vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor Pierrette Champagne, Malerin')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #bccada;}
-    section
-        #logoartist
-            h1 Pierrette Champagne
-            p Kanada
-    section
-        #imageartist
-            img(src='/images-galerie/artists/champagne1009.jpg' alt='Pierrette Champagne, 2010')
-            #legende Pierrette Champagne, Stillleben, 2010
-    block aside
+        .fond{background: #bccada;}
+    .fond        
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Pierrette Champagne
+                    p Canada
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/champagne1009.jpg' alt='Pierrette Champagne, Stillleben, 2010')
+                        .legendes Pierrette Champagne, Stillleben, 2010
+            

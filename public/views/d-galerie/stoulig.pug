@@ -1,22 +1,26 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Fabienne Stoulig vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Fabienne Stoulig, Malerin')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #dddddd;}
-    section
-        #logoartist
-            #legende 
-                h1 Fabienne Stoulig
-                p "Bewegen Sie sich nicht mehr"
-                p 
-                | 205 x 90 cm
-                br
-                | Acryl auf Leinwand,
-                br
-                | Rahmen mit Goldfaden bestickt
-    section
-        #imageartist
-            img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig, "Rühren Sie sich nicht mehr"')
-    block aside
+        .fond{background: #dddddd;}
+        #peinture{font-weight:600; padding:5%;line-height:1.3rem;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Fabienne Stoulig
+                    #peinture
+                        p "Ne bougez plus" (Bewegen Sie sich nicht)
+                        p 
+                        | 205 x 90 cm
+                        br
+                        | Acryl auf Leinwand,
+                        br
+                        | Rahmen aus gewebtem Golddraht
+                    p Foto : Fabienne Stoulig                
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/stoulig-fabienne.jpg' alt='Fabienne Stoulig' title="Bewegen Sie sich nicht")

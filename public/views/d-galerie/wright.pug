@@ -1,13 +1,25 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Nicholas Wright vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor: Nicholas Wright, Keramiken')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/wright/dias-listes.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-         a(href="https://art.artistes-sf.org/wright/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+    style.
+        .fond{background: #d8d8d8;}
+        #legende{font-weight:600;}
+        #icons{background:#FD0837;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/wright/nicholas-wright-logo.gif' alt='Nicholas Wright, logo')
+                    h1 Nicholas Wright
+                    p © Fotos : Nicholas Wright
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                    
+        button#icons  Kurze Pause

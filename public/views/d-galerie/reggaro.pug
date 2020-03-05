@@ -1,15 +1,17 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Suzan Reggaro vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Suzan Reggaro, Malerin')
     meta(name='robots', content='index, follow')
 block main
     style.
-        main{background: #bbbbbb;}
-    section
-        #logoartist
-            h1 Shannon Reggaro
-    section
-        #imageartist
-            img(src='/images-galerie/artists/shannon-painting.jpg' alt='Shannon Reggaro in 2016')
-            #legende Shannon Reggaro malt im Atelier des Vereins - ihre Werke werden in Kürze erscheinen
-    block aside
+        .fond{background: #bbbbbb;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Shannon Reggaro
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/shannon-painting.jpg' alt='Shannon Reggaro in 2016')
+                        #legende Shannon Reggaro malt im französischen Atelier des Vereins - Werke in Vorbereitung

@@ -1,33 +1,76 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt "Le Paquet" vor - Konstruktion Fischerboot')
+    meta(name='description' content='Artistes sans Frontières stellt vor:"Le Paquet", Holzkonstruktion eines traditionnelles französische Fischerboots')
     meta(name='robots', content='index, follow')
-block main
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/lepaquet/dias-listes3.js')
+    script(src='../js/galerie.js')
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;margin:1px;}
 
-    section
-        //- p#message=title
+block main  
+    .fond   
         .row-artists
             .column35
                 #logoartist
                     h1 Alain Pasquier "Le Paquet"
                     img(src='/images-galerie/base/lepaquet/alain-pasquier-3.jpg' alt='Alain Pasquier 1991')
-                    h3 Werke:
+                    h3 Realisationen
                     #artistmenu
-                        a(href='dlepaquet') Theaterdekor
+                        a(aria-label="Theaterdekor, Holzkonstruktion " href='dlepaquet' title="Theaterdekor") 
+                            button.am Theater
                         br
-                        a(href='dlepaquet2') Bar
+                        a(aria-label="Construction of a bar" href='dlepaquet2' title="Construction of a bar") 
+                            button.am Bar
                         br
-                        a(href='dlepaquet3') Caseieur
+                        a(aria-label="Ancient fishing boat construction" href='dlepaquet3' title="Ancient fishing boat construction") 
+                            button.am  Caseieur
+                        br
+                        button#goToBio.am(aria-label="Französische Biografie" type='submit title="französische Biografie')  Biografie           
 
                     p © Photos: Marie Renée Burrin (théâtre), Alain Pasquier
-                    
             .column65
                 #diacontainer
                     #dias
                     #legende
-                    block script
-                    style.
-                        dias{background: #bccada;}
-                    script(src='../images-galerie/base/lepaquet/dias-listes3.js')
-        button#icons  Kurze Pause    
-        
+                #bio
+                    h2 Charpentier naval,
+                    p 30 ans d’expérience en menuiserie
+                    h3 Compétences
+                    p 
+                    | dans le domaine de la charpente navale:
+                    br
+                    | Ebauche et lecture de plans, choix des essences et débit de pièces
+                    br
+                    | Réalisation des opérations de façonnage et de finition
+                    br
+                    | Utilisation et entretien des machines outils
+                    p
+                    | Dans le domaine de la menuiserie:
+                    br
+                    |Fabrication et installation de mobilier bois
+                    br
+                    |Réalisation et installation de décors et accessoires de spectacle à partir des recommandations du décorateur et du metteur en scène
+                    h3 Parcours professionnel
+                    p
+                    | 2002 Charpentier naval - ETS CONTRERAS - Frontignan
+                    br
+                    | 2001 Menuiser - SARL BOUZIGUES - Sète
+                    br
+                    | 2000 Charpentier naval - ETS HENAF - Sète
+                    br
+                    | 1996 - 1997 Constructeur de décors / Machiniste - Secteur du spectacle - Paris, théâtres des Champs Elysées, de Genevilliers et Bobigny - Opéra Garnier
+                    br
+                    | 1986 - 1988 Constructeurs de décors - Atelier d’Ouvriers Réunies - Pantin
+                    br
+                    | 1985 Menuiser - SOS DEPANNAGE - Paris
+                    br
+                    | 1979 - 1982 Apprenti ébéniste - Artisan menuiser - ébéniste - Châteaubriant
+
+                    h3 Formation
+                    | 1999 CAP Charpente navale - Les Ateliers de l’Enfer - Douarnenez
+                    br
+                    | 1982 CAP Ebéniste - C.A.F. de Nantes
+
+        button#icons  Kurze Pause

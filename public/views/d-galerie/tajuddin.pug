@@ -1,13 +1,34 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Tajuddin vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Ahmed Tajuddin, Maler')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/tajuddin/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-         a(href="https://art.artistes-sf.org/tajuddin/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(189, 121, 35, 0.71);color:#990000; background-color: white;margin:1px;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/tajuddin/tajuddin.gif' alt='Logo Ahmed Tajuddin')
+                    h1 Ahmed Tajuddin
+                    #artistmenu
+                        a(aria-label="Bilder" href='dtajuddin' title="Bilder") 
+                            button.am Gemälde
+                        br
+                        button#goToBio.am(aria-label="Biografie" type='submit title="Biografie')  Biografie           
+                        
+                    p © Fotos : Ahmed Tajuddin
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 Biographie
+                    p in Vorbereitung
+                    
+        button#icons  Kurze Pause

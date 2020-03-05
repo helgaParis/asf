@@ -1,13 +1,44 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Catherine Pillas vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Catherine Pillas, Malerin')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/pillas/dias-listes.js')
+    script(src='../js/galerie.js')
+
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-         a(href="https://art.artistes-sf.org/pillas/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4); color:#A90101; background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/pillas/catherine-pillas-logo.gif' alt='Catherine Pillas, logo')
+                    h1 Catherine Pillas
+                    #artistmenu                        
+                        a(aria-label="Werke nochmal sehen" href='dpillas' title="Bilder") 
+                            button.am Werke
+                        br
+                        button#goToBio.am(aria-label="Biografie" type='submit' title="Biografie") Biografie           
+                        br
+                        button#goToPhilo.am(aria-label="Die Künstlerin über ihre Kunst" type='submit' title="Der Künstler über seine Kunst")  Meine Kunst
+                        br
+                        button#goToExtratext.am(aria-label="Meine Technik" type='submit' title="Meine Technik")  Collage           
+
+            .column65
+                #diacontainer
+                    #dias
+                    #legende          
+                #bio
+                    h2 Biografie
+                    p in Vorbereitung
+                #philo
+                    h2 Parcours d'une artiste indépendante et autodidacte - Die Künstlerin über ihre Kunst
+                    p in Vorbereitung
+                #extratext
+                    h2 "Le classique revisité" - Meine Technik
+                    p in Vorbereitung
+
+        button#icons  Kurze Pause

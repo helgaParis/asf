@@ -1,13 +1,204 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Beauford Delaney vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Beauford Délaney, Maler')
     meta(name='robots', content='index, follow')
-block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-            a(href="https://art.artistes-sf.org/delaney/index.html", target="_blank") Bisherige Website    
-    block aside
+
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/delaney/dias-listes.js') 
+    script(src='../js/galerie.js')
+
+
+block main  
+    style.
+        #legende{font-weight:600;}
+        .am{border-color:rgba(255, 0, 0, 0.4);color:blue; background-color: white;margin:1px;}
+    .fond        
+        .row-artists
+            .column35
+                #logoartist
+                    img(src='/images-galerie/base/delaney/beauford-delaney-logo.gif' alt='Beauford Delaney, imaginaires Logo, vorgestellt von Doug')
+                    h1 Beauford Delaney
+                    #artistmenu                        
+                        a(aria-label="Bilder nochmal sehen" href='ddelaney' title="Bilder nochmal sehen") 
+                            button.am Bilder
+                        br
+                        button#goToPhilo.am(aria-label="lire le Hommage" type='submit' title="voir le Hommage")  Hommage
+                        br
+                        button#goToBio.am(aria-label="Biographie" type='submit' title="Biographie")  Biografie           
+                        
+
+                    p © Photos : Helga Strobl
+            .column65
+                #diacontainer
+                    #dias
+                    #legende      
+                    
+
+                #philo
+                    h2 Hommage à Beauford Delaney
+                    p
+                    | C’était en novembre ou décembre 1968 que je faisais la connaissance de Beaufort Delaney au café Sélect au Montparnasse à Paris, pendant que je faisais une petite sieste le matin après une nuit blanche.
+                    br
+                    | Il était assis à coté de moi et il m’a réveillé parce que je ronflais trop.
+                    | Comme j’étais juste arrivé en France je ne parlais qu’un français élémentaire et nous avons toute de suite commencé une conversation en anglais. Après quelques verres de vin rouge j’ai appris de lui qu’il était venu à Paris dans les années 50 pour une tournée d’Europe qu’il n’avait jamais faite mais qu’il était resté à Paris. Aussi qu’il était peintre et avait fait des portraits de beaucoup de célébrités comme Louis Armstrong, Henry Miller, James Baldwin. Comme je n’avais que 17 ans je connais ces célébrités de nom ou par la lecture et cela m’impressionnait énormément. 
+                    | Comme je n’avais pas beaucoup d’argent il m’a proposé ce jour là de prendre le déjeuner avec lui dans un restaurant Milles Colonnes ou on servait des menus à bas prix. (Il existe toujours mais est devenu un restaurant chic.)
+                    | C’était un endroit fréquenté par tous les peintres, écrivains, philosophes et Beaufort les connaissait presque tous. C’était comme ça que je suis entré dans le monde artistique et intellectuelle de Montparnasse de l’année 68.
+
+                    p
+                    | J’y habitais une chambre de bonne on se voyait pendant plusieurs années presque chaque semaine pour quelques verres de rouge, qu’il adorait à prendre en compagnie. Il m’a amené plusieurs fois dans son atelier rue Vercingetorix, à coté de la gare Montparnasse. Je me rappelle très bien quand je suis entré la première fois que même s’il n'était pas très grand qu’il était assez haut comme atelier d’artiste et l’atelier était plein de plantes, presque comme un jungle. La lumière entrait par le toit en verre et était filtré par les plantes. Quand je lui demandais pourquoi les plantes étaient tellement immenses, il m’a dit que quelqu’un les lui avait données toutes petites et il ne faisait que les arroser de temps en temps, elles poussaient d’elles-mêmes.
+                    | Aujourd’hui je peux dire que c’était un miroir de son cœur, tellement grand et de son âme tellement tolérante et généreuse.
+                    | Il m’a montré tous les tableaux. Les plus fascinants pour moi étaient ses compositions abstraites en couleurs. 
+                    | Les portraits étaient dans un style très naïf et trop gentils pour mon goût. Il ne pouvait jamais s’imaginer que quelqu’un pourrait être de mauvaise foi. Il ignorait toutes les caractéristiques négatives des hommes ou de l’humanité entière. Dans cet aspect de la peinture figurative il était le contraire de Francis Bacon.
+
+                    p 
+                    | En été 71, j'habitais un appartement au 7ème étage bd. du Montparnasse avec un balcon tout le long de l’appartement. 
+                    | Après une soirée de jazz au American Center, bd. Raspail, j'invitais Beauford et quelques musiciens à prendre un verre chez moi. 
+                    | Vers 6 h 30 au lever du jour, les musiciens et Beaufort décidaient de réveiller Paris avec un concert de Jazz. 
+                    | Le balcon était long mais pas large et ils s’alignaient, un trompettiste, un cornettiste, Beaufort au milieu, 
+                    | un guitariste et un batteur qui jouait avec du bois sur la grille en fer du balcon. c
+                    | C'était la première fois que j’entendais Beaufort chanter avec une voix tellement douce et admirable que l’on peut seulement trouver 
+                    | chez des enfants dans les chorales baptistes à New Orléans. Les fenêtres dans les alentours s’ouvraient 
+                    | toutes et les gens applaudissaient malgré d’être réveillés trop tôt. Le concert a durée une demi heure ou plus.
+                    p
+                    | Nous sommes devenus des vrais amis malgré la différence d’âge: il aurait pu être mon grand père. Malgré mes voyages un peu partout dans le monde nous nous sommes toujours retrouvés jusqu’à son hospitalisation en 1975.
+                    | Je regrette aujourd’hui de ne pas lui avoir rendu visite pendant ses derniers années qu’il a passé à l’hôpital Saint Anne à Paris. 
+                    | Pour mon premier mariage il m’a offert les deux tableaux que je vous présente ici et qui m’ont accompagné depuis 34 ans.
+                    p
+                    | C’est à cause de lui, que je commençais à peindre et que je faisais l’Ecole des Beaux Arts. 
+                    |Il était mon premier et donc le plus important critique d’art. 
+                    p Douglas de Petrovic
+                #bio
+                    h3 Beauford Delaney
+                    p  
+                        | 1901 Naissance à Knoxville, Tennessee, Ecole des Beaux Arts de Boston et de Cambridge, Massachusetts
+                        br
+                        | 1929 s'installe à 
+                        | New York. Nombreuses portraits au fusain et au pastel des musiciens de jazz 
+                        | tels Duke Ellington, Louis Armstrong et Marian Anderson.
+                        br
+                        | 1940 Amitié 
+                        | avec James Baldwin et Henry Miller, réalisation de plusieurs portraits 
+                        | d'eux.
+                        br
+                        |   1953 Installation à Paris, ou il reste jusqu'à sa mort en 1979.
+                    p
+                        font(color='#990000')
+                            | 1901 Born at Knoxville, Tennessee. Art studies in Boston and in Cambridge, Massachusetts
+                            br
+                            |   1929 Moves to New York. Creates a number of paintings of his friends and of 
+                            |   jazz musiciens like Duke Ellington, Louis Armstrong, Marian Anderson.
+                            br
+                            |   1940 Friendship with James Baldwin and Henry Miller, many portraits of them.
+                            br
+                            |   1953 Goes to Europe, where he stays in Paris until his death in 1979.
+                    p
+                        font(color='#336600')
+                            | 1901 Geboren in Knoxville, Tennessee; Kunststudium in Boston und in Cambridge, Masssachusetts
+                            br
+                            |   1929 Übersiedlung nach New York, wo er zahlreiche Portraits seiner Freunde 
+                            |   und von Jazzmusikern wie Duke Ellington, Louis Armstrong, Marian Anderson ausführt.
+                            br
+                            |   1940 Freundschaft mit James Baldwin und später mit Henry Miller; verschiedene 
+                            |   Portraits dieser beiden entstehen.
+                            br
+                            |   1953 Geht nach Europa, lebt in Paris bis zu seinem Tod 1979.
+                    h3
+                        font(color='black')
+                        b Expositions personnelles:
+                    p                      
+                        | 1930 Harlem Library, New York
+                        br
+                        |   1932 42nd Street Library, New York
+                        br
+                        |   1938 8th Street Playhouse Art Gallery, New York
+                        br
+                        |   1941 Vendôme Gallery, New York
+                        br
+                        |   1950 University of Maine, Orlando
+                        br
+                        | 1951, 1952, 1953 Roko Gallery, New York
+                        br
+                        |   1955 Galerie Clan, Madrid
+                        br
+                        |   1956 Galerie Prisme, Paris
+                        br
+                        |   1960 Galerie Facchetti, Paris
+                        br
+                        |   1961 Centre Culturel Américain, Paris
+                        br
+                        |   1965 Galerie Lambert, Paris
+                        br
+                        |   1973 Galerie Darthea Speyer, Paris
+                        br
+                        |   1978 The Studio Museum, Harlem
+                        br
+                        |   1988, 1991 Philippe Briet Gallery, New York
+                        br
+                        |   1992 Galerie Darthea Speyer, Paris
+                        br
+                        |   ...
+                    p
+                        | 2000 "Basking in the Glow: Beauford Delaney's Art Shines", Studio Museum in Harlem, New York, USA
+                        br
+                        | 2003 "Beauford Delaney: The Color Yellow", Harvard University Art Museums, Cambridge, Masachusetts, USA 
+                        br
+                        | "Les Oeuvres sur Papier de Beauford Delaney", Le Musée d'Art Américain de Giverny, France
+                        br
+                        |  2004-2005 "Beauford Delaney: From New York to Paris", The Minneapolis Institute of Arts, Minneapolis, Minnesota, USA
+                    h3 Principales Expositions de Groupe
+                    p
+                        | 1930 Whitney Studio Gallery, New York
+                        br
+                        | 1939 The C Gallery, Washington, DC
+                        br
+                        | 1950 Whitney Museum, New York
+                        br
+                        | 1954, 1960, 1963 Salon des Réalités Nouvelles, Paris
+                        br
+                        | 1956 Groupe de la Galerie Arnaud au Musée Iserlohn, Allemagne
+                        br
+                        | 1957 Groupe de la Galerie Facchetti à Bordighera, Italie
+                        br
+                        | University of Wisconsin, U.S.A.
+                        br
+                        | 1958 Musée de Leverkusen, Allemagne
+                        br
+                        | 1959, 1962 Groupe à la Galerie Breteau, Paris
+                        br
+                        | 1960 Antagonisme, Musée des Arts décoratifs, Paris
+                        br
+                        | 1961 Lincoln Gallery, London
+                        br
+                        | Centre Culturel Américain, Paris
+                        br
+                        | 1962 Carnegie Institure, Pittsburgh, Pennsylvanie
+                        br
+                        | 1963 Musée Cantonal des Beaux-Arts, Lausanne
+                        br
+                        | 1964 Galerie Internationale d'Art contemporain, Paris
+                        br
+                        | Den Frie, Copenhague
+                        br
+                        | 1966 Galerie A., Paris
+                        br
+                        | 1967 L'Age du Jazz, Musée Galliera, Paris
+                        br
+                        | 1972 Hommage à Henry Miller, Centre Culturel Américain, Paris
+                        br
+                        | 1976 Hommage à Julien Alvard, Château de Anzy-le-Franc
+                        br
+                        | 1981 Le Clair et l'Obscur, Musée d'Evreux
+                        br
+                        | 1990 Against the Odds. Newark Museum, Newark, New Jersey
+                        br
+                        | 1991 FIAC, Paris, Stand Darthea Speyer
+                        br
+                        |   ...
+                        br
+                        | 1996 "Explorations in the City of Light: African-American Artists in Paris", 1945-1965,  
+                        | Studio Museum in Harlem, New York, USA
+                        br
+                        | ...
+
+
+        button#icons  Kurze Pause

@@ -1,18 +1,36 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Mary Quartarone vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Mary Quartarone, Malerin')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/quartarone/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
     style.
-        main{background: #cccccc;}
-    section
-        #logoartist
-            h1 Mary Quartarone
-            img(src='/images-galerie/base/quartarone/blue-woman.jpg' alt='Mary Quartarone, blue woman')
-            #legende Mary Quartarone, "Blue Woman"
-            
-    section
-        #imageartist
-            img(src='/images-galerie/base/quartarone/creation.jpg' alt='Mary Quartarone,creation')
-            #legende Mary Quartarone, Creation
-    block aside
+        .fond{background: #e6e6e6;}
+        #legende{font-weight:600;}
+        .am{background-color: #e6e6e6; border-color:rgba(255, 0, 0, 0.4);color:blue;margin:1px; }
+
+    .fond
+        section
+            .row-artists
+                .column35
+                    #logoartist
+                        h1 Mary Quartarone
+                        h3 Oeuvres
+                        #artistmenu
+                            a(aria-label="Bilder" href='dquartarone' title="Gemälde") 
+                                button.am Gemälde
+                            br
+                            button#goToPhilo.am(aria-label="Die Künstlerin über ihre Kunst" type='submit' title="Die Künstlerin über ihre Kunst") Die Künstler über seine Kunst
+                          
+                        p © Fotos : Mary Quartarone, Canada
+
+                .column65
+                    #diacontainer
+                        #dias
+                        #legende
+                    #philo
+                        h2 Die Künstlerin über ihre Kunst
+                        p in Vorbereitung
+            button#icons  Kurze Pause

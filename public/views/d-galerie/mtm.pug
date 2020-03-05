@@ -1,16 +1,18 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Marie-Thérèse Masias vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Marie-Thérèse Massias, Emailkünstlerin')
     meta(name='robots', content='index, follow')
 block main
     style. 
-        main{background:#d7d7d7;}
-    section
-        #logoartist
-            h1 Marie-Thérèse Masias
-            p Foto: Marie-Thérèse Masias, 2007
-    section
-        #imageartist
-            img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, Skulptur Email auf Kupfer')
-            #legende Marie-Thérèse Masias, Skulptur Email auf Kupfer, 60 cm
-    block aside
+        .fond{background:#d7d7d7;}
+    .fond
+        .row-artists
+            .column35
+                #logoartist
+                    h1 Marie-Thérèse Masias
+                    p Photo: Marie-Thérèse Masias, 2007
+            .column65
+                #diacontainer
+                    #dias
+                        img(src='/images-galerie/artists/mtm-sculpture.jpg' alt='Marie-Thérèse Masias, Email auf Kupfer Skulptur,')
+                        .legendes Marie-Thérèse Masias, Skulptur, Email auf Kupfer, 60 cm

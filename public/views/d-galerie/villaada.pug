@@ -1,13 +1,13 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Ada vor')
+    meta(name='description' content='Artistes sans Frontières stellt Villa Ada, Malerin, vor')
     meta(name='robots', content='noindex, nofollow')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-         a(href="https://art.artistes-sf.org/val-gallard/index.html", rel="noopener noreferrer nofollow" target="_blank") Bisherige Website 
-    block aside
+    style. 
+        .fond{background-color:black; color:#eae8e0;}            
+    .fond
+        h3=message
+        h1=title
+        #logoartist
+            p Website von #{artist} in Vorbereitung
+            

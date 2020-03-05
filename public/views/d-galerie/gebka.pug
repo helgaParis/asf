@@ -1,13 +1,37 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Gabriel Gebka vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Gabriel Gebka')
     meta(name='robots', content='noindex, nofollow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/gebka/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-            a(href="https://art.artistes-sf.org/gebka/index.html" rel="noopener noreferrer nofollow" target="_blank") Bisherige Website 
-    block aside
+    style.
+        .fond{background-color: black; color:white;}
+        #logoartist{background-color: #298D82; color:#ff7722;}
+        #icons {  background-color:#298D82;color:#ff7722;}
+        .am{background-color:white; border-color:#ff7722;color:#ff7722;margin:1px;}
+   
+    .fond
+        .row-artists
+            .column35
+                #logoartist 
+                    h1 Gabriel Gebka
+                    img(src='/images-galerie/base/gebka/gabriel-gebka.gif' alt='Gabriel Gebka, logo')
+                    #artistmenu
+                        a(aria-label="peintures" href='dgebka' title="paintings") 
+                            button.am Paintings
+                        br
+                        button#goToBio.am(aria-label="Biografie" type='submit title="Biografie')  Biografie          
+
+                            
+                    p Photos: Gabriel Gebka
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+                #bio
+                    h2 Biografie in Vorbereitung                
+                    
+        button#icons  Kurze Pause                
+        

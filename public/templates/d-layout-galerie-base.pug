@@ -8,15 +8,18 @@ html(lang="de")
         meta(name='author', content='helga strobl petrovic, paris')
         meta(name='copyright', content='artistes sans frontières, paris')
         meta(name="theme-color" content='#118cff') 
+
+        title=title
+        block extrameta  
+
         link(rel='stylesheet', href='../css/20main.css') 
         link(rel='stylesheet', href='../css/20main-nav.css')
         link(rel='stylesheet', href='../css/colonnes.css') 
         link(rel='stylesheet', href='../css/flex.css') 
         link(rel='stylesheet', href='../css/artistes-base.css')
         link(rel="shortcut icon" href="../images/favicon.ico")
-        script(src='../js/dias-code-base.js')
-        title=title
-        block extrameta  
+        
+        
     body
         nav
             include ./d-nav-galerie.pug

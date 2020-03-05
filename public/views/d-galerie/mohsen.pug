@@ -1,13 +1,42 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières stellt Lihidheb Mohsen vor')
+    meta(name='description' content='Artistes sans Frontières stellt vor:  Lihidheb Mohsen, Ökokünstler und Umwelt Installationen')
     meta(name='robots', content='index, follow')
+    script(src='../js/dias-code-base.js')
+    script(src='../images-galerie/base/mohsen/dias-listes.js')
+    script(src='../js/galerie.js')
 block main
-    section
-    h3=message
-    h1=title
-    div
-        p  Hier finden Sie in Kürze die neue Version der Webseite von: #{artist}
-        p
-            a(href="https://art.artistes-sf.org/mohsen/index.html" rel="noopener" target="_blank") Bisherige Website 
-    block aside
+    style.
+        #legende{background-color:white;padding:2px;}
+        .fond{background-color: #ff6633;}
+        #icons{background-color:white;color: #0066ff;font-weight:600;}
+        #dias{background-position: left top, center, right top;}
+        .am{border-color:rgba(255, 102, 51, 0.4);color: #0066ff;font-weight:600;background-color: white;margin:1px;}
+
+    .fond
+        .row-artists
+            .column35
+                #logoartist 
+                    style. 
+                        #logoartist{background-color: #0099ff}
+                    h1 Mohsen Lihidheb
+                    img(src='/images-galerie/base/mohsen/lihidheb-mohsen.gif' alt='Lihidheb Mohsen, logo')
+                    #artistmenu
+                        a(aria-label="Installationen Umwelt und Kunst" href='dmohsen' title="Ökokunst Umwelt Installationen") 
+                            button.am Installationen
+                        br
+                        button#goToExtratext.am(aria-label="Poesie, in französisch" type='submit' title="Französische Gedichte") Poesie
+                        br
+                        button#goToBio.am(aria-label="Biografie" type='submit title="Biografie')  Biografie         
+                        
+                    p Fotos: Mohsen Lihidheb
+            .column65
+                #diacontainer
+                    #dias
+                    #legende
+
+                #bio
+                    h2 Biografie in Vorbereitung
+                #extratext
+                    h2 Poèmes - in Vorbereitung
+        button#icons  Kurze Pause
