@@ -77,6 +77,7 @@ var dtargets = [
     let target ={c:'index', t:'erreur de route dans /site', lang:"f"};      
     let folder='';
     let page;  //needed till all translations made, then render(cible )
+    let pageCalled = cible;
   
     //  site/index or site/ This page will be an animation. For now it's a news page.
     if(cible ==='' || cible === 'index.html') {
@@ -137,8 +138,9 @@ var dtargets = [
     }
     res.render(folder+page,{
                         title:target.t ||'', 
-                        target:target
-                        });
+                        target:target,
+                        canon:"https://artistessansfrontieres.fr/site/"+pageCalled       
+                         });
      
    //console.log( 'target :  ',target);    
    //console.log('cible : ',cible);

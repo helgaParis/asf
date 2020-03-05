@@ -79,7 +79,8 @@ router.get('/actuel',function(req,res,next) {
                                 past: targets[1],
                                 future: targets[0],
                                 eevent:'eactuel',
-                                devent:'dactuel'
+                                devent:'dactuel',
+                                	canon:"https://artistessansfrontieres.fr/archive/"+current
                               });
 });
 
@@ -91,7 +92,8 @@ router.get('/eactuel',function(req,res,next) {
                                 past: etargets[1],
                                 future: etargets[0],
                                 fevent:'actuel',
-                                devent:'dactuel'
+                                devent:'dactuel',
+                                	canon:"https://artistessansfrontieres.fr/archive/"+current
                               });
 });
 router.get('/dactuel',function(req,res,next) {
@@ -102,7 +104,8 @@ router.get('/dactuel',function(req,res,next) {
                                 past: dtargets[1],
                                 future: dtargets[0],
                                 eevent:'eactuel',
-                                fevent:'actuel'
+                                fevent:'actuel',
+                                	canon:"https://artistessansfrontieres.fr/archive/"+current
                               });
 });
 
@@ -114,6 +117,7 @@ router.get('/*/',function(req,res) {
   
    var eventUrl= req.params[0] ;
    var event = path.basename(eventUrl);
+   let pageCalled = event;
 
     //French archive pages
     if( targets.includes(event) ) {
@@ -125,7 +129,8 @@ router.get('/*/',function(req,res) {
                         future: targets[targets.indexOf(event)-1] || current,
                         eevent:'e'+event,
                         devent:'d'+event, 
-                        fevent:event,                    
+                        fevent:event,   
+                        canon:"https://artistessansfrontieres.fr/archive/"+pageCalled	                 
                     });
             
         } 
@@ -142,7 +147,8 @@ router.get('/*/',function(req,res) {
                         future: etargets[etargets.indexOf(event)-1] || ecurrent,
                         eevent:eevent,
                         fevent:fevent,
-                        devent:devent
+                        devent:devent,
+                        canon:"https://artistessansfrontieres.fr/archive/"+pageCalled
                     });
     } 
     //German archive pages
@@ -158,7 +164,8 @@ router.get('/*/',function(req,res) {
                         future: dtargets[dtargets.indexOf(event)-1] || dcurrent,
                         devent:devent,
                         fevent:fevent,
-                        eevent:eevent
+                        eevent:eevent,
+                        canon:"https://artistessansfrontieres.fr/archive/"+pageCalled
                     });
     }    
 });

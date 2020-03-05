@@ -61,6 +61,7 @@ router.get('/*',function(req,res) {
 
     // get the name of the artist from the link clicked on nav-galerie or typed in url or search
     let artist = (req.params[0]);
+    let pageCalled = artist;
   
     //default page to render, if the page for the artist does not / no longer / not yet exist 
     let storage='f-galerie';
@@ -178,7 +179,8 @@ router.get('/*',function(req,res) {
                                 lastseen: lastseen,
                                 eartist:eartist,
                                 dartist:dartist, 
-                                fartist:fartist     
+                                fartist:fartist ,
+                                	canon:"https://artistessansfrontieres.fr/galerie/"+pageCalled
                             });
     
 });
