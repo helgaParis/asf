@@ -1,26 +1,29 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='robots', content='index, follow')
-    meta(name='revisit-after', content='7 days')
-    meta(name='author', content='helga strobl petrovic, paris')
-    meta(name='copyright', content='artistes sans frontières, paris')
-    meta(name="theme-color" content='#118cff') 
-    //- script(src='/js/pages.js')
-    link(rel='stylesheet', href='css/20main.css')  
-    link(rel='stylesheet', href='css/20main-nav.css')
-    link(rel='stylesheet', href='css/site.css')
-    link(rel='stylesheet', href='css/colonnes.css')
-    link(rel="shortcut icon" href="images/favicon.ico")
-    title=title
-    block extrameta  
-    link(rel="canonical" href=canon)
-  body
-    nav
-      include ./e-nav.pug
-    main
-        block main
-           
-            include ./footer.pug
+    head
+        vlink(rel="canonical" href=canon)
+        link( rel="alternate" hreflang="fr" href="https:/artistessansfrontieres.fr/index") 
+        link( rel="alternate" hreflang="de" href="https:/artistessansfrontieres.fr/d-index/") 
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='robots', content='index, follow')
+        meta(name='revisit-after', content='7 days')
+        meta(name='author', content='helga strobl petrovic, paris')
+        meta(name='copyright', content='artistes sans frontières, paris')
+        meta(name="theme-color" content='#118cff') 
+        //- script(src='/js/pages.js')
+        link(rel='stylesheet', href='css/20main.css')  
+        link(rel='stylesheet', href='css/20main-nav.css')
+        link(rel='stylesheet', href='css/site.css')
+        link(rel='stylesheet', href='css/colonnes.css')
+        link(rel="shortcut icon" href="images/favicon.ico")
+        title=title
+        block extrameta  
+        link(rel="canonical" href=canon)
+    body
+        nav
+            include ./e-nav.pug
+        main
+            block main
+
+                include ./footer.pug

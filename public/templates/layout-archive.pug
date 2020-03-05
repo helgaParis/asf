@@ -1,6 +1,9 @@
 doctype html
 html(lang="fr")
     head
+        link(rel="canonical" href=canon)
+        link( rel="alternate" hreflang="en" href="https:/artistessansfrontieres.fr/archive/"+eevent) 
+        link( rel="alternate" hreflang="de" href="https:/artistessansfrontieres.fr/archive/"+devent) 
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         meta(name='robots', content='index, follow')
@@ -15,7 +18,7 @@ html(lang="fr")
         link(rel="shortcut icon" href="../images/favicon.png")
         title=title
         block extrameta  
-        link(rel="canonical" href=canon)
+        
     body
         nav
             include ./nav-archive.pug

@@ -1,25 +1,28 @@
 doctype html
 html(lang="en")
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(name='robots', content='index, follow')
-    meta(name='revisit-after', content='7 days')
-    meta(name='author', content='helga strobl petrovic, paris')
-    meta(name='copyright', content='artistes sans frontières, paris')
-    meta(name="theme-color" content='#118cff') 
-    //- script(src='../js/pages.js')
-    link(rel='stylesheet', href='../css/20main.css' media="screen")
-    link(rel='stylesheet', href='../css/20main-nav.css' media="screen")
-    link(rel='stylesheet', href='../css/colonnes.css' media="screen")
-  
-    link(rel="shortcut icon" href="../images/favicon.png")
-    title=title
-    block extrameta  
-    link(rel="canonical" href=canon)
-  body
-    nav
-      include ./e-nav-archive.pug
-    main
-        block main
-        hr
+    head
+        link(rel="canonical" href=canon)
+        link( rel="alternate" hreflang="fr" href="https:/artistessansfrontieres.fr/archive/"+fevent) 
+        link( rel="alternate" hreflang="de" href="https:/artistessansfrontieres.fr/archive/"+devent) 
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='robots', content='index, follow')
+        meta(name='revisit-after', content='7 days')
+        meta(name='author', content='helga strobl petrovic, paris')
+        meta(name='copyright', content='artistes sans frontières, paris')
+        meta(name="theme-color" content='#118cff') 
+        //- script(src='../js/pages.js')
+        link(rel='stylesheet', href='../css/20main.css' media="screen")
+        link(rel='stylesheet', href='../css/20main-nav.css' media="screen")
+        link(rel='stylesheet', href='../css/colonnes.css' media="screen")
+
+        link(rel="shortcut icon" href="../images/favicon.png")
+        title=title
+        block extrameta  
+
+    body
+        nav
+            include ./e-nav-archive.pug
+        main
+            block main
+            hr

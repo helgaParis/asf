@@ -1,6 +1,9 @@
 doctype html
 html(lang="en")
     head
+        link(rel="canonical" href=canon)
+        link( rel="alternate" hreflang="fr" href="https:/artistessansfrontieres.fr/site/"+target.ciblef) 
+        link( rel="alternate" hreflang="de" href="https:/artistessansfrontieres.fr/site/"+target.cibled ) 
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
         meta(name='robots', content='index, follow')
@@ -16,7 +19,7 @@ html(lang="en")
         link(rel="shortcut icon" href="../images/favicon.ico")
         title=title
         block extrameta  
-        link(rel="canonical" href=canon)
+        
     body
         nav
             include ./e-nav-site.pug
