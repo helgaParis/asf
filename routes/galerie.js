@@ -35,7 +35,7 @@ router.get('/*',function(req,res) {
                 'gebka', 'gruyters','jalila','kouassi','krive','lepaquet','merle','mohsen','mtm',
                 'nicolas','plazanet','paquetrobert','pillas','pluvinage','quartarone',
                 'rahs','rasmussen','reggaro','schwertfeger','souche','stoulig','sylviaartdeco',
-                'tajuddin','valgallard','villaada','wright',
+                'tajuddin','valgallard','villaada','wright', 'zamoum',
                 'you',
                 'refweb', 'reflogos', 'refpub', 'refsdc', 'refmhh', 
                 'lepaquet2','lepaquet3',
