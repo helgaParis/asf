@@ -2,11 +2,10 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, show  "Rencontres", November 2016 :Germain Kouassi, Doug Petrovic, Suzan Rasmussen, Suzan Reggaro, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         #textgauche
             header
                 h1 Rencontres d'artistes - Artist's encounter
@@ -21,13 +20,13 @@ block main
                     | Alexandre Froment, 
                     a(href="galerie/kouassi")  Germain Kouassi
                     |, Françoise Orbey, 
-                    a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                     | , 
                     a(href="/galerie/rasmussen")  Suzan Rasmussen
                     | , 
                     a(href="galerie/reggaro") Shannon Reggaro
                     | , 
-                    a(href="https://www.hstrobl.info") Helga Strobl
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
 
                     p 3 - 19 November, at the bar restaurant Le Daudet, another meeting point.
                 .column

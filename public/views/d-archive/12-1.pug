@@ -2,20 +2,19 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Wechsel in der Vereinsleitung und Ankündigungen 2012')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
         header
-            h1 Änderung des Vorstands
-        #textgauche 
-            p Nach dem Tod des Gründers und Präsidenten Douglas Petrovic wurde am 4 Januar 2012 ein neuer Vorstand gewählt.
-            p Gewählt wurden. Frau Helga Strobl als Präsidentin, Herr Alain Pasquierals Vizepräsident, Herr Ferdinand Winkler als Schatzmeister und Sekretär.
-            h3 An unsere Mitglieder: gegenwärtige, ehemalige und zukünftige :
-            p Wenn Sie Douglas' Abenteuer weiterführen wollen, nehmen Sie bitte Kontakt mit dem Büro des Vereins auf.           
-            p Senden Sie uns Ihre Vorschläge, Fragen oder Erinnerungen an Douglas per Mail oder Brief.
-        hr
+            p#message=title
+    section
+    header
+        h1 Änderung des Vorstands
+    #textgauche 
+        p Nach dem Tod des Gründers und Präsidenten Douglas Petrovic wurde am 4 Januar 2012 ein neuer Vorstand gewählt.
+        p Gewählt wurden. Frau Helga Strobl als Präsidentin, Herr Alain Pasquierals Vizepräsident, Herr Ferdinand Winkler als Schatzmeister und Sekretär.
+        h3 An unsere Mitglieder: gegenwärtige, ehemalige und zukünftige :
+        p Wenn Sie Douglas' Abenteuer weiterführen wollen, nehmen Sie bitte Kontakt mit dem Büro des Vereins auf.           
+        p Senden Sie uns Ihre Vorschläge, Fragen oder Erinnerungen an Douglas per Mail oder Brief.
+    hr
     section
         h1 Ausstellungen 2012
         #textgauche 
@@ -28,9 +27,9 @@ block main
             p 
                 a(href="/galerie/erguy") Roland Erguy
                 | , 
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
                 |  und  
-                a(href="https://www.hstrobl.info")  Helga Strobl
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank")  Helga Strobl
     section
         h2 November
         #textgauche  

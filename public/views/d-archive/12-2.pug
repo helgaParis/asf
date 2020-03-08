@@ -2,36 +2,35 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Teilnehmer und Plan der Offenen Türen  2012 : Roland Erguy, Doug Petrovic, Suzan Rasmussen, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         header
             h1 Ausstellungen 2012
-    .row
-        .column
-            h3 Mai
-            h3  Portes Ouvertes - Offene Türen der Künstler Ateliers
-            p 12 und 13 Mai 2012
-            p 
-            | Samstag 12: 14h30 - 20 Uhr
-            | Samstag 12: 14h30 - 20 Uhr
-            p 
-                a(href="/galerie/erguy") Roland Erguy
-                | , 
-                br
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-                | , 
-                br
-                a(href="/galerie/rasmussen")  Suzan Rasmussen
-                | , 
-                br
-                a(href="https://www.hstrobl.info") Helga Strobl
-        .column
-            a(href="/pdf/po12.pdf")
-                img#imagefull(src="/images-news/2012/po-affiche.jpg", alt="Plakat - Laden Sie das Programm herunter")
-                | Laden Sie das Programm der Offenen Türen herunter
+        .row
+            .column
+                h3 Mai
+                h3  Portes Ouvertes - Offene Türen der Künstler Ateliers
+                p 12 und 13 Mai 2012
+                p 
+                | Samstag 12: 14h30 - 20 Uhr
+                | Samstag 12: 14h30 - 20 Uhr
+                p 
+                    a(href="/galerie/erguy") Roland Erguy
+                    | , 
+                    br
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                    | , 
+                    br
+                    a(href="/galerie/rasmussen")  Suzan Rasmussen
+                    | , 
+                    br
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            .column
+                a(href="/pdf/po12.pdf")
+                    img#imagefull(src="/images-news/2012/po-affiche.jpg", alt="Plakat - Laden Sie das Programm herunter")
+                    | Laden Sie das Programm der Offenen Türen herunter
     section
         header
             h1 November

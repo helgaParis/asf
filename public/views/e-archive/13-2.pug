@@ -2,11 +2,10 @@ extends ../../templates/e-layout-archive-dias.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, photos of the event and participants of Arts 14 in June 2013 : Doug Petrovic, Mary Quarterone, Suzan Rasmussen, Helga Strobl, Fatma-Zohra Zamoum')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         #textgauche
             header 
                 h1  Portes Ouvertes Portes Ouvertes - Open Doors - Paris
@@ -14,13 +13,13 @@ block main
             p Saturday and Sunday: 11h - 19h
             h3  Exhibition : 
             p 
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                 | , painting, sculpture 
                 br
                 a(href="/galerie/rasmussen")  Suzan Rasmussen
                 | , painting, engraving
                 br
-                a(href="https://www.hstrobl.info") Helga Strobl
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                 |  , photography
                 br
                 a(href="/galerie/zamoum") Fatma-Zohra Zamoum

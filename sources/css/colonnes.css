@@ -15,6 +15,13 @@
     margin: auto;
     padding: 5% 0;
 }
+#image80{
+    width: 80%;
+    margin: auto;
+    padding: 5% 2%;
+    text-align: center;
+}
+
 #image30{
     width: 30%;
     margin: auto;

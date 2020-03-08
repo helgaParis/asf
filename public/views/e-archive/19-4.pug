@@ -2,62 +2,61 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, project for a new website, the team of developers, a flooding in progress')
 block main
-    div
+    section
+        header
+            p#message=title
+    section
+        header
+            h1 A diverse and committed team
         section
-            header
-                p#message=title
-        section
-            header
-                h1 A diverse and committed team
-            section
+        p 
+        | We return to our founding principle: To offer our member artists means of presentation of their works
+        | worthy of works of art. That means, websites and now state-of-the-art mobile apps,
+        | created by professionals and adapted to the work of each artist.
+        p 
+        | To carry out this process, our longtime webmaster, Helga Petrovic, became "Full Stack Developer"
+        | and she brought fellow developpers with her.
+        | Saloum Sylla participated in the creation of the association's server during an internship and he continues to work on the sites of the artists.
+        | Zoubeir Marouf joined the team for an internship in September.
+        p See details further down
+    section
+        header
+            h1 The ground is sinking
+        p 
+        | Unfortunately, this is not a poetic expression, but a factual description.
+        br
+        | In June, the office floor seemed more flexible in places. This effect worsened and became worrying.
+        | In Paris, not far from the catacombs, it is always possible that a sink hole opens appears from an old quarry.
+        | Neighbors had fun stories to tell about this, like the incident in the 50s,
+        | when the former concierge had fallen into an abyss that had appeared in the yard, from which the firefighters had rescued him with abrasions but otherwise unharmed.
+        | Or the recent renovation of a ground floor atelier in the building accross the courtyard, which revealed gaping holes under the ground. 
+        p 
+        | Exploratory excavations under the floor have shed light on the mystery: a great water leak from some ateliers further on flooded our workshop from below.
+        | We have to change the floor from the ground earth under the foundations up. And changing the floor requires removing everything that is in the workshop.
+        p During the works, the association does not receive visitors in our space and does not have fixed schedules. By appointment, we come to meet you elsewhere.
+    section
+        header
+            h1 The website of the association is changing
+        p 
+        | Our team of Javascript developers has started to migrate the association's sites to new technologies.
+        br
+        | The change will include several steps:
+        ul
+            li The site you see is responsive, it adapts to the size of your screen, from mobile phones to very large screens.
+            | This phase will take a little time - we have produced over ten thousand files over the years. The sites of the artist-members will reappear first in an old version.
+            | New versions will be displayed site by site before the end of the year.
+            | In the News chapter, events from previous years will appear in reverse order until reaching our beginnings in 2001.
+            li The back-end, the invisible structure of the site, is technically more complicated, but it takes less time to achieve. The details for the techies:
+                ul Migration from one VPS to two faster VPS, migration from Apache to Nginx, configuration and securing of the servers.
+                ul Installation of a database (MongoDB) on a VPS and securing access and data.
+                ul Sensitive data, which you entrust to us via a form on our sites, such as your personal data, will be encrypted.
+                ul Creation of the Node - Express servers, which serve the pages of the sites.
+                ul Sites in https: You see a small lock in the address bar because the connection between your computer and our server is encrypted.
+                ul This protects you, if you look at the site in a public wifi network: another user of the same wifi network can neither monitor your activity nor inject harmful code into the connection.
+                ul Google gives higher ranking to https sites for this reason.
+            li The front-end, the pages you see on the screen, contain dynamic elements.
+            | To do this, the pages are rewritten in a new code language: we must work on them, page after page, link by link.                
             p 
-            | We return to our founding principle: To offer our member artists means of presentation of their works
-            | worthy of works of art. That means, websites and now state-of-the-art mobile apps,
-            | created by professionals and adapted to the work of each artist.
-            p 
-            | To carry out this process, our longtime webmaster, Helga Petrovic, became "Full Stack Developer"
-            | and she brought fellow developpers with her.
-            | Saloum Sylla participated in the creation of the association's server during an internship and he continues to work on the sites of the artists.
-            | Zoubeir Marouf joined the team for an internship in September.
-            p See details further down
-        section
-            header
-                h1 The ground is sinking
-            p 
-            | Unfortunately, this is not a poetic expression, but a factual description.
-            br
-            | In June, the office floor seemed more flexible in places. This effect worsened and became worrying.
-            | In Paris, not far from the catacombs, it is always possible that a sink hole opens appears from an old quarry.
-            | Neighbors had fun stories to tell about this, like the incident in the 50s,
-            | when the former concierge had fallen into an abyss that had appeared in the yard, from which the firefighters had rescued him with abrasions but otherwise unharmed.
-            | Or the recent renovation of a ground floor atelier in the building accross the courtyard, which revealed gaping holes under the ground. 
-            p 
-            | Exploratory excavations under the floor have shed light on the mystery: a great water leak from some ateliers further on flooded our workshop from below.
-            | We have to change the floor from the ground earth under the foundations up. And changing the floor requires removing everything that is in the workshop.
-            p During the works, the association does not receive visitors in our space and does not have fixed schedules. By appointment, we come to meet you elsewhere.
-        section
-            header
-                h1 The website of the association is changing
-            p 
-            | Our team of Javascript developers has started to migrate the association's sites to new technologies.
-            br
-            | The change will include several steps:
-            ul
-                li The site you see is responsive, it adapts to the size of your screen, from mobile phones to very large screens.
-                | This phase will take a little time - we have produced over ten thousand files over the years. The sites of the artist-members will reappear first in an old version.
-                | New versions will be displayed site by site before the end of the year.
-                | In the News chapter, events from previous years will appear in reverse order until reaching our beginnings in 2001.
-                li The back-end, the invisible structure of the site, is technically more complicated, but it takes less time to achieve. The details for the techies:
-                    ul Migration from one VPS to two faster VPS, migration from Apache to Nginx, configuration and securing of the servers.
-                    ul Installation of a database (MongoDB) on a VPS and securing access and data.
-                    ul Sensitive data, which you entrust to us via a form on our sites, such as your personal data, will be encrypted.
-                    ul Creation of the Node - Express servers, which serve the pages of the sites.
-                    ul Sites in https: You see a small lock in the address bar because the connection between your computer and our server is encrypted.
-                    ul This protects you, if you look at the site in a public wifi network: another user of the same wifi network can neither monitor your activity nor inject harmful code into the connection.
-                    ul Google gives higher ranking to https sites for this reason.
-                li The front-end, the pages you see on the screen, contain dynamic elements.
-                | To do this, the pages are rewritten in a new code language: we must work on them, page after page, link by link.                
-                p 
-                | The previous version and the new version are not compatible.
-                | We have chosen to have the new site appear in stages, so you can follow the progress almost in real time.
-                | We apologize for any small bugs during this time. Let's call it artistic freedom.
+            | The previous version and the new version are not compatible.
+            | We have chosen to have the new site appear in stages, so you can follow the progress almost in real time.
+            | We apologize for any small bugs during this time. Let's call it artistic freedom.

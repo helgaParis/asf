@@ -2,40 +2,39 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Artist in residence: Suzan Reggaro and upcoming shows 2016')
 block main
-    div
-        section
+    section
+        header
+            p#message=title
+    section
+        #textgauche
             header
-                p#message=title
-        section
-            #textgauche
-                header
-                    h1 Artist in residence: Shannon Reggaro
-                .row
-                    .column
-                        p
-                        | Shannon Reggaro was artist in residence of the association,
-                        br
-                        | In March and April 2016, 
-                        p The paintings will be shown during the Open Doors in June
-                    .column
-                        img#imagefull(src="/images-news/2016/shannon-painting.jpg" alt="Shannon Reggaro peint dans l'atelier de l'association à Sète") 
-                        | Shannon Reggaro paints in the Sète atelier of the association
-        section
-            header
-                h1 Upcoming shows
-            h2 Open Doors of the artist's ateliers in Paris
-            p Sunday 12 June 2016
-            p 
-            | Rick Emory: photography
-            br
-            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-            | , painting, sculpture
-            br
-            a(href="/galerie/rasmussen")  Suzan Rasmussen
-            | , painting, engraving
-            br
-            a(href="galerie/reggaro") Shannon Reggaro
-            | , painting
-            br
-            a(href="https://www.hstrobl.info") Helga Strobl
-            | , photography
+                h1 Artist in residence: Shannon Reggaro
+            .row
+                .column
+                    p
+                    | Shannon Reggaro was artist in residence of the association,
+                    br
+                    | In March and April 2016, 
+                    p The paintings will be shown during the Open Doors in June
+                .column
+                    img#imagefull(src="/images-news/2016/shannon-painting.jpg" alt="Shannon Reggaro peint dans l'atelier de l'association à Sète") 
+                    | Shannon Reggaro paints in the Sète atelier of the association
+    section
+        header
+            h1 Upcoming shows
+        h2 Open Doors of the artist's ateliers in Paris
+        p Sunday 12 June 2016
+        p 
+        | Rick Emory: photography
+        br
+        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+        | , painting, sculpture
+        br
+        a(href="/galerie/rasmussen")  Suzan Rasmussen
+        | , painting, engraving
+        br
+        a(href="galerie/reggaro") Shannon Reggaro
+        | , painting
+        br
+        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+        | , photography

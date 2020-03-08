@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-  <!-- Homepage -->
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+    http://www.w3.org/1999/xhtml http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml" >
+    <!-- Homepage -->
+    <url>
     <loc>https://artistessansfrontieres.fr/index</loc>
     <priority>1.00</priority>
     <xhtml:link 
                rel="alternate"
                hreflang="de"
-               href="https://artistessansfrontieres.fr/d-index.html"/>
+               href="https://artistessansfrontieres.fr/d-index"/>
     <xhtml:link 
                rel="alternate"
                hreflang="en"
-               href="https://artistessansfrontieres.fr/e-index.html"/>
+               href="https://artistessansfrontieres.fr/e-index"/>
     </url>
     <url>
     <loc>https://artistessansfrontieres.fr/d-index</loc>
     <xhtml:link 
                rel="alternate"
                hreflang="fr"
-               href="https://artistessansfrontieres.fr/index.html"/>
+               href="https://artistessansfrontieres.fr/index"/>
     <xhtml:link 
                rel="alternate"
                hreflang="en"
-               href="https://artistessansfrontieres.fr/e-index.html"/>
+               href="https://artistessansfrontieres.fr/e-index"/>
     </url>
     <url>
     <loc>https://artistessansfrontieres.fr/e-index</loc>
     <xhtml:link 
                rel="alternate"
                hreflang="de"
-               href="https://artistessansfrontieres.fr/d-index.html"/>
+               href="https://artistessansfrontieres.fr/d-index"/>
     <xhtml:link 
                rel="alternate"
                hreflang="fr"
-               href="https://artistessansfrontieres.fr/index.html"/>
+               href="https://artistessansfrontieres.fr/index"/>
     </url>
     <!-- chapter site -->
     <!-- buts -->
@@ -268,7 +269,7 @@
                href="https://artistessansfrontieres.fr/site/eservices"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/eservices<loc>
+        <loc>https://artistessansfrontieres.fr/site/eservices</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -279,7 +280,7 @@
                href="https://artistessansfrontieres.fr/site/services"/>    
     </url>
     <!--expos  -->   
-     <url>
+    <url>
         <loc>https://artistessansfrontieres.fr/site/expos</loc>
         <xhtml:link 
                rel="alternate"
@@ -302,7 +303,7 @@
                href="https://artistessansfrontieres.fr/site/eexpos"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/eexpos<loc>
+        <loc>https://artistessansfrontieres.fr/site/eexpos</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -313,7 +314,7 @@
                href="https://artistessansfrontieres.fr/site/expos"/>    
     </url>
     <!-- sites -->   
-     <url>
+    <url>
         <loc>https://artistessansfrontieres.fr/site/sites</loc>
         <xhtml:link 
                rel="alternate"
@@ -336,7 +337,7 @@
                href="https://artistessansfrontieres.fr/site/esites"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/esites<loc>
+        <loc>https://artistessansfrontieres.fr/site/esites</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -370,7 +371,7 @@
                href="https://artistessansfrontieres.fr/site/eapps"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/eapps<loc>
+        <loc>https://artistessansfrontieres.fr/site/eapps</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -404,7 +405,7 @@
                href="https://artistessansfrontieres.fr/site/estages"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/estages<loc>
+        <loc>https://artistessansfrontieres.fr/site/estages</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -438,7 +439,7 @@
                href="https://artistessansfrontieres.fr/site/edivers"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/edivers<loc>
+        <loc>https://artistessansfrontieres.fr/site/edivers</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -472,7 +473,7 @@
                href="https://artistessansfrontieres.fr/site/eterms"/>    
     </url>
     <url>
-        <loc>https://artistessansfrontieres.fr/site/eterms<loc>
+        <loc>https://artistessansfrontieres.fr/site/eterms</loc>
         <xhtml:link 
                rel="alternate"
                hreflang="de"
@@ -484,8 +485,8 @@
     </url>
    
 
-<!-- chapter galerie -->
-<!-- index  -->
+    <!-- chapter galerie -->
+    <!-- index  -->
     <url>
       <loc>https://artistessansfrontieres.fr/galerie/index</loc>
         <xhtml:link 
@@ -581,6 +582,7 @@
     </url>
     <url>
       <loc>https://artistessansfrontieres.fr/galerie/ebazencir</loc>
+    </url>
     <url>
       <loc>https://artistessansfrontieres.fr/galerie/dbazencir</loc>
     </url>
@@ -706,6 +708,7 @@
     </url>
     <url>
         <loc>https://artistessansfrontieres.fr/galerie/dlepaquet</loc>
+    </url>
     <url>
         <loc>https://artistessansfrontieres.fr/galerie/lepaquet2</loc>
     </url>
@@ -988,7 +991,8 @@
 
  <!-- chapter archive / news -->
 <!-- 2020  -->
-<loc>https://artistessansfrontieres.fr/archive/20-1</loc>
+    <url>
+    <loc>https://artistessansfrontieres.fr/archive/20-1</loc>
     <priority>1.00</priority>
     <xhtml:link 
                rel="alternate"
@@ -1021,784 +1025,781 @@
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/20-1"/>
     </url>
-<!-- 2019 -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/19-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/18-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e19-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d19-5</loc>
-</url>
-<!-- 2018  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e18-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d18-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e18-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d18-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e18-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d18-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/18-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/18-2</loc>
-</url>
-<!-- 2017  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/17-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/17-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e17-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d17-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/pdf/mdlp17.pdf</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e17-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d17-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/pdf/po2017.pdf</loc>
-</url>
-<!-- 2016  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e16-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d16-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e16-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d16-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e16-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d16-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/16-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/16-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/16-1</loc>
-</url>
-<!-- 2015  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/15-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/15-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e15-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d15-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e15-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d15-2</loc>
-</url>
-<!-- 2014  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e14-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d14-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e14-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d14-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e14-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d14-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/14-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/14-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/14-1</loc>
-</url>
-<!-- 2013 -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/13-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/13-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e13-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d13-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e13-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d13-2</loc>
-</url>
-<!-- 2012  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e12-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d12-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e12-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d12-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e12-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d12-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/pdf/po12.pdf</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e12-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d12-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/12-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/12-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/12-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/12-1</loc>
-</url>
-<!-- 2011  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/11-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/11-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/11-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/11-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e11-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d11-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e11-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d11-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/pdf/po11.pdf</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e11-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d11-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e11-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d11-1</loc>
-</url>
-<!-- 2010  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e10-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d10-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/10-1</loc>
-</url>
-<!-- 2009  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/09-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e09-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d09-1</loc>
-</url>
-<!-- 2008  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e08-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d08-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e08-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d08-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e08-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d08-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e08-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d08-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/08-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/08-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/08-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/08-1</loc>
-</url>
-<!-- 2007  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/07-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e07-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d07-1</loc>
-</url>
-<!-- 2006  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-11</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-12</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-12</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e06-11</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d06-11</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-12</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/06-1</loc>
-</url>
-<!-- 2005  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/05-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-10</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-9</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-8</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-7</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-6</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-5</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-4</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-3</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e05-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d05-1</loc>
-</url>
-<!-- 2004  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e04-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d04-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e04-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d04-2</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/04-1</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/04-2</loc>
-</url>
-<!-- 2001  -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/01</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e01</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d01</loc>
-</url>
-<!-- 2000 -->
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/00</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/e00</loc>
-</url>
-<url>
-  <loc>https://artistessansfrontieres.fr/archive/d00</loc>
-</url>
-
+    <!-- 2019 -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/19-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/18-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e19-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d19-5</loc>
+    </url>
+    <!-- 2018  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e18-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d18-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e18-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d18-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e18-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d18-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/18-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/18-2</loc>
+    </url>
+    <!-- 2017  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/17-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/17-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e17-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d17-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/pdf/mdlp17.pdf</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e17-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d17-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/pdf/po2017.pdf</loc>
+    </url>
+    <!-- 2016  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e16-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d16-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e16-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d16-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e16-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d16-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/16-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/16-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/16-1</loc>
+    </url>
+    <!-- 2015  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/15-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/15-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e15-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d15-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e15-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d15-2</loc>
+    </url>
+    <!-- 2014  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e14-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d14-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e14-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d14-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e14-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d14-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/14-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/14-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/14-1</loc>
+    </url>
+    <!-- 2013 -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/13-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/13-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e13-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d13-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e13-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d13-2</loc>
+    </url>
+    <!-- 2012  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e12-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d12-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e12-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d12-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e12-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d12-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/pdf/po12.pdf</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e12-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d12-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/12-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/12-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/12-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/12-1</loc>
+    </url>
+    <!-- 2011  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/11-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/11-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/11-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/11-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e11-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d11-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e11-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d11-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/pdf/po11.pdf</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e11-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d11-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e11-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d11-1</loc>
+    </url>
+    <!-- 2010  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d10-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/10-1</loc>
+    </url>
+    <!-- 2009  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/09-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d09-1</loc>
+    </url>
+    <!-- 2008  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e08-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d08-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e08-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d08-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e08-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d08-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e08-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d08-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/08-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/08-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/08-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/08-1</loc>
+    </url>
+    <!-- 2007  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/07-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e07-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d07-1</loc>
+    </url>
+    <!-- 2006  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-11</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-12</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-12</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-11</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d06-11</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-12</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/06-1</loc>
+    </url>
+    <!-- 2005  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/05-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-10</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-9</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-8</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-7</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-6</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-5</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-4</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-3</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d05-1</loc>
+    </url>
+    <!-- 2004  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e04-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d04-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e04-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d04-2</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/04-1</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/04-2</loc>
+    </url>
+    <!-- 2001  -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/01</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e01</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d01</loc>
+    </url>
+    <!-- 2000 -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/00</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/e00</loc>
+    </url>
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/d00</loc>
+    </url>
 </urlset>
-
-

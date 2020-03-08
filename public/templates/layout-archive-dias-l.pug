@@ -24,13 +24,14 @@ html(lang="fr")
         nav
             include ./nav-archive.pug
         main
-            block main  
-            #diacontainer
-                #dias
-                #legende
-            button#icons  <-  courte pause 
-                block script
-            footer
-                hr
+            .bgarchive
+                block main  
+                #diacontainer
+                    #dias
+                    #legende
+                button#icons  ←  courte pause 
+                    block script
+            .piedvariable
+                hr.piedvariable
                 include ./footer.pug
 

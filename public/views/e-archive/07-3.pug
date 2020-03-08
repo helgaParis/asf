@@ -1,11 +1,6 @@
-extends ../../templates/d-layout-archive-dias.pug
+extends ../../templates/e-layout-archive-dias.pug
 block main
-    div
-        h3=message
-        section
-            header
-                h1=title
-        section
+    section
         #textgauche
             header 
                 h3  Annonce d'exposition :
@@ -31,7 +26,7 @@ block main
                 | , 
                 a(href="/galerie/gruyters") Dirk Gruyters
                 | , 
-                a(href="https://www.dougpetrovic.info" target="_blank") Douglas de Petrovic
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas de Petrovic
 
             block script
                 script(src='../images-news/2007/po/dias-listes.js')

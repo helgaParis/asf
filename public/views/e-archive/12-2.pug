@@ -2,37 +2,36 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, map of the event and participants Open Doors 2012 : Roland Erguy, Doug Petrovic, Suzan Rasmussen, Helga Strobl ')
 block main
-    div
-        h3=message
-        section
-            header
-                p#message=title
-        section
+    h3=message
+    section
+        header
+            p#message=title
+    section
         header
             h1 Exhibitions 2012
-    .row
-        .column
-            h3 May
-            h3  Portes Ouvertes - Open Doors - Paris
-            p 12 and 13 May 2012
-            p 
-            | Samedi 12: 14h30 - 20h
-            | Dimanche 13: 11h - 19h
-            p 
-                a(href="/galerie/erguy") Roland Erguy
-                | , 
-                br
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-                | , 
-                br
-                a(href="/galerie/rasmussen")  Suzan Rasmussen
-                | , 
-                br
-                a(href="https://www.hstrobl.info") Helga Strobl
-        .column
-            a(href="/pdf/po12.pdf")
-                img#imagefull(src="/images-news/2012/po-affiche.jpg", alt="poster - Download the program of the Open Doors")
-                | Download the program of the Open Doors
+        .row
+            .column
+                h3 May
+                h3  Portes Ouvertes - Open Doors - Paris
+                p 12 and 13 May 2012
+                p 
+                | Samedi 12: 14h30 - 20h
+                | Dimanche 13: 11h - 19h
+                p 
+                    a(href="/galerie/erguy") Roland Erguy
+                    | , 
+                    br
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                    | , 
+                    br
+                    a(href="/galerie/rasmussen")  Suzan Rasmussen
+                    | , 
+                    br
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            .column
+                a(href="/pdf/po12.pdf")
+                    img#imagefull(src="/images-news/2012/po-affiche.jpg", alt="poster - Download the program of the Open Doors")
+                    | Download the program of the Open Doors
     section
         header
             h1 November

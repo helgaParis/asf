@@ -2,11 +2,10 @@ extends ../../templates/d-layout-archive-dias.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Fotos der Ausstellung und Teilnehmer, Offene Türen 2011 : Roland Erguy, Doug Petrovic, Suzan Rasmussen, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         #textgauche
             header 
                 h1  Portes Ouvertes - Offene Türen der Künstler Ateliers
@@ -17,11 +16,11 @@ block main
                     p 
                         a(href="/galerie/erguy") Roland Erguy
                         | , 
-                        a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                         | , 
                         a(href="/galerie/rasmussen")  Suzan Rasmussen
                         | , 
-                        a(href="https://www.hstrobl.info") Helga Strobl
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                 .column
                     a(href="/pdf/po11.pdf")
                         img(src="/images-news/2011/po.jpg", alt="Offene Türen 2011 - Laden Sie das Programm herunter")   

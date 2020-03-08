@@ -83,7 +83,11 @@ a.see{
 /*********block accessibility ************/
 .fleche:focus, .fleche:hover, 
 .drapeau:focus, .drapeau:hover{
-    outline: #A90101 1px ridge;
+    outline: none;
+    padding:none;
+    background-color: none;
+    border-color: none;
+    /* #A90101 1px ridge; */
 }
 /**********  reactive styles
 ** hidden on small screens: 
@@ -353,6 +357,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 105px;
         min-height: 195px;  
         font-size: 0.9rem;
+        min-width:180px;
     }
     .home {
         display : block;
@@ -394,7 +399,7 @@ desktp for the arrows with text link and desktop for the alternative logo
     }
 }
 
-/*** aside on the right from here on **/
+/*** large screens > 992 **/
 
 @media only screen and (min-width:992px) {
     nav {
@@ -424,6 +429,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         border-radius : 0 10px 10px 0;
         top : 130px;
         left : 105px;
+        min-width:180px;
     }
     .home {
         display : block;

@@ -2,15 +2,14 @@ extends ../../templates/d-layout-archive-dias.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Europäischer Fotomonat 2010, Fotos des Fotosalons Paris 14')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
-        #textgauche
-            header 
-                h1  Salon de la photo à la Mairie du 14e, Paris
-            h3 Helga Strobl, expo 2010
+    section
+        header
+            p#message=title
+    section
+    #textgauche
+        header 
+            h1  Salon de la photo à la Mairie du 14e, Paris
+        h3 Helga Strobl, expo 2010
 
-            block script
-                script(src='../images-news/2010/photosalon/dias-listes.js')
+        block script
+            script(src='../images-news/2010/photosalon/dias-listes.js')

@@ -2,11 +2,10 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Ankündigung der Offenen Türen 2014, Ausstellungs Teilnehmer:  Doug Petrovic, Mary Quarterone, Suzan Rasmussen, Helga Strobl, Fatma-Zohra Zamoum')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         #textgauche
             header 
                 h1  Portes Ouvertes - Offene Türen der Künstler Ateliers - Paris
@@ -16,7 +15,7 @@ block main
                 .column
                     h3  Ausstellung : 
                     p 
-                        a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                         | , Malerei, Skulptur
                         br
                         a(href="/galerie/quartarone")  Mary Quartarone
@@ -25,7 +24,7 @@ block main
                         a(href="/galerie/rasmussen")  Suzan Rasmussen
                         | , Malerei, Holzschnitt
                         br
-                        a(href="https://www.hstrobl.info") Helga Strobl
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                         |  , Fotografie
                         br
                         a(href="/galerie/zamoum") Fatma-Zohra Zamoum

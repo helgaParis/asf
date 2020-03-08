@@ -3,24 +3,25 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières, die Dienstleistungen, die unsere Verein anbietet')
 
 block main
-    div
-        section
-            header
-                h1=title
-            h3 Mitglieder
-            p
-            | Entdecken Sie unsere Leistungen auf den folgenden Seiten!
-            br
-            | Die im Jahresabonnement enthaltenen Leistungen finden Sie auf der Seite "Mitglied werden".
-            | Die anderen Leistungen sind in der Regel kostenpflichtige Leistungen zu sehr attraktiven Konditionen für unsere Mitglieder.
-            h3 Privatperson oder Unternehmen
-            p
-            | Wir bieten auch verschiedene Dienste an, die für Nichtmitglieder zugänglich sind
-            ul
-                li Internetdienste
-                li Webentwicklung
-            p Wenn Sie einen persönlichen Service und eine künstlerische Herangehensweise an Ihr Webprojekt suchen, zögern Sie nicht, uns zu kontaktieren.
-            h3 Künstler, aber kein Mitglied
-            p Wenn Sie Künstler oder im Kulturbereich tätig sind, ohne jedoch bei AsF Mitglied zu werden, erhalten Sie eine Ermäßigung von 10% auf den Standardpreis.
+    section
+        header
+            h1=title
+        h3 Mitglieder
+        p
+        | Entdecken Sie unsere Leistungen auf den folgenden Seiten!
+        br
+        | Die im Jahresabonnement enthaltenen Leistungen finden Sie auf der Seite "Mitglied werden".
+        | Die anderen Leistungen sind in der Regel kostenpflichtige Leistungen zu sehr attraktiven Konditionen für unsere Mitglieder.
+        h3 Privatperson oder Unternehmen
+        p
+        | Wir bieten auch verschiedene Dienste an, die für Nichtmitglieder zugänglich sind
+        ul
+            li Internetdienste
+            li Webentwicklung
+        p Wenn Sie einen persönlichen Service und eine künstlerische Herangehensweise an Ihr Webprojekt suchen, zögern Sie nicht, uns zu kontaktieren.
+        h3 Künstler, aber kein Mitglied
+        p Wenn Sie Künstler oder im Kulturbereich tätig sind, ohne jedoch bei AsF Mitglied zu werden, erhalten Sie eine Ermäßigung von 10% auf den Standardpreis.
 
-    block aside
+    footer
+        hr
+        include ../../templates/footer.pug

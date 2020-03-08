@@ -2,40 +2,39 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Artist in Residence: Suzan Reggaro, Ausstellungsankündigungen 2016')
 block main
-    div
-        section
+    section
+        header
+            p#message=title
+    section
+        #textgauche
             header
-                p#message=title
-        section
-            #textgauche
-                header
-                    h1 Artist in residence: Shannon Reggaro
-                .row
-                    .column
-                        p
-                        | Shannon Reggaro war die eingeladene Künstlerin des Vereins,
-                        br
-                        | im März und April 2016, in Paris und in Sète.
-                        p Die Werke werden während der Offenen Türen im juni ausgestellt
-                    .column
-                        img#imagefull(src="/images-news/2016/shannon-painting.jpg" alt="Shannon Reggaro malt im Atelier in Sète") 
-                        | Shannon Reggaro malt im Atelier in Sète
-        section
-            header
-                h1 Ausstellungs Ankündigungen
-            h2 Offene Türen der Künstler Ateliers in Paris:
-            p Sonntag 12 juin 2016
-            p 
-            | Rick Emory: Fotos
-            br
-            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-            | , Malerei, Skulptur
-            br
-            a(href="/galerie/rasmussen")  Suzan Rasmussen
-            | , Malerei, Holzschnitt
-            br
-            a(href="galerie/reggaro") Shannon Reggaro
-            | , Malerei
-            br
-            a(href="https://www.hstrobl.info") Helga Strobl
-            | , Fotos
+                h1 Artist in residence: Shannon Reggaro
+            .row
+                .column
+                    p
+                    | Shannon Reggaro war die eingeladene Künstlerin des Vereins,
+                    br
+                    | im März und April 2016, in Paris und in Sète.
+                    p Die Werke werden während der Offenen Türen im juni ausgestellt
+                .column
+                    img#imagefull(src="/images-news/2016/shannon-painting.jpg" alt="Shannon Reggaro malt im Atelier in Sète") 
+                    | Shannon Reggaro malt im Atelier in Sète
+    section
+        header
+            h1 Ausstellungs Ankündigungen
+        h2 Offene Türen der Künstler Ateliers in Paris:
+        p Sonntag 12 juin 2016
+        p 
+        | Rick Emory: Fotos
+        br
+        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+        | , Malerei, Skulptur
+        br
+        a(href="/galerie/rasmussen")  Suzan Rasmussen
+        | , Malerei, Holzschnitt
+        br
+        a(href="galerie/reggaro") Shannon Reggaro
+        | , Malerei
+        br
+        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+        | , Fotos

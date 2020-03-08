@@ -2,16 +2,14 @@ extends ../../templates/d-layout-site.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières und auch einzelne Mitglieder bieten Kurse und Einzelschulungen an. Wir bilden auch Praktikanten aus.')
 block main
-    div
-        section
-            header
-                h1=title
-            div
-                h3 Angebot in Vorbereitung
-                p 
-                    | Kurse in verschiedenen künstlerischen Techniken (Malen, Lithografie, Foto ...), die von unseren Künstler-Mitgliedern organisiert werden,
-                    | im Rahmen der verfügbaren Plätze. 
-                p - Lokales Angebot.
-
-
-    block aside
+    section
+        header
+            h1=title
+        h3 Angebot in Vorbereitung
+        p 
+            | Kurse in verschiedenen künstlerischen Techniken (Malen, Lithografie, Foto ...), die von unseren Künstler-Mitgliedern organisiert werden,
+            | im Rahmen der verfügbaren Plätze. 
+        p - Lokales Angebot.
+    footer
+        hr
+        include ../../templates/footer.pug

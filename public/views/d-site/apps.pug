@@ -3,25 +3,23 @@ block extrameta
     meta(name='description' content='AsF baut Ihre App - Ihr mobiler Auftritt bindet die Funktionen der mobilen Geräte mit ein.')
 
 block main
-    div
+    section
+        header
+            h1=title
+        h3 Eine mobile Anwendung für ein zeitgenössisches Kunstereignis
+        p Eine mobile Anwendung für Ihre Veranstaltung bietet Ihnen neue Möglichkeiten:
+        ul
+            li Einfacher Zugang für Ihre Besucher über ihr Smartphone (Geolocation, Tickets)
+            li Abwechslung der Inhalte je nach Zeit oder Ort innerhalb der Show
+            li Belohnungssystem für Ihre treuen Besucher
+            li Variable Optionen während der Besichtigungen
+        p Eine eigene mobile App ist der Standard von morgen für ein großartiges Kunstereignis - wir bieten die Avantgarde schon heute!
         section
-            header
-                h1=title
-            h3 Eine mobile Anwendung für ein zeitgenössisches Kunstereignis
-            p Eine mobile Anwendung für Ihre Veranstaltung bietet Ihnen neue Möglichkeiten:
-            ul
-                li Einfacher Zugang für Ihre Besucher über ihr Smartphone (Geolocation, Tickets)
-                li Abwechslung der Inhalte je nach Zeit oder Ort innerhalb der Show
-                li Belohnungssystem für Ihre treuen Besucher
-                li Variable Optionen während der Besichtigungen
-            p Eine eigene mobile App ist der Standard von morgen für ein großartiges Kunstereignis - wir bieten die Avantgarde schon heute!
-            section
-            header
-                h3 Eine kommerzielle mobile Anwendung
-            p
-            | Wenn Sie die neueste Technologie suchen, ein individuelles Design,
-            | eine Benutzeroberfläche für ein Publikum jeden Alters, erzählen Sie uns von Ihrem Projekt!
+        header
+            h3 Eine kommerzielle mobile Anwendung
+        p
+        | Wenn Sie die neueste Technologie suchen, ein individuelles Design,
+        | eine Benutzeroberfläche für ein Publikum jeden Alters, erzählen Sie uns von Ihrem Projekt!
     footer        
         hr
         include ../../templates/footer.pug
-    block aside

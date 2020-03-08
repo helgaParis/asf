@@ -1,12 +1,11 @@
 extends ../../templates/e-layout-archive.pug
 block main
-    div
-        h3=message
+    h3=message
+    section
+        header
+            h1=title
+    section
+        header
+            h1 Annonces 20#{event}
         section
-            header
-                h1=title
-        section
-            header
-                h1 Annonces 20#{event}
-            section
-            p à suivre (Nouveau site)
+        p à suivre (Nouveau site)

@@ -2,9 +2,8 @@ extends ../../templates/d-layout-archive-dias-l.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Plan und Teilnehmer an den Arts 14, 2017 : Doug Petrovic, Suzan Rasmussen, Helga Strobl')
 block main
-    div
-        p#message=title
-        section
+    p#message=title
+    section
         #textgauche
             header 
                 h1  Portes Ouvertes - Offene Türen der Künstler Ateliers in Paris
@@ -13,18 +12,18 @@ block main
                     h3  Ausstellung : 
                     p Sonntag 2 Juli 2017
                     p
-                        a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                         | , Malerei, Skulptur
                         br
                         a(href="/galerie/rasmussen")  Suzan Rasmussen
                         | , Malerei, Holzschnitt
                         br
-                        a(href="https://www.hstrobl.info") Helga Strobl
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                         |  , Fotos 
                 .column
                     a(href='../pdf/po2017.pdf', target='_blank')
                         img(src='../images-news/2017/po2017-2.jpg', alt='pdf: Plan der offenen Ateliers und Veranstaltungen 2017')
-        section
-            div         
-                block script
-                    script(src='../images-news/2017/dias-listes.js')
+    section
+        div         
+            block script
+                script(src='../images-news/2017/dias-listes.js')

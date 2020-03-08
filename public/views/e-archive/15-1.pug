@@ -2,30 +2,28 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, upcoming Open Doors 2014, participants: Doug Petrovic, Mary Quarterone, Suzan Rasmussen, Helga Strobl ')
 block main
-    div
-        section
-            header
-                p#message=title
-    div
+    section
+        header
+            p#message=title
         p  Annonces d'expos
-        section
-            header
-                h1 Portes Ouvertes  - Open Doors - Paris
-            p  6 and 7 June 2015
-            br
-            | Saturday and Sunday: 11h - 19h
-            p  
-            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-            | , painting, sculpture
-            br
-            a(href="galerie/quartarone") Mary Quartarone
-            | , painting
-            br
-            a(href="/galerie/rasmussen") Suzan Rasmussen
-            | , painting, engraving
-            br
-            a(href="https://www.hstrobl.info") Helga Strobl
-            | , photography
+    section
+        header
+            h1 Portes Ouvertes  - Open Doors - Paris
+        p  6 and 7 June 2015
+        br
+        | Saturday and Sunday: 11h - 19h
+        p  
+        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+        | , painting, sculpture
+        br
+        a(href="galerie/quartarone") Mary Quartarone
+        | , painting
+        br
+        a(href="/galerie/rasmussen") Suzan Rasmussen
+        | , painting, engraving
+        br
+        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+        | , photography
 
         .row
             .column
@@ -36,7 +34,7 @@ block main
                 p Suzan Rasmussen: Milburn Heights, water color
         .row
             .column
-                img#image90(src="/images-galerie/base/quartarone/creation.jpg" alt='Mary Quartarone: "Creation", aquarelle')
+                img#image90(src="/images-galerie/base/quartarone/4creation.jpg" alt='Mary Quartarone: "Creation", aquarelle')
                 p Mary Quartarone: Creation, water color
             .column    
                 img#image90(src="/images-news/2015/douglas-petrovic-sans-titre.jpg" alt='Douglas "Doug" Petrovic, sans titre, huile sur toile')

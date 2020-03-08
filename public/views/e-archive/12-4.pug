@@ -2,37 +2,36 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, European Photo Month 2012, show "Traces et Péregrinations": Elisa Spuche and Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         p Shows in November 2012
-        section
-            header
-                h1 Mois de la Photo - Photographie Month in Paris
-            .row
-                .column
-                    h3 Show: The photographer's of the 14 arrondissement
-                    p  9 - 18 November
-                    p 
-                    | Mairie Annexe
-                    br
-                    | 12 rue Pierre Castagnou 
-                    br
-                    | M° Mouton-Duvernet
-                    p 
-                    | Organized by the mayor of the 14
-                    | Monday to Friday, 11 - 18h, 
-                    | Saturday and Sunday, 11 - 19h
-                .column
-                    h(ref="/pdf/programme_mois_photo12.pdf")
-                        img#image90(src="/images-news/2012/mois-photo.jpg", alt="Photo Month 2012")
-                        | Download the program       
+    section
+        header
+            h1 Mois de la Photo - Photographie Month in Paris
+        .row
+            .column
+                h3 Show: The photographer's of the 14 arrondissement
+                p  9 - 18 November
+                p 
+                | Mairie Annexe
+                br
+                | 12 rue Pierre Castagnou 
+                br
+                | M° Mouton-Duvernet
+                p 
+                | Organized by the mayor of the 14
+                | Monday to Friday, 11 - 18h, 
+                | Saturday and Sunday, 11 - 19h
+            .column
+                h(ref="/pdf/programme_mois_photo12.pdf")
+                    img#image90(src="/images-news/2012/mois-photo.jpg", alt="Photo Month 2012")
+                    | Download the program       
         section
             header
                 h1 Traces et Pérégrinations : 
-                    a(href="https://www.hstrobl.info")  Helga Strobl 
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank")  Helga Strobl 
                     | and Elisa Souche
             .row
                 .column

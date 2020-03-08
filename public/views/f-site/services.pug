@@ -2,27 +2,25 @@ extends ../../templates/layout-site.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, les services de notre association')
 block main
-    div
-        section
-            header
-                h1=title
-            h3 Membres
-            p 
-            | Découvrez la palette de nos services sur les pages suivantes !
-            br
-            | Pour les services inclus dans la cotisation annuelle, voir page "Devenir Membre"
-            | Les autres services sont généralement payants, à des tarifs très intéressants pour nos membres.
-            h3 Particulier ou entreprise 
-            p
-            | Nous offrons également plusieurs prestations accesibles aux non membres
-            ul
-                li Services Internet 
-                li Développement web
-            p Si vous cherchez un service personnalisé et une approche artistique, n'hésitez pas à nous contacter. 
-            h3 Artiste, mais pas membre
-            p Si vous êtes artiste ou acteur culturel, sans toutefois adhérer à AsF, vous profitérez d'une réduction de 10 % du prix standard.
-
-    block aside
+    section
+        header
+            h1=title
+        h3 Membres
+        p 
+        | Découvrez la palette de nos services sur les pages suivantes !
+        br
+        | Pour les services inclus dans la cotisation annuelle, voir page "Devenir Membre"
+        | Les autres services sont généralement payants, à des tarifs très intéressants pour nos membres.
+        h3 Particulier ou entreprise 
+        p
+        | Nous offrons également plusieurs prestations accesibles aux non membres
+        ul
+            li Services Internet 
+            li Développement web
+        p Si vous cherchez un service personnalisé et une approche artistique, n'hésitez pas à nous contacter. 
+        h3 Artiste, mais pas membre
+        p Si vous êtes artiste ou acteur culturel, sans toutefois adhérer à AsF, vous profitérez d'une réduction de 10 % du prix standard.
+   
     footer
         hr
         include ../../templates/footer.pug

@@ -1,5 +1,4 @@
-
-
+Sitemap: https://artistessansfrontieres.fr/sitemap.xml
 
 # Group 1
 User-agent: Googlebot

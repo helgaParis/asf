@@ -2,37 +2,36 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Fotomonat 2012, Ausstellung "Traces et Peregrination", Elisa Souche, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         p Ausstellungen im November 2012
-        section
-            header
-                h1 Mois de la Photo - Monat der Fotografie - Paris
-            .row
-                .column
-                    h3 Salon der Fotografen des 14. Bezirks
-                    p 9 - 18 November
-                    p 
-                    | Mairie Annexe
-                    br
-                    | 12 rue Pierre Castagnou 
-                    br
-                    | M° Mouton-Duvernet
-                    p 
-                    | Organisiert vom Bürgermeister des 14.Bezirks
-                    | Montag bis Freitag, 11 - 18 Uhr,
-                    | Samstag und Sonntag, 11 -19 Uhr
-                .column
-                    h(ref="/pdf/programme_mois_photo12.pdf")
-                        img#image90(src="/images-news/2012/mois-photo.jpg", alt="Fotomonat 2012")
-                        | Das Programm des Fotomonats 2012 herunterladen     
+    section
+        header
+            h1 Mois de la Photo - Monat der Fotografie - Paris
+        .row
+            .column
+                h3 Salon der Fotografen des 14. Bezirks
+                p 9 - 18 November
+                p 
+                | Mairie Annexe
+                br
+                | 12 rue Pierre Castagnou 
+                br
+                | M° Mouton-Duvernet
+                p 
+                | Organisiert vom Bürgermeister des 14.Bezirks
+                | Montag bis Freitag, 11 - 18 Uhr,
+                | Samstag und Sonntag, 11 -19 Uhr
+            .column
+                h(ref="/pdf/programme_mois_photo12.pdf")
+                    img#image90(src="/images-news/2012/mois-photo.jpg", alt="Fotomonat 2012")
+                    | Das Programm des Fotomonats 2012 herunterladen     
         section
             header
                 h1 Traces et Pérégrinations (Spuren und Wanderungen): 
-                    a(href="https://www.hstrobl.info")  Helga Strobl 
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank")  Helga Strobl 
                     | und Elisa Souche
             .row
                 .column

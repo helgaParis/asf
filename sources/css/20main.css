@@ -38,14 +38,17 @@ h2{
 /******* Containers ***********/
 
 /* 
-*  (Blue nav, #118cff66 and #118cffcc, on top or left, on extra css), footer on the bootom, aside bottom or right only on some pages,
-*  main= zone handled by single pages, contains main div as (inline style colored) zone for text and images
-*  main div may have sections with headers if several h1 titels are needed
+*  (Blue nav, #118cff66 and #118cffcc, on top or left, on extra css), footer on the bootom, 
+*  main= zone handled by single pages, contains named div as (inline style colored) zone for text and images
+*  background div may have sections with headers if several h1 titels are needed
+* .fond = background gallery pages (layout galerie base and inline styles)
+* .bgsite = background chapter site (maxwidth on template layout-site)
 */
 
-main div {
+/*  main div */ .bgsite, .bgarchive{
     max-width: 90%;
-}
+    margin:1%;
+} 
 section {
     max-width: 100%;
 }
@@ -54,21 +57,22 @@ header{
     border-radius: 12px;
     padding-left: 15px;
 }
-footer{
+footer, .piedvariable{
     text-align: center;
     background-color: white;
     font-size: 0.8em;
 }
-footer hr{
+.piedvariable{
+    margin-top: 5%;
+}
+hr.piedvariable, footer hr{
     border-bottom-color:#118cff66;
     border-style:ridge;
     height: 1px;
     width: 400px;
     text-align: center;
 }
-aside{
-    background-color: #118cff07;
-}
+
 
 
 /**********  reactive styles*/
@@ -89,9 +93,6 @@ aside{
        font-size: 0.9rem;
        width: 100%;
     }
-    aside {
-	    display: none;
-    }
 }
 
 /*************    400 - 600   *************/
@@ -110,9 +111,6 @@ aside{
        font-size: 0.9rem;
        width: 100%;
     }
-    aside {
-	    display: none;
-    }
 }
 
 /********************* 600 - 792    *********************/
@@ -128,10 +126,6 @@ aside{
     }  
     section {
        font-size: 0.9rem;
-    }
-    aside{
-        font-size: 0.8 rem;
-        width: 100%;
     }
 }
 
@@ -152,10 +146,6 @@ aside{
     section {
         font-stretch: semi-expanded;
     }
-    aside{
-        font-size: 0.8 rem;
-        width: 20%;
-    }
     footer {
         position : absolute;
         display : block;
@@ -165,7 +155,7 @@ aside{
     }
 }
 
-/*** aside on the right from here on **/
+/***  large screen : > 992 **/
 
 @media only screen and (min-width:992px) {   
     main {
@@ -180,12 +170,6 @@ aside{
     section {
         font-stretch: semi-expanded;
     }
-    aside{
-        font-size: 0.8 rem;
-        width: 20%;
-        height: 100%;
-        align-self: flex-end;
-    }
     footer {
         position : absolute;
         display : block;
@@ -194,7 +178,7 @@ aside{
         bottom : 0;
     }
 }
-/**********     > 1200 px   ***********/
+/**********   extra large screen  > 1200 px   ***********/
 @media only screen and (min-width:1200px) {
     main {
         position : absolute;
@@ -206,12 +190,6 @@ aside{
     }       
     section {
         font-stretch: semi-expanded;
-    }
-    aside{
-        font-size: 0.8 rem;
-        width: 25%;
-        height: 100%;
-        align-self: flex-end;
     }
     footer {
         position : absolute;

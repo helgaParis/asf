@@ -1,11 +1,6 @@
-extends ../../templates/d-layout-archive-dias.pug
+extends ../../templates/e-layout-archive-dias.pug
 block main
-    div
-        h3=message
-        section
-            header
-                h1=title
-        section
+    section
         #textgauche
             header 
                 h3  Annonce d'exposition :
@@ -22,9 +17,9 @@ block main
                 | , sculptures
                 a(href="/galerie/villaada") Ada Villa
                 | et 
-                a(href="https://www.dougpetrovic.info" target="_blank") Douglas Petrovic
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
                 | , peinture, 
-                a(href="https://www.hstrobl.info") Helga Strobl
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                 | , photos
 
             block script

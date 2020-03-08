@@ -2,65 +2,63 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Projekt zur Neugestaltung der Webseite, das Team der Entwickler, ein grosse Schäden im Atelier')
 block main
-    div
+    section
+        header
+            p#message=title
+    section
+        header
+            h1 Ein vielfältiges und engagiertes Team
         section
-            header
-                p#message=title
-        section
-            header
-                h1 Ein vielfältiges und engagiertes Team
-            section
-            p 
-            | Wir kehren zu unserem Gründungsprinzip zurück: Wir wollen unseren Mitgliedskünstlern die Möglichkeit bieten, ihre Werke so gut zu präsentieren,
-            | wie Kunstwerke das verdienen. Das heißt, Websites und jetzt hochmoderne mobile Apps,
-            | erstellt von Profis und angepasst an die Arbeit jedes Künstlers.
-            p 
-            | Für diesen Zweck machte unsere langjährige Webmasterin Helga Petrovic eine "Full Stack Developer" Ausbildung
-            | und sie brachte Schulungskollegen zur Unterstützung mit.
-            | Saloum Sylla war während eines Praktikums an der Erstellung des Servers des Vereins beteiligt und arbeitet weiterhin an den individuellen Webseiten der Künstler.
-            | Zoubeir Marouf trat dem Team im September für ein Praktikum bei.
-            p Siehe Details zur Transition weiter unten
-        section
-            header
-                h1 Der Boden versinkt unter uns
-            p 
-            | Leider ist dies kein poetischer Ausdruck, sondern eine sachliche Beschreibung.
-            br
-            | m Juni wirkte der Büroboden stellenweise flexibler. Dieser Effekt verschlechterte sich und wurde besorgniserregend.
-            | In Paris, nicht weit von den Katakomben entfernt, ist es immer möglich, dass sich ein Sinkloch zu einem alten Steinbruch öffnet.
-            | Die Nachbarn hatten lustige Geschichten zu erzählen, wie den Fall in den 50er Jahren,
-            | als der ehemalige Hausmeister in ein Sinkloch gefallen war, das über Nacht im Hof ​​aufgetaucht war. Die Feuerwehrleute hatte ihn schliesslich ziemlich zerschürft aber sonst unversehrt herausgezogen.
-            | Oder die Baustelle in einer Erdgeschoss Wohnung gegenüber, die vor zwei Jahren klaffende Löcher im Boden enthüllte.
+        p 
+        | Wir kehren zu unserem Gründungsprinzip zurück: Wir wollen unseren Mitgliedskünstlern die Möglichkeit bieten, ihre Werke so gut zu präsentieren,
+        | wie Kunstwerke das verdienen. Das heißt, Websites und jetzt hochmoderne mobile Apps,
+        | erstellt von Profis und angepasst an die Arbeit jedes Künstlers.
+        p 
+        | Für diesen Zweck machte unsere langjährige Webmasterin Helga Petrovic eine "Full Stack Developer" Ausbildung
+        | und sie brachte Schulungskollegen zur Unterstützung mit.
+        | Saloum Sylla war während eines Praktikums an der Erstellung des Servers des Vereins beteiligt und arbeitet weiterhin an den individuellen Webseiten der Künstler.
+        | Zoubeir Marouf trat dem Team im September für ein Praktikum bei.
+        p Siehe Details zur Transition weiter unten
+    section
+        header
+            h1 Der Boden versinkt unter uns
+        p 
+        | Leider ist dies kein poetischer Ausdruck, sondern eine sachliche Beschreibung.
+        br
+        | m Juni wirkte der Büroboden stellenweise flexibler. Dieser Effekt verschlechterte sich und wurde besorgniserregend.
+        | In Paris, nicht weit von den Katakomben entfernt, ist es immer möglich, dass sich ein Sinkloch zu einem alten Steinbruch öffnet.
+        | Die Nachbarn hatten lustige Geschichten zu erzählen, wie den Fall in den 50er Jahren,
+        | als der ehemalige Hausmeister in ein Sinkloch gefallen war, das über Nacht im Hof ​​aufgetaucht war. Die Feuerwehrleute hatte ihn schliesslich ziemlich zerschürft aber sonst unversehrt herausgezogen.
+        | Oder die Baustelle in einer Erdgeschoss Wohnung gegenüber, die vor zwei Jahren klaffende Löcher im Boden enthüllte.
+        p
+        | Erkundungsgrabungen unter dem Boden haben das Rätsel geklärt: Ein riesiges Wasserleck 20 m weiter unter dem Hof überschwemmte das Atelier von unten.
+        | Wir müssen den Boden bis zum Fundament hinunter austauschen. Und um den Boden auszutauschen, muss alles entfernt werden, was sich im Raum befindet.
+        p Während der Arbeiten empfängt der Verein keine Besucher in unseren Räumen und hat keine festen Termine. Nach Vereinbarung treffen wir uns an anderer Stelle.
+
+    section
+        header
+            h1 Die Webseite des Vereins verändert sich 
+        p 
+        | Unser Team von Javascript-Entwicklern hat begonnen, die Websites der Vereinigung auf neue Technologien zu umzustellen.
+        br
+        | Die Änderung umfasst mehrere Schritte:
+        ul
+            li Die Seite, auf der Sie sich befinden, ist reaktiv, sie passt sich an die Größe Ihres Bildschirms an, vom Mobiltelefon bis zum sehr großen Bildschirm.
+            | Diese Phase fertigzustellen wird einige Zeit in Anspruch nehmen - wir haben im Laufe der Jahre über zehntausend Dateien erstellt. Die Seiten der Künstler werden zuerst in einer alten Version wieder angezeigt.
+            | Neue Versionen werden vor Jahresende Seite für Seite angezeigt.
+            | Im News-Kapitel werden die Ereignisse der Vorjahre bis zu unserem Debüt im Jahr 2001 in umgekehrter Reihenfolge aufgeführt.
+
+            li Das Back-End, die unsichtbare Struktur der Website, ist technisch komplizierter, erfordert jedoch weniger Zeit. Die Details für die Technikfreaks:
+                ul Migration des Servers VPS auf zwei schnellere VPS, Migration von Apache zu Nginx, Konfiguration und Sicherung der Server.
+                ul Installation einer Datenbank (MongoDB) auf einem VPS und Sicherung von Zugriff und Daten.
+                ul Sensible Daten, die Sie uns über ein Formular auf unseren Websites anvertrauen, wie z. B. Ihre persönlichen Daten, werden verschlüsselt.
+                ul Erstellung der Node-Express-Server, die die Seiten der Website liefern.
+                ul Sites in https: In der Adressleiste wird eine kleines Schloss angezeigt, da die Verbindung zwischen Ihrem Computer und unserem Server verschlüsselt ist.
+                ul Dies schützt Sie, wenn Sie sich die Site in einem öffentlichen WLAN-Netzwerk ansehen: Ein anderer Benutzer desselben WLAN-Netzwerks kann weder Ihre Aktivität überwachen noch schädlichen Code in die Verbindung einfügen.
+                ul Google verleiht aus diesem Grund https-Websites ein höheres Ranking.
+            li Das Front-End, die Seiten, die Sie auf dem Bildschirm sehen, enthalten dynamische Elemente.
+            | Dazu müssen die alten Seiten in eine neue Codesprache umschreiben: Wir müssen sie Seite für Seite, Link für Link übertragen.    
             p
-            | Erkundungsgrabungen unter dem Boden haben das Rätsel geklärt: Ein riesiges Wasserleck 20 m weiter unter dem Hof überschwemmte das Atelier von unten.
-            | Wir müssen den Boden bis zum Fundament hinunter austauschen. Und um den Boden auszutauschen, muss alles entfernt werden, was sich im Raum befindet.
-            p Während der Arbeiten empfängt der Verein keine Besucher in unseren Räumen und hat keine festen Termine. Nach Vereinbarung treffen wir uns an anderer Stelle.
-
-        section
-            header
-                h1 Die Webseite des Vereins verändert sich 
-            p 
-            | Unser Team von Javascript-Entwicklern hat begonnen, die Websites der Vereinigung auf neue Technologien zu umzustellen.
-            br
-            | Die Änderung umfasst mehrere Schritte:
-            ul
-                li Die Seite, auf der Sie sich befinden, ist reaktiv, sie passt sich an die Größe Ihres Bildschirms an, vom Mobiltelefon bis zum sehr großen Bildschirm.
-                | Diese Phase fertigzustellen wird einige Zeit in Anspruch nehmen - wir haben im Laufe der Jahre über zehntausend Dateien erstellt. Die Seiten der Künstler werden zuerst in einer alten Version wieder angezeigt.
-                | Neue Versionen werden vor Jahresende Seite für Seite angezeigt.
-                | Im News-Kapitel werden die Ereignisse der Vorjahre bis zu unserem Debüt im Jahr 2001 in umgekehrter Reihenfolge aufgeführt.
-
-                li Das Back-End, die unsichtbare Struktur der Website, ist technisch komplizierter, erfordert jedoch weniger Zeit. Die Details für die Technikfreaks:
-                    ul Migration des Servers VPS auf zwei schnellere VPS, Migration von Apache zu Nginx, Konfiguration und Sicherung der Server.
-                    ul Installation einer Datenbank (MongoDB) auf einem VPS und Sicherung von Zugriff und Daten.
-                    ul Sensible Daten, die Sie uns über ein Formular auf unseren Websites anvertrauen, wie z. B. Ihre persönlichen Daten, werden verschlüsselt.
-                    ul Erstellung der Node-Express-Server, die die Seiten der Website liefern.
-                    ul Sites in https: In der Adressleiste wird eine kleines Schloss angezeigt, da die Verbindung zwischen Ihrem Computer und unserem Server verschlüsselt ist.
-                    ul Dies schützt Sie, wenn Sie sich die Site in einem öffentlichen WLAN-Netzwerk ansehen: Ein anderer Benutzer desselben WLAN-Netzwerks kann weder Ihre Aktivität überwachen noch schädlichen Code in die Verbindung einfügen.
-                    ul Google verleiht aus diesem Grund https-Websites ein höheres Ranking.
-                li Das Front-End, die Seiten, die Sie auf dem Bildschirm sehen, enthalten dynamische Elemente.
-                | Dazu müssen die alten Seiten in eine neue Codesprache umschreiben: Wir müssen sie Seite für Seite, Link für Link übertragen.    
-                p
-                | Die vorherige Version und die neue Version sind nicht kompatibel.
-                | Wir haben uns dafür entschieden, die neue Website schrittweise zu erstellen, sodass Sie den Fortschritt nahezu in Echtzeit verfolgen können.
-                | Wir entschuldigen uns für kleine Fehler in dieser Zeit. Nennen wir es künstlerische Freiheit.
-    block aside
+            | Die vorherige Version und die neue Version sind nicht kompatibel.
+            | Wir haben uns dafür entschieden, die neue Website schrittweise zu erstellen, sodass Sie den Fortschritt nahezu in Echtzeit verfolgen können.
+            | Wir entschuldigen uns für kleine Fehler in dieser Zeit. Nennen wir es künstlerische Freiheit.

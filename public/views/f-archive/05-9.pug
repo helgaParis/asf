@@ -1,9 +1,13 @@
 extends ../../templates/layout-archive-dias.pug
 block main
+    h3=message
     section
-        #textgauche
-            header 
-                h1  Portes ouvertes de l'Automne
-           
-            block script
-                script(src='../images-news/2005/ponov/dias-listes.js')        
+        header
+            h1=title
+    section
+    #textgauche
+        header 
+            h1  Portes ouvertes de l'Automne
+       
+        block script
+            script(src='../images-news/2005/ponov/dias-listes.js')        

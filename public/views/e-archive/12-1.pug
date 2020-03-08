@@ -2,11 +2,10 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, administration changements  and upcoming events 2012 ')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         header
             h1 Change of board
         #textgauche 
@@ -16,7 +15,8 @@ block main
             p If you wish to continue Douglas' adventure, please contact the association     
             p Send us your propositions, questions and souvenirs of Douglas by mail or by letter.
     section
-        h1 Shows 2012
+        header
+            h1 Shows 2012
         #textgauche 
             h2 May Portes Ouvertes - Open Doors, Paris
             p 
@@ -28,9 +28,9 @@ block main
             p 
                 a(href="/galerie/erguy") Roland Erguy
                 | , 
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
                 |  and  
-                a(href="https://www.hstrobl.info")  Helga Strobl
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank")  Helga Strobl
     section
         h2 November
         #textgauche  

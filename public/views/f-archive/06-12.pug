@@ -1,10 +1,14 @@
 extends ../../templates/layout-archive-dias.pug
 block main
+    h3=message
     section
-        #textgauche
-            header 
-                h1  Claire Pluvinage expose dans la Galerie Thuillier
-            p 13, rue de Thorigny, 75003 Paris, Tél 01 42 77 33 24
-            p du 10 au 23 novembre 2006
-            block script
-                script(src='../images-news/2006/pluvinage/dias-listes.js')       
+        header
+            h1=title
+    section
+    #textgauche
+        header 
+            h1  Claire Pluvinage expose dans la Galerie Thuillier
+        p 13, rue de Thorigny, 75003 Paris, Tél 01 42 77 33 24
+        p du 10 au 23 novembre 2006
+        block script
+            script(src='../images-news/2006/pluvinage/dias-listes.js')       

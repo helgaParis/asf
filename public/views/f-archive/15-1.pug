@@ -3,7 +3,6 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières, annonces des Portes Ouvertes 2015 et participants : Doug Petrovic, Mary Quarterone, Suzan Rasmussen, Helga Strobl')
 
 block main
-    div
         p#message=title
         p  Annonces d'expos
         section
@@ -13,7 +12,7 @@ block main
             br
             | Samedi et dimanche: 11h - 19h
             p  
-            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
             | , peinture, sculpture
             br
             a(href="galerie/quartarone") Mary Quartarone
@@ -22,7 +21,7 @@ block main
             a(href="/galerie/rasmussen") Suzan Rasmussen
             | , peinture, gravure
             br
-            a(href="https://www.hstrobl.info") Helga Strobl
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
             | , photographie
 
         .row
@@ -34,7 +33,7 @@ block main
                 p Suzan Rasmussen: Milburn Heights, aquarelle
         .row
             .column
-                img#image90(src="/images-galerie/base/quartarone/creation.jpg" alt='Mary Quartarone: "Creation", aquarelle')
+                img#image90(src="/images-galerie/base/quartarone/4creation.jpg" alt='Mary Quartarone: "Creation", aquarelle')
                 p Mary Quartarone: Creation, aquarelle
             .column    
                 img#image90(src="/images-news/2015/douglas-petrovic-sans-titre.jpg" alt='Douglas "Doug" Petrovic, sans titre, huile sur toile')

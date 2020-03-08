@@ -1,9 +1,13 @@
 extends ../../templates/layout-archive-dias.pug
 block main
+    h3=message
     section
-        #textgauche
-            header 
-                h1  Exposition Roland Erguy
-           
-            block script
-                script(src='../images-news/2006/adzak/dias-listes.js')
+        header
+            h1=title
+    section
+    #textgauche
+        header 
+            h1  Exposition Roland Erguy
+       
+        block script
+            script(src='../images-news/2006/adzak/dias-listes.js')

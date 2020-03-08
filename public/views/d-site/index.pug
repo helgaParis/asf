@@ -3,10 +3,10 @@ block extrameta
     meta(name='description' content='Artistes sans Frontières, Startseite des Kapitel Service unseres Vereins')
 
 block main
-    div
-        h2 #{title} 
-        section
-            p 
+    section
+        header
+            h1 #{title} 
+        p 
             | Auf unserer neuen Website finden Sie Informationen zu
             | unserem Kunstverein (einige Seiten noch in Vorbereitung), über unsere Serviceleistungen,
             | die Mitgliedergalerie und die Veranstaltungen der letzten Jahre.
@@ -14,6 +14,6 @@ block main
             h3
             | Jüngster Newsbeitrag (Jahr - Beitragsnummer)
             a(href='/archive/dactuel') :  20#{target.actu}
-            footer
-                hr
-                include ../../templates/footer.pug
+        footer
+            hr
+            include ../../templates/footer.pug

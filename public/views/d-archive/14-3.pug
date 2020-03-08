@@ -2,24 +2,22 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Ausstellungs Ankündigungen : Fotomonat 2014 und Ausstellung Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-    div
+    section
+        header
+            p#message=title
         p  Ausstellungen im November 2014
-        section
-            header
-                h1 Mois de la Photo - Europäischer Foto Monat - Paris
-            .row
-                .column
-                    p 
-                        a(href="https://www.hstrobl.info") Helga Strobl
-                        | , Fotos
-                    p Mairie du 14e,  13 - 24 November,
-                    p Bar Restaurant Daudet, rue Alphonse Daudet, 18 November - 6 Dezember
-                .column
-                    a(href="/images-news/2014/mois-photo2014.jpg") Programme Fotomonat anzeigen
-                        img#imagefull(src="/images-news/2014/affiche-helga.jpg" alt="Ausstellungs Plakat Helga Strobl")
+    section
+        header
+            h1 Mois de la Photo - Europäischer Foto Monat - Paris
+        .row
+            .column
+                p 
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                    | , Fotos
+                p Mairie du 14e,  13 - 24 November,
+                p Bar Restaurant Daudet, rue Alphonse Daudet, 18 November - 6 Dezember
+            .column
+                a(href="/images-news/2014/mois-photo2014.jpg") Programme Fotomonat anzeigen
+                    img#imagefull(src="/images-news/2014/affiche-helga.jpg" alt="Ausstellungs Plakat Helga Strobl")
         img#image90(src="/images-news/2014/vue-du-ciel.png" alt="Vom Himmel aus gesehen")
         | Vom Himmel aus gesehen, Helga Strobl

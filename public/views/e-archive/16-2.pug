@@ -2,11 +2,10 @@ extends ../../templates/e-layout-archive-dias.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, photos and participants Open Doors / Arts 14, June 2016 : Doug Petrovic, Suzan Rasmussen, Suzan Reggaro, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         #textgauche
             header 
                 h1  Portes Ouvertes des ateliers d'artistes à Paris - Open workshop Doors
@@ -16,7 +15,7 @@ block main
                 a(href="/galerie/emory") Rick Emory
                 | , photos
                 br 
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                 | , paintings, sculptures 
                 br
                 a(href="/galerie/rasmussen")  Suzan Rasmussen
@@ -25,7 +24,7 @@ block main
                 a(href="/galerie/reggaro")  Shannon Reggaro
                 | , paintings
                 br
-                a(href="https://www.hstrobl.info") Helga Strobl
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                 |  , photos   
             block script
                 script(src='../images-news/2016/dias-listes.js')

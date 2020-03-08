@@ -2,15 +2,14 @@ extends ../../templates/layout-archive.pug
 block extrameta
     meta(name='description' content='Annonce d\'exposition en hommage de Paolo Boni, janvier 2018')
 block main
-    div
-        p#message=title
-        p  A voir
-        section
-            header
-                h1 Hommage à Paolo Boni
-            p Beaubourg 24, 24 rue Beaubourg, Paris 3e
-            p du 10 au 26 janvier 2018, du mardi au samedi, 11 - 19h
-            p
-                img#imagefull(src='/images-news/2018/boni.jpg', alt='invitation expo Paolo Boni')
-                img#imagefull(src='/images-news/2018/boni-text.jpg', alt='expo Paolo Boni, texte')
+    p#message=title
+    p  A voir
+    section
+        header
+            h1 Hommage à Paolo Boni
+        p Beaubourg 24, 24 rue Beaubourg, Paris 3e
+        p du 10 au 26 janvier 2018, du mardi au samedi, 11 - 19h
+        p
+            img#image80(src='/images-news/2018/boni.jpg', alt='invitation expo Paolo Boni')
+            img#image80(src='/images-news/2018/boni-text.jpg', alt='expo Paolo Boni, texte')
 

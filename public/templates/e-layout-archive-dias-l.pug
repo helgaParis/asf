@@ -25,13 +25,16 @@ html(lang="en")
         nav
             include ./e-nav-archive.pug
         main
-            block main  
-            #diacontainer
-                #dias
-                #legende
-            button#icons  <-  courte pause 
-                block script
-            footer
-                hr
+            .bgarchive
+                block main  
+                #diacontainer
+                    #dias
+                    #legende
+                button#icons  ←  short break
+                    block script
+            .piedvariable
+                hr.piedvariable
                 include ./footer.pug
+
+
 

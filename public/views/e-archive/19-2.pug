@@ -2,14 +2,13 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Saloum Sylla joins the team as a Javascript developper')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
         header
-            h1 First steps on the new website project
-        section
+            p#message=title
+    section
+    header
+        h1 First steps on the new website project
+    section
         .row
             .column
                 p In mid-March, two developers started to create the new site:
@@ -20,4 +19,5 @@ block main
                 p As we see, this is not always obvious - Saloum's bike seemed much smaller in the street ...
             .column
                 img#image90(src="/images-news/2019/saloum.jpg", alt="Saloum arrives for his first day at work")
+                br
                 | Saloum arrives for his first day at work

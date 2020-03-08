@@ -1,9 +1,16 @@
 extends ../../templates/layout-archive-dias.pug
 block main
+    h3=message
     section
-        #textgauche
-            header 
-                h1  Portes Ouvertes et et de la réception pour les artistes à la mairie du XIV
-            block script
-                script(src='../images-news/2006/po/dias-listes.js')
-            
+        header
+            h1=title
+    section
+        header
+            h1=title
+    section
+    #textgauche
+        header 
+            h1  Portes Ouvertes et et de la réception pour les artistes à la mairie du XIV
+        block script
+            script(src='../images-news/2006/po/dias-listes.js')
+        

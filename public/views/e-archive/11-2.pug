@@ -2,15 +2,12 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, upcoming shox Doug Petrovic et contribution de Lihidheb Mohsen ')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         header
             h1 News Jannuary 2011
-
-
         p 
         | Our Tunesien member, 
         h(ref="mohsen") Lihidheb Mohsen
@@ -27,7 +24,7 @@ block main
     section
         header
             h1 
-                h(ref="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                h(ref="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                 |  : oil on canvas
         p The show will take place in March 2011
         p at the Grand Hôtel, Sète, France

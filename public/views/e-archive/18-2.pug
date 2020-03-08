@@ -2,30 +2,29 @@ extends ../../templates/e-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Open Doors during the ARTS 14, June 2018, participants: Doug Petrovic, Suzan Rasmussen, Helga Strobl')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
-            header
-                h1 Exhibition Announcements
-        h2 14 ARTS 2018 - Open Doors of Artists' Workshops
-        .row
-            .column
-                p
-                    a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-                    | , painting, drawing, sculpture
-                    br
-                    a(href="/galerie/rasmussen")  Suzan Rasmussen
-                    | , painting, drawing
-                    br
-                    a(href="https://hstrobl.info") Helga Strobl
-                    | , photography 
-                    | Zohra Zamoum, film
-                p Saturday 9 and Sunday 10 June 2018
-                p In the 14th arrondissement of Paris and in our workshop, 7 impasse du Rouet, Paris 14th
-            .column
-                p 
-                    a(href="18-3")
-                        img#imagefull(src="/images-news/2018/plancomplet2018po.png" alt="Map for the route to Open Doors and Urban Art, 2018")
-                        | See the map in detail - Open Doors and Urban Art, 2018
+    section
+        header
+            p#message=title
+    section
+        header
+            h1 Exhibition Announcements
+    h2 14 ARTS 2018 - Open Doors of Artists' Workshops
+    .row
+        .column
+            p
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                | , painting, drawing, sculpture
+                br
+                a(href="/galerie/rasmussen")  Suzan Rasmussen
+                | , painting, drawing
+                br
+                a(href="https://hstrobl.info" rel='noopener' target="_blank" ) Helga Strobl
+                | , photography 
+                | Zohra Zamoum, film
+            p Saturday 9 and Sunday 10 June 2018
+            p In the 14th arrondissement of Paris and in our workshop, 7 impasse du Rouet, Paris 14th
+        .column
+            p 
+                a(href="18-3")
+                    img#imagefull(src="/images-news/2018/plancomplet2018po.png" alt="Map for the route to Open Doors and Urban Art, 2018")
+                    | See the map in detail - Open Doors and Urban Art, 2018

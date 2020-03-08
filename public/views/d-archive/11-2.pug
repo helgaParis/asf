@@ -2,11 +2,10 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Ausstellungs Ankündigung Doug Petrovic, Beitrag von Lihidheb Mohsen')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         header
             h1 Neuigkeiten Jänner 2011
         p 
@@ -25,7 +24,7 @@ block main
     section
         header
             h1 
-                h(ref="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                h(ref="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                 |  : Ölbilder
         p Die Ausstellung wird im März 2011 stattfinden
         p Grand Hôtel, Sète, France

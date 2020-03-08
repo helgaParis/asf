@@ -2,11 +2,10 @@ extends ../../templates/d-layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Ausstellung zu den Offenen Türen abgesagt - Schäden im Gebäude')
 block main
-    div
-        section
-            header
-                p#message=title
-        section
+    section
+        header
+            p#message=title
+    section
         header
             h1 14 ARTS 2019 - Offene Atelier Türen
         h2 STORNIERUNG der offenen Türen des Ateliers Artistes sans Frontières
@@ -16,13 +15,13 @@ block main
             .column3
                 p Samstag 29 und Sonntag 30 Juni 2019
                 p
-                    a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
                     | ,  Malerei, Zeichung, Skulptur
                     br
                     a(href="/galerie/rasmussen")  Suzan Rasmussen
                     | , Malerei, Zeichung
                     br
-                    a(href="https://hstrobl.info" target="_blank") Helga Strobl
+                    a(href="https://hstrobl.info" rel='noopener' target="_blank") Helga Strobl
                     | , Fotos 
             .column3
                 img#image90(src="/images-news/2019/po19recto.jpg", alt="14 ARTS - Art Urbain")
