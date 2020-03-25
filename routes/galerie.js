@@ -31,11 +31,11 @@ router.get('/*',function(req,res) {
     //+++ valid internal routes for French galerie - add new navlink names here, non-artist pages after 'you' +++
 
     let destinations=[
-                'adzak','amorim','bazencir','champagne','delaney','emory','erguy','frevarias',
+                'amorim','bazencir','champagne','delaney','emory','erguy','frevarias',
                 'gebka', 'gruyters','jalila','kouassi','krive','lepaquet','merle','mohsen','mtm',
                 'nicolas','plazanet','paquetrobert','pillas','pluvinage','quartarone',
                 'rahs','rasmussen','reggaro','schwertfeger','souche','stoulig','sylviaartdeco',
-                'tajuddin','valgallard','villaada','wright', 'zamoum',
+                'tajuddin','valgallard','villaada','wright','adzak', 'zamoum',
                 'you',
                 'refweb', 'reflogos', 'refpub', 'refsdc', 'refmhh', 
                 'lepaquet2','lepaquet3',

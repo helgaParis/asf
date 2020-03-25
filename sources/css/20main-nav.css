@@ -4,10 +4,12 @@
 /*************** navigation + nav links */
 nav {
     background-color : #118cff60;
-  /*  min-height: 44px;*/
 }
 .menu1 {
 text-align : left;
+}
+nav ul {
+    padding-inline-start: 9px;
 }
 nav li {
     list-style-type : none;
@@ -27,7 +29,7 @@ nav > div > ul > li:hover .menu2 {
     max-width: 300px;
     min-width: 100px;
     }        
-.menu2 li{
+.menu2 li {
     display: list-item;
 }  
 nav a {
@@ -43,7 +45,6 @@ nav a:active {
     }
 nav a:visited{
     text-decoration : none;
-   
     }
 nav a:hover, 
 nav a:focus {
@@ -58,43 +59,92 @@ nav hr {
 	color: white;
 	height:1;
 }
-/* .language contains drapeux, .home the logo, .defilee the arrows */
-.language,
-.defilee,
-.home,
-.logo {
+/*  /  .start holds .asf = the asf logo  */
+ 
+.asf {
+    background-image: url("/images/asf20.png");
+    background-size: cover;
+    display: block;
+    border:0px;
+    margin-bottom:5px;
+}
+.asf:hover, .asf:focus{
+    background-image: url("/images/asf20.png");
+    outline: none;
+}
+.start{
     border:0;
+    display:block;
+}
+/*  there are 3 flags, e, f, d, which appear on specific places of a page, depending on the original language
+ There is a fourth version  flagef  for the French flag appearing on the English website   */
 
+.flagd, .flage, .flagf, .flagef{
+    background-size: cover;
+    display: block;
+    border:0px;
 }
-.drapeau {
-    width:30%;
-    /* margin:auto; */
-    padding:5%;
+
+/* German flag always left on small screens, hidden on tiny screens */
+.flagd{
+    background-image: url("/images/drapeau-de.png");
+    background-color: forestgreen;
+}
+/* US flag always right side on small screens */
+.flage{
+    background-image: url("/images/drapeau-en.png");
+    background-color: #A90101;
+}
+/* French flag right side on English pages small screen, left on German pages, hidden on tiny screens  
+(The French flag uses the same space as one of the others, but only one flag can be needed )*/
+.flagf, .flagef{
+    background-image: url("/images/drapeau-fr.png");
+    background-color: blue;
+}
+/* The 4 arrows: arrows as a container, -up and down in the news archive, forward (arrow) and back between artists */
+.arrowup, .arrowdown, .arrow, .arrowback{
+    position: absolute;
+    background-size: cover;
+    display: block;
+    border:0px;
+    background-color : #118cff30;  
     border-color: transparent;
     border-style: solid;
 }
-.fleche{
-    border-color: transparent;
-    border-style: solid;
-}
+.arrowup{background-image: url("/images/fleche-haut.png");}
+.arrowdown{background-image: url("/images/fleche-bas.png");}
+.arrowback{background-image: url("/images/fleche-gauche.png");}
+.arrow{background-image: url("/images/fleche.png");}
+/* .arrowback{background-image: url("/images/arrow-back.png");}
+    .arrow{background-image: url("/images/arrow.png");} */
+
 a.see{
     display:inline;
 }
 /*********block accessibility ************/
-.fleche:focus, .fleche:hover, 
-.drapeau:focus, .drapeau:hover{
+
+.arrowup:focus, .arrowdown:focus, .arrow:focus, .arrowback:focus,
+.arrowup:hover, .arrowdown:hover, .arrow:hover, .arrowback:hover {
     outline: none;
     padding:none;
-    background-color: none;
+    background-color:#118cffcc; 
     border-color: none;
-    /* #A90101 1px ridge; */
+}
+.flagd:focus, .flage:focus, .flagf:focus, .flagef:focus
+.flagd:hover, .flage:hover, .flagf:hover, .flagef:hover{
+    outline: #A90101 2px ridge;
+    padding:none;  
+}
+.asf:hover, .asf:focus{
+    background-image: url("/images/logo_asf-blanc.jpg");
+    outline: none;
 }
 /**********  reactive styles
 ** hidden on small screens: 
-** deco elements on nav bar: .mini (line breaks) and nav hr
-** additional text link on arrows and text under the logo
-++ showing with the menu left side: 
-desktp for the arrows with text link and desktop for the alternative logo 
+** deco elements on nav bar: 
+**    .mini (line breaks and parts of texts) and nav hr
+**     .min600 appears only between 600 and 792 px (tablet portrait mode)
+**     additional text link on arrows and text under the logo
 **************/
 
 /*          < 400              */
@@ -102,12 +152,12 @@ desktp for the arrows with text link and desktop for the alternative logo
 @media only screen and (max-width:400px) {
 	nav {
         border-bottom : 1px dotted #A90101;
-        height : 30px;
+        height : 33px;        
     }
     nav hr, 
-    .desktp,
-    .desktop,
-    .mini {
+    .min600,
+    .mini, 
+    .arrowtextup, .arrowtextdown, .arrowtext {
 	    display: none;
     }
     nav ul {
@@ -134,43 +184,64 @@ desktp for the arrows with text link and desktop for the alternative logo
         font-size: 0.8rem;
         line-height: 17px;
     }
-    
-    .home {
+    .asf {
+        width : 50px;
+        height : 33px;
+    }   
+    .start  {
         position : absolute;
         top : 9px;
         right : 9px;
-    }
-    .logo {
-        width : 41px;
+        width: 41px;
         height : 29px;
     }
-    .language {
-        position : absolute;
-        top : 42px;
-        right : -10px;
-        width:100px;  
+    .arrowup{
+        width: 21px;
+        height: 30px;
+        top: 150px;
+        right: 4px;
     }
-    .defilee {   
-        position : absolute;
-        top : 40px;
-        left : 10;
-        width:80px;
-        text-align: left;
+    .arrowdown{
+        width: 21px;
+        height: 30px;
+        top: 200px;
+        right: 4px;
+    }
+    .arrowback{
+        width: 30px;
+        height: 21px;
+        top: 170px;
+        left: 2px;    
        
     }
-    .fleche{
-        width: 25%;
-        padding: 0 4%;
-        background-color: #118cff60;
-        border-width: 8px ;
+    .arrow{width: 30px;
+        height: 21px;
+        top: 170px;
+        right: 2px;
     }
-    .flecheup{
-        width: 20%;
-        padding: 0 4%;
-        background-color: #118cff60;
+
+    
+    .flagd, .flage, .flagf, .flagef{
+        position: absolute;
+        width: 33px;
+        height: 20px;
+        border-bottom: 3px solid;
     }
-    .drapeau{
-        border-width: 4px;
+    
+    .flage, .flagef{
+        top : 46px;
+        right : 8px;
+        /* always visible if not English version */ 
+    }
+    .flagd{
+       display: none;
+        /* not visible on smallest screens */
+    }
+    .flagf{
+        top : 46px;
+        left : 8px;
+        /* always visible if not French version */
+        
     }
 }
 /*************    400 - 600   *************/
@@ -204,45 +275,60 @@ desktp for the arrows with text link and desktop for the alternative logo
         font-size: 0.9rem;
     }
     nav hr,
-    .mini,
-    .desktop,
-    .desktp {
+    .min600,
+    .mini, 
+    .arrowtextup, .arrowtextdown, .arrowtext {
 	    display: none;
     }
-    .home {
+    .start{
         position : absolute;
-        top : 9px;
+        top :11px;
         right : 9px;
     }
-    .logo {
+    .asf {
         width : 50px;
         height : 33px;
     }
-    .defilee{
-        position : absolute;
-        top :53px;
-        left : 10px;
-        width:80px;
-        text-align: left;
+    .arrowup{
+        width: 21px;
+        height: 30px;
+        top: 150px;
+        right: 4px;
     }
-    .fleche{
-        width: 26%;
-        padding: 0 6%;
-        background-color: #118cff60;
-        border-width: 8px;
+    .arrowdown{
+        width: 21px;
+        height: 30px;
+        top: 200px;
+        right: 4px;
     }
-    .language {
-        position : absolute;
-        top : 48px;
-        right : -1px;
-        width:75px;
-        border-width: 6px;
+    
+    .arrowback{
+        width: 30px;
+        height: 21px;
+        top: 140px;
+        left: 2px;        
+    }
+    .arrow{
+        width: 30px;
+        height: 21px;
+        top: 140px;
+        right: 2px;
+    }
+    .flagd, .flage, .flagf, .flagef{
+        position: absolute;
+        width: 33px;
+        height: 20px
+    }   
+    .flage, .flagef{
+        top : 53px;
+        right : 8px;
+    }
+   
+    .flagf, .flagd{
+        top : 53px;
+        left : 8px;
+        /* flagd is visible from now on */
         
-    }
-    .flecheup{
-        width: 21%;
-        padding: 0 6%;
-        background-color: #118cff60;
     }
 }
 /********************* 600 - 792    *********************/
@@ -252,7 +338,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         border-bottom : 1px solid #A90101;
         height : 35px;
     }
-    nav div {
+    .menucontainer {
         margin : 3px 5px;
     }
     nav ul {
@@ -280,52 +366,75 @@ desktp for the arrows with text link and desktop for the alternative logo
         font-size: 0.9rem;
          }
     nav hr,
-    .mini,
-    .desktop,
-    .desktp {
+    .mini, 
+    .arrowtextup, .arrowtextdown, .arrowtext {
         display: none;
     }
-    .home {
+    .start {
         position : absolute;
         top : 9px;
         right : 9px;
     }
-    .logo {
+    .asF {
         width : 50px;
         height : 33px;
     }
-    .defilee{
-        position : relative;
-        
+    .arrowup{
+        width: 21px;
+        height: 30px;
+        top: 150px;
+        right: 4px;
     }
-    .fleche{
-        width: 3%;
-        padding: 0 2px;
-        background-color:none;
-        border-width: 8px;
+    .arrowdown{
+        width: 21px;
+        height: 30px;
+        top: 200px;
+        right: 4px;
     }
-    .flecheup{
-        width: 2%;
-        padding: 0 2px;
-        background-color:none;
+    .arrowback{
+        width: 30px;
+        height: 21px;
+        top: 140px;
+        left: 2px;        
     }
-    .language {
-        position : absolute;
-        top : 58px;
-        right : 7px;
-        width:80px;
-        border-width: 6px;
+    .arrow{
+        width: 30px;
+        height: 21px;
+        top: 1400px;
+        right: 2px;
+    }  
+    .flagd, .flage, .flagf, .flagef{
+        position: absolute;
+        width:33px;
+        height: 20px;
+    }    
+    .flage, .flagef{
+        top : 52px;
+        right : 8px;       
+    }  
+    .flagf, .flagd{
+        top : 52px;
+        left : 8px;
     }
 }
 
 /***** menu on the left side from this size on  ****/
 
+/*  special effects coming with menu change: 
+the arrows don't need a blue background any more, as they are now situated in the blue menu bar. 
+Safari handles background-color:none arbitrarily, therefore they get a fully transparent (blue) background
+
+Linktext belonging to the arrow background-image appears either left or right of it. 
+Focus and hover are white now, the state needs the same padding-left for the down arrow, 
+otherwise the text jumps to the left when trying to click it. 
+hidden parts for small screens get a display:inline
+*/
+
 @media only screen and (min-width:768px) {
-    .mobile.home, 
-    .mobil.defilee{
+    .min600 {
         display: none;
     }
-    .mini{
+    .mini, .arrowtextup, .arrowtextdown , .arrowtext {
         display: inline;
     }
     nav {
@@ -335,8 +444,9 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 0;
         width : 130px;
     }
-    nav div {
+    .menucontainer {
         display : block;
+        position:relative;
         left : 12px;
         padding : 3px;
         border-left : 2px solid;
@@ -346,6 +456,7 @@ desktp for the arrows with text link and desktop for the alternative logo
     .menu1 {
         text-align : left;
         font-size: 0.9rem;
+        line-height: 20px;
     }
     nav li {
         display : list-item;
@@ -359,43 +470,88 @@ desktp for the arrows with text link and desktop for the alternative logo
         font-size: 0.9rem;
         min-width:180px;
     }
-    .home {
+    .start {
         display : block;
-        padding-left:3%;
+        left:6px;
         position : inherit;
+        padding-bottom: 50px;
     }
-    .logo {
+    .asf {
         width : 71px;
         height : 50px;
     }
-    .defilee{
-        position : relative;
-        display:block;
-        left:2%;
-        width: 110px;
-        text-align: left;
-        top: 5px; 
+    /* arrows archive */
+    .arrowup, .arrowdown {
+        position: relative;
+        display: block;
+        background-color: #118cff00;   /* transparent background for the arrows from here on, as they are situated in the blue navbar */
         font-size: 0.8rem;
         font-weight: 300;
-    }
-    .fleche{
-        width: 22%;
-        padding: 12% 15% 3% 2%;
-        border:none;
-    }
-    .flecheup{
-        width: 18%;
-        padding: 12% 15% 3% 2%;
-    }
-    .language {
-        position : relative;
-        display:block;
-        left : 15px;
-        width:95px;
-        border-top: 1px ridge white;
-        padding-top:3%;
+        width: 21px;
+        height: 30px;      
+        margin-bottom: 5px ;  
+        top:20px;
+        left:8px;
         text-align: right;
-        border:none;
+        z-index:3;
+    }
+    .arrowup{
+        margin-left: 35px;
+        /* the link text appears left of the icon */
+    }
+    /* arrow galerie */
+    .arrow, .arrowback{
+        display: block;
+        background-color: #118cff00;   /* transparent background for the arrows from here on, as they are situated in the blue navbar */
+        width: 30px;
+        height: 21px;
+        margin-bottom: 15px;     
+        position:absolute; 
+        top:103px;    
+    }
+    .arrowback {
+        left: 8px;
+    }
+    .arrow{
+        left:52px;
+        /* the icon appears left of the arrowback icon */
+    }
+    /* the text of the arrow links, invisible on small screens */
+    a.arrowtext{
+        font-size: 0.8em;
+        font-weight: 300;
+        padding-left: 3px;
+        margin-top:50px;
+    }
+    a.arrowtextup{
+        font-size: smaller;
+        padding-left: 3px;
+    }
+    a.arrowtextdown{
+        font-size: smaller;
+        padding-left: 38px;
+    }
+    a.arrowtextdown:hover{
+        padding-left: 38px;
+    }
+    .arrowup:hover, .arrowdown:hover, .arrow:hover, .arrowback:hover,
+    .arrowup:focus, .arrowdown:focus, .arrow:focus, .arrowback:focus {
+        background-color: white;
+    }
+    .flagd, .flage, .flagf, .flagef{
+        position: relative;
+        width: 40px;
+        height: 24px;
+    }
+    .flage, .flagef{
+        left : 8px;
+        margin-bottom: 10px;       
+    }
+    .flagd{     
+        left : 8px;      
+    }
+    .flagf{
+        left : 8px;
     }
 }
 
@@ -409,7 +565,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 0;
         width : 180px;
     }
-    nav div {
+    .menucontainer{
         position : relative;
         display : block;
         left : 30px;
@@ -431,37 +587,36 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 105px;
         min-width:180px;
     }
-    .home {
+    .start {
         display : block;
         position : inherit;
-        padding-left:7%;
+       
     }
-    .logo {
+    .asf {
         width : 72px;
         height : 48px;
     }
-    .language{
-        width:120px;
-        left: 5px;
-        text-align: right;
+    .arrowback {
+        left: 12px;
     }
-    .defilee{
-        position : relative;
-        left:2%;
-        text-align: left;
-        top: 10px;
-        width: 110px;
-        padding-left: 0;
+    .arrow{
+        left:60px;
     }
-    .fleche{
-        width: 22%;
-        padding: 12% 15% 3% 2%;
-        
+    .flagd, .flage, .flagf, .flagef{
+        position: relative;
+        width: 50px;
+        height: 30px;
     }
-    .flecheup{
-        width: 18%;
-        padding: 12% 15% 3% 2%;
-        
+    .flage, .flagef{
+        left : 10px;
+        margin-bottom: 10px;       
+    }
+    .flagd{  
+        left : 10px;       
+    }
+    .flagf{
+        left : 10px;
+        margin-top: 13px;
     }
 }
 @media only screen and (min-width:1200px) {
@@ -472,7 +627,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 0;
         width : 210px;
     }
-    nav div {
+    .menucontainer {
         position : relative;
         display : block;
         left : 60px;
@@ -495,7 +650,7 @@ desktp for the arrows with text link and desktop for the alternative logo
         left : 110px;
         font-size: 0.9rem;
     }
-    .home {
+    .start {
         display : block;
         position : inherit;
         padding-left:8%;

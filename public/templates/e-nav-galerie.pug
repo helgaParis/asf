@@ -1,27 +1,14 @@
-div
-    span.mobile.home
-        a(aria-label="return to home page" href='/site/eindex' tabindex="0" role="button")
-            | Home            
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-    span.desktop.home
-        a(aria-label="return to home page" href='/site/eindex' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-            br
-            | Home
-    span.mobil.defilee
-        a(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="arrow back" alt="See the artist before" )
-            |  
-            a( aria-label="Leaf through the gallery: "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-                img.fleche(src="/images/arrow.png" title="arrow" alt="See the next artist") 
-    span.desktp.defilee
-        a(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="arrow back" alt="See the artist before" )
-        |  
-        a( aria-label="Leaf through the gallery: "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-            img.fleche(src="/images/arrow.png" title="arrow back" alt="See the next artist") 
-            br
-            | leaf through gallery
+.menucontainer
+    .start
+        a.asf(aria-label="return to home page" href='/site/eindex'  title="logo ASF" tabindex="0" role="button")
+        a.mini(aria-label="return to home page" href='/site/eindex') Home 
+    a.min600(aria-label="return to home page" href='/site/eindex') Home 
+
+    .arrows        
+        a.arrowback(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen role="button"  tabindex="0" title="backwards arrow")            
+        a.arrow(aria-label="Leaf through the gallery: : "+next href='/galerie/'+next role="button"  tabindex="0" title="arrow")                 
+        a.arrowtext(aria-label="Leaf through the gallery: "+next href='/galerie/'+next) Flip through Gallery
+
     ul.menu1
         li
             a(href='adzak') Gallery
@@ -133,8 +120,7 @@ div
                 li
                     a(href='https://vite-fait-bien-fait.com',  rel="noopener" target="_blanc") Vite fait bien fait
 
-    span.language
-        a(aria-label="English version of this page" href=dartist) 
-            img.drapeau(src="/images/drapeau-de.png", alt='Deutsche Version' role="button" tabindex="0")
-        a(aria-label="German version of this page" href=fartist) 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française' role="button"  tabindex="0")
+    a.flagef(aria-label="French version of this page" title="Version française" href=fartist role="button"  tabindex="0") 
+    a.flagd(aria-label="German version of this page" title="Deutsche Version"  href=dartist role="button"  tabindex="0") 
+
+

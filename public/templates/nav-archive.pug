@@ -1,29 +1,16 @@
 
-div
-    span.mobile.home
-        a(aria-label="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
-            | Accueil 
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières')
+.menucontainer
+    .start
+        a.asf(aria-label="retour à la page d\'accueil" title="logo A S F" href='/site/index' tabindex="0" role="button")     
+        a.mini(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+    a.min600(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+    
+    .arrows
+        a.arrowup(aria-label="feuilleter l'archive du passé vers le present" href='/archive/'+future role="button"  tabindex="0" title="flèche haut")
+        a.arrowtextup(aria-label="feuilleter l'archive du passé vers le present" href='/archive/'+future ) Futur
+        a.arrowdown(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past role="button"  tabindex="0" title="flèche bas")         
+        a.arrowtextdown(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past) Passé
 
-    span.desktop.home
-        a(aria-label="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
-            br
-            | Accueil
-    span.mobil.defilee
-        a(aria-label="feuilleter l'archive du passé vers le present : " href='/archive/'+future role="button"  tabindex="0")
-            img.flecheup(src="/images/fleche-haut.png", title="flèche haut" alt="vers le present")
-        |
-        a(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past role="button"  tabindex="0") 
-            img.flecheup(src="/images/fleche-bas.png", title="flèche bas" alt="vers le passé")
-    span.desktp.defilee
-        a(href='/archive/'+future) futur 
-        a(aria-label="feuilleter l'archive du passé vers le present " href='/archive/'+future role="button"  tabindex="0")
-            img.flecheup(src="/images/fleche-haut.png", title="flèche haut" alt="next more recent event")
-        |
-        a(aria-label="feuilleter l'archive du present vers le passé : " href='/archive/'+past role="button"  tabindex="0") 
-            img.flecheup(src="/images/fleche-bas.png", title="flèche bas" alt="vers le passé")
-            | passé
     ul.menu1
         li
             a(href='actuel') Actuel
@@ -233,8 +220,8 @@ div
                     a(href='01')  2001
                 li 
                     a(href='00')  2000
-    span.language
-        a(aria-label="Version anglaise de cette page" href=eevent role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-en.png", title="drapeau anglais", alt='English Version')
-        a(aria-label="Version allemande de cette page" href=devent role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-de.png", title="drapeau allemand", alt='Deutsche Version')
+
+    
+
+    a.flage(aria-label="Version anglaise de cette page" href=eevent role="button"  title="English Version" tabindex="0")  
+    a.flagd(aria-label="Version allemande de cette page" href=devent title="Deutsche Version" role="button"  tabindex="0") 

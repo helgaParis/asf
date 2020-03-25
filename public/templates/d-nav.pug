@@ -1,6 +1,7 @@
-div
-    span
-        img.logo(src='/images/logo_asf.jpg' title="logo A S F" alt='logo Artistes sans Frontières')
+.menucontainer
+    .start
+        a.asf(aria-label="Startseite Kaputel Verein" title='logo Artistes sans Frontières' href='/site/index' tabindex="0" role="button" )
+    
     ul.menu1
         li
             a(href='site/buts') Verein AsF
@@ -9,8 +10,5 @@ div
         li
             a(href='archive/dactuel') Neuigkeiten
 
-    span.language
-        a(aria-label="Englische Version der Startseite" href='e-index' role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-en.png", title="Englische Fahne", alt='English version')
-        a(aria-label="Französische Version der Startseite" href="index" role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-fr.png", title="Französische Fahne", alt='Version française')
+    a.flage(aria-label="Englishe Version dieser Seite" href='e-index' title="English Version"  role="button"  tabindex="0") 
+    a.flagf(aria-label="Französische Version dieser Seite" href='index' title="Version française" role="button"  tabindex="0")   

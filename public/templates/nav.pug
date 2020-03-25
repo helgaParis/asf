@@ -1,6 +1,6 @@
-div
-    span.home
-        img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
+.menucontainer
+    .start
+        a.asf(aria-label="accueil chapitre Association" title='logo Artistes sans Frontières' href='/site/index' tabindex="0" role="button" )
     ul.menu1
         li
             a(href='site/buts') Association
@@ -8,8 +8,6 @@ div
             a(href='galerie/index') Galerie
         li
             a(href='archive/actuel') Actualités
-    span.language
-        a(aria-label="Version anglaise de page d'accueil" href='e-index' role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-en.png", title="drapeau anglais", alt='English version')
-        a(aria-label="Version allemande de page d'accueil" href='d-index' role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-de.png", title="drapeau allemand", alt='Deutsche Version')
+
+    a.flage(aria-label="Version anglaise de cette page" href='e-index' role="button"  title="English Version" tabindex="0") 
+    a.flagd(aria-label="Version allemande de cette page" href='d-index' title="Deutsche Version" role="button"  tabindex="0") 

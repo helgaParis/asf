@@ -1,12 +1,9 @@
-div
-    span.mobile.home
-        a(aria-label="retour à la page d\'accueil" href='/site/index' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-    span.desktop.home
-        a(aria-label="retour à la page d\'accueil" href='/site/index' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-            br
-            | Accueil     
+.menucontainer
+    .start
+        a.asf(aria-label="retour à la page d\'accueil" title="logo A S F" href='/site/index' tabindex="0" role="button")     
+        a.mini(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+    a.min600(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+
     ul.menu1
         li
             a(href='buts') Association...
@@ -41,9 +38,5 @@ div
         li
             a(href='/archive/actuel') Actualités
 
-    span.language
-        a(aria-label="Version anglaise de cette page" href=target.ciblee role="button"  tabindex="0") 
-            img.drapeau(src="/images/drapeau-en.png", title="drapeau anglais", alt='English Version')
-        a(aria-label="Version allemande de cette page" href=target.cibled role="button"  tabindex="0") 
-            img.drapeau(src="/images/drapeau-de.png", title="dapeau allemand", alt='Deutsche Version')
-
+    a.flage(aria-label="Version anglaise de cette page" href=target.ciblee role="button"  title="English Version" tabindex="0")       
+    a.flagd(aria-label="Version allemande de cette page" href=target.cibled title="Deutsche Version" role="button"  tabindex="0")  
