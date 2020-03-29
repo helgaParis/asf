@@ -1,20 +1,24 @@
-window.addEventListener('DOMContentLoaded', function () {
-  //first picture on start  
+
+'use strict';
+function diaporama(arg1,arg2,arg3) {
+  arg1=photos;
+  arg2=legendes;
+  arg3=delai;
+    //first picture on start  
   //where to write the picture titles
     var cibleLegende = document.getElementById('legende');
     cibleLegende.innerHTML = 'un moment svp...';
     cibleLegende.innerHTML = legendes[0];
     //where to place the photos
     var cibleDias = document.getElementById('dias');
-    cibleDias.style.backgroundImage =  photos[0];
+    cibleDias.style.backgroundImage =  arg1[0];
 
     var diacontainer = document.getElementById('diacontainer');
 
 
  
-var array = photos; // coming from dias-listes.js 
-var interval = delai; //  time  between two pictures
-
+var array = arg1 //photos; // coming from dias-listes.js 
+var interval = arg3//delai; //  time  between two pictures
 
 
 
@@ -64,14 +68,6 @@ loop().then(function () {
 });
 
 
+};
 
-
- 
-  
-
-
-
-
-
-
-}); //end of EL domcontentloaded
+window.addEventListener('DOMContentLoaded',  diaporama); //end of EL domcontentloaded

@@ -100,6 +100,7 @@ nav hr {
 .flagf, .flagef{
     background-image: url("/images/drapeau-fr.png");
     background-color: blue;
+    
 }
 /* The 4 arrows: arrows as a container, -up and down in the news archive, forward (arrow) and back between artists */
 .arrowup, .arrowdown, .arrow, .arrowback{
@@ -107,20 +108,23 @@ nav hr {
     background-size: cover;
     display: block;
     border:0px;
-    background-color : #118cff30;  
+    background-color : #118cff30;
     border-color: transparent;
     border-style: solid;
+   
 }
 .arrowup{background-image: url("/images/fleche-haut.png");}
 .arrowdown{background-image: url("/images/fleche-bas.png");}
 .arrowback{background-image: url("/images/fleche-gauche.png");}
 .arrow{background-image: url("/images/fleche.png");}
 /* .arrowback{background-image: url("/images/arrow-back.png");}
-    .arrow{background-image: url("/images/arrow.png");} */
+    .arrow{background-image: url("/images/arrow.png");} 
+    -check with graphist*/
 
 a.see{
     display:inline;
-}
+    /* check if still needed */
+} 
 /*********block accessibility ************/
 
 .arrowup:focus, .arrowdown:focus, .arrow:focus, .arrowback:focus,
@@ -142,9 +146,10 @@ a.see{
 /**********  reactive styles
 ** hidden on small screens: 
 ** deco elements on nav bar: 
-**    .mini (line breaks and parts of texts) and nav hr
-**     .min600 appears only between 600 and 792 px (tablet portrait mode)
-**     additional text link on arrows and text under the logo
+**    .mini (line breaks and parts of texts) and nav hr;
+**     .min600 for the link with the logo: it appears smaller on sizes 400-600 
+**     and in normal size between 600 and 792 px (tablet portrait mode), invisible on other sizes;
+**     arrowtexts: invisible on mobile screens
 **************/
 
 /*          < 400              */
@@ -219,15 +224,16 @@ a.see{
         top: 170px;
         right: 2px;
     }
-
-    
+    a.flagd, a.flage, a.flagf, a.flagef{
+        color: white
+        /* otherwise the link on the div is underlined in red */
+    }    
     .flagd, .flage, .flagf, .flagef{
         position: absolute;
         width: 33px;
         height: 20px;
         border-bottom: 3px solid;
     }
-    
     .flage, .flagef{
         top : 46px;
         right : 8px;
@@ -252,7 +258,6 @@ a.see{
         height : 33px;
     }
     nav ul {
-        /* display : inline; */
         margin-left : 5px;
         margin-right: 30px;
         padding : 2px;
@@ -275,10 +280,15 @@ a.see{
         font-size: 0.9rem;
     }
     nav hr,
-    .min600,
     .mini, 
     .arrowtextup, .arrowtextdown, .arrowtext {
 	    display: none;
+    }
+    .min600{
+        position:absolute;
+        top:24px;
+        right: 62px;
+        font-size: smaller;
     }
     .start{
         position : absolute;
@@ -327,8 +337,7 @@ a.see{
     .flagf, .flagd{
         top : 53px;
         left : 8px;
-        /* flagd is visible from now on */
-        
+        /* flagd is visible from now on */        
     }
 }
 /********************* 600 - 792    *********************/
@@ -375,9 +384,14 @@ a.see{
         top : 9px;
         right : 9px;
     }
-    .asF {
+    .asf {
         width : 50px;
         height : 33px;
+    }
+    .min600{
+        position:absolute;
+        top:19px;
+        right: 65px;
     }
     .arrowup{
         width: 21px;
@@ -400,7 +414,7 @@ a.see{
     .arrow{
         width: 30px;
         height: 21px;
-        top: 1400px;
+        top: 140px;
         right: 2px;
     }  
     .flagd, .flage, .flagf, .flagef{
@@ -537,6 +551,10 @@ hidden parts for small screens get a display:inline
     .arrowup:hover, .arrowdown:hover, .arrow:hover, .arrowback:hover,
     .arrowup:focus, .arrowdown:focus, .arrow:focus, .arrowback:focus {
         background-color: white;
+    }
+    a.flagd, a.flage, a.flagf, a.flagef{
+        color:  #118cff00;  
+        /* on the blue navbar the underline is transparent blue */
     }
     .flagd, .flage, .flagf, .flagef{
         position: relative;
