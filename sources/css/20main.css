@@ -2,7 +2,6 @@
 
 body {
     font-family : 'Arial', sans-serif;
-    margin : 5;
     font-size: 1em;
 }
 /** server message in red-error message or temporary content during migration **/
@@ -16,8 +15,7 @@ a {
     color :#A90101;
     text-decoration: none;
 }
-a:hover,
-a:focus{
+a:hover, a:focus {
     text-decoration: underline;
 }
 
@@ -42,10 +40,20 @@ h2{
 *  main= zone handled by single pages, contains named div as (inline style colored) zone for text and images
 *  background div may have sections with headers if several h1 titels are needed
 * .fond = background gallery pages (layout galerie base and inline styles)
-* .bgsite = background chapter site (maxwidth on template layout-site)
+* .bgsite = background chapter site 
 */
 
-/*  main div */ .bgsite, .bgarchive{
+.bgsite{
+    width: 97%;
+    max-width: 800px;
+    margin:1%;
+} 
+.fond{
+    /* margin-top:1%; */
+    margin-left:1%;
+    /* margin-right: 8%; */
+} 
+.bgarchive{
     max-width: 90%;
     margin:1%;
 } 
@@ -67,12 +75,11 @@ footer, .piedvariable{
 }
 hr.piedvariable, footer hr{
     border-bottom-color:#118cff66;
-    border-style:ridge;
+    border-style:outset;
     height: 1px;
     width: 400px;
     text-align: center;
 }
-
 
 
 /**********  reactive styles*/
@@ -80,9 +87,7 @@ hr.piedvariable, footer hr{
 /********* < 400 ***************/
 
 @media only screen and (max-width:400px) {
-	/* body{
-		font-size: 0.8em;
-    } */
+    
     #message{
         margin-top: 22px;
     }
@@ -93,6 +98,14 @@ hr.piedvariable, footer hr{
        font-size: 0.9rem;
        width: 100%;
     }
+    .bgsite{
+        max-width: 400px;        
+    } 
+    .fond{
+        /* max-width: 96%;      */
+        margin-right: 14%;   
+        border-top: 24px solid white;
+    } 
 }
 
 /*************    400 - 600   *************/
@@ -111,6 +124,14 @@ hr.piedvariable, footer hr{
        font-size: 0.9rem;
        width: 100%;
     }
+    .bgsite {
+        padding-top: 12px;
+    }
+    .fond{
+        /* max-width: 89%;      */
+        border-top: 24px solid white;
+        margin-right:8%;
+    } 
 }
 
 /********************* 600 - 792    *********************/
@@ -120,6 +141,7 @@ hr.piedvariable, footer hr{
     }
     #message{
         margin-top:0;
+        text-align: center;
     }
     main {
         margin : 0 20px;
@@ -127,6 +149,17 @@ hr.piedvariable, footer hr{
     section {
        font-size: 0.9rem;
     }
+    .bgsite{
+        padding-top: 12px;
+    }
+    .fond{
+        border-top: 27px solid white;
+        margin-right: 6%;
+    }
+    .bgarchive{
+        padding-top: 12px;
+    }
+   
 }
 
 /***** menu on the left side from this size on  ****/
@@ -150,8 +183,15 @@ hr.piedvariable, footer hr{
         position : absolute;
         display : block;
         left:130px;
-        width : 82%;
+        width : 62%;
         bottom : 0;
+    }
+    .bgsite, .bgarchive{
+        padding-top: 0px;
+    }
+    .fond{
+        border-top:Opx;
+        padding-top: 3%;
     }
 }
 
@@ -177,6 +217,9 @@ hr.piedvariable, footer hr{
         width : 82%;
         bottom : 0;
     }
+    .bgsite footer {
+        left:0px;   
+    }
 }
 /**********   extra large screen  > 1200 px   ***********/
 @media only screen and (min-width:1200px) {
@@ -195,7 +238,10 @@ hr.piedvariable, footer hr{
         position : absolute;
         display : block;
         left:210px;
-        width : 80%;
+        width : 74%;
         bottom : 0;
     }  
+    .bgsite footer {
+        left:0px;       
+    }
 }

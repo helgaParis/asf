@@ -1,28 +1,16 @@
 
-div
-    span.mobile.home
-        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
-            | Home 
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières')
-    span.desktop.home
-        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières')
-            br
-            | Home
-    span.mobil.defilee
-        a(aria-label="blättern im Archiv von der Vergangenheit Richtung Gegenwart" href='/archive/'+future role="button"  tabindex="0")
-            img.flecheup(src="/images/fleche-haut.png", title="Aufwärts Pfeil" alt="Richtung Gegenwart")
-        |
-        a(aria-label="Blättern im Archiv in Richtung Vergangenheit" href='/archive/'+past role="button"  tabindex="0") 
-            img.flecheup(src="/images/fleche-bas.png", title="Abwärts Pfeil" alt="Richtung Vergangenheit")
-    span.desktp.defilee
-        a(href='/archive/'+future) Zukunft 
-        a(aria-label="blättern im Archiv von der Vergangenheit Richtung Gegenwart" href='/archive/'+future role="button"  tabindex="0")
-            img.flecheup(src="/images/fleche-haut.png", title="Aufwärts Pfeil" alt="Richtung Gegenwart")
-        |
-        a(aria-label="Blättern im Archiv in Richtung Vergangenheit" href='/archive/'+past role="button"  tabindex="0") 
-            img.flecheup(src="/images/fleche-bas.png", title="Abwärts Pfeil" alt="Richtung Vergangenheit")
-            | Vergangenheit
+.menucontainer
+    .start
+        a.asf(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" title="logo A S F" role="button")           
+        a.mini(aria-label="zurück zur Startseite" href='/site/dindex') Home 
+    a.min600(aria-label="zurück zur Startseite" href='/site/dindex') Home 
+
+    .arrows
+        a.arrowup(aria-label="im Archiv von der Vergangenheit Richtung Gegenwart blättern" href='/archive/'+future role="button"  tabindex="0" title="flèche haut")
+        a.arrowtextup(aria-label="im Archiv von der Vergangenheit Richtung Gegenwart blättern" href='/archive/'+future ) Heute
+        a.arrowdown(aria-label="im Archiv von der Gegenwart Richtung Vergangenheit blättern" href='/archive/'+past role="button"  tabindex="0" title="flèche bas")         
+        a.arrowtextdown(aria-label="im Archiv von der Gegenwart Richtung Vergangenheit blättern" href='/archive/'+past) Gestern
+        
     ul.menu1
         li
             a(href='dactuel') Actuelles
@@ -231,8 +219,6 @@ div
                     a(href='d01')  2001
                 li 
                     a(href='d00')  2000
-    span.language
-        a(aria-label="Englishe Version dieser Seite" href=eevent) 
-            img.drapeau(src="/images/drapeau-en.png", alt='English version' role="button"  tabindex="0")
-        a(aria-label="Französische Version dieser Seite" href=fevent) 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française' role="button"  tabindex="0")
+    
+    a.flage(aria-label="Englishe Version dieser Seite" href=eevent title="English Version"  role="button"  tabindex="0")  
+    a.flagf(aria-label="Französische Version dieser Seite" href=fevent title="Version française" role="button"  tabindex="0")   

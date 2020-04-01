@@ -27,7 +27,30 @@
     margin: auto;
     padding: 5% 0;
 }
-
+.imagefullc{
+    width:100%;
+    padding: 5% 0;
+}
+.imagehalfc{
+    width:45%;
+    padding: 5% 0;
+}
+.image90c{
+    width: 90%;
+    margin: auto;
+    padding: 5% 0;
+}
+.image80c{
+    width: 80%;
+    margin: auto;
+    padding: 5% 2%;
+    text-align: center;
+}
+.image30c{
+    width: 30%;
+    margin: auto;
+    padding: 5% 0;
+}
 /* place 2 or more columns in a row, 
   use image 90 if images are touching each other */
 
@@ -48,6 +71,7 @@
     display: -webkit-flex; /* Safari */
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 80%;
 }
 .columndouble{
     flex: 60%;

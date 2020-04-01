@@ -59,16 +59,16 @@ app.use('/site',site);
 
 
 app.get('/',function(req,res,next) {
-    res.render('index',{title:'Artistes sans Frontières - bienvenue - welcome!', canon:"https://artistessansfrontieres.fr/index"});
+    res.render('index',{title:'Artistes sans Frontières - des sites artistiques pour des artistes !', canon:"https://artistessansfrontieres.fr/index"});
 });
 app.get('/d-index',function(req,res,next) {
-  res.render('d-index',{title:'Artistes sans Frontières - Willkommen !',  canon:"https://artistessansfrontieres.fr/d-index"});
+  res.render('d-index',{title:'Artistes sans Frontières - Kunst Websiten für Künstler !',  canon:"https://artistessansfrontieres.fr/d-index"});
 });
 app.get('/e-index',function(req,res,next) {
-    res.render('e-index',{title:'Artistes sans Frontières - Welcome !', canon:"https://artistessansfrontieres.fr/e-index"});
+    res.render('e-index',{title:'Artistes sans Frontières - artistic websites for artists !', canon:"https://artistessansfrontieres.fr/e-index"});
 });
   app.get('/index',function(req,res,next) {
-    res.render('index',{title:'Artistes sans Frontières - Bienvenue !', canon:"https://artistessansfrontieres.fr/index"});
+    res.render('index',{title:'Artistes sans Frontières - Sites Internet pour des artistes !', canon:"https://artistessansfrontieres.fr/index"});
 });
 
 

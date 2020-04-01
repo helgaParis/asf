@@ -1,139 +1,124 @@
-div
-    span.mobile.home
-        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
-            | Home           
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-    span.desktop.home
-        a(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-            br
-            | Home
-    span.mobil.defilee
-        a(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="arrow back" alt="Den Künstler davor sehen" )
-            |  
-            a( aria-label="Leaf through the gallery: "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-                img.fleche(src="/images/arrow.png" title="arrow" alt="Den nächsten Künstler sehen") 
-    span.desktp.defilee
-        a(aria-label="Rückwärts durch die Galerie blättern: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="arrow back" alt="Den Künstler davor sehen" )
-        |  
-        a( aria-label="Durch die Galerie blättern: "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-            img.fleche(src="/images/arrow.png" title="arrow back" alt="Den nächsten Künstler sehen") 
-            br
-            | Galerie blättern        
-    ul.menu1
-        li
-            a(href='adzak') Galerie
-            ul.menu2
-                li  
-                    a(href='adzak') Adzak Roy
-                li
-                    a(href='amorim') Amorim Rangel 
-                li
-                    a(href='bazencir') Bazencir Halit  
-                li
-                    a(href='champagne') Champagne Pierrette 
-                li
-                    a(href='delaney') Delaney Beauford
-                li
-                    a(href='emory') Rick Emory
-                li
-                    a(href='erguy') Erguy Roland  
-                li
-                    a(href='frevarias') Frevarias C.
-                li
-                    a(href='gebka') Gebka Gabriel
-                li
-                    a(href='gruyters') Gruyters Dirk
-                li
-                    a(href='kouassi') Kouassi Germain
-                li
-                    a(href='krive') "Krive" Eva Krischan
-                li
-                    a(href='lepaquet') Le Paquet
-                li
-                    a(href='merle') Merle Jean-Charles
-                li
-                    a(href='mohsen')  Mohsen Lihidheb
-                li
-                    a(href='mtm') MTM Massias                
-                li
-                    a(href='nicolas') Nicolas
-                li
-                    a(href='paquetrobert') Paquet Robert 
-                li
-                    a(href='plazanet') P.Plazanet 
-                li
-                    a(href='pillas')  Pillas Catherine
-                li
-                    a(href='pluvinage') Pluvinage Claire
-                li
-                    a(href='quartarone') Quartarone Mary
-                li  
-                    a(href='rahs')  Rahs Wolfgang
-                li
-                    a(href='rasmussen') Rasmussen Suzan
-                li
-                    a(href='reggaro') Shannon Reggaro
-                li  
-                    a(href='jalila') Rezine Jalila
-                li
-                    a(href='schwertfeger') Schwertfeger J.
-                li
-                    a(href='sylviaartdeco') Simoncelli Sylvia Artdeco
-                li
-                    a(href='souche') Elisa Souche
-                li
-                    a(href='stoulig') Stoulig Fabienne
-                li
-                    a(href='tajuddin') Tajuddin Ahmed
-                li
-                    a(href='valgallard') Val-Gallard  
-                li
-                    a(href='villaada') Villa Ada 
-                li
-                    a(href='wright')  Wright Nicholas
-        br.mini
-        li 
-            a(href='') Künstler 
-            ul.menu2
-                li 
-                    a(href='http://gabriella.carbone.free.fr/cadres.html', rel="noopener noreferrer nofollow", target='_blank') Carbone Gabriella 
-                li 
-                    a(href='https://www.dock-sud.com/AET%202009%20GIETL%20Karl%20-%20du%2022-05-09%20au%2022-06-09.php ', rel="noopener noreferre nofollow", target='_blank') Gietl Karl
-                li
-                    a(href='https://yorgosmaryelis.weebly.com', rel="noopener noreferrer nofollow", target='_blank') Maryelis Yorgos
-                li
-                    a(href='https://dougpetrovic.info', rel='noopener' target='_blank')  Petrovic Doug
-                li
-                    a(href='https://petrovic.ovh/moab', rel="noopener", target='_blank') Petrovic Helga
-                li
-                    a(href='https://hstrobl.info', rel='noopener', target='_blank') Strobl Helga    
-                li
-                    a(href='https://www.larp.fr/membres/fatma-zohra-zamoum/', rel="noopener noreferrer nofollow", target='_blank') Zamoum F.-Z.       
-        br.mini  
-        li
-            a(href='') Andere Seiten
-            ul.menu2
-                li
-                    a(href='https://leroidesaulnes.org', rel="noopener" target="_blanc") Les Amis du Roi des Aulnes
-                li
-                    a(href='https://artistessansfric.com',  rel="noopener" target="_blanc") Artistes sans Fric
-                li
-                    a(href='https://paris-informatix.com',  rel="noopener" target="_blanc") Informatix
-                li
-                    a(href='refweb') Referenzen
-                li
-                    a(href='refmhh',rel='noreferrer') MHH
-                li
-                    a(href='refsdc') SDC
-                li
-                    a(href='') Le Clown
-                li
-                    a(href='https://vite-fait-bien-fait.com',  rel="noopener" target="_blanc") Vite fait bien fait
-    span.language
-        a(aria-label="Englishe Version dieser Seite" href=eartist) 
-            img.drapeau(src="/images/drapeau-en.png", alt='English version' role="button"  tabindex="0")
-        a(aria-label="Französische Version dieser Seite" href=fartist) 
-            img.drapeau(src="/images/drapeau-fr.png", alt='Version française' role="button"  tabindex="0")
+.menucontainer
+    .start
+        a.asf(aria-label="zurück zur Startseite" href='/site/dindex' tabindex="0" title="logo A S F" role="button")           
+        a.mini(aria-label="zurück zur Startseite" href='/site/dindex') Home 
+    a.min600(aria-label="zurück zur Startseite" href='/site/dindex') Home 
+
+    .arrows        
+        a.arrowback(aria-label="Durch die Galerie zurück blättern: "+lastseen href='/galerie/'+lastseen role="button"  tabindex="0" title="Pfeil zurück")            
+        a.arrow(aria-label="Durch die Galerie blättern: "+next href='/galerie/'+next role="button"  tabindex="0" title="Pfeil vorwärts")                 
+        a.arrowtext(aria-label="Durch die Galerie blättern:"+next href='/galerie/'+next) Galerie blättern 
+   
+ul.menu1
+    li
+        a(href='adzak') Galerie
+        ul.menu2
+            li  
+                a(href='adzak') Adzak Roy
+            li
+                a(href='amorim') Amorim Rangel 
+            li
+                a(href='bazencir') Bazencir Halit  
+            li
+                a(href='champagne') Champagne Pierrette 
+            li
+                a(href='delaney') Delaney Beauford
+            li
+                a(href='emory') Rick Emory
+            li
+                a(href='erguy') Erguy Roland  
+            li
+                a(href='frevarias') Frevarias C.
+            li
+                a(href='gebka') Gebka Gabriel
+            li
+                a(href='gruyters') Gruyters Dirk
+            li
+                a(href='kouassi') Kouassi Germain
+            li
+                a(href='krive') "Krive" Eva Krischan
+            li
+                a(href='lepaquet') Le Paquet
+            li
+                a(href='merle') Merle Jean-Charles
+            li
+                a(href='mohsen')  Mohsen Lihidheb
+            li
+                a(href='mtm') MTM Massias                
+            li
+                a(href='nicolas') Nicolas
+            li
+                a(href='paquetrobert') Paquet Robert 
+            li
+                a(href='plazanet') P.Plazanet 
+            li
+                a(href='pillas')  Pillas Catherine
+            li
+                a(href='pluvinage') Pluvinage Claire
+            li
+                a(href='quartarone') Quartarone Mary
+            li  
+                a(href='rahs')  Rahs Wolfgang
+            li
+                a(href='rasmussen') Rasmussen Suzan
+            li
+                a(href='reggaro') Shannon Reggaro
+            li  
+                a(href='jalila') Rezine Jalila
+            li
+                a(href='schwertfeger') Schwertfeger J.
+            li
+                a(href='sylviaartdeco') Simoncelli Sylvia Artdeco
+            li
+                a(href='souche') Elisa Souche
+            li
+                a(href='stoulig') Stoulig Fabienne
+            li
+                a(href='tajuddin') Tajuddin Ahmed
+            li
+                a(href='valgallard') Val-Gallard  
+            li
+                a(href='villaada') Villa Ada 
+            li
+                a(href='wright')  Wright Nicholas
+    br.mini
+    li 
+        a(href='') Künstler 
+        ul.menu2
+            li 
+                a(href='http://gabriella.carbone.free.fr/cadres.html', rel="noopener noreferrer nofollow", target='_blank') Carbone Gabriella 
+            li 
+                a(href='https://www.dock-sud.com/AET%202009%20GIETL%20Karl%20-%20du%2022-05-09%20au%2022-06-09.php ', rel="noopener noreferre nofollow", target='_blank') Gietl Karl
+            li
+                a(href='https://yorgosmaryelis.weebly.com', rel="noopener noreferrer nofollow", target='_blank') Maryelis Yorgos
+            li
+                a(href='https://dougpetrovic.info', rel='noopener' target='_blank')  Petrovic Doug
+            li
+                a(href='https://petrovic.ovh/moab', rel="noopener", target='_blank') Petrovic Helga
+            li
+                a(href='https://hstrobl.info', rel='noopener', target='_blank') Strobl Helga    
+            li
+                a(href='https://www.larp.fr/membres/fatma-zohra-zamoum/', rel="noopener noreferrer nofollow", target='_blank') Zamoum F.-Z.       
+    br.mini  
+    li
+        a(href='') Andere Seiten
+        ul.menu2
+            li
+                a(href='https://leroidesaulnes.org', rel="noopener" target="_blanc") Les Amis du Roi des Aulnes
+            li
+                a(href='https://artistessansfric.com',  rel="noopener" target="_blanc") Artistes sans Fric
+            li
+                a(href='https://paris-informatix.com',  rel="noopener" target="_blanc") Informatix
+            li
+                a(href='refweb') Referenzen
+            li
+                a(href='refmhh',rel='noreferrer') MHH
+            li
+                a(href='refsdc') SDC
+            li
+                a(href='') Le Clown
+            li
+                a(href='https://vite-fait-bien-fait.com',  rel="noopener" target="_blanc") Vite fait bien fait
+
+    a.flage(aria-label="Englishe Version dieser Seite" href=eartist title="English Version"  role="button"  tabindex="0")  
+    a.flagf(aria-label="Französische Version dieser Seite" href=fartist title="Version française" role="button"  tabindex="0")  

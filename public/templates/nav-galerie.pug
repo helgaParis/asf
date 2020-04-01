@@ -1,30 +1,17 @@
-div
-    span.mobile.home
-        a(aria-label="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
-            | Accueil            
-            img.logo(src='/images/asf20.png' title="logo ASF" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-    span.desktop.home
-        a(aria-label="retour à la page d'accueil" href='/site/index' tabindex="0" role="button")
-            img.logo(src='/images/asf20.png' title="logo A S F" alt='logo Artistes sans Frontières' tabindex="0" role="button")
-            br
-            | Accueil
-    span.mobil.defilee
-        a(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="flèche retour" alt="voir l'artiste d'avant" )
-            |  
-            a( aria-label="feuilleter la galerie en arrière : "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-                img.fleche(src="/images/arrow.png" title="flèche" alt="voir le prochain artiste") 
-    span.desktp.defilee
-        a(aria-label="Leaf through the gallery backwards: "+lastseen href='/galerie/'+lastseen  role="button"  tabindex="0") 
-            img.fleche(src="/images/arrow-back.png" title="flèche retour" alt="voir l'artiste d'avant" )
-        |  
-        a( aria-label="feuilleter la galerie en arrière : "+next href='/galerie/'+next style={'line-height': '0.8em'}  role="button"  tabindex="0")
-            img.fleche(src="/images/arrow.png" title="flèche" alt="voir le prochain artiste") 
-            br
-            | parcourir la galerie
+.menucontainer
+    .start
+        a.asf(aria-label="retour à la page d\'accueil" title="logo A S F" href='/site/index' tabindex="0" role="button")     
+        a.mini(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+    a.min600(aria-label="retour à la page d\'accueil" href='/site/index' ) Accueil
+
+    .arrows        
+        a.arrowback(aria-label="feuilleter la galerie en arrière : "+lastseen href='/galerie/'+lastseen role="button"  tabindex="0" title="flèche retour")            
+        a.arrow(aria-label="feuilleter la galerie en avant : "+next href='/galerie/'+next role="button"  tabindex="0" title="flèche avant")                 
+        a.arrowtext(aria-label="feuilleter la galerie en avant : "+next href='/galerie/'+next) Parcourir la Galerie
+
     ul.menu1
         li
-            a(href='adzak') Galerie
+            a(href='amorim') Galerie
             ul.menu2
                 li  
                     a(href='adzak') Adzak Roy
@@ -94,7 +81,7 @@ div
                     a(href='villaada') Villa Ada 
                 li
                     a(href='wright')  Wright Nicholas
-        br.mini
+        //- br.mini
         li
             a(href='') Artistes
             ul.menu2
@@ -112,7 +99,7 @@ div
                     a(href='https://hstrobl.info', rel='noopener', target='_blank') Strobl Helga    
                 li
                     a(href='https://www.larp.fr/membres/fatma-zohra-zamoum/', rel="noopener noreferrer nofollow", target='_blank') Zamoum F.-Z.       
-        br.mini  
+        //- br.mini  
         li
             a(href='') Autres Sites
             ul.menu2
@@ -132,8 +119,6 @@ div
                     a(href='') Le Clown
                 li
                     a(href='https://vite-fait-bien-fait.com',  rel="noopener" target="_blanc") Vite fait bien fait
-    span.language
-        a(aria-label="Version anglaise de la même page" href=eartist role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-en.png", title="drapeau anglais", alt='English version') 
-        a(aria-label="Version allemande de la même page" href=dartist role="button" tabindex="0") 
-            img.drapeau(src="/images/drapeau-de.png",title="drapeau allemand", alt='Deutsche Version')
+
+    a.flage(aria-label="Version anglaise de cette page" href=eartist role="button"  title="English Version" tabindex="0")  
+    a.flagd(aria-label="Version allemande de cette page" href=dartist title="Deutsche Version" role="button"  tabindex="0")  

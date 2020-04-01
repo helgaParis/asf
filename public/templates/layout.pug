@@ -13,7 +13,6 @@ html(lang="fr")
         meta(name="theme-color" content='#118cff') 
         link(rel='stylesheet', href='css/20main.css')
         link(rel='stylesheet', href='css/20main-nav.css')
-        link(rel='stylesheet', href='css/site.css')
         link(rel='stylesheet', href='css/colonnes.css')
         link(rel="shortcut icon" href="images/favicon.ico")
         title=title
@@ -23,6 +22,6 @@ html(lang="fr")
         nav
             include ./nav.pug
         main
-            block main
-
-                include ./footer.pug
+            .bgsite
+                block main
+                    include ./footer.pug
