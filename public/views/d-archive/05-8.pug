@@ -1,11 +1,32 @@
-extends ../../templates/d-layout-archive.pug
+extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Salon des Arts, Kunstsalon 2005 : Douglas "Doug" Petrovic, Roland Erguy')
+
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p annonces, à suivre
+        p#message=title
+        #textgauche
+            header
+                h1 Ausstellung Salon des Arts
+            .row
+                .column
+                    h3 Mairie du 14e arrondissement de Paris
+                    p 
+                        | 15 - 25 September 2005, 
+                        br
+                        | 10h - 17h, Donnerstag bis 19h 
+                .column
+                    h3 Mehrere unserer Mitglieder nehmen teil:
+                    p
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        | ,  Ölbild "Lanze", 
+                        br
+                        a(href="/galerie/erguy")  Roland Erguy
+                        | , Skulptur "Schiff", 
+                        br
+                        a(href="/galerie/wright")  Nicholas Wright
+                        | , Skulptur "Margaret", 
+                        br
+                        | Airelle,  Gemälde "Solstice"
+        block script
+            script(src='../images-news/2005/salon/dias-listes.js')

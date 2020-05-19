@@ -180,7 +180,7 @@ router.get('/*',function(req,res) {
                                 eartist:eartist,
                                 dartist:dartist, 
                                 fartist:fartist ,
-                                	canon:"https://artistessansfrontieres.fr/galerie/"+pageCalled
+                                canon:"https://artistessansfrontieres.fr/galerie/"+pageCalled
                             });
     
 });

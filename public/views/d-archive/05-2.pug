@@ -1,14 +1,30 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Einladung und Plakat zur Ausstellungi der Loft Gallery 2005 : Douglas "Doug" Petrovic, Roland Erguy, Monique Dussauge')
+
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p annonces, à suivre
+        p#message=title
+        #textgauche
+            header 
+                h1  Ausstellung in der Loft Gallery
+            .row
+                .column
+                    p 15 - 29 Juni 2005, täglich von 12h bis 19h
+                    p 88, rue du dessous des Berges, 75013 Paris
+                    h3  Ausstellung : 
+                    p 
+                        a(href="/galerie/erguy") Roland Erguy
+                        | , 
+                        br
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        | ,  
+                        br
+                        | Monique Dussauge
+                .column                    
+                    img.image80c(src="../images-news/2005/loft/loft-affiche.jpg", alt="Plakat Ausstellung loft gallery")
+            .row
+                .column
+                    img(src="../images-news/2005/loft/loft-recto.jpg", alt="Einladungskarte Ausstellung loft gallery")
+                .columnright
+                    img(src="../images-news/2005/loft/loft-verso.jpg", alt="Einladungskarte Rückseite, Ausstellung loft gallery")

@@ -1,11 +1,20 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Künstler des Jahres 2005 : Ahmed Tajuddin')
+
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p Tajuddin, à suivre
+        #textgauche
+            header 
+                h1  Projekte 2005
+            .row
+                .column
+                    p Unser Künstler des Jahres
+                    p Im Dezmber 2004 besuchten wir die Ausstellung des Malers Ahmed Tajuddin im Museum Adzak, International Art Space, in Paris.
+                    p Das kleine Museum, geleitet von Margaret Crowther, ist ein wahrer internationamer Treffpunkt, wo man Künstler von überall her treffen kann.
+                    p Ahmed Tajuddin aus Dhaka, Bangladesh hat seine Werke überall auf der Welt ausgestellt. Seine Werke haben uns beeindrickt, daher haben wir ihm ein Jahr Mitgliedschaft bei Artistes sans Frontières angeboten und eine eigene Website.
+                    p Damit wurde Ahmed Tajuddin zu unserem ersten Künstler des Jahres 2005. Wir planen in Zukunft jedes Vierteljahr einen neuen Künstler aus einem anderen Land zu wählen, um neue Talente vorzustellen.
+                .column
+                    img(src="/images-news/2005/taj1.jpg", alt="Ahmed Tajuddin Kunstwerk")
+                    img(src="/images-news/2005/taj2.jpg", alt="Ahmed Tajuddin, Malerei")
+                    img(src="/images-news/2005/tajuddin.jpg", alt="Foto Ahmed Tajuddin")

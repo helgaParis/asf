@@ -80,30 +80,29 @@
 }
 
 .column {
-flex: 50%;
-max-width: 47%;
-align-self: center;
-padding-right:3%;
+    flex: 50%;
+    max-width: 47%;
+    align-self: center;
+    padding-right:3%;
+}
+.columnright{
+    flex:50%;
+    text-align: right;
 }
 
 .column3 {
-flex: 30%;
-max-width: 30%;
-align-self: center;
-padding-left: 3%;
+    flex: 30%;
+    max-width: 30%;
+    align-self: center;
+    padding-left: 3%;
 }
 .column35 {
     flex: 30%;
-    /* max-width: 30%; */
     align-self: center;
-    /* padding-left: 3%; */
-    /* border: 1px solid red; */
     }
 .column65{
     flex: 65%;
-    /* max-width: 65%; */
     align-self: center;
-    /* background-color: gold; */
    
     }
 .column4 {

@@ -1,16 +1,22 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos und Teilnehmer Kunst Markt in Pont Audemer 2005 : Doug Pretrovic, Suzan Rasmussen')
+
 block main
-    h3=message
     section
+        p#message=title
+        #textgauche
         header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Salon des Arts - Mairie du 14e arrondissement de Paris
-        p 15/25 septembre 2005, 10-17h (19h le jeudi)
-        p Plusieurs de nos membres exposent:
-       
-        block script
-            script(src='../images-news/2005/salon/dias-listes.js')
-            
+            h1  Kunst Markt in Pont Audemer
+        p  3 Juli 2005
+        p Ausstellung: 
+            br
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+            | , Malerei, Skulptur 
+            br
+            a(href="/galerie/rasmussen")  Suzan Rasmussen
+            | , Malerei, Lithografie
+            br
+
+            block script
+                script(src='../images-news/2005/audemer/dias-listes.js')

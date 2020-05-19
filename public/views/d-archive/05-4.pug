@@ -1,14 +1,22 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos und Teilnehmer an den Offenen Türen Paris, 20005 : Roland Erguy, Douglas "Doug" Petrovic, Suzan Rasmussen')
+
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  L'exposition à la Loft-Gallery, juin 2005
-        p Photos prises par nos membres - nous remercions Régine et Roland Erguy
-        block script
-            script(src='../images-news/2005/lofterguy/dias-listes.js')
+        p#message=title
+        #textgauche
+            header
+                h1  Offene Türen Ateliers in Paris, 14 Bezirk, Mai 2005
+                 p
+                a(href="/galerie/erguy") Roland Erguy
+                | , Skulptur und Lithografie
+                br
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                | , Malerei
+                br
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                | , Malerei
         
+        block script
+            script(src='../images-news/2005/po/dias-listes.js')

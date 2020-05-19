@@ -1,13 +1,53 @@
-extends ../../templates/d-layout-archive-dias.pug
+extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Offene Türen und Ausstellungen 2005 : Claire Pluvinage, Doug Petrovic, Airelle,Pascal Plazanet, Catherine Pillas ')
+
 block main
-    h3=message
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1 Offene Türen
+            .row
+                .column
+                    p Samstag 19 und Sonntag 20 November 2005,
+                    p 14 - 20 h
+                    p 7, impasse du Rouet
+                    h3 Ausstellung: 
+                    p 
+                        | Airelle, 
+                        a(href="/galerie/pluvinage") Claire Pluvinage
+                        | , 
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                    p Offene Türen im November: Artistes sans Frontières gestaltete das Layout des Plakats und der Broschüre für den Verein 14 und die teilnehmenden Künstler. (© Idee, Foto und Gestaltung: Douglas de Petrovic, Paris, Oktober 2005)
+                .column
+                    img.image90c(src="../images-news/2005/po-nov05.jpg", title="Offene Türen, Plakat gestaltet von Artistes sans Frontières", alt="Offene Türen, Plakat gestaltet von Artistes sans Frontières, Veranstalter: Monts 14." )
+       
     section
         header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Portes ouvertes de l'Automne
-       
-        block script
-            script(src='../images-news/2005/ponov/dias-listes.js')        
+            h1 Ausstellungen
+        h2 C.E.P.S. (Centre d'Etude et de Prospective Stratégique) und Musée du Montparnasse stellen REMZI vor
+        p Musée du Montparnasse, 21 avenue du Maine, 75015 Paris
+        h3 28 Oktober - 10 November 2005
+
+        h2 Unser Mitglied 
+            a(href="/galerie/plazanet") Pascal Plazanet 
+            | stellt aus: 
+        h3 22e salon des Artistes Peintres et Sculpteurs du 15e
+        p 24 November - 4 Dezember, 13h-17h, Donnerstag 13h-19h,
+        p Maire du 15e, Festsaal, 31 rue Péclet, 75015 Paris, Metro Vaugirard
+
+        h2 Ausstelung unseres Mitglieds 
+            a(href="/galerie/pluvinage") Claire Pluvinage
+        h3 Salon d'Art Nature - Animaux
+        p 8 - 11 Dezember: Donnerstag 11h - 22h, Freitag und Samstag 11h - 20h, Sonntag 11h -19h
+        p Espace Champerret, Paris 17 ème, Porte de Champerret, M. ligne 3 Pte Champerret, M ligne 2 Louise Michel, RER C Station Pereire
+
+        h2 Unsere Mitglieder  
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+            | und 
+            a(href="/galerie/pluvinage") Catherine Pillas 
+
+        h3 stellen im Bistro du Marché, Sète, Südfrankreich, aus.
+        p 15 Dezember 2005 - 14 Januar 2006, täglich ausser Sonntag
+        p Bistro du Marché, 1 rue Alsace Lorraine, 34200 Sète, Tél. 04.67.74.82.26 

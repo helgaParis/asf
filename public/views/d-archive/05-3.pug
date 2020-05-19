@@ -1,16 +1,30 @@
-extends ../../templates/d-layout-archive-dias.pug
+extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Ausstellungs Ankündigungen 2005 : Roland Erguy, Douglas "Doug" Petrovic, Suzan Rasmussen')
+
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Portes Ouvertes et et de la réception pour les artistes à la mairie du XIV
-        block script
-            script(src='../images-news/2006/po/dias-listes.js')
-        
+        #textgauche
+            p#message=title
+            h3  Einladung der Redaktion des Who's Who In International Art und Madame Christiane Peugeot
+            h2 Ausstellung unseres Mitglieds 
+                a(href="/galerie/plazanet") Pascal Plazanet
+            h3 "La peinture d'aujourd'hui dans ses différents métiers"
+            p 9 - 14 Juni 2005,  11 - 19 Uhr.
+            h3 Vernissage: Donnerstag 9 Juni,  18 - 21h
+            p Centre culturel Christiane Peugeot, 62 avenue de la Grande Armée, 75017 Paris
+            p Métro: Argentine. Parking: Porte Maillot (Palais de Congrès)
+            
+            h2 Portes ouvertes des ateliers du XIV
+            p  Offene Türen der Künstler Ateliers in Paris, 14 Bezirk
+            p Samstag 21 und Sonntag 22 Mai 2005
+            h3 Künstler:
+            p
+                a(href="/galerie/erguy") Roland Erguy
+                | , Skulptur und Lithografie
+                br
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                | , Malerei
+                br
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                | , Malerei
