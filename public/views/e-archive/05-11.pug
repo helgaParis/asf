@@ -1,0 +1,24 @@
+extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, art show at Sète 2005: Douglas "Doug" Petrovic, Catherine Pillas')
+    meta(name='author' content='Babacar')
+block main
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1  Exhibition at Sète
+            .row
+                .column
+                    p 15 december 2005 - 14 january 2006, Monday to Saturday
+                    p Bistro du Marché, South of France
+                    h3  Exhibition :
+                    p
+                        a(href="/galerie/epillas") Catherine Pillas
+                        | , 
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+
+                .column
+                    img(src="/images-news/2005/sete/affiche.jpg", alt="Poster show at Sete ")  
+        block script
+            script(src='../images-news/2005/sete/dias-listes.js')

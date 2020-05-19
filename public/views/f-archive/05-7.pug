@@ -1,16 +1,21 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants au Marché de l\'art Pont Audemer 2005 : Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Salon des Arts - Mairie du 14e arrondissement de Paris
-        p 15/25 septembre 2005, 10-17h (19h le jeudi)
-        p Plusieurs de nos membres exposent:
-       
-        block script
-            script(src='../images-news/2005/salon/dias-listes.js')
-            
+        p#message=title
+        #textgauche
+            header
+                h1  Marché d'Art à Pont Audemer
+        p 3 juillet 2005
+        p Exposition : 
+            br
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+            | , peinture et sculptures, 
+            br
+            a(href="/galerie/rasmussen")  Suzan Rasmussen
+            | , peinture, gravure
+            br
+            block script
+                script(src='../images-news/2005/audemer/dias-listes.js')

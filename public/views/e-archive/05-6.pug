@@ -1,16 +1,15 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, show at the loft-gallery 2005, pictures by the artists, Roland Erguy')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
+        p#message=title
         #textgauche
-            header 
-                h1  Marché d'Art à Pont Audemer
-            p 3 juillet 2005
-            p Exposants : DOUG Petrovic, Suzan Rasmussen
-           
-            block script
-                script(src='../images-news/2005/audemer/dias-listes.js')
-            
+            header
+                h1  The exhibition at the Loft-Gallery, June 2005
+        p Photos provided by our members - our thanks to Regine and Roland Erguy
+        block script
+            script(src='../images-news/2005/lofterguy/dias-listes.js')
+
+

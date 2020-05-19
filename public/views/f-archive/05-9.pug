@@ -1,13 +1,52 @@
-extends ../../templates/layout-archive-dias.pug
+extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants aux Portes Ouvertes 2005 : Claire Pluvinage, Doug Petrovic,Airelle ')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes à Paris
+            .row
+                .column
+                    p 19 et 20 novembre 2005,
+                    p Samedi et dimanche : 14h à 20h
+                    p 7, impasse du Rouet, Paris 14e
+                    h3  Exposition 
+                    p 
+                        | Airelle, 
+                        a(href="/galerie/pluvinage") Claire Pluvinage
+                        | , 
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                    p Cette année, Artistes sans Frontières a offert la maquette de l'affiche et des dépliants à l'association Monts 14 et aux artistes participants aux Portes Ouvertes. (© Idée, photo et réalisation: Douglas de Petrovic, Paris, octobre 2005)
+                .column
+                    img.image90c(src="../images-news/2005/po-nov05.jpg", title="Portes Ouvertes - affiche créée par Artistes sans Frontières", alt="Portes Ouvertes du 14e, organisé par Monts14, affiche créée par Artistes sans Frontières" )
     section
         header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Portes ouvertes de l'Automne
-       
-        block script
-            script(src='../images-news/2005/ponov/dias-listes.js')        
+            h1 Expositions 
+        h2 Le C.E.P.S. et le musée du Montparnasse présentent REMZI
+        p au Musée du Montparnasse, 21 avenue du Maine, 75015 Paris
+        h3 du 28 octobre au 10 novembre 2005
+        
+        h2 Notre membre 
+            a(href="/galerie/plazanet") Pascal Plazanet 
+            | expose 
+        h3 au 22e salon des Artistes Peintres et Sculpteurs du 15e
+        p Du 24 novembre au 4 décembre, Ouverture 13h-17h, jeudi de 13h-19h,
+        p Maire du 15e, Salle des fêtes de la Mairie du 15e, 31 rue Péclet, 75015 Paris, Métro Vaugirard
+            
+        h2 Notre membre 
+            a(href="/galerie/pluvinage") Claire Pluvinage 
+            | expose
+        h3 au Salon d'Art Nature - Animaux
+        p 8 - 11 décembre, horaires: jeudi 11h à 22h, vendredi et samedi 11h à 20h, dimanche 11 décembre 11h à 19h
+        p Espace Champerret, Paris 17 ème, Porte de Champerret, M. ligne 3 Pte Champerret, M ligne 2 Louise Michel, RER C Station Pereire
+
+        h2 Nos membres 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+            | et 
+            a(href="/galerie/pluvinage") Catherine Pillas 
+        p exposent au Bistro du Marché à Sète
+        p 15 décembre 2005 - 14 janvier 2006, ouvert tous les jours sauf dimanche
+        p Bistro du Marché, 1 rue Alsace Lorraine, 34200 Sète, Tél. 04.67.74.82.26 

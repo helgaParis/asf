@@ -1,14 +1,19 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants, loft gallery 2005 : Roland Erguy,  Doug Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  L'exposition à la Loft-Gallery, juin 2005
-       
+        p#message=title
+        #textgauche
+            header
+                h1  L'exposition à la Loft-Gallery, juin 2005
+            h3 Exposition :
+            p   
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                | et 
+                a(href="/galerie/rasmussen")  Suzan Rasmussen
         block script
             script(src='../images-news/2006/loft/dias-listes.js')
-        

@@ -1,11 +1,23 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants aux Projets 2005 : Ahmed Tajuddin')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p Tajuddin, à suivre
+        p#message=title
+        #textgauche
+            header 
+                h1  Projets 2005
+            .row
+                .column
+                    h2 L’artiste du trimestre
+                    p En décembre 2004 nous avons visité l’exposition au Musée-atelier Adzak, International Art Space, à Paris de l'artiste peintre Ahmed Tajuddin.
+                    p Cet International Art Space, géré par Margaret Crowther, est un vrai espace international de l’art contemporain, où l’on peut rencontrer des artistes de toutes les nationalités.
+                    p 
+                        a(href="/galerie/tajuddin") Ahmed Tajuddin 
+                        | vient de Dhaka, Bangladesh et a déjà exposé dans le monde entier. Comme nous étions impressionnés par son œuvre, nous lui avons offert une année d’adhésion à l’association Artistes sans Frontières avec la création d’un site Internet personnalisé, pour présenter son œuvre.
+                    p Ainsi Ahmed Tajuddin est devenu le premier Artiste du trimestre.De cette action, l’idée est née de choisir un ou une artiste par trimestre, d’origine différente, dont l’œuvre mérite d’être connue.
+                .column
+                    img(src="/images-news/2005/taj1.jpg", alt="Ahmed Tajuddin oeuvre")
+                    img(src="/images-news/2005/taj2.jpg", alt="Ahmed Tajuddin painture")
+                    img(src="/images-news/2005/tajuddin.jpg", alt="photo Ahmed Tajuddin")
