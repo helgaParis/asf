@@ -1,0 +1,55 @@
+extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants aux Portes Ouvertes 2004, Expositions 2004 : Doug Petrovic, Jacqueline Cauet, Tajuddin Ahmed' )
+    meta(name='author' content='Babacar')
+block main
+    section
+        p#message=title
+        #textgauche
+            header
+                h1  Portes Ouvertes 2004
+        .row
+            .column
+                h2 Portes Ouvertes   
+                p Le samedi 20 et dimanche 21 novembre 2004
+                p De 14h - 20h
+                p 7, Impasse du Rouet
+                h3  
+                    | Exposition : 
+                    a(href="http://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug Petrovic
+                    |  et Jacqueline Cauet
+                p Depuis les dernières Portes Ouvertes en mai 2004, nos lieux ont encore une fois changés: d'autres travaux de rénovation ont été effectués et nous avons installé une place de travail pour un artiste, qui lui permet de travailler en haut, de recevoir des visiteurs en bas et de présenter ses oeuvres sur tout l'espace.
+            .column
+                img#imagefull(src="../images-news/2004/bilder.jpg", alt="Travaux en progrès pour les Portes Ouvertes")
+                br
+                | Travaux en progrès pour les Portes Ouvertes     
+
+        .row 
+            .column
+                img(src="../images-news/2004/atelier.jpg", alt="Atelier 2004")
+            .column
+                p Cette place de travail a été réalisé avec des anciens piliers en chêne et une grande planche de travail en plexiglas, pour ne pas réduire ni l'hauteur de l'atelier ni la lumière.
+                p Ces deux matières très différentes, les piliers solides de chêne antiques et le verre léger permettaient de réaliser un design très moderne sans changer l'esprit de l'ancien atelier d'artiste.
+
+
+    section
+        header
+            h1 Exposition au Musée Atelier Adzak,
+        p 3 rue Jonquoy, 75014 Paris, tél. 01.45.43.06.98 
+        h3 Didier de Nayer, Philippe Descharmes et Luc Gueronnet: Photographies "De Natura"
+        p Du lundi 8 novembre au mardi 23 novembre 2004
+        p Vernissage mardi 9 novembre. Le 16 novembre poésie de Claude-Marie à partir de 18 h.
+
+    section
+        header
+            h1 Automne de Bengale : 
+        h2
+            a(href="/galerie/tajuddin") Tajuddin Ahmed
+            | ,  peintre bengali  
+        p Du jeudi 16 au vendredi 24 décembre 2004
+        p Vernissage le jeudi 16 décembre à partir de 18h.
+
+    section
+        header
+            h1 Prévu pour février - mars 2005:
+        h3 Exposition collective des membres de l'association Artistes sans Frontières à Paris

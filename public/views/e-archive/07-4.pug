@@ -1,8 +1,87 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exhibition Announcements 2007')
+    meta(name='author' content='Babacar')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (nouveau site)
+        p#message=title
+            header 
+                h1 New website
+            #exception  
+                style.
+                    #exception{background-image: url(/images-news/2007/hginnenint.jpg); background-repeat:repeat-x ;opacity:0.6; height: 360px;  -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+
+                h3 The web site of Artistes sans Frontières changed its look in July 2007 and shows our dreams:
+                p The photographer, Helga Strobl, dreams of a baby bird, as Coco, the parrot of the association died in spring.
+                p Douglas Petrovic sees as a typical painter beautiful women everywhere, even floating in the Canal Royal at Sète.
+                p He even attributes a boat to the association to embark you on imaginary trips with us and on this site.
+                h3 The buttons will change also on the individual web sites:
+                p &#8594 "go on" to show the next picture or to restart a slide show
+                p  || to stop a slide show.
+    section
+        #textgauche
+            header
+                h1 The Blog 
+            p The web site offers now a blog for our artists.
+
+            p At every show we are aware that our members love to meet each other, as every member profits from the exchange of experiences and all regret that they may not learn to know personally every other member.
+            p Such personal meetings between all member get the more and more difficult, as the association gains members in different countries all over the world (at the moment France, Austria, Germany, United Kingdom, USA, Greece, Bangladesh, Tunisia).
+
+            p The artist's blog offers to you a meeting place on Internet, where you may confront your views with other members and other persons interested in art.
+
+            h3 Use the blog to
+            ul 
+                li present yourself,
+                li share your experience,
+                li discussions on art,
+                li on the life of artists,
+                li your difficulties 
+                li and the solutions you found
+                li and every other idea.
+            p How does it work? It's quite easy, you write articles like you write e-mails on hotmail, yahoo or another web mail. On the right side of the blog, you find some pages with instructions, the rules of the game etc.
+
+            p Your access codes: to contribute to the blog, if you are already member of the association,simply send us an email and we will create an account for you. If you are no member of the association, please send us a completed contact form.
+            p If you want to choose your own codes,please tell us in advance.
+            p Identifiant = User's name, you may choose your first name or your family name
+            p Mot de passe = pass word, choose freely, letters or numbers or both
+            p Pseudo: you may choose one to write incognito, otherwise it's your first name. You may choose any time yourself your pseudo and your password.
+
+    section
+        #textgauche
+            header 
+                h1 Next Shows
+            p The association organizes several small shows during the next months - for details and to participate see blog.
+            .row
+                .column
+                    img(src="../images-news/2007/rasmussen-saratoga.jpg", alt="photo de l'exposition Suzan Rasmussen : Saratoga")
+
+                .column
+                    h2
+                        a(href="/galerie/rasmussen") Suzan Rasmussen
+                        |  shows her water colors:
+                    h3 Utah Art Alliance Group Show
+                    p 
+                        | 127 S. Main Street Salt Lake City July 31 to August 31
+                        br
+                        | Reception with light refreshments August 3 from 6:00 to 9:00pm 
+                        br
+                        | Gallery Hours: Tuesdays & Fridays from 4:00 to 8:00pm  
+                        br
+                        | Wednesdays & Thursdays from 11:00 to 8:00pm
+                        br
+                        | Saturdays from 1:00 to 5:00pm
+            .row
+                .column
+                    h2 Cuchi White shows her pictures
+                    h3 "Demeures en partance"
+                    p
+                        | 14 June to 2 September 2007 
+                        br
+                        | at the Office de Tourisme de Rennes Métropole - Chapelle Saint-Yves 
+                        br
+                        | 11, rue Saint-Yves, Rennes
+                        br
+                        | Phone 02 99 67 11 66, Métro République, free entrance.
+                .columnright
+                    img(src="../images-news/2007/cuchi-white-0407.jpg", alt="Avril 2007 : Cuchi White takes a photo of an artwork of Paolo Boni ")
+

@@ -1,8 +1,87 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces des expositions 2007')
+    meta(name='author' content='Babacar')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (nouveau site)
+        p#message=title   
+            header 
+                h1  Nouveau site Web 
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2007/hginnenint.jpg); background-repeat:repeat-x ;opacity:0.6; height: 360px;  -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+
+            h3 Le site d'artistes sans frontières a changé de look fin juin 2007 et affiche nos rêves: 
+            p La photographe, Helga Strobl, rêve d'un bébé oiseau après que Coco, le perroquet de l'association, nous a quitté.
+            p Douglas Petrovic voit en bon peintre des belles femmes partout, même flottant dans le Canal Royal de Sète.
+            p Il attribue même un bateau à l'association pour vos voyages imaginaires avec nous et sur ce site.
+            h3 Les boutons changent de l'aspect également. 
+            p A coté des nouveaux boutons autour de cette page, vous trouverez vers mi-août deux boutons sur les sites individuels des artistes : 
+            p &#8594 suite pour aller d'une oeuvre à l'autre ou pour démarrer un défilée 
+            p || stop pour arrêter un défilée automatique. 
+    section
+        #textgauche
+            header 
+                h1 Le Blog
+            p Le site dispose d'une nouvelle fonctionalité, un blog des artistes.
+
+            p Lors de chaque exposition nous pouvons constater, que nos membres aiment se rencontrer, chacun profite des échanges avec d'autres artistes et tout le monde regrette, qu'on ne peut plus connaître tous les autres membres.
+            p Ces rencontres de face à face de tous les membres artistes deviennent de moins en moins possibles, car l'association gagne des membres dans de nombreux pays (en ce moment des artistes de France, Autriche, Allemagne, Angleterre, Grèce, États Unis, Bangladesh, Tunisie).
+
+            p Le Blog des artistes vous offre un endroit de rencontres sur internet, où vous pouvez confronter vos points de vues aux ceux des autres membres et des amateurs d'art.
+
+            h3 Profitez-en pour 
+            ul 
+                li vous présenter,
+                li partager vos expériences,
+                li entamer des discussions sur l'art,
+                li la vie d'artiste,
+                li vos difficultés
+                li et les solutions que vous avez trouvées 
+                li et toute autre idée. 
+            p Comment ça marche? Le principe est assez simple, on écrit des articles comme on écrit des e-mails sur hotmail, yahoo ou un autre webmail. Dans la colonne droite du blog, en haut, vous trouvez des pages avec le mode d'emploi, les règles du jeu etc.
+
+            p Vos codes d'accès: Pour participer au blog, si vous êtes membre de l'association, envoyez-nous un mail, nous créons votre compte. Si vous n'êtes pas membre de l'association, envoyez-nous un formulaire de contact entièrement rempli.
+            p Si vous souhaitez choisir vos propres codes, indiquez les d'avance.
+            p Identifiant = Nom d'utilisateur: cela peut être votre prénom ou votre nom
+            p Mot de passe: selon votre choix, chiffres ou lettres 
+            p Pseudo: si vous voulez rester incognito, choisissez-un, sinon ce sera votre prénom. Le pseudo est la signature des articles. Vous pouvez changer vous-même à tout moment le pseudo et le mot de passe.
+
+    section
+        #textgauche
+            header 
+                h1 Next Shows  
+            p L'association organisera plusieurs petites expositions dans les mois à venir - voir blog.
+            .row 
+                .column
+                    img(src="../images-news/2007/rasmussen-saratoga.jpg", alt="Suzan Rasmussen : Saratoga")
+
+                .column
+                    h2
+                        a(href="/galerie/rasmussen") Suzan Rasmussen
+                        |  expose ses aquarells 
+                    h3 Utah Art Alliance Group Show
+                    p 127 S. Main Street Salt Lake City July 31 to August 31
+                    p 
+                        | Reception with light refreshments August 3 from 6:00 to 9:00pm 
+                        br 
+                        | Gallery Hours: Tuesdays & Fridays from 4:00 to 8:00pm  
+                        br
+                        | Wednesdays & Thursdays from 11:00 to 8:00pm
+                        br
+                        | Saturdays from 1:00 to 5:00pm 
+            .row
+                .column
+                    h2 Cuchi White expose ses photos
+                    h3 "Demeures en partance" 
+                    p 
+                        | du 14 juin au 2 septembre 2007 
+                        br
+                        | à l'Office de Tourisme de Rennes Métropole - Chapelle Saint-Yves. 
+                        br
+                        | 11, rue Saint-Yves, Rennes, 
+                        br
+                        | Tél; 02 99 67 11 66, Métro République, entrée libre
+
+                .columnright
+                    img(src="../images-news/2007/cuchi-white-0407.jpg", alt="Avril 2007 : Cuchi White photographie une oeuvre de Paolo Boni ")

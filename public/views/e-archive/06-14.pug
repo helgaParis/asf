@@ -1,0 +1,16 @@
+extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, pictures of the event and participants in the 2006 exhibition : Claire Pluvinage')
+    meta(name='author' content='Babacar')
+block main
+    section
+    p#message=title
+    #textgauche
+        header
+            h1  
+                a(href="/galerie/pluvinage") Claire Pluvinage 
+                | , exhibits at the Galerie Thuillier 
+        p 13, rue de Thorigny, 75003 Paris, Tél: 01 42 77 33 24
+        p 10 - 23 November 2006 
+        block script
+            script(src='../images-news/2006/pluvinage/dias-listes.js')

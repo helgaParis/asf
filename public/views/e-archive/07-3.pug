@@ -1,22 +1,25 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Open Doors show 2007 : Roland Erguy, Val Gallard,  Nicolas Ganter, Dirk Gruyters, Douglas de Petrovic')
+    meta(name='author' content='Babacar')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h3  Annonce d'exposition :
+                h3  Exhibition announcement :
             p 
                 a(href="/galerie/villaada") Ada Villa 
-                    | : 'Ritagle di Memorie' du 26 mai au 4 juin
-                    br
-                    | Galleria dea Borgo Pinti 42/r 50121 Firenze
-                    br
-                    | Vernissage 26 mai 18h
-            hr
+                | : 'Ritagle di Memorie' May 26th to June 4th
+                br
+                | Galleria dea Borgo Pinti 42/r 50121 Firenze
+                br
+                | Vernissage 26 May 18h
     section
         #textgauche
             header 
-                h1  Portes Ouvertes des ateliers d'artistes du 14e à Paris
-            p 12 et 13 mai 2007, chez Artistes sans Frontières
+                h1  Open Doors of the 14th arrondissement artists' studios in Paris
+            p May 12 and 13, 2007, at Artistes sans Frontières
             p 
                 a(href="/galerie/erguy") Roland Erguy
                 | , 

@@ -1,8 +1,37 @@
-extends ../../templates/layout-archive.pug
+extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exhibitions Announcements October 2007')
+    meta(name='author' content='Babacar')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header 
+                h1  Exhibition Announcements
+            h3 
+                a(href="/galerie/erguy") Roland Erguy
+                | , sculptures 
+                a(href="/galerie/villaada") Ada Villa
+                |  and  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+                | , paintings, 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                | , photos
+            .row
+                .column
+                    img(src="../images-news/2007/loft/invitation-recto.jpg", alt=" invitation card recto")
+                .column
+                    img(src="../images-news/2007/loft/invitation-verso.jpg", alt="invitation card verso")
+
+    section
+        #textgauche
+            header 
+                h3  Exhibition announcement :
+            p  Ulysses Belz exhibits in Freiburg, Germany from October 19 to December 2 :
+            img(src="../images-news/2007/fete/ulysses-tript.jpg", alt="invitation card exhibition in Germany")
+
+        .row
+            .column
+                img(src="../images-news/2007/fete/ulysses2a.jpg", alt="invitation Ulyssess Belz back")
+            .column
+                img(src="../images-news/2007/fete/ulysses2.jpg", alt="invitation Ulysses, back, right")

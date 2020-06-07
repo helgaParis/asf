@@ -1,26 +1,37 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, pictures of the event et participants at the association party 2007')
+    meta(name='author' content='Babacar')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h3  Annonce d'exposition :
-            p  Ulysse Belz exposera à Fribourg, en Allemagne du 19 octobre au 2 décembre:
-
-            hr
+                h3  Exhibition announcement
+            p  Ulysses Belz exhibits in Freiburg, Germany from October 19 to December 2:
+            .row
+                .column
+                    img(src="../images-news/2007/fete/ulysses-tript.jpg", alt="invitation Ulysses Belz")
+                .column
+                    img(src="../images-news/2007/fete/ulysses2.jpg", alt="Ulysses Belz invitation back")
+            
     section
         #textgauche
             header 
-                h1  Fête de l'association
-            p Debut septembre, nous avons profité de la Loft-Gallery, pour faire notre fête annuelle. Tous ces murs blancs attendent notre prochaine exposition, du 17 au 30 novembre 2007.
+                h1  Association party
             p 
+                | At the beginning of September, we took advantage of the Loft-Gallery to hold our annual party. 
+                | All these white walls are waiting for our next exhibition, from November 17 to 30, 2007. 
+                br
+                | You will find the works of 
                 a(href="/galerie/erguy") Roland Erguy
-                | , sculptures
-                a(href="/galerie/villaada") Ada Villa
-                | et 
+                | , sculptures, 
+                a(href="/galerie/villaada") Ada Villa 
+                | and  
                 a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
-                | , peinture, 
+                | , painting, 
                 a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-                | , photos
+                | , picture
 
             block script
                 script(src='../images-news/2007/fete/dias-listes.js')

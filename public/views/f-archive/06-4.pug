@@ -1,14 +1,20 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants aux Portes Ouvertes du XIVe 2006 : Roland Erguy, Nicolas Ganter, Doug Petrovic')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Portes Ouvertes du XIVe, 20 et 21 mai 2006, chez Artistes sans Frontières
-       
-        block script
-            script(src='../images-news/2006/po/dias-listes.js')
-        
+        p#message=title
+        #textgauche
+            header 
+                h1  Portes Ouvertes du XIVe, 20 et 21 mai 2006, chez Artistes sans Frontières
+            h3 
+                | L'association accueille 
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="/galerie/nicolas") Nicolas Ganter
+                |  et 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic.
+
+            block script
+                script(src='../images-news/2006/po/dias-listes.js')
+

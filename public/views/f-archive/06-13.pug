@@ -1,0 +1,14 @@
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, l\'ambiance du Salon Art du Nu 2006 ')
+    meta(name='author' content='Babacar')
+block main
+    section 
+        p#message=title
+            header 
+                h1  Salon Art du Nu - impressions des alentours
+            block script
+                script(src='../images-news/2006/artdunu2/dias-listes.js')
+            p 
+                a(href='06-12')   Voir notre stand au Salon Art du Nu 
+        

@@ -1,11 +1,25 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, nouveau service, 2007')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (service photos)
+        p#message=title
+        #textgauche
+            header 
+                h1  Nouveau service
+            h3 Photos en qualité exceptionnelle pour l'Internet et pour l'impression
+            p Artistes sans Frontières s'équipe pour vous offrir un nouveau service : des photos professionnelles numériques de vos oeuvres ou de votre vernissage.
+            h3 Notre photographe se déplace chez vous avec un studio mobile!
+        img(src="../images-news/2007/clown07-g-oeil.jpg", alt="Photo: Helga Strobl, Sète, France 2007.")
+
+        p Offre spéciale pour nos membres et les membres adhérents en mars, avril et mai 2007
+        ul  
+            li Déplacement du studio mobile dans votre atelier à Paris intramuros ou à Sète*
+            li Prises de vue de 10 oeuvres
+            li Traitement des photos choisies pour la publication sur votre site Internet (mode RVB)
+            li Finition du traitement des couleurs en votre présence, pour choisir les plus fines nuances de couleurs
+        br
+        p Prix : 300 Euros ttc
+
+

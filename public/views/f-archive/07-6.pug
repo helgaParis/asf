@@ -1,8 +1,36 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces des expositions en 2007')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header 
+                h1  Annonces des expositions
+            h3 
+                a(href="/galerie/erguy") Roland Erguy
+                | , sculptures 
+                a(href="/galerie/villaada") Ada Villa
+                |  et 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+                | , peinture, 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                | , photos
+            .row
+                .column
+                    img(src="../images-news/2007/loft/invitation-recto.jpg", alt="carte invitation recto")
+                .column
+                    img(src="../images-news/2007/loft/invitation-verso.jpg", alt="carte invitation verso")
+    section
+        #textgauche
+            header 
+                h3  Annonce d'exposition :
+                        
+            p  Ulysses Belz exposera à Fribourg, en Allemagne du 19 octobre au 2 décembre :
+            img(src="../images-news/2007/fete/ulysses-tript.jpg", alt="invitation exposition en Allemagne")
+        
+            .row
+                .column
+                    img(src="../images-news/2007/fete/ulysses2a.jpg", alt="invitation Ulysses Belz verso")
+                .column
+                    img(src="../images-news/2007/fete/ulysses2.jpg", alt="invitation Ulysses Belz recto droite")

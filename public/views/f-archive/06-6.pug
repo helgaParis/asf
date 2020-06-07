@@ -1,11 +1,15 @@
-extends ../../templates/layout-archive.pug
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants de la fête de l\'ascension 2005 ')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Annonces)
+        p#message=title
+        #textgauche
+            header 
+                h1  Une fête de l'association
+            p En été, Paris se vide et mi-juillet nous nous trouvions seul dans la cour de l'impasse du Rouet, car tous les voisins du rez-de-chaussée de nos immeubles étaient partis en vacances. Le samedi 22, nous donnions donc une fête improvisée pour nos membres et voisins, qui étaient restés à Paris.
+    
+            p  L'apéritif entre 17 et 19h se transformait en repas convivial pour ceux, qui pouvaient rester. Sur les photos vous nous trouvez déjà au dessert entre 21 et 22h. Le dernier visiteur partait vers trois heures du matin. Nous espérons d'avoir du bon temps en septembre pour répéter l'expérience après la rentrée.         
+            block script
+                script(src='../images-news/2006/fete/dias-listes.js')

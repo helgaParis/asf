@@ -1,10 +1,14 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos du pot d\'adieu du marchand de journaux')
+    meta(name='author' content='Babacar')
 block main
     section
+        p#message=title
         #textgauche
-            header 
+            header
                 h1  Le pot d'adieu du marchand de journaux
-            p Une petite fête improvisée pour le depart d'une âme de quartier
+            p Une petite fête improvisée pour le départ d'une âme de quartier.
            
             block script
                 script(src='../images-news/2007/pot/dias-listes.js')

@@ -1,11 +1,23 @@
-extends ../../templates/layout-archive.pug
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, nouveau site Internet, photos de la fête improvisée ')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
+   block main
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Nouveau site)
+        p#message=title
+        header 
+            h1  Nouveau site Internet
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2006/site/6fond.jpg); background-repeat:repeat-x ;opacity:0.7; height: 300px;  -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+
+            h3 Comme vous avez pu constater, le site d'Artistes sans Frontières porte un nouveau look plus gai.
+            p Nous espérons aussi qu'il soit plus fonctionnel.
+            p Le premier site était conçu comme un petit site, mais son développement à dépassé nos attentes et un grand ménage de ses plus que mille fichiers devenait nécessaire. Ainsi nous commençons l'année bien sage, en réalisant nos bonnes intentions.
+            h3 Pour le choix de l'image de l'arrière-plan nous avons pris une photo d'un événement bien typique pour notre association d'artistes internationales:  une fête improvisée.
+            p Un samedi en été 2004 nous voulions inviter deux personnes au dîner. L'un n'était pas seul ce soir, pendant qu'on parlait à l'autre, un voisin passait et fut invité aussi. Des visiteurs de l'après-midi restaient et le soir nous nous trouvions à onze personnes de sept nationalités parlant trois langues différentes à table.
+            p Les invités amenaient salades, hors d'oeuvres ou fromage, Douglas achetait le plus grand pot à obtenir dans les alentours et ajoutait plus de haricots à son chili con carne mémorable. (La viande, il la calcule toujours pour une foule.)
+
+        block script
+            script(src='../images-news/2006/site/dias-listes.js')

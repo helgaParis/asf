@@ -1,15 +1,75 @@
-extends ../../templates/e-layout-archive-dias.pug
+extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exhibitions announcements 2006 : ')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Une fête de l'association
-        p  En été, Paris se vide et mi-juillet nous nous trouvions seul dans la cour de l'impasse du Rouet, car tous les voisins du rez-de-chaussée de nos immeubles étaient partis en vacances. Le samedi 22, nous donnions donc une fête improvisée pour nos membres et voisins, qui étaient restés à Paris.
-        p  L'apéritif entre 17 et 19h se transformait en repas convivial pour ceux, qui pouvaient rester. Sur les photos vous nous trouvez déjà au dessert entre 21 et 22h. Le dernier visiteur partait vers trois heures du matin. Nous espérons d'avoir du bon temps en septembre pour répéter l'expérience après la rentrée.         
-        block script
-            script(src='../images-news/2006/fete/dias-listes.js')
-        
+        p#message=title
+        #textgauche
+            header 
+                h1 Exhibitions announcements: 
+
+            h2 Ulysses Belz exhibit in Germany: „Zurück zur Figur“ 
+            p Kunsthalle der HYPO-Stiftung, München 2 June - 13 August 2006
+            br
+            hr.piedvariable
+            br
+            .row
+                .column
+                    h2 
+                        a(href="/galerie/nicolas") Nicolas Ganter
+                        | 
+                    p exhibits at the Montparnasse Gallery,
+                    p 55 rue du Montparnasse, 75014 Paris,
+                    p 1st - 15th september 2006
+                    p Monday to Saturday 11h - 19h 
+                    p Vernissage the Friday 8 september,  18:30
+                .column
+                    img#imagefull(src="../images-news/2006/n-ganter-invit.gif", alt="affiche de l'exposition de nicolas ganter")
+            br
+            hr.piedvariable
+            br
+            h2 
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                | , 
+                a(href="/galerie/erguy") Roland Erguy    
+                |  and  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  
+            p will exhibit together at the Loftgallery  
+            p beginning of September. Suzan Rasmussen, who lives in Utah will come to Paris for the exhibition. 
+            p Finissage: 7 september 2006
+            p Loftgallery, 88, rue du dessous des Berges, 75013 Paris
+            p Metro: Bibliothèque François Mitterand, 14 et RER C   
+            p Bus: Patay-Tolbiac, 27, 62 et 132
+
+            br
+            hr.piedvariable
+            br
+            h3 
+                | Airelle,
+                |
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                |  and    
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  exhibits at the 
+                | 
+                a(href='06-12')  Salon Art du Nu
+            p Espace de la Porte Champerret, Place de la Porte de Champerret, Paris XVIIe
+            p which will take place 23 - 25 September.
+            p Saturday 23 September 2006: 14h - 22:00 Vernissage
+            p Sunday 24: 11:00 - 19:00 Artist's aperitif   
+            p Monday 25: 12:00 - 19:00 Vernissage
+            br
+            hr.piedvariable
+            br
+            h3  
+                |
+                a(href="/galerie/pillas") Cathérine Pillas
+                |  expose:
+            p Académie Internationale de Lutèce, espace 2001, salle Next Step, 9 - 11, cour Debille, 75011 Paris, 22 - 29 octobre. Vernissage: 21 octobre, 18h.
+            p FMP, fédération mutualiste interdépartementale de la région parisienne, 24 rue St. Victor, 75005 Paris, le mardi 7 novembre: vernissage et salon d'une journée 
+            br 
+            h2 Activités d'été:
+            p We organize painting and sculpture workshops in the center of France, in the Alier.
+            p Small groups, stay at the hotel or in the farm / guesthouse , meals and training. Details on request.

@@ -1,0 +1,17 @@
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants à l\'exposition 2006 : Claire Pluvinage')
+    meta(name='author' content='Babacar')
+block main
+    section
+        p#message=title
+        #textgauche
+            header
+                h1  
+                    a(href="/galerie/pluvinage") Claire Pluvinage 
+                    | , expose dans la Galerie Thuillier 
+            p 13, rue de Thorigny, 75003 Paris, 
+            p Tél: 01 42 77 33 24
+            p Du 10 au 23 novembre 2006
+            block script
+                script(src='../images-news/2006/pluvinage/dias-listes.js')

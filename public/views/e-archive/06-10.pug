@@ -1,18 +1,21 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, pictures of the event and participants in the exhibition at the Loft Gallery : Roland Erguy, Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
-    section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1   Salon Art du Nu
-        p Airelle, Douglas Petrovic et Suzan Rasmussen  
-        p 23 - 25 septembre 2006
-        p Le stand d'Artistes sans Frontières
-        block script
-            script(src='../images-news/2006/artdunu/dias-listes.js')
-        p 
-            a(href='06-12')   Voir l'ambiance du Salon Art du Nu  - les alentours
-        
+    section   
+        p#message=title
+        #textgauche
+            header 
+                h1 The finishing party 
+            h3 
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                | , 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                |  exhibit at the Loftgallery
+            p 
+                a(href='e06-9') Photos of the Show
+            block script
+                script(src='../images-news/2006/loft/dias-listes2.js')

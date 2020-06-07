@@ -1,15 +1,17 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos of the event and participants in the Autumn salon of the Mairie du XIV : Airelle, Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Salon Art du Nu - impressions des alentours
-        block script
-            script(src='../images-news/2006/artdunu2/dias-listes.js')
-        p 
-            a(href='06-11')   Voir notre stand au Salon Art du Nu 
-        
+        p#message=title
+        #textgauche
+            header 
+                h1  Salon d'automne de la Mairie du XIV
+            h3 
+                | Airelle, 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                | and  
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+            block script
+                script(src='../images-news/2006/mairie/dias-listes.js')         

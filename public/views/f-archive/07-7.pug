@@ -1,11 +1,29 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants l\'exposition à la loft gallery 2007 : Roland Erguy, Ada Villa, Douglas Petrovic et Helga Strobl ')
+    meta(name='author' content='Babacar')
 block main
     section
+        p#message=title
         #textgauche
-            header 
-                h1  L'exposition dans la Loft Gallery
-            p Ada Villa, Helga Strobl, Douglas Petrovic et Roland Erguy
-           
-            block script
-                script(src='../images-news/2007/loft/dias-listes.js')
-            
+            .row
+                .column
+                    header 
+                        h1 L'exposition dans la Loft Gallery
+                    h3 
+                        a(href="/galerie/erguy") Roland Erguy
+                        | , 
+                        br
+                        a(href="/galerie/villaada") Ada Villa
+                        | ,
+                        br
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+                        |  et  
+                        br
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                    p 17 - 30 Novembre 2007
+                .column
+                    img.imagehalfc(src="../images-news/2007/loft/affiche.jpg", alt="affiche de la loft gallery")
+    section
+        block script
+            script(src='../images-news/2007/loft/dias-listes.js')

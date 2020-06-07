@@ -1,11 +1,22 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, affiche de l\'évenement et participants aux Expositions 2004 : Doug Petrovic' )
+    meta(name='author' content='Babacar')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Exposition à Sète : Doug Petrovic 
+            .row
+                .column
+                    h2  
+                        |
+                        a(href="http://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug Petrovic
+                        |  
+                    p expose à Sète, dans le Midi, du 21 juin au 12 juillet 2004
+                    p Vernissage le 21 juin, jour de la Fête de la Musique - naturellement avec musique,
+                    h3 le Blues-Rock-Band "Drivin' South"
+                    p Adresse: Bistro du Marché, 1 rue Alsace Lorraine, 34200 Sète
+                .column
+                    img#imagefull(src="../images-news/2004/affiche_sete.jpg", alt="affiche Expo Doug Petrovic à Sète 2004")

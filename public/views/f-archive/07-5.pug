@@ -1,26 +1,37 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos de l\'évenement et participants à la fête de l\'association')
+    meta(name='author' content='Babacar')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h3  Annonce d'exposition :
-            p  Ulysse Belz exposera à Fribourg, en Allemagne du 19 octobre au 2 décembre:
+                h3  Annonce d'exposition     
+            p  Ulysses Belz exposera à Fribourg, en Allemagne du 19 octobre au 2 décembre:
+            .row    
+                .column
+                    img(src="../images-news/2007/fete/ulysses-tript.jpg", alt="invitation exposition en Allemagne")
+                .column
+                    img(src="../images-news/2007/fete/ulysses2.jpg", alt="Ulysses Belz invitation")
 
-            hr
     section
         #textgauche
             header 
                 h1  Fête de l'association
-            p Debut septembre, nous avons profité de la Loft-Gallery, pour faire notre fête annuelle. Tous ces murs blancs attendent notre prochaine exposition, du 17 au 30 novembre 2007.
-            p 
+            p   
+                | Debut septembre, nous avons profité de la Loft-Gallery, pour y faire notre fête annuelle. 
+                | Tous ces murs blancs attendent notre prochaine exposition, du 17 au 30 novembre 2007. 
+                br
+                | Vous y trouverez des oeuvres de 
                 a(href="/galerie/erguy") Roland Erguy
-                | , sculptures
-                a(href="/galerie/villaada") Ada Villa
-                | et 
+                | , sculptures 
+                a(href="/galerie/villaada") Ada Villa 
+                |  et 
                 a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
                 | , peinture, 
                 a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-                | , photos
+                | , photos.
 
             block script
                 script(src='../images-news/2007/fete/dias-listes.js')

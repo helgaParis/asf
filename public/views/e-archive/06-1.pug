@@ -1,11 +1,23 @@
-extends ../../templates/e-layout-archive.pug
+extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières,new website, improvised party photos ')
+    meta(name='author' content='Babacar')
 block main
-    h3=message
+   block main
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Nouveau site)
+        p#message=title
+        header 
+            h1  New Web site
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2006/site/6fond.jpg); background-repeat:repeat-x ;opacity:0.7; height: 300px;  -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+             
+            h3 As you could note, the site of Artistes sans Frontières shows a new, merrier look.
+            p  We also hope that it is more functional.
+            p The first site was conceived as a small site, but its development exceeded our attentions and a spring cleaning of its more than thousand files became necessary. Thus we begin the year quite wisely, by carrying out our good intentions.
+            h3 For background image we choose a photograph of a quite typical event for our association of international artists: an impromptu festival.
+            p One Saturday in summer 2004 we wanted to invite two people for dinner. One was not alone this evening, while we spoke with the other, a neighbor passed and was invited too.
+            p Visitors of the afternoon stayed and at the evening we were eleven people of seven nationalities speaking three different languages at the table. The guests brought salads, starters or cheese, Douglas bought the largest pot to be obtained in the neighborhoods and added more beans to his memorable Chili con carne. (The meat, he always calculates it for a crowd.)
+
+            block script
+            script(src='../images-news/2006/fete/dias-listes.js')
