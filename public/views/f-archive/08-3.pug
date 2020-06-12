@@ -1,8 +1,76 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nouveau site interne et Annonces d\'expositions 2008, Portes Ouvertes à Paris et Sète')
+    meta(name='author' content='Babacar')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 Nouveau site Internet
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2008/0809toile_19c.jpg); background-size:cover ;opacity:0.6; height: 250px;padding:1%;margin-top:1%;} 
+            h2 Le site d'Artistes sans Frontières est repeint        
+            p Avec la rentrée, le site de l'association a changé du look et s'affiche sur fond de toiles en préparation. 
+            h3 Pour voir les oeuvres peints sur ces toiles, venez-nous voir pendant les portes ouvertes !
+            p Le directeur artistique du site, Douglas Petrovic, est également peintre et montrera ses tableaux à Paris et à Sète. 
+            p Le webmaster Helga Strobl a photographié les fonds des pages et montrera ses photos lors des portes ouvertes. 
+    section
+        header 
+            h1 Annonces d'expositions:
+        h2 Portes Ouvertes du 14e à Paris 
+        p 27 et 28 septembre 2008
+        p Samedi,de 14 h 30 à 20 h
+        p Dimanche, de 11h à 19 h
+        p Nous présenterons 
+        h3
+            | Peintures de 
+            a(href="/galerie/kouassi") Germain Kouassi
+            | , 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+            | , 
+            a(href="/galerie/schwertfeger") Jochen Schwertfeger
+            | , 
+            br
+            | sculptures de 
+            a(href="/galerie/erguy") Roland Erguy
+            | , 
+            br
+            | photos d'  
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            | .
+            br
+            | 
+            a(href="/galerie/zamoum") Fatma-Zohra Zamoum 
+            | montrera plusieurs court-métrages.
+
+        p dans les lieux de l'association, 7 impasse du Rouet, 75014 Paris, Tel. 01 40 44 77 41
+
+        h2 
+            a(href="/galerie/erguy") Roland Erguy
+            |  et 
+            a(href="/galerie/wright") Nicholas Wright
+        p Sculptures - gravures 
+        p 27 et 28 septembre 2008
+        p Samedi,de 13 h 30 à 18 h 30
+        p Dimanche, de 10 h 30 à 18 h 30
+        p exposition dans le cadre de la fête des jardins de l’école d’horticulture du Breuil au bois de Vincennes, Paris.
+        p Accès : métro Château de Vincennes, puis bus 112 ,arrêt Carrefour de beauté.
+        p RER : ligne A dir. Boissy/s/léger,
+        p Station Joinville-le-pont.
+        p Entrée libre
+        p 
+            a(href="https://www.ecoledubreuil.fr" rel='noopener' target="_blank") www.ecoledubreuil.fr
+
+        h2 Portes Ouvertes à Sète
+        p 3 et 4 octobre 2008
+        p Nous présenterons dans les lieux de l'association, 9 rue de la Douane, 34200 Sète, tél. 04 67 78 56 09,
+
+        h3 
+            | les peintures et sculptures de 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+            | 
+            br
+            | et les photos d' 
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl.
