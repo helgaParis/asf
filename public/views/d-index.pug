@@ -1,21 +1,56 @@
 extends ../templates/d-layout.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières - Entdecken Sie unseren Verein, die Galerie der Künstler Mitglieder, unser Angebot und 20 Jahre Vereinsgeschichte! - Eingeschränkter Empfang während der Covid Epidemie')
+
 block main
-    style.
-        body{font-weight:600; }    
-        .rouge{color: #A90101;}
-        .bleu{color: blue;}
     section
         header
             h1=title
-        h2 COVID-19-Epidemie
-        p Infolge der aktuellen öffentlichen Maßnahmen,
-        h3.red sind unsere Räumlichkeiten für Besucher geschlossen.
-        p Wir bieten montags bis freitags zwischen 14 und 17 Uhr einen Telefonempfang an.
-        p.bleu Handynummer: +33 (0)6 32 95 40 90
-        p Um einen Telefontermin außerhalb dieser Zeiten zu vereinbaren, kontaktieren Sie uns per E-Mail oder SMS.
-        a(href='mailto:bureau.asso@artistes-sf.org?subject=Empfang') E-mail: bureau.asso@artistes-sf.org
+        h2 Virtuelle Ausstellungen
+        p
+            | 2020, mit den sozialen Abstandsregeln in der realen Welt 
+            |  ist das Jahr einer massiven Migration in die virtuelle Welt des Internets.
+        p
+            | 2020 ist es 20 Jahre her, dass unser Team die erste Website für Künstler erstellt hat.
+            br
+            | Kunstfreund, machen Sie einen Spaziergang in der virtuellen Galerie der AsF-Site, um die Werke unserer Mitglieder zu entdecken!
+            br
+            | Künstler, kontaktieren Sie uns für
+            ul
+                li eine virtuelle Ausstellung, 
+                li eine reale Ausstellung so bald wie möglich,
+                li eine neue Website zur Präsentation Ihrer Werke.
+        h2 Eingeschränkter Empfang in unseren Räumlichkeiten
+        p
+            | Das Büro des Vereins ist klein und unser Team arbeitet hauptsächlich vom Home Office aus.
+            | Für Besuche in unseren Räumlichkeiten gelten neue Empfangsregeln:
+            ul
+                li Besuche nur nach Vereinbarung
+                li maximal ein oder zwei Besucher
+                li obligatorisches Tragen eines Mund und Nasen Schutzes
+                li Terminvereinbarungen: 06 32 95 40 90, von Dienstag bis Samstag, zwischen 13 und 17 Uhr
+                li Termine von Dienstag bis Samstag ab 14 Uhr
+
+    section
+        #textgauche
+            .row
+                .column
+                    h2 Erste Ausstellung im Jahr 2020: Doug Petrovic
+                    p Ölbilder und Gouachen von Doug Petrovic sind nach Vereinbarung zu besichtigen (siehe Besuchs Regeln oben).
+                    p Aufgrund der administrativen Schließung vom 16. März wurden die Vernissage und die Einweihungsparty nach der Renovierung unserer Räumlichkeiten abgesagt.
+                    h3 Ein privater Ausstellungsbesuch nach Termin Vereinbarung
+                    p bietet Ihnen die Möglichkeit, einen Künstler in einer intimen Umgebung zu entdecken, während einer Zeitspanne, die ausschließlich Ihrer Entdeckung gewidmet ist.
+                .column
+                    img.imagehalfc(src="/images-news/2020/atelier1.jpg", title="Doug Petrovic, Ölbild" alt = "Doug Petrovic, Ölbilder und Gouachen")
+            h2 Neue Website - neue Teammitglieder
+            p Die neue Site hat die alte Version ersetzt, die Inhalts Übertragung ist weit fortgeschritten und wird im Mai abgeschlossen.
+            p
+                | Babacar Seck, unser neuestes Team Mitglied, begann sein Praktikum am 1. April unter besonderen Bedingungen: Am Tag seines ersten Vorstellungstermins wurde die Ausgangssperre verhängt.
+                | Sein Praktikum begann von zu Hause aus und in einer Codesprache, die er vorher nicht kannte. 
+                | Er hat bereits begonnen, den Inhalt des Archivs für die Jahre 2005 und 06 zu übertragen. Es wird die fehlenden Jahre im Mai beenden.
+            p Im Mai oder Juni wird ein weiterer Auszubildender zu uns stossen - seine Ausbildung wurde durch die Quarantäne unterbrochen
+            | und das Enddatum seiner Ausbildung kann sich noch ändern.       
+             
         hr.piedvariable
         .piedvariable
             include ../templates/footer.pug
