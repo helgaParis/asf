@@ -1,14 +1,68 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen  2006')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Exposition à la  Loftgallery 
-        p Suzan Rasmussen, Roland Erguy et Douglas Petrovic 
-        block script
-            script(src='../images-news/2006/loft/dias-listes.js')
-        
+        p#message=title
+        #textgauche
+            header
+                h1 Nächste Ausstellungen :
+            .row
+                .column
+                    h2 
+                        a(href="/galerie/nicolas") Nicolas Ganter
+                        | 
+                    p stellt in der Galerie du Montparnasse aus,
+                    p 55 rue du Montparnasse, 75014 Paris, 1. - 15. September 2006.
+                    p Täglich ausser Sonntag von 11 - 19h
+                    p Vernissage Freitag 8 September 18h30.
+                .column
+                    img#imagefull(src="../images-news/2006/n-ganter-invit.gif", alt="Ausstellungsplakat Nicolas Ganter")
+            
+            hr.piedvariable
+            .row
+                .column    
+                    h2 
+                        a(href="/galerie/rasmussen") Suzan Rasmussen
+                        | , 
+                        a(href="/galerie/erguy") Roland Erguy   
+                        |  und  
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        |  
+                    p stellen zusammen in der Loftgallery Anfang September aus.
+                    p Suzan Rasmussen kommt für die Ausstellung aus Utah nach Paris.
+                    p Finissage: Donnerstag 7 September 2006
+                    p Musikalische Unterhaltung: 
+                        a(href='06-7') Tiki Joe Congo Drums 
+                    p Loftgallery, 88, rue du dessous des Berges, 75013 Paris
+                    p Metro: Bibliothèque François Mitterand, 14 et RER C   
+                    p Bus: Patay-Tolbiac, 27, 62 et 132
+                .column
+                    .row
+                        .columndouble
+                            img(src="../images-news/2006/artistes-sf_invit-r.gif", alt="Einladungskart")
+                        .columndouble
+                            img(src="../images-news/2006/artistes-sf_invit-v.gif", alt="Einladung Rückseite")
+            h2 
+                | Airelle,
+                |
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                |  und  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  stellen am
+                | 
+                a(href='06-12')  Salon Art du Nu aus.
+            p Espace de la Porte Champerret, Place de la Porte de Champerret, Paris XVIIe
+            p Samstag 23 September 2006 : 14 - 22:00 Vernissage
+            p Sonntag 24: 11 h - 19h Apéritif der Künstler   
+            p Montag 25 : 12 - 19 Vernissage
+            h2  
+                |
+                a(href="/galerie/pillas") Cathérine Pillas
+                |  stellt aus:
+            p Académie Internationale de Lutèce, espace 2001, salle Next Step, 9 - 11, cour Debille, 75011 Paris, 22 - 29 Oktober. Vernissage: 21., 18h.
+            p FMP, fédération mutualiste interdépartementale de la région parisienne, 24 rue St. Victor, 75005 Paris, Dienstag 7 November: Vernissage und Tagesausstellung 
+            h2 Sommer Aktivitäten:
+            p Wir veranstalten Malerei und Skulptur Workshops in Zentralfrankreich, in der Auvergne.
+            p Kleine Gruppen, Nächtigung im Hotel oder im Gästehaus, Mahlzeiten und Kurse. Details auf Anfrage.

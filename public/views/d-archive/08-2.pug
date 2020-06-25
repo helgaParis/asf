@@ -1,8 +1,38 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen 2008, Germain Kouassi, Doug Petrovic, Jochen Schwertfeger, Roland Erguy, Helga Strobl, Fatma-Zohra Zamoum')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Nächste Ausstellungen
+            .row
+                .column
+                    h3 Offenen Türen
+                    p Die Offenen Türen der Künstlerateliers, "les Portes Ouvertes du 14e" finden dieses Jahr erst im Herbst statt:
+                    strong 27 und 28 September 2008
+                    h3 Wir präsentieren 
+                    p 
+                        | Gemälde von 
+                        a(href="/galerie/kouassi") Germain Kouassi
+                        | , 
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        | , 
+                        a(href="/galerie/schwertfeger") Jochen Schwertfeger
+                        | , 
+                        br
+                        | Skulpturen von 
+                        a(href="/galerie/erguy") Roland Erguy
+                        | , 
+                        br
+                        | Fotos von  
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                        | , 
+                        br
+                        | Kurzfilme von 
+                        a(href="/galerie/zamoum") Fatma-Zohra Zamoum
+                .column
+                    img(src="../images-news/2008/affiche-zamoum.jpg", alt="Fatma Zohra Zamoum :  Das Wollknäul")
+            

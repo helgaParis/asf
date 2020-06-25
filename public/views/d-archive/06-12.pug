@@ -1,18 +1,20 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos von der Veranstaltung und Teilnehmer am Salon Art du Nu 2006 : Airelle, Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1   Salon Art du Nu
-        p Airelle, Douglas Petrovic et Suzan Rasmussen  
-        p 23 - 25 septembre 2006
-        p Le stand d'Artistes sans Frontières
+        p#message=title
+        #textgauche
+            header 
+                h1  Salon Art du Nu, der Stand von Artistes sans Frontières               
+            h3 Ausstellung : 
+                | Airelle, 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  und  
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+            p 
+                | 23 - 25 September 2006 - 
+                a(href='06-12')  Die Stimmung des Salons Art du Nu 
         block script
             script(src='../images-news/2006/artdunu/dias-listes.js')
-        p 
-            a(href='06-12')   Voir l'ambiance du Salon Art du Nu  - les alentours
-        

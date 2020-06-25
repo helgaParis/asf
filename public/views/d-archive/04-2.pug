@@ -1,11 +1,22 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Plakat der Veranstaltung und Teilnehmer Ausstellung 2004 : Doug Petrovic' )
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Ausstellung in Sète : Doug Petrovic 
+            .row
+                .column
+                    h2  
+                        |
+                        a(href="http://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug Petrovic
+                        |  
+                    p stellt in Sète, Südfrankreich, vom 21. Juni bis 12. Juli 2004
+                    p Vernissage, 21. Juni, zum Fest der Musik in Frankreich - Natürlich mit Musikbegleitung,
+                    h3 Blues-Rock-Band "Drivin' South"
+                    p Ort: Bistro du Marché, 1 rue Alsace Lorraine, 34200 Sète
+                .column
+                    img#imagefull(src="../images-news/2004/affiche_sete.jpg", alt="Plakat der Ausstellung, Doug Petrovic, Sète 2004")

@@ -1,15 +1,21 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos von der Veranstaltung und Teilnehmer an der Ausstellung in der Loft Gallery : Roland Erguy, Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
-    section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Exposition à la  Loftgallery 
-        p Suzan Rasmussen, Roland Erguy et Douglas Petrovic 
-        //- à changer diaporama pour Finissage
-        block script
-            script(src='../images-news/2006/loft/dias-listes.js')
-        
+    section   
+        p#message=title
+        #textgauche
+            header 
+                h1 Die Finissage
+            h3 
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                |  et  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  stellten in der Loftgallery aus
+            p  
+                a(href='06-9') Ausstellungsfotos
+            block script
+                script(src='../images-news/2006/loft/dias-listes2.js')

@@ -1,11 +1,22 @@
-extends ../../templates/d-layout-archive.pug
+extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Neue Website, Fotos von des improvisiertes Fest')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
+   block main
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Nouveau site)
+        p#message=title
+        header 
+            h1  Neue Website
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2006/site/6fond.jpg); background-repeat:repeat-x ;opacity:0.7; height: 300px;padding:1%;margin-top:1%;  -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+
+            h3 Wie Sie feststellen konnten, hat die Website von Artistes sans Frontières einen neuen und fröhlicheren Look.
+            p Wir hoffen auch, dass sie praktischer geworden ist.
+            p Die erste Site war als kleine Website geplant, aber ihre Entwicklung hat unsere Erwartungen übertroffen und ein Frühjahrsputz unter den mehr als tausend Dateien wurde nötig. Somit beginnen wir das Jahr ganz brav, indem wir unsere guten Vorsätze in die Tat umsetzen.
+            h3 Als Hintergrundbild wählten wir ein Foto von einem für unsere internationale Künstler Organisation typischen Ereignis aus: ein improvisiertes Fest.
+            p An einem Samstag im Sommer 2004 wollten wir zwei Leute zum Abendessen einladen. Der eine war an diesem Abend nicht allein, während wir mit dem zweiten sprachen, kam ein Nachbar vorbei, der auch eingeladen wurde. Nachmittags Besucher blieben gleich da und am Abend waren wir elf Personen, Angehörige von sieben Nationalitäten, die bei Tisch drei Sprachen sprachen.
+            p Die Gäste brachten Salate, Vorspeisen oder Käse mit, Douglas kaufte den größten Topf, den er in der Umgebung finden konnte und gab mehr Bohnen zu seinem unvergesslichen Chili con Carne (Das Fleisch berechnet er sowieso immer für eine Menschenmenge).
+        block script
+            script(src='../images-news/2006/site/dias-listes.js')

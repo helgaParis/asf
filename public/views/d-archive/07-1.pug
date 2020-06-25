@@ -1,11 +1,25 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Neues Service, 2007')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (service photos)
+        p#message=title
+        #textgauche
+            header 
+                h1  Neues Service
+            h3 Fotos in ausgezeichneter Qualität fürs Internet und für den Druck
+            p Artistes sans Frontières rüstet auf, um Ihnen ein neues Service anbieten zu können: Digitale Profifotos Ihrer Kunstwerke und Ihrer Ausstellungen.
+            h3 Unser Fotograf kommt mit einem mobilen Atelier zu Ihnen !
+        img(src="../images-news/2007/clown07-g-oeil.jpg", alt="Photo: Helga Strobl, Sète, Frankreich 2007.")
+
+        p Promo für Mitglieder, gültig im April, Mai und Juni 2007 
+        ul  
+            li Das mobile Fotoatelier kommt zu Ihnen: Paris intra-muros oder Sète
+            li Fotos von 10 Kunstwerken
+            li Bearbeitung der ausgewählten Bilder für die Publikation auf ihrer Website (RGB Modus)
+            li Farbabstimmung in Ihrer Gegenwart um die besten Farbnuancen zu erzielen
+        br
+        p Preis : 300 Euros ttc
+
+

@@ -1,0 +1,39 @@
+extends ../templates/layout.pug
+block extrameta
+    meta(name='author' content='B.Y.')
+    link(rel='stylesheet', href='/views/by/styles/test_canvas.css')
+    link(rel='stylesheet', href='views/by/styles/jeu_debut.css')
+    link(rel='stylesheet', href='views/by/styles/test_canvas.css')
+    link(rel='stylesheet', href='views/by/styles/test_canvas.css')
+    script(src='views/by/js/test.js')
+    script(src='views/by/js/draw_constructor.js')
+    script(src='views/by/js/main.js')
+block main
+    section
+        header
+            h1=title
+        #bgsite_0.bgsite
+            #textdiv_0.textdiv
+                form#speedradio_0
+                    | Vitesse: 
+                    input#speedradio_0_normal(type='radio', name='vitesse', value='normal')
+                    label(for='normal') Normal
+                    input#speedradio_0_rapide(type='radio', name='vitesse', value='rapide')
+                    label(for='rapide') Rapide
+                    input#speedradio_0_instantane(type='radio', name='vitesse', value='instantané')
+                    label(for='instantané') Instantané
+                form#artistesradio_0
+                    | Artistes: 
+                    input#artiste_abc(type='radio', name='artiste_page', value='artiste_abc')
+                    label(for='artiste_0') Artiste abc
+                    input#artiste_def(type='radio', name='artiste_page', value='artiste_def')
+                    label(for='artiste_1') Artiste def
+                    a#artiste_page_link(href='https://www.google.fr') link
+                br
+                #scene_0.scene
+                    canvas#myCanvasBg(width='900', height='450')
+                        | Votre navigateur ne supporte pas le canvas
+
+            hr.piedvariable
+            .piedvariable
+                include ../templates/footer.pug

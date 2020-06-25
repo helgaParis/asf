@@ -1,8 +1,88 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen 2007')
+    meta(name='author' content='Frederic')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (nouveau site)
+        p#message=title   
+            header 
+                h1  Neue Website 
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2007/hginnenint.jpg); background-repeat:repeat-x ;opacity:0.6; height: 360px; padding:1%;margin-top:1%; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain;} 
+
+            h3 Die Website Artistes sans Frontières hat im Juni 2007 ihr Aussehen geändert und zeigt unsere Träume an: 
+            p Die Fotografin, Helga Strobl, träumt von einem Vogelbaby, nachdem Coco, der Vereins Papagei, uns verlassen hat.
+            p Douglas Petrovic sieht als typischer Maler überall schöne Frauen, selbst im Canal Royal von Sète treibend.
+            p Er bezeichnet selbst ein Boot für den Verein, damit Sie mit uns auf imaginäre Reisen auf dieser Website gehen können.
+            h3 Die Schaltflächen auf den individuellen Seiten der Künstler ändern sich auch. 
+            p Neben den neuen Schaltflächen auf dieser Seite finden Sie Mitte August zwei Schaltflächen auf den einzelnen Websites der Künstler: : 
+            p &#8594 "weiter", um das nächste Werk anzuzeigen oder eine gestoppte Bilderfolge wieder zu starten
+            p || "stop"; u, eine automatische Diashow anzuhalten. 
+    section
+        #textgauche
+            header 
+                h1 Der Blog
+            p Die Website hat ein neues Element gewonnen, einen Blog der Künstler.
+
+            p Bei jeder Ausstellung konnten wir feststellen, dass unserere Mitglieder sich gerne treffen, da jeder vom Erfahrungs Austtausch mit den anderen profitiert. Alle bedauern immer, dass sie nicht alle anderen Mitglieder persönlich treffen können.
+            p Diese Zusammentreffen mit allen anderen werden immer weniger möglich, da die Association inzwischen Mitglieder in verschiedenen Ländern hat (derzeit Künstler in Frankreich, Österreich, Deutschland, England, USA, Griechenland, Bangladesh, Tunesien).
+
+            p Der Blog der Künstler bietet Ihnen einen Treffpunkt im Internet am, wo sie Ihre Meinungen mit anderen Künstlern und Kunstliebhabern austauschen können.
+
+            h3 Profitieren Sie davon, um 
+            ul 
+                li sich vorzustellen,
+                li Erfahrungen auszutauschen,
+                li über Kunst zu diskutieren,
+                li oder über das Leben als Künstler,
+                li seine Schwierigkeiten
+                li und die Lösungen, die Sie dafür gefunden haben 
+                li und jede andere Idee.
+            p Wie funktioniert das? Im Prinzip ganz einfach, Man schreibt die Artikel so wie man Emails auf hotmail, yahoo oder sonst einem Webmail schreibt. In der rechten Spalte des Blogs finden Sie Bedienungsanleitungen, die Spielregeln etc.
+
+            p Zugangscodes: Wenn Sie als Mitglied der Association am Blog teilnehmen wollen, schreiben Sie uns einfach ein Mail, wir schicken Ihnen die Codes per Mail. Falls Sie nicht Mitglied sind, schicken Sie uns bitte ein vollständig ausgefülltes Kontaktformular.
+            p Falls Sie Ihre eigenen Codes auswählen wollen, geben sie sie bitte vorher an.
+            p Identifiant = Benutzername das kann Ihr Vorname oder Ihr Nachname sein
+            p Mot de passe: ein Passwort Ihrer Wahl aus Buchstaben oder Ziffern
+            p Pseudo: Wenn Sie inkognito schreiben wollen, wählen sie eines, sonst ist es Ihr Vorname. Sie können selbst jederzeit das Pseudo und das Passwort ändern.
+
+    section
+        #textgauche
+            header 
+                h1 Nächste Ausstellungen  
+            p Der Verein AsF organisiert einige kleine Expos in den nächsten Monaten -  siehe Blog.
+            .row 
+                .column
+                    img(src="../images-news/2007/rasmussen-saratoga.jpg", alt="Suzan Rasmussen : Saratoga")
+
+                .column
+                    h2
+                        a(href="/galerie/rasmussen") Suzan Rasmussen
+                        |  stellt Aquarelle aus 
+                    h3 Utah Art Alliance Group Show
+                    p 127 S. Main Street Salt Lake City July 31 to August 31
+                    p 
+                        | Reception with light refreshments August 3 from 6:00 to 9:00pm 
+                        br 
+                        | Gallery Hours: Tuesdays & Fridays from 4:00 to 8:00pm  
+                        br
+                        | Wednesdays & Thursdays from 11:00 to 8:00pm
+                        br
+                        | Saturdays from 1:00 to 5:00pm 
+            .row
+                .column
+                    h2 Cuchi White stellt ihre Fotos aus
+                    h3 "Demeures en partance" 
+                    p (Reisende Wohnsitze)
+                    p 
+                        | du 14 juin au 2 septembre 2007 
+                        br
+                        | à l'Office de Tourisme de Rennes Métropole - Chapelle Saint-Yves. 
+                        br
+                        | 11, rue Saint-Yves, Rennes, 
+                        br
+                        | Tél; 02 99 67 11 66, Métro République, entrée libre
+
+                .columnright
+                    img(src="../images-news/2007/cuchi-white-0407.jpg", alt="Avril 2007 : Cuchi White fotografiert ein Werk von Paolo Boni ")

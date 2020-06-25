@@ -1,20 +1,22 @@
-extends ../../templates/d-layout-archive.pug
+extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos von der Veranstaltung und Teilnehmer Ausstellungen 2004 : Doug Petrovic, Christian "Motor" Polansek et Eveline Krischan' )
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        p ...
-            h1  Portes Ouvertes des ateliers du 14ème arrondissement
-        p le 15 et 16 mai 2004
-        h3  Exposition : 
-        p 
-        | Tableaux et sculptures de 
-        a(href="http://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug
-        | , Christian "Motor" Polansek, 
-        a(href="/galerie/krive") Eveline Krischan 
-        |  et de 10 autres artistes autrichiens.     
+        p#message=title
+        #textgauche
+            header
+                h1  Offene Türen der Künstlerateliers, "les Portes Ouvertes du 14e"
+            p 15 - 16 Mai 2004
+            h3  
+                | Ausstellungen : 
+                | Gemälde und Skulpturen von 
+                a(href="http://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug Petrovic
+                | , Christian "Motor" Polansek, 
+                a(href="/galerie/krive") Eveline Krischan 
+                |  und 10 andere österreichische Künstler.    
         block script
             script(src='../images-news/2004/dias-listes.js')
+
             

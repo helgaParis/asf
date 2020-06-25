@@ -1,14 +1,19 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos von der Veranstaltung und Teilnehmer am Herbst Ausstellung des 14 Bezirks von Paris : Airelle, Douglas "Doug" Petrovic, Suzan Rasmussen')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-    #textgauche
-        header 
-            h1  Salon d'automne de la Mairie du XIV
-        p Airelle, Douglas Petrovic et Suzan Rasmussen 
-        block script
-            script(src='../images-news/2006/mairie/dias-listes.js')
+        p#message=title
+        #textgauche
+            header 
+                h1  Salon d'automne de la Mairie du XIV 
+            h3 
+                | Airelle, 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  und   
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+
+            block script
+                script(src='../images-news/2006/mairie/dias-listes.js')       
         

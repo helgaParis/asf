@@ -1,8 +1,76 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, New web site and next shows 2008, Open Days in Paris and Sete')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 New web site
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2008/0809toile_19c.jpg); background-size:cover ;opacity:0.6; height: 250px;padding:1%;margin-top:1%;} 
+            h2 Artistes sans Frontières web site is being refreshed.        
+            p With the new season, the association's web site updates its look and is displayed against the background of canvas in different states of preparation. 
+            h3 To see the paintings once completed, visit us during the Open Days!
+            p The artistic director of the web site, Douglas Petrovic, is also a painter and will exhibit his paintings in Paris and Sète.
+            p The webmaster Helga Strobl made the photos for the backgrounds of the pages and will exhibit her photos during the Open Days. 
+    section
+        header 
+            h1 Next shows:
+        h2 Open Days "Les Portes Ouvertes du 14e" in Paris 
+        p 27 & 28 September 2008
+        p Saturday, 2:30 pm - 8:00 pm
+        p Sunday, 11:00 am - 7:00 pm
+        p We will exhibit 
+        h3
+            | paintings by 
+            a(href="/galerie/kouassi") Germain Kouassi
+            | , 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+            | , 
+            a(href="/galerie/schwertfeger") Jochen Schwertfeger
+            | , 
+            br
+            | sculptures by 
+            a(href="/galerie/erguy") Roland Erguy
+            | , 
+            br
+            | photos by  
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            | .
+            br
+            | 
+            a(href="/galerie/zamoum") Fatma-Zohra Zamoum 
+            | will show several short films.
+
+        p at the association location, 7 impasse du Rouet, 75014 Paris, Tel. 01 40 44 77 41
+
+        h2 
+            a(href="/galerie/erguy") Roland Erguy
+            |  and 
+            a(href="/galerie/wright") Nicholas Wright
+        p Sculptures - engravings 
+        p 27 & 28 septembre 2008
+        p Saturday, 1:30 pm - 6:30 pm
+        p Sunday, 10:00 am - 6:30 pm
+        p Exhibition during the "Fête des jardins de l’école d’horticulture du Breuil", Bois de Vincennes, Paris.
+        p Access and transport : metro station Château de Vincennes, then bus 112, bus stop Carrefour de beauté.
+        p RER : line A dir. Boissy/s/Léger,
+        p Station Joinville-le-pont.
+        p Free entrance
+        p 
+            a(href="https://www.ecoledubreuil.fr" rel='noopener' target="_blank") www.ecoledubreuil.fr
+
+        h2 Open Days in Sete
+        p 3 & 4 October 2008
+        p We will exhibit at the association location, 9 rue de la Douane, 34200 Sète, Tel. 04 67 78 56 09,
+
+        h3 
+            | paintings and sculptures by 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+            | 
+            br
+            | and photos by 
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl.

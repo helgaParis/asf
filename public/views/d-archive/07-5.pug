@@ -1,26 +1,37 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Fotos vom Vereins Sommerfest, Ankündigungen')
+    meta(name='author' content='Frederic')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h3  Annonce d'exposition :
-            p  Ulysse Belz exposera à Fribourg, en Allemagne du 19 octobre au 2 décembre:
+                h3  Nächste Ausstellungen     
+            p  Ulysses Belz stellt in Freiburg, Deutschland, aus: 19 Oktober - 2 Dezember:
+            .row    
+                .column
+                    img(src="../images-news/2007/fete/ulysses-tript.jpg", alt="Enladungskarte")
+                .column
+                    img(src="../images-news/2007/fete/ulysses2.jpg", alt="Ulysses Belz Einladung Rückseite")
 
-            hr
     section
         #textgauche
             header 
-                h1  Fête de l'association
-            p Debut septembre, nous avons profité de la Loft-Gallery, pour faire notre fête annuelle. Tous ces murs blancs attendent notre prochaine exposition, du 17 au 30 novembre 2007.
-            p 
+                h1  Das Sommerfest des Vereins
+            p   
+                | Anfang September gaben wir unser jährliches Sommerfest in der Loft Gallery. 
+                | All diese weissen Wände warten schon auf unser nächste Ausstellung: 17 - 30 November 2007. 
+                br
+                | Sie finden Werke von
                 a(href="/galerie/erguy") Roland Erguy
-                | , sculptures
-                a(href="/galerie/villaada") Ada Villa
-                | et 
+                | , Skulpturen 
+                a(href="/galerie/villaada") Ada Villa 
+                |  und 
                 a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
-                | , peinture, 
+                | , Malerei, 
                 a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-                | , photos
+                | , Fotos.
 
             block script
                 script(src='../images-news/2007/fete/dias-listes.js')

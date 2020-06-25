@@ -1,8 +1,35 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen 2008 Rangel Amorim, Dreharbeiten zum Film Bunker, Nicolas Ganter')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Nächste Ausstellungen
+            .row
+                .column
+                    h2 
+                        a(href="/galerie/amorin") Rangel Amorim 
+                    p Der junge brasilianische Maler stellt seine Bilder aus:
+                    p 5 - 18 Mai 2008
+                    p 
+                        | Galerie 3 F,
+                        br
+                        | 58 rue des 3 Frères, Paris 18,
+                        br
+                        | Métro Abesses 
+                .column
+                    img#imagehalf(src="../images-news/2008/invitation-rangel-amorim.jpg", alt="Rangel Amorim, Ausstellungs Einladung")
+            .row
+                .column
+                    h2
+                        a(href="/galerie/nicolas") Nicolas Ganter 
+                        | dreht "Bunker"
+                    p Nicolas Ganter, Grafiker, Maler und Filmemacher, dreht einen Film, "Bunker", für den er auch das Drehbuch geschrieben hat.
+
+
+                .column
+                    img.image80c(src="../images-news/2008/cinema-tournage-nicolas-gan.jpg", alt="Kino: Dreharbeiten zum Film 'Bunker' von Nicolas Ganter")
+                    p Artikel in der Tageszeitung Nice Matin 

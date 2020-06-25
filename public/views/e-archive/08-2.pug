@@ -1,8 +1,38 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Next shows 2008, Germain Kouassi, Doug Petrovic, Jochen Schwertfeger, Roland Erguy, Helga Strobl, Fatma-Zohra Zamoum')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Next shows and other events:
+            .row
+                .column
+                    h3 Open Days
+                    p This year, Open Days "Les Portes Ouvertes du 14e" will take place in autumn only:
+                    strong 27 & 28 September 2008
+                    h3 We will exhibit 
+                    p 
+                        | paintings by 
+                        a(href="/galerie/kouassi") Germain Kouassi
+                        | , 
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        | , 
+                        a(href="/galerie/schwertfeger") Jochen Schwertfeger
+                        | , 
+                        br
+                        | sculptures by 
+                        a(href="/galerie/erguy") Roland Erguy
+                        | , 
+                        br
+                        | photos by  
+                        a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                        | ,
+                        br
+                        | short films by 
+                        a(href="/galerie/zamoum") Fatma-Zohra Zamoum
+                .column
+                    img(src="../images-news/2008/affiche-zamoum.jpg", alt="Fatma Zohra Zamoum :  La pelote de laine")
+            

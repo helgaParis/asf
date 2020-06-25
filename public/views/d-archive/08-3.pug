@@ -1,8 +1,77 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Neue Website und Nächste Ausstellungen 2008, Offene Türen in Paris und Sète')
+    meta(name='author' content='Babacar')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 Neue Website
+        #exception  
+            style.
+                #exception{background-image: url(/images-news/2008/0809toile_19c.jpg); background-size:cover ;opacity:0.6; height: 250px;padding:1%;margin-top:1%;} 
+            h2 Die Webseite von Artistes sans Frontières Website präsentiert sich im neuen Look.        
+            p Mit der neuen Saison ändert die Vereins-Website ihr Aussehen und zeigt sich vor dem Hintergrund von Malerleinwänden in verschiedenen Stadien der Vorbereitung. 
+            h3 Um die fertigen Gemälde zu sehen, besuchen Sie uns während der Offenen Türen !
+            p Der künstlerische Leiter der Webseite, Douglas Petrovic, ist auch Maler und zeigt seine Gemälde in Paris und Sète. 
+            p Die Webmasterin Helga Strobl hat auch die Fotos für die Hintergründe der Seiten gemacht und zeigt ihre anderen Fotos ebenfalls während der Offenen Türen. 
+    section
+        header 
+            h1 Nächste Ausstellungen
+        h2 Offene Türen im 14. Arondissement von Paris 
+        p 27 und 28 September 2008
+        p Samstag, 14:30 - 20:00 Uhr
+        p Sonntag, 11:00 - 19:00 Uhr
+        p We zeigen 
+        h3
+            | Gemälde von 
+            a(href="/galerie/kouassi") Germain Kouassi
+            | , 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+            | , 
+            a(href="/galerie/schwertfeger") Jochen Schwertfeger
+            | , 
+            br
+            | Skulpturen von 
+            a(href="/galerie/erguy") Roland Erguy
+            | , 
+            br
+            | Fotos von  
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            | .
+            br
+            | 
+            a(href="/galerie/zamoum") Fatma-Zohra Zamoum 
+            | zeigt verschiedene Kurzfilme.
+
+        p in der Association, 7 impasse du Rouet, Tel. (+33) 01 40 44 77 41.
+
+        h2 
+            a(href="/galerie/erguy") Roland Erguy
+            |  und 
+            a(href="/galerie/wright") Nicholas Wright
+        p Skulpturen - Radierungen 
+        p 27 und 28 September 2008
+        p Samstag, 13:30 - 18:30 Uhr
+        p Sonntag, 10:30 - 18:30 Uhr
+        p stellen während der "Fête des jardins de l’école d’horticulture du Breuil" aus
+        Bois de Vincennes, Paris.
+        p Anfahrt : Métro Château de Vincennes, danach Bus 112 , stop Carrefour de beauté.
+        p RER : ligne A dir. Boissy/s/léger,
+        p Station Joinville-le-pont.
+        p Freier Eintritt
+        p 
+            a(href="https://www.ecoledubreuil.fr" rel='noopener' target="_blank") www.ecoledubreuil.fr
+
+        h2 Offene Türen in Sète
+        p 3 und 4 Oktober 2008
+        p We zeigen im Hauptsitz des Vereins, 9 rue de la Douane, 34200 Sète, Tel. (+33) 04 67 78 56 09, 
+
+        h3 
+            | Gemälde und Skulpturen von 
+            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic
+            |  
+            br
+            | Fotos von 
+            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl.

@@ -1,11 +1,111 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen 2006 : ')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    h3=message
     section
-        header
-            h1=title
-    section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (Nouveau site)
+        p#message=title
+        #textgauche
+            header 
+                h1 Nächste Ausstellungen 
+            h3 
+                a(href="/galerie/erguy") Roland Erguy
+                |  und Zemrina stellen im Musée Adzak aus,
+            p  3 rue Jonquoy, 75014 Paris, Métro Plaisance, 
+            p Tel. 01.45.43.06.98, 12 - 22 April 2006,
+            p Geöffnet von Mittwoch bis Sonntag, 14 - 19:00
+            p Täglich außer sonntags geöffnet, 11 - 19:00
+            p Vernissage 12 April, 18:00
+            h3 
+                a(href='06-3')  Siehe Fotos
+            br
+            hr.piedvariable
+            br
+            h3 Portes Ouvertes (Offene Türen) du XIVe : 20 + 21 Mai 2006, 
+            p Samstag 14:30 - 20:00, Sonntag 11 - 19:00.
+            p Artistes sans Frontières präsentiert 
+                |
+                a(href="/galerie/erguy") Roland Erguy
+                | , 
+                a(href="/galerie/nicolas") Nicolas Ganter
+                |  und 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic.
+            p Airelle öffnet ihr Atelier, 21 rue Daguerre
+            p Besuchen Sie 
+                |
+                a(href="/galerie/wright") Nicholas Wright 
+                |  im Musée Adzak
+
+            
+            h3 Die Portes Ouvertes du XVe finden zur selben Zeit statt:
+            p Samstag 14 - 20:00, Sonntag 11 - 20:00.
+            p 
+                |
+                a(href="/galerie/kouassi") Germain Kouassi 
+                |  stellt 132, avenue F. Faure, 01 45 54 72 14, aus.
+            p 
+                |
+                a(href="/galerie/plazanet") Pascal Plazanet 
+                | zeigt seine Werke 41 rue Desnouettes.
+            br
+            hr.piedvariable
+            br
+            h3 Unser neues Mitglied,
+                |
+                a(href="/galerie/valgallard")  Val. Gallard  
+                | stellt in Angers aus: Tour Saint-Aubin, Place Saint Eloi, rue des Lices, 49000 Angers,
+            p  19 - 29 Mai 2006, täglich 10:30 -18:00.
+            br
+            hr.piedvariable
+            br
+            h2 Ulysses Belz stellt in Deutschland aus: „Zurück zur Figur“ 
+            p Kunsthalle der HYPO-Stiftung, München,2 Juni bis 13 August 2006
+            br
+            hr.piedvariable
+            br
+            h3
+                |
+                a(href="/galerie/tajuddin") Ahmed Tajuddin, 
+                | Bangladesh, kommt für eine Sommerausstellung nach Paris.
+            br
+            hr.piedvariable
+            br
+            h3 
+                a(href="/galerie/nicolas") Nicolas Ganter
+                |  stellt in der "Galerie du Montparnasse" 
+            p 55 rue du Montparnasse, 75014 Paris, 1 - 15 September 2006.
+            p Täglich außer sonntags geöffnet, 11 - 19:00
+            p Vernissage Freitag 8 September 18:30
+            br
+            hr.piedvariable
+            br
+            h3 
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                | ,  
+                a(href="/galerie/erguy") Roland Erguy    
+                |  und    
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |   stellen   
+            p zusammen in der Loftgallery Anfang September aus. Suzan Rasmussen kommt für die Ausstellung aus Utah nach Paris.
+            p Finissage: Donnerstag, 7 September 2006
+            p Loftgallery, 88, rue du dessous des Berges, 75013 Paris
+            p Metro: Bibliothèque François Mitterand, 14 et RER C   
+            p Bus: Patay-Tolbiac, 27, 62 et 132
+            br
+            hr.piedvariable
+            br
+            h3 
+                | Airelle,
+                |
+                a(href="/galerie/rasmussen") Suzan Rasmussen
+                |  und    
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  stellen am 
+                | 
+                a(href='06-12')  Salon Art du Nu aus.
+            br
+            p Espace de la Porte Champerret, Place de la Porte de Champerret, Paris XVIIe
+            p Samstag 23 September 2006 : 14 - 22:00 Vernissage
+            p Sonntag 24: 11 h - 19h Apéritif der Künstler   
+            p Montag 25 : 12 - 19 Vernissage
+            
