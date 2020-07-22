@@ -1,8 +1,21 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Offene Türen im 14. Arondissement von Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Offene Türen im 14. Arondissement von Paris
+            p
+            img.image100c(src="../images-news/2009/0906_po77.jpg", alt="Douglas Petrovic, atelier")
+            p Das Atelier von Douglas Petrovic quillt schon zur zur Nachbarin über...
+
+            h3 Besuchen Sie das Atelier des Vereins Artistes sans Frontières
+            p Am Wochenende, 13 + 14 Juni 2009
+                br
+                | Samstag, 14h30 - 20h
+                br
+                | Sonntag, 11h - 19h
+            p 7 impasse du Rouet, 75014 Paris

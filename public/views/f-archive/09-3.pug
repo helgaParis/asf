@@ -1,8 +1,21 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Portes Ouvertes à Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces)
+        p#message=title
+        #textgauche
+            header
+                h1 Portes Ouvertes du 14e à Paris
+            p
+            img.image100c(src="../images-news/2009/0906_po77.jpg", alt="Douglas Petrovic, atelier")
+            p L'atelier de Douglas Petrovic déborde dans le salon des voisins.
+
+            h3 Visitez l'atelier de l'association Artistes sans Frontières
+            p Week-end des 13 et 14 juin 2019
+                br
+                | Samedi, de 14h30 à 20h
+                br
+                | Dimanche, de 11h à 19h
+            p 7 impasse du Rouet, 75014 Paris

@@ -1,31 +1,30 @@
-extends ../../templates/layout-archive-dias.pug
+extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exposition Roland Erguy, Exposition Doug Petrovic, Helga Strobl')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
                 h1 
-                    | Exposition en septembre : 
-                    a(href="/galerie/erguy") Roland Erguy
-
-            hr
-    section
-        #textgauche
-            header 
-                h1 Exposition dans la galerie 3F, Paris, août 2009
-            p 
-                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
-                | , peinture et sculptures 
-                br
-                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-                |  , photographie
-            p du 6 au 30 août, jeudi à dimanche, 14 - 18h et sur rendez-vous (Tél. 06 32 95 40 90)
-            p Galerie 3F, 58 rue des 3 frères, Paris 18e, Métro Abbesses
-            hr
-    section
-        #textgauche
-            header 
-                h1 Exposition en octobre 2009 : Laurent Loizeau
-            h3 Foire Internationale de Montpellier
-            p du Vendredi 9 au Lundi 19 Octobre 2009
-            p Parc des Expositions Hall7-stand 035
-            p Vernissage Samedi 10 Octobre à 18H00
+                    | Expositions en 2009
+                .row
+                    .col
+                        h2 Août
+                        h3 
+                            | AsF à la galerie 3F à Paris
+                            br
+                            a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                            | , peinture et sculptures  , 
+                            br
+                            a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                            |  , photographie
+                        img(src="../images-news/2009/affiche3f-doug-helga.jpg", alt="Doug Petrovic, Helga Strobl, annonce expo")
+                        p du 6 au 30 août, jeudi à dimanche, 14 - 18h et sur rendez-vous (Tél. 06 32 95 40 90)
+                        p Galerie 3F, 58 rue des 3 frères, Paris 18e, Métro Abbesses
+                    .col
+                        h2 Septembre
+                        h3 
+                            a(href="/galerie/erguy") Roland Erguy
+                        img(src="../images-news/2009/roland-expo.jpg", alt="Roland Erguy, annonce expo")

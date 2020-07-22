@@ -1,8 +1,30 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Next exhibitions 2009 Gabriella Carbone, Open Days "Portes Ouvertes du 14e", Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 Next exhibitions:
+            h2 
+                a(href="http://gabriella.carbone.free.fr/" rel='noopener' target="_blank") Gabriella Carbone 
+                | , photos 
+            .row
+                .column                    
+                    p from March 31st to April 5th 2009
+                        br
+                        | 2pm - 7pm
+                    p Vernissage, Friday April 3rd, 6:30pm  
+                    p Phone: 06.80.62.64.38
+                    p Galerie 3 F,
+                        br
+                        | 58 rue des 3 Frères, Paris 18,
+                        br
+                        | Métro Abesses 
+                .column
+                    img(src="../images-news/2009/expo-carbone-gabriella.jpg", alt="Gabriella Carbone, annonce expo")
+            h2 Open Days "Portes Ouvertes du 14e", Paris
+            p Open Days will be held in June 13th and 14th 2009.
+

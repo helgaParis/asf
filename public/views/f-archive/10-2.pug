@@ -1,49 +1,48 @@
-extends ../../templates/layout-archive-dias.pug
+extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces d\'expositions 2010 Portes Ouvertes des ateliers d\'artistes à Paris,  Parc Floral de Paris, BASE’ART, Le Festival, Doug Petrovic expose en Chine')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
                 h1  Expositions en printemps 2010
-            h3 Portes Ouvertes des ateliers d'artistes à Paris
+            h2 Portes Ouvertes des ateliers d'artistes à Paris
             p 29 et 30 mai 2010
             p 
                 a(href="/galerie/erguy") Roland Erguy
                 | , 
                 a(href="/galerie/kouassi")   Germain Kouassi
                 | , 
-                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
-                | et
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                |  et  
                 a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-    section
-        #textgauche
-            header 
-                h1 Parc Floral de Paris: Peintures, Sculptures, Gravures et Photographies
-            p 
-                a(href="/galerie/erguy") Roland Erguy
-            p 13 mai - 13 juin 2010
-            p Tous les jours de 13h30 à 19h, week-end de 10h30 à 19h
-            p Bois de Vincennes, Bus 112, RER Vincennes, M Chateau de Vincennes
-            p Pavillon 18, Entrée Nympheas, entrée de l'exposition gratuite
-    section
-        #textgauche
-            header
-                h1 BASE’ART, Le Festival
-            p  à Fréjus le 3, 4, 5 ET 6 JUIN
-            p
-                a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-                | et  
-                a(href="https://www.hstrobl.info") Helga Strobl
-    section
-        #textgauche
-            header
-                h1 
-                     a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
-                | expose en Chine
-            p avec l'Association Art en Voyage         
-            p 
-                | 12 au 16 AVRIL 2010, SENAT, Peking
-                | 20 AVRIL au 16 MAI 210, MUSEE DE TIANJIN 
-                | 20 MAI au 20 JUIN 2010,PEKIN ORIENTAL MEDIA CENTER
-           
-            block script
-                script(src='../images-news/2010/chine/dias-listes.js')            
+            h2 Parc Floral de Paris: Peintures, Sculptures, Gravures et Photographies
+        .row
+            .column
+                p 
+                    a(href="/galerie/erguy") Roland Erguy
+                p 13 mai - 13 juin 2010
+                p Tous les jours de 13h30 à 19h, week-end de 10h30 à 19h
+                p Bois de Vincennes, Bus 112, RER Vincennes, M Chateau de Vincennes
+                p Pavillon 18, Entrée Nympheas, entrée de l'exposition gratuite
+                p Info: 
+                    a(href="https://www.paris.fr/" target="_blank") Mairie de Paris
+            .column
+                img(src="../images-news/2010/parc-floral.jpg", alt="Parc floral")
+        h2 BASE’ART, Le Festival
+        p  à Fréjus le 3, 4, 5 et 6 juin
+        p
+            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic 
+            | et  
+            a(href="https://www.hstrobl.info") Helga Strobl
+        h2 
+            a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+            |  expose en Chine avec l'Association Art en Voyage               
+        p 
+            | 12 au 16 AVRIL 2010, SENAT, Peking
+            br
+            | 20 AVRIL au 16 MAI 210, MUSEE DE TIANJIN
+            br
+            | 20 MAI au 20 JUIN 2010, PEKIN ORIENTAL MEDIA CENTER

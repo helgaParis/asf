@@ -1,8 +1,20 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Offene Türen im 14. Arondissement von Paris, Juni 2009')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h1 Portes Ouvertes du 14e à Paris, juin 2009
+                h1 Offene Türen im 14. Arondissement von Paris, Juni 2009
+            p
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                | , 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl 
+                |  , 
+                a(href="/galerie/paquetrobert") Robert Paquet 
+                |  , 
+                a(href="/galerie/erguy") Roland Erguy
             block script
                 script(src='../images-news/2009/po/dias-listes.js')

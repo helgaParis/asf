@@ -1,0 +1,15 @@
+extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, photos of Doug Petrovic\'s exhibition')
+block main
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1  
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Douglas Petrovic 
+                    | at the Daudet, winter 2010 / 2011
+            p 
+
+            block script
+                script(src='../images-news/2010/daudet/dias-listes.js')

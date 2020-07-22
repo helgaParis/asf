@@ -1,8 +1,15 @@
-extends ../../templates/e-layout-archive.pug
+extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, African childhood day \"Journée de l\'enfance africaine\" 2009')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonce freva)
+        p#message=title
+        #textgauche
+            header 
+                h1 African childhood day "Journée de l'enfance africaine" 2009
+            p
+            | Artistes sans Frontières takes part in an artistic event in front of the town hall of the XIVth in Paris
+                   
+            block script
+                script(src='../images-news/2009/jea/dias-listes.js')

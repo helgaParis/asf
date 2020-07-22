@@ -1,15 +1,34 @@
-extends ../../templates/d-layout-archive-dias.pug
+extends ../../templates/d-layout-archive.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières, Europäischer Fotomonat 2010, Fotos des Fotosalons Paris 14')
+    meta(name='description' content='Artistes sans Frontières, Ausstellungen Winter 2010 / 2011, Doug Petrovic Gouachen und Ölbilder')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
     section
-        header
-            p#message=title
-    section
-    #textgauche
-        header 
-            h1  Salon de la photo à la Mairie du 14e, Paris
-        h3 Helga Strobl, expo 2010
+        p#message=title
+        #textgauche
+            header
+                h1 Ausstellungen Winter 2010 / 2011
+            h2
 
-        block script
-            script(src='../images-news/2010/photosalon/dias-listes.js')
+            
+                a(href="https://www.dougpetrovic.info" rel='noopener'   target="_blank") Doug Petrovic
+                |  Gouachen und Ölbilder
+            .row
+                .column
+                    p Vernissage
+                    p 17 Dezember, ab 17 h
+                    br
+                    p Krisenmenu - Spenden willkommen
+                    img(src="../images-news/2010/menu-doug-affiche.jpg",    alt="menu doug affiche")
+                .column
+                    img(src="../images-news/2010/doug-affiche.jpg", alt="doug   affiche")
+                    p 10 Dezember 2010 - 8 Januar 2011
+                    p Montag - Mittwoch 7h - 21h,
+                    p Donnerstag und Freitag 7 - 00h,
+                    p Samstag 7h - 20h
+            h2
+                a(href="https://www.dougpetrovic.info" rel='noopener'   target="_blank") Doug Petrovic
+                |  huiles
+            p 15 Januar - 28 Februar 2011
+            p Grand Hôtel, Sète, Frankreich
+    

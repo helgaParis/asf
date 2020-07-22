@@ -1,15 +1,15 @@
 extends ../../templates/d-layout-archive-dias.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières, Fotos der Ausstellung Doug Petrovic')
+    meta(name='description' content='Artistes sans Frontières, Fotos von Salon de la photo du 14e, 2010')
 block main
     section
-        header
-            p#message=title
-    section
-    #textgauche
-        header 
-            h1  Douglas Petrovic au Daudet, 2010 / 2011
-        p 
+        p#message=title
+        #textgauche
+            header 
+                h1  Salon de la photo in der Mairie du 14e, Paris
+            h3 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                | , Ausstellung 2010
 
-        block script
-            script(src='../images-news/2010/daudet/dias-listes.js')
+            block script
+                script(src='../images-news/2010/photosalon/dias-listes.js')

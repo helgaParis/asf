@@ -1,8 +1,30 @@
 extends ../../templates/d-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Nächste Ausstellungen 2009 Gabriella Carbone, Offene Türen im 14. Arondissement von Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 Nächste Ausstellungen
+            h2 
+                a(href="http://gabriella.carbone.free.fr/" rel='noopener' target="_blank") Gabriella Carbone
+                | , Fotos 
+            .row
+                .column                    
+                    p 31 März - 5 April 2009
+                        br
+                        | 14 - 19h
+                    p Vernissage, Freitig, 3 April, 18h30  
+                    p Telefon: 06.80.62.64.38
+                    p Galerie 3 F,
+                        br
+                        | 58 rue des 3 Frères, Paris 18,
+                        br
+                        | Métro Abesses 
+                .column
+                    img(src="../images-news/2009/expo-carbone-gabriella.jpg", alt="Gabriella Carbone, Einladung zur Ausstellung")
+            h2 Offene Türen im 14.Arondissement von Paris
+            p Am 13 und 14 Juni 2009.
+

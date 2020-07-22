@@ -1,8 +1,21 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Doug Petrovic exhibits in China')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h1  Portes Ouvertes des ateliers d'artistes à Paris
+                h1 
+                    a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                    |  exhibits in China with Association Art en Voyage               
+        p 
+            | April 12th to 16th 2010, SENAT, Beijing
+            br
+            | April 20th to May 16th 2010, TIANJIN Museum
+            br
+            | May 20th to June 20th, PEKIN ORIENTAL MEDIA CENTER
+           
             block script
-                script(src='../images-news/2010/po/dias-listes.js')
+                script(src='../images-news/2010/chine/dias-listes.js')            

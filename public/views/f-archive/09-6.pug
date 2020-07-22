@@ -1,9 +1,17 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exposition Doug Petrovic, Helga Strobl')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
                 h1 Exposition dans la galerie 3F, Paris, août 2009
-            p Doug Petrovic, Helga Strobl
+            p 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                | , peinture et sculptures, et 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank")  Helga Strobl
+                |  , photographie
             block script
                 script(src='../images-news/2009/3f/dias-listes.js')

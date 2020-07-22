@@ -1,11 +1,22 @@
 extends ../../templates/e-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Open Days "Portes Ouvertes du 14e", Exhibition Gabriella Carbone, photographs')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1 Open Days "Portes Ouvertes du 14e", Paris
+            p Open Days will be held during the week-end of June 13th and 14th 2009 : 
+            p Saturday, 2:30pm - 8pm
+            p Sunday, 11am - 7pm        
     section
         #textgauche
             header 
                 h1   
                     a(href='http://gabriella.carbone.free.fr/'  rel='noopener noreferrer nofollow'  target='_blank') Gabriella Carbone 
-                | , photographies
-                h3 Vernissage Galerie 3 F, 3 avril 2009
+                    | , photographs
+            h3 Vernissage Galerie 3 F, 3 avril 2009
             block script
                 script(src='../images-news/2009/carbone/dias-listes.js')

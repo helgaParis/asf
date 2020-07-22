@@ -1,12 +1,29 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exposition octobre 2009, Laurent Loizeau, Exposition Doug Petrovic, Helga Strobl')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1 Exposition en octobre 2009 : Laurent Loizeau
+            h3 Foire Internationale de Montpellier
+            p 
+                | du Vendredi 9 au Lundi 19 Octobre 2009
+                br 
+                | Parc des Expositions Hall7-stand 035
+                br
+                | Vernissage Samedi 10 Octobre à 18H00
     section
         #textgauche
             header 
-                h1 Exposition à partir du 24 septembre 2009
-                p 
-                    a(href="/galerie/erguy") Roland Erguy
-                h3 Sur le fil de la pointe et du burin
-                p au restaurant Les Cercles Bleus, 56 rue de la Sablière, Paris 14e
+                h1 Exposition dans la galerie 3F, Paris, août 2009
+            p 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                | , peinture et sculptures 
+                br
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                |  , photographie
             block script
-                script(src='../images-news/2009/cercles/dias-listes.js')
+                script(src='../images-news/2009/3f/dias-listes.js')

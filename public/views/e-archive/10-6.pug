@@ -1,15 +1,32 @@
-extends ../../templates/e-layout-archive-dias.pug
+extends ../../templates/e-layout-archive.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières, photos of the show Salon de la Photo, Paris 2016')
+    meta(name='description' content='Artistes sans Frontières, Exhibitions in winter 2010 / 2011, Doug Petrovic gouaches and oil paintings')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-        section
-            header
-                p#message=title
-        section
+    section
+        p#message=title
         #textgauche
-            header 
-                h1  Photo exhibition at the Town hall du 14e, Paris
-            h3 Helga Strobl, exhibition 2010 (rest of the page not yet migrated)
-
-            block script
-                script(src='../images-news/2010/photosalon/dias-listes.js')
+            header
+                h1 Exhibitions in winter 2010 / 2011
+            h2
+                a(href="https://www.dougpetrovic.info" rel='noopener'   target="_blank") Doug Petrovic
+                |  gouaches and oil paintings
+            .row
+                .column
+                    p Vernissage
+                    p December 17th, from 5pm
+                    br
+                    p Crisis menu - donations welcome
+                    img(src="../images-news/2010/menu-doug-affiche.jpg",    alt="menu doug affiche")
+                .column
+                    img(src="../images-news/2010/doug-affiche.jpg", alt="doug   affiche")
+                    p December 10th 2010 - January 8th 2011
+                    p Monday to Wednesday: 7am - 9pm,
+                    p Thursday and Friday: 7am - 12pm,
+                    p Saturday: 7am - 8pm
+            h2
+                a(href="https://www.dougpetrovic.info" rel='noopener'   target="_blank") Doug Petrovic
+                |  oil paintings
+            p January 15th to February 28th 2011
+            p Grand Hôtel in Sète
+    

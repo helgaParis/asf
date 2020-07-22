@@ -1,8 +1,34 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Exhibition 2010, Open Days "Portes Ouvertes du 14e", Paris, Doug Petrovic exhibits in China ')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonce freva)
+        p#message=title
+        #textgauche
+            header
+                h1 Exhibitions in spring 2010:
+            h2
+                | Open Days in the workshops of contemporary artists in 14e in Paris:
+            p May 29th and 30th 2010
+            h2  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  exhibits in China with 
+                a(href="http://www.artenvoyage.org/f/xhhd_c.asp?ID=139" rel='noopener' target="_blank") Association Art en Voyage
+        .row        
+            .column
+                    p April 12th to 16th 2010
+                    h3 SENAT (advisory committee of the People's Republic of China)
+                    p Address: 北京市西城区太平桥大街23号
+                    p No23 TAIPINGQIAO STREET XICHENG DISTRICT BEIJING
+                    br
+                    p April 20th to May 16th 2010
+                    h3 PEKIN ORIENTAL MEDIA CENTER
+                    p 第三站：北京东方梅地亚中心  Pekin Oriental Media Center
+                    p Address: 4 Guang Hua Road, Chao Yang
+                    p Dist, Beijing
+                    p Postal Code: 100026
+            .column
+                    img(src="../images-news/2010/1002doug_05.jpg", alt="Doug Petrovic: Bleu cérise")
+        h2 Exhibitions with Art en Voyage
+        p Other exhibitions in China are planned - contact us for participation details

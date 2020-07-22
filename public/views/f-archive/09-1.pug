@@ -1,8 +1,30 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces d\'expositions 2009 Gabriella Carbone, Portes Ouvertes à Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonces) 
+        p#message=title
+        #textgauche
+            header
+                h1 Annonces d'expositions
+            h2 
+                a(href="http://gabriella.carbone.free.fr/" rel='noopener' target="_blank") Gabriella Carbone 
+                | , photographies 
+            .row
+                .column                    
+                    p du 31 mars au 5 avril 2009
+                        br
+                        | de 14h à 19h
+                    p Vernissage, vendredi 3 avril, 18h30  
+                    p Téléphone: 06.80.62.64.38
+                    p Galerie 3 F,
+                        br
+                        | 58 rue des 3 Frères, Paris 18,
+                        br
+                        | Métro Abesses 
+                .column
+                    img(src="../images-news/2009/expo-carbone-gabriella.jpg", alt="Gabriella Carbone, annonce expo")
+            h2 Portes Ouvertes du 14e, Paris
+            p Les Portes ouvertes auront lieu les 13 et 14 juin 2009.
+

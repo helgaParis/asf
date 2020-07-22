@@ -1,8 +1,50 @@
 extends ../../templates/e-layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, mois de la photo and Helga Strobl, Doug Petrovic gouaches and drawings, Roland Erguy')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (doug)
+        p#message=title
+        #textgauche
+            header
+                h1 Exhibits in automn 2010: Mois de la Photo in Paris,  
+                    a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+            .row
+                .column
+                    h3 Salon des Photographes du 14ème
+                    img(src="../images-news/2010/mois-de-la-photo.jpg", alt="mois de la photo")
+                    p November 13th to 24th 2010,
+                    p everyday 11am - 8pm
+                    p in Mairie du 14e, Annexe Salle des Fêtes,
+                    p 12 rue Durouchoux,
+                    p M° Mouton-Duvernet
+                    p
+                        a(href="../pdf/programme_mois_photo12.pdf" target='_blank') Download the progam for further details
+                    br
+                    br
+                .column
+                    h3 Impressions de balades et dégustations
+                    img(src="../images-news/2010/strobl-affiche.jpg", alt="strobl affiche")
+                    p November 2nd to 30th 2010
+                    p Monday to Wednesday: 7am - 9pm,
+                    p Thursday and Friday: 7am - 12pm,
+                    p Saturday: 7am - 8pm
+                    br
+                    p Bar Restaurant "Le Daudet"
+                    p 16 rue Daudet, Paris 14e, Tel. 01.45.40.82.33
+                    p M° Alesia, ligne 4, Bus 28, 38, 62, 68, 724
+    section
+        #textgauche
+            header
+                h1
+                    a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                    |  gouaches and drawings
+            p December 1st to 30th 2010
+            p Bar Restaurant "Le Daudet"
+    section
+        #textgauche
+            header
+                h1 
+                    a(href="/galerie/erguy") Roland Erguy
+            p will exhibit in November, at the Mairie du 8ème.
+

@@ -1,11 +1,22 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Offene Türen im 14. Arondissement von Paris, Ausstellung Gabriella Carbone, Fotos')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
+    section
+        p#message=title
+        #textgauche
+            header 
+                h1 Offene Türen im 14. Arondissement von Paris
+            p Sie finden am Wochenende des 13. und 14. Juni 2009 statt : 
+            p Samstag, 14h30 - 20h
+            p Sonntag, 11h - 19h     
     section
         #textgauche
             header 
                 h1   
-                    a(href='http://gabriella.carbone.free.fr/'  rel='noopener noreferrer nofollow'  target='_blank') Gabriella Carbone 
-                | , photographies
-                h3 Vernissage Galerie 3 F, 3 avril 2009
+                    a(href='http://gabriella.carbone.free.fr/'  rel='noopener noreferrer nofollow'  target='_blank') Gabriella Carbone
+                    | , Fotos
+            h3 Vernissage Galerie 3 F, 3 April 2009
             block script
                 script(src='../images-news/2009/carbone/dias-listes.js')

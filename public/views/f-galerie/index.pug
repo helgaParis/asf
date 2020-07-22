@@ -2,6 +2,11 @@ extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières - la galerie ')
     meta(name='robots', content='index, follow')
+    link(rel='stylesheet', href='/css/galerie-index.css')
+    link(rel='stylesheet', href='/css/galerie-anim.css')
+    script(src='/js/galerie-config.js')
+    script(src='/js/draw_constructors.js')
+    script(src='/js/galerie-animation.js')
 block main
     .fond
         section
@@ -9,6 +14,26 @@ block main
                 h3=message
             h1=title
             p Decouvrez nos artistes !
-
-
+            p 
+            | L'animation vous donne un aperçu sur quelques oeuvres présentés dans une galerie - si vous vous promenez dans les pages 
+            | Actualités des années passées, vous decouvrirez peut-être quelle galérie a inspiré le dessin. Retrouvez ces oeuvres - en plus grand - 
+            | sur les sites individuels des artistes. Menu Galerie ou les flèches pour les sites intégrés, Menu Artistes pour les sites independants.
+        
+        #scene_0.scene
+            canvas#myCanvasBg
+                | Votre navigateur ne supporte pas le canvas
+            canvas#myCanvasFg
+            
+        #artistediv_0
+            button#artistediv_0_button_next
+            #artistediv_0_ending
+            a#artistediv_0_linkpage
+        form#speedradio_0
+            | Vitesse: 
+            input#speedradio_0_normal(type='radio', name='vitesse', value='normal')
+            label(for='normal') Normal
+            input#speedradio_0_rapide(type='radio', name='vitesse', value='rapide')
+            label(for='rapide') Rapide
+            input#speedradio_0_instantane(type='radio', name='vitesse', value='instantane')
+            label(for='instantane') Instantané
         block aside

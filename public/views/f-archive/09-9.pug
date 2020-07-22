@@ -1,8 +1,15 @@
-extends ../../templates/layout-archive.pug
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Journée de l\'enfance africaine 2009')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonce freva)
+        p#message=title
+        #textgauche
+            header 
+                h1 Journée de l'enfance africaine 2009
+            p
+            | Artistes sans Frontières participe à une manifestation artistique devant la mairie du XIVe à Paris
+                   
+            block script
+                script(src='../images-news/2009/jea/dias-listes.js')

@@ -1,8 +1,21 @@
 extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces d\'expositions 2010 Portes Ouvertes des ateliers d\'artistes à Paris,  Parc Floral de Paris, BASE’ART, Le Festival, Doug Petrovic expose en Chine')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h1  Portes Ouvertes des ateliers d'artistes à Paris
+                h1 
+                    a(href="https://www.dougpetrovic.info" target="_blank") Doug Petrovic
+                    |  expose en Chine avec l'Association Art en Voyage               
+        p 
+            | 12 au 16 AVRIL 2010, SENAT, Peking
+            br
+            | 20 AVRIL au 16 MAI 210, MUSEE DE TIANJIN
+            br
+            | 20 MAI au 20 JUIN 2010,PEKIN ORIENTAL MEDIA CENTER
+           
             block script
-                script(src='../images-news/2010/po/dias-listes.js')
+                script(src='../images-news/2010/chine/dias-listes.js')            

@@ -1,14 +1,15 @@
 extends ../../templates/e-layout-archive-dias.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières, photos show Doug Petrovic')
+    meta(name='description' content='Artistes sans Frontières, photos of Salon de la photo in Town hall of 14e, Paris, 2010')
 block main
-        section
-            header
-                p#message=title
-        section
+    section
+        p#message=title
         #textgauche
             header 
-                h1  Exhibiton Douglas Petrovic at the bar restaurant Daudet
+                h1  Salon de la photo in Town hall of 14e, Paris
+            h3 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                | , exhibition 2010
 
             block script
-                script(src='../images-news/2010/daudet/dias-listes.js')
+                script(src='../images-news/2010/photosalon/dias-listes.js')

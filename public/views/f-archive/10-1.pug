@@ -1,8 +1,34 @@
 extends ../../templates/layout-archive.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Annonces d\'expositions 2009 Gabriella Carbone, Portes Ouvertes à Paris')
+    meta(name='author' content='Frederic LAMAGNERE')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (annonce freva)
+        p#message=title
+        #textgauche
+            header
+                h1 Expositions au printemps 2010 :
+            h2
+                | Portes Ouvertes des ateliers d'artistes à Paris:
+            p 29 et 30 mai 2010
+            h2  
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                |  expose en Chine avec l'
+                a(href="http://www.artenvoyage.org/f/xhhd_c.asp?ID=139" rel='noopener' target="_blank") Association Art en Voyage
+        .row        
+            .column
+                    p 12 au 16 avril 2010
+                    h3 SENAT (comité consultatif de la République Populaire de Chine)
+                    p Adresse: 北京市西城区太平桥大街23号
+                    p No23 TAIPINGQIAO STREET XICHENG DISTRICT BEIJING
+                    br
+                    p 20 avril au 16 mai 2010
+                    h3 PEKIN ORIENTAL MEDIA CENTER
+                    p 第三站：北京东方梅地亚中心  Pekin Oriental Media Center
+                    p Adresse: 4 Guang Hua Road, Chao Yang
+                    p Dist, Beijing
+                    p Code postal: 100026
+            .column
+                    img(src="../images-news/2010/1002doug_05.jpg", alt="Doug Petrovic: Bleu cérise, Cherry Blue")
+        h2 Expositions avec Art en Voyage
+        p D'autres expositions en Chine sont prévues - contactez-nous pour des détails de participation

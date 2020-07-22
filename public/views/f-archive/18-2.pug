@@ -2,29 +2,30 @@ extends ../../templates/layout-archive.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières, Les participants aux Arts 14 de 2018 : Doug Petrovic, Suzan Rasmussen, Helga Strobl')
 block main
-    section
-        p#message=title
-        header
-            h1 Annonces d'expositions
-    h2 Les 14 ARTS 2018 - Les Portes Ouvertes des Ateliers d'Artistes
-    .row
-        .column
-            p
-                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
-                | , peinture, dessin, sculpture
-                br
-                a(href="/galerie/rasmussen")  Suzan Rasmussen
-                | , peinture, dessin
-                br
-                a(href="https://hstrobl.info" rel='noopener' target="_blank") Helga Strobl
-                | , photographie 
-                br
-                a(href="/galerie/zamoum")  Zohra Zamoum
-                |, film
-            p le samedi 9 et le dimanche 10 Juin 2018
-            p Dans le 14e arrondissement de Paris et dans notre atelier, 7 impasse du Rouet, Paris 14e
-        .column
-            p 
-                a(href="18-3")
-                    img#imagefull(src="/images-news/2018/plancomplet2018po.png" alt="le plan du parcours, Portes Ouvertes et Art Urbain, 2018")
-                    | Voir le plan du parcours 14 ARTS en grand
+    p#message=title
+    section        
+        #textgauche
+            header
+                h1 Annonces d'expositions
+            h2 Les 14 ARTS 2018 - Les Portes Ouvertes des Ateliers d'Artistes
+            .row
+                .column
+                    p
+                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic
+                        | , peinture, dessin, sculpture
+                        br
+                        a(href="/galerie/rasmussen")  Suzan Rasmussen
+                        | , peinture, dessin
+                        br
+                        a(href="https://hstrobl.info" rel='noopener' target="_blank") Helga Strobl
+                        | , photographie 
+                        br
+                        a(href="/galerie/zamoum")  Zohra Zamoum
+                        |, film
+                    p le samedi 9 et le dimanche 10 Juin 2018
+                    p Dans le 14e arrondissement de Paris et dans notre atelier, 7 impasse du Rouet, Paris 14e
+                .column
+                    p 
+                        a(href="18-3")
+                            img#imagefull(src="/images-news/2018/plancomplet2018po.png" alt="le plan du parcours, Portes Ouvertes et Art Urbain, 2018")
+                            | Voir le plan du parcours 14 ARTS en grand

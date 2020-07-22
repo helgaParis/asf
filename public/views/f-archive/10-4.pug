@@ -1,8 +1,19 @@
-extends ../../templates/layout-archive.pug
+extends ../../templates/layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Portes Ouvertes des ateliers d\'artistes à Paris')
 block main
-    p  L'évenement 20#{event} sera bientôt disponible
     section
-        header
-            h1 Annonces 20#{event}
-        section
-        p à suivre (mois de la photo)
+        p#message=title
+        #textgauche
+            header 
+                h1  Portes Ouvertes des ateliers d'artistes à Paris
+            p
+                a(href="/galerie/erguy") Roland Erguy 
+                | ,
+                a(href="/galerie/kouassi") Germain Kouassi 
+                | , 
+                a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank") Doug Petrovic 
+                | , 
+                a(href="https://www.hstrobl.info" rel='noopener' target="_blank") Helga Strobl 
+            block script
+                script(src='../images-news/2010/po/dias-listes.js')

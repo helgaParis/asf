@@ -1,12 +1,16 @@
 extends ../../templates/d-layout-archive-dias.pug
+block extrameta
+    meta(name='description' content='Artistes sans Frontières, Ausstellung Roland Erguy, Sur le fil de la pointe et du burin')
+    meta(name='author' content='Frédéric LAMAGNERE')
 block main
     section
+        p#message=title
         #textgauche
             header 
-                h1 Journée de l'enfance africaine 2009
-                p 
-                | Artistes sans Frontières participe à une manifestation artistique 
-                | devant la mairie du XIVe à Paris
-                   
+                h1 Ausstellung ab 24 September 2009
+            p 
+                a(href="/galerie/erguy") Roland Erguy
+            h3 Sur le fil de la pointe et du burin
+            p Restaurant Les Cercles Bleus, 56 rue de la Sablière, Paris 14e
             block script
-                script(src='../images-news/2009/jea/dias-listes.js')
+                script(src='../images-news/2009/cercles/dias-listes.js')
