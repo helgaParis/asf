@@ -34,8 +34,9 @@
  *
  * Some meta-data is defined on this router file: the title, the canonical link, the keywords, which are imported from a seperate list.
  * The rel="alternate" hreflang meta data is defined on the template by using the fevent, eevent, devent variables 
- * Last feature: the router exports itself and also the function to know which is the current page. 
- * This is used by the site.js router to indicate it on site/index.
+ * 
+ * Last feature: the router exports itself and also a variable indicating the lastnews page. 
+ * This is used by the site.js router to indicate it on site/index and on the index page.
  * 
  *****/
 
@@ -47,8 +48,9 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 const bodyParser = require('body-parser');
+const { stringify } = require('querystring');
 
-let current;
+let lastnews="No 4 / 2020";
 
 router.get('/*/',function(req,res) {
     // 1. get the name of the archive page from the link clicked on nav-archive or typed in url or search
@@ -56,9 +58,10 @@ router.get('/*/',function(req,res) {
 
     //targets = pages to showw (if called as archive/target)
     //file names: year-eventNumberThatYear, add most recent on top
-    //current: to define the most recent as the page "actuel" on the main site
+    //current: to define the most recent as the page "actuel" 
+    //ATTENTION :  change No of global lastnews variable for export to other routers
     const targets= [
-                '20-4','20-3','20-2','20-1',
+                '20-5','20-4','20-3','20-2','20-1',
                 '19-6','19-5','19-4','19-3','19-2','19-1',    '18-3','18-2','18-1',
                 '17-2','17-1',   '16-3','16-2','16-1',  '15-2','15-1',   '14-3','14-2','14-1',
                 '13-2', '13-1',   '12-4','12-3','12-2','12-1',  '11-4','11-3', '11-2', '11-1', 
@@ -68,17 +71,18 @@ router.get('/*/',function(req,res) {
                 '05-11','05-10','05-9','05-8','05-7','05-6','05-5','05-4','05-3','05-2','05-1',
                 '04-3', '04-2', '04-1',  '01',  '00'  
     ];
-    current=targets[0];
+    const current=targets[0];
     let foundation=targets[targets.length-1]; //the first event ever, to avoid going further past
 
     const etargets = targets.map(x =>'e'+x);
-    const ecurrent= etargets[0];
+    const ecurrent = etargets[0];
     const dtargets = targets.map(x =>'d'+x);
-    const dcurrent=dtargets[0];
+    const dcurrent = dtargets[0];
+
 
 // define incoming request 
    let eventUrl= req.params[0] ;
-   let event = path.basename(eventUrl);  
+   let event = path.basename(eventUrl); 
    let ev = event.toString();  //check if needed
 
    //define keywords for the requested page
@@ -216,5 +220,5 @@ router.use(function(error, req, res, next) {
 
 module.exports = {
     router:router,
-    current:current
+    lastnews:lastnews   
 }

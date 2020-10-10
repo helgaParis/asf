@@ -6,20 +6,35 @@ block main
     section
         header
             h1=title
-        h2 Virtuelle Ausstellungen
-        p
-            | 2020, mit den sozialen Abstandsregeln in der realen Welt 
-            |  ist das Jahr einer massiven Migration in die virtuelle Welt des Internets.
-        p
-            | 2020 ist es 20 Jahre her, dass unser Team die erste Website für Künstler erstellt hat.
+        .row
+            .column
+                h2 Neue Website für unseren  Nachbarschaftsrat
+                p
+                    a(href='https://petrovic.ovh', rel='noopener', target='_blank')  Helga Petrovic 
+                    | und das Team von Artistes sans Frontières arbeiten am Projekt einer Website für den
+                    a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') Conseil de Quartier Jean Moulin Porte d'Orléans, 
+                    br
+                    | Textes par Zeliha Chaffin.
+            .columncenter
+                a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') 
+                    img.imagefullc(src="/images-news/2020/conseil-jmpo.jpg", title="Erste Version der Website conseil-jmpo.fr" alt="Erste Version der Website conseil-jmpo.fr") 
+                    br
+                    | Erste Version der Website, 6 Oktober 2020
+        h2 Neuer Film von Fatma-Zohra Zamoum:  Body &amp; Art
+        p 
+            |Samstag 17. Oktober 2020, 19 Uhr
             br
-            | Kunstfreund, machen Sie einen Spaziergang in der virtuellen Galerie der AsF-Site, um die Werke unserer Mitglieder zu entdecken!
+            | im ZKM, Zentrum für Kunst und Medien, Karlsruhe, Deutschland
+        h3 Film und interview mit der Regisseurin Fatma Zohra Zamoum
+        p 
+            | Body &amp; Art ist eine Retrospektive einer Kunst Performance von Gunter Brus
+            | in den Strassen von Wien im Jahr 1965.
             br
-            | Künstler, kontaktieren Sie uns für
-            ul
-                li eine virtuelle Ausstellung, 
-                li eine reale Ausstellung so bald wie möglich,
-                li eine neue Website zur Präsentation Ihrer Werke.
+            |Mit Gunter Brus, Peter Weibel, Eva Badura Trischka und Yves Michaud. 
+    
+        a(href="https://zkm.de/de/veranstaltung/2020/10/body-art" rel='noopener' target="_blank") Programm des Abends auf der ZKM Website
+       
+
         h2 Eingeschränkter Empfang in unseren Räumlichkeiten
         p
             | Das Büro des Vereins ist klein und unser Team arbeitet hauptsächlich vom Home Office aus.
@@ -31,26 +46,6 @@ block main
                 li Terminvereinbarungen: 06 32 95 40 90, von Dienstag bis Samstag, zwischen 13 und 17 Uhr
                 li Termine von Dienstag bis Samstag ab 14 Uhr
 
-    section
-        #textgauche
-            .row
-                .column
-                    h2 Erste Ausstellung im Jahr 2020: Doug Petrovic
-                    p Ölbilder und Gouachen von Doug Petrovic sind nach Vereinbarung zu besichtigen (siehe Besuchs Regeln oben).
-                    p Aufgrund der administrativen Schließung vom 16. März wurden die Vernissage und die Einweihungsparty nach der Renovierung unserer Räumlichkeiten abgesagt.
-                    h3 Ein privater Ausstellungsbesuch nach Termin Vereinbarung
-                    p bietet Ihnen die Möglichkeit, einen Künstler in einer intimen Umgebung zu entdecken, während einer Zeitspanne, die ausschließlich Ihrer Entdeckung gewidmet ist.
-                .column
-                    img.imagehalfc(src="/images-news/2020/atelier1.jpg", title="Doug Petrovic, Ölbild" alt = "Doug Petrovic, Ölbilder und Gouachen")
-            h2 Neue Website - neue Teammitglieder
-            p Die neue Site hat die alte Version ersetzt, die Inhalts Übertragung ist weit fortgeschritten und wird im Mai abgeschlossen.
-            p
-                | Babacar Seck, unser neuestes Team Mitglied, begann sein Praktikum am 1. April unter besonderen Bedingungen: Am Tag seines ersten Vorstellungstermins wurde die Ausgangssperre verhängt.
-                | Sein Praktikum begann von zu Hause aus und in einer Codesprache, die er vorher nicht kannte. 
-                | Er hat bereits begonnen, den Inhalt des Archivs für die Jahre 2005 und 06 zu übertragen. Es wird die fehlenden Jahre im Mai beenden.
-            p Im Mai oder Juni wird ein weiterer Auszubildender zu uns stossen - seine Ausbildung wurde durch die Quarantäne unterbrochen
-            | und das Enddatum seiner Ausbildung kann sich noch ändern.       
-             
-        hr.piedvariable
+            hr.piedvariable
         .piedvariable
             include ../templates/footer.pug

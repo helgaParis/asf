@@ -15,16 +15,16 @@ html(lang='de')
         link(rel='stylesheet', href='../css/colonnes.css')
         link(rel='stylesheet', href='../css/20main-nav.css')
         link(rel="shortcut icon" href="../images/favicon.png")
-        link(rel="keywords" content=keys)
+        meta(name="keywords" content=keys)
         title=title
         block extrameta 
 
-    body
-        nav
-            include ./d-nav-archive.pug
-        main
-            .bgarchive
-                block main
-            .piedvariable
-                hr.piedvariable
-                include ./footer.pug
+        body
+            nav
+                include ./d-nav-archive.pug
+            main
+                .bgarchive
+                    block main
+                .piedvariable
+                    hr.piedvariable
+                    include ./footer.pug

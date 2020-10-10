@@ -1,0 +1,73 @@
+#stage {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+}
+
+#myCanvasBg {
+    border: 1px solid #A90101;
+    background-color: #fffbeb;
+    z-index: 2;
+}
+
+/*
+une 3ème canvas, myCanvasMg, était utilisé pour l'animation
+du camion qui roule dans la version précédente de Helga
+https://petrovic.ovh/jeu1/ 
+*/
+/*#myCanvasMg {
+    z-index: 4;
+}*/
+
+#myCanvasFg {
+    z-index: 3;
+}
+
+@media only screen and (max-width: 600px) {
+    #myCanvasFg { width: 100%; }
+    #myCanvasBg { width: 100%; }
+    /*#myCanvasMg { width: 100%; }*/
+}
+
+@media only screen and (min-width: 600px) {
+    #myCanvasFg { width: 95%; }
+    #myCanvasBg { width: 95%; }
+    /*#myCanvasMg { width: 95%; }*/
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+/* body { background: blue; } */
+    #myCanvasFg { width: 90%; }
+    #myCanvasBg { width: 90%; }
+    /*#myCanvasMg { width: 90%; }*/
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* body { background: orange; } */
+    #myCanvasFg { width: 90%; }
+    #myCanvasBg { width: 90%; }
+    /*#myCanvasMg { width: 90%; }*/
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* body { background: pink; } */
+    #myCanvasFg {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    #myCanvasBg {
+        width: 90%;
+        max-width: 1200px;
+    }
+
+    /*#myCanvasMg {
+        width: 90%;
+        max-width: 1200px;
+    }*/
+}

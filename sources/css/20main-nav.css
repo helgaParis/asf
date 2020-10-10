@@ -24,10 +24,10 @@ nav > div > ul > li:hover .menu2 {
     background-color :  #118cffcc; 
     position : absolute;
     display : none;
-    min-width : 140px;
+    min-width : 100px;
     z-index : 3;
     max-width: 300px;
-    min-width: 100px;
+    
     }        
 .menu2 li {
     display: list-item;

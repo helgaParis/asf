@@ -1,25 +1,45 @@
 extends ../templates/layout.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières - Découvrez la galerie de nos membres artistes et les services de l\'association !, COVID-19 : Annonce d\'accueil changé ')
+    meta(name='description' content='Artistes sans Frontières - Découvrez la galerie de nos membres artistes et les services de l\'association !, COVID-19 : Accueil sur rendez-vous ')
 
 block main
     section
         header
-            h1=title
-        h2 Expositions virtuelles 
+            h1=title     
+        .row
+            .column
+                h2 Nouveau Site pour notre conseil de quartier 
+                p
+                    | Un site Internet pour le 
+                    a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') Conseil de Quartier Jean Moulin Porte d'Orléans, 
+                    br
+                    | c'est un projet créé par 
+                    a(href='https://petrovic.ovh', rel='noopener', target='_blank')  Helga Petrovic 
+                    | et l'équipe d'Artistes sans Frontières.
+                    br
+                    | Textes par Zeliha Chaffin.
+            .columncenter
+                a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') 
+                    img.imagefullc(src="/images-news/2020/conseil-jmpo.jpg", title="Première version du site du conseil de quartier jmpo" alt="Première version du site du conseil de quartier jmpo") 
+                    br
+                    | Première version du site, le 6 octobre 2020
+        h2 Nouveau film de Fatma-Zohra Zamoum :  Body &amp; Art
         p 
-            | 2020, avec la distanciation sociale imposé dans le monde réel, 
-            | c'est l'année d'une migration massive vers le monde virtuel de l'Internet. 
-        p
-            | 2020, cela fait 20 ans depuis la première création de site Internet pour des artistes par notre équipe. 
+            | Le samedi 17 octobre 2020, à 19 h
             br
-            | Ami(e) de l'art, promenez-vous dans la galerie virtuelle du site AsF pour découvrir les oeuvres de nos membres! 
+            | au ZKM, Zentrum für Kunst und Medien, Karlsruhe, Allemagne
+        h3 Film et Entretien avec la cinéaste Fatma Zohra Zamoum
+        p 
+            | Body &amp; Art est une retrospective d'une performance artistique de Gunter Brus 
+            |dans les rues de Vienne, Autriche, en 1965. 
             br
-            | Artiste, contactez-nous pour 
-            ul
-                li organiser une exposition virtuelle, 
-                li une exposition réelle dès que possible, 
-                li la création d'un site pour présenter vos oeuvres.
+            |Avec Gunter Brus, Peter Weibel, Eva Badura Trischka et Yves Michaud. 
+
+            a(href="https://zkm.de/de/veranstaltung/2020/10/body-art" rel='noopener' target="_blank") Programme detaillé de la soirée au ZKM 
+
+
+
+
         h2 Accueil dans nos lieux
         p
             | L'atelier de l'association est petit et notre équipe travaille surtout en télétravail. 
@@ -31,32 +51,6 @@ block main
                 li prises de rdv : 06 32 95 40 90, de mardi à samedi, entre 13 et 17h
                 li rendez-vous de mardi à samedi à partir de 14h
 
-    section
-        #textgauche
-            .row
-                .column
-                    h2 
-                        | Exposition 
-                        a(href="https://www.dougpetrovic.info" rel='noopener' target="_blank")  Doug Petrovic
-                    p  Des huiles et des gouaches de Doug Petrovic sont visibles sur rendez-vous (voir les règles d'accueil ci-haut).
-                    p La fermeture administrative du 16 mars a annulé le vernissage et la la pendaison de crémaillère après la rénovation de nos lieux. 
-                    h3 La visite sur rendez-vous 
-                    p vous offre l'occasion de découvrir un artiste dans un cadre intime, pendant un moment dédié uniquement à votre découverte. 
-                .column
-                    img.image80c(src="/images-news/2020/pinguin-et-serpent.jpg", title="Doug Petrovic, sculpture" alt="Doug Petrovic, sculpture")
-            h2 Nouveau site - nouveaux membres de l'équipe
-            .row
-                .column35
-                    img.imagefullc(src="/images-news/2020/babacar.jpg", title="Babacar Seck, premier jour \"au bureau\"", alt="Babacar Seck, après 6 semaines de travail, premier jour \"au bureau\"")
-                    p.legendes Babacar Seck, premier jour "au bureau" - après six semaines de télétravail
-                .column
-                    p Le nouveau site a remplace l'ancienne version, la migration du contenu a bien avancé et se terminera en mai. 
-                    p
-                        | Babacar Seck a joint l'équipe le 1 avril dans des conditions particulières : le jour de sa première visite, le confinement a été déclaré. 
-                        | Son stage a commencé à distance, travaillant dans un language de code, qu'il ne connaissait pas 
-                        | et il a déjà commencé à migrer le contenu de l'archive des années 2005 et 06. Il terminera les années manquantes en mai.
-                    p En mai ou juin, un autre stagiaire se joindra à nous - sa formation a été interrompu par le confinement 
-                    | et la date de fin de sa formation est encore susceptible à changer. 
 
         hr.piedvariable
         .piedvariable

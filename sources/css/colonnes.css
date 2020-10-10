@@ -89,7 +89,10 @@
     flex:50%;
     text-align: right;
 }
-
+.columncenter{
+    flex:50%;
+    text-align: center;
+}
 .column3 {
     flex: 30%;
     max-width: 30%;

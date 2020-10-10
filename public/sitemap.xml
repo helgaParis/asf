@@ -969,7 +969,42 @@
   </url>
 
 <!-- chapter archive / news -->
-<!--  _____________________2020______________________ -->
+<!--  _____________________2020-5______________________ -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/20-5</loc>
+      <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-5"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-5"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d20-5</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-5"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-5"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e20-5</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-5"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-5"/>
+    </url>
+<!--  _____________________2020 - 1 ______________________ -->
     <url>
       <loc>https://artistessansfrontieres.fr/archive/20-1</loc>
       <priority>1.00</priority>
@@ -1003,6 +1038,111 @@
                rel="alternate"
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/20-1"/>
+    </url>
+    <!--  _____________________2020-2______________________ -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/20-2</loc>
+      <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-2"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-2"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d20-2</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-2"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-2"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e20-2</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-2"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-2"/>
+    </url>
+    <!--  _____________________2020 - 3______________________ -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/20-3</loc>
+      <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-3"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d20-3</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-3"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e20-3</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-3"/>
+    </url>
+    <!--  _____________________2020-4______________________ -->
+    <url>
+      <loc>https://artistessansfrontieres.fr/archive/20-4</loc>
+      <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-4"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-4"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d20-4</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-4"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e20-4"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e20-4</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d20-4"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/20-4"/>
     </url>
     <!-- ________________________________________2019 __________________________ -->
 
@@ -1422,7 +1562,7 @@
     </url>
 
 
-    <!-- fait     -->
+    
 
 
     <!-- _______________________________________________2016___________________________________________________  -->
@@ -2414,9 +2554,43 @@
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/10-7"/>
     </url>
+<!-- _______________________________________________10-8____________________________________________________  -->
 
 
-    <!-- FFFFFFFFFFFFFFaaaaaaaaaaaaaaaaaaiiiiiiiiiiiiiiiitttttttttttttt -->
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/10-8</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d10-8"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e10-8"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d10-8</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/10-8"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e10-8"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e10-8</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d10-8"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/10-8"/>
+    </url>
       <!-- _______________________________________________2009____________________________________________________  -->
       <!-- _______________________________________________09-1____________________________________________________  -->
 
@@ -2752,8 +2926,43 @@
                href="https://artistessansfrontieres.fr/archive/09-9"/>
     </url>
 
-    <!-- FFFFFFFFFFFFFFFaaaaaaaaaaaaaaaaaaaaaaaaiiiiiiiiiiiiiiiiiiiiiiiiiitttttttttttttttttt -->
+    <!-- _______________________________________________09-10___________________________________________________  -->
 
+
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/09-10</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d09-10"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e09-10"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d09-10</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/09-10"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e09-10"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e09-10</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d09-10"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/09-10"/>
+    </url>
 
     <!-- 2008  -->
 
@@ -2906,11 +3115,6 @@
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/08-4"/>
     </url>
-
-    <!-- _______________________________ fait _________________________ -->
-
-
-
 
      <!-- _______________________________________________2007____________________________________________________  -->
 
@@ -3679,8 +3883,80 @@
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/06-12"/>
     </url>
-   
+    <!-- _______________________________________________06-13____________________________________________________  -->
 
+
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/06-13</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d06-13"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e06-13"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d06-13</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/06-13"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e06-13"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-13</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d06-13"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/06-13"/>
+    </url>
+ <!-- _______________________________________________06-14____________________________________________________  -->
+
+
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/06-14</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d06-14"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e06-14"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d06-14</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/06-14"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e06-14"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e06-14</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d06-14"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/06-14"/>
+    </url>
   
   <!-- _______________________________________________2005____________________________________________________  -->
 
@@ -4071,6 +4347,46 @@
     </url>
 
 
+      <!-- _______________________________________________05-11____________________________________________________  -->
+
+
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/05-11</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d05-11"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e05-11"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d05-11</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/05-11"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e05-11"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e05-11</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d05-11"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/05-11"/>
+    </url>
+
+
+
       <!--_______________________________________________ 2004 ___________________________________________________  -->
 
       <!-- _______________________________________________04-1____________________________________________________  -->
@@ -4147,6 +4463,44 @@
                rel="alternate"
                hreflang="fr"
                href="https://artistessansfrontieres.fr/archive/04-2"/>
+    </url>
+
+  <!-- _______________________________________________04-3____________________________________________________  -->
+
+
+         <url>
+        <loc>https://artistessansfrontieres.fr/archive/04-3</loc>
+        <priority>1.00</priority>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d04-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e04-3"/>
+    </url>
+        <url>
+        <loc>https://artistessansfrontieres.fr/archive/d04-3</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/04-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="https://artistessansfrontieres.fr/archive/e04-3"/>
+    </url>
+      <url>
+      <loc>https://artistessansfrontieres.fr/archive/e04-3</loc>
+    <xhtml:link 
+               rel="alternate"
+                hreflang="de"
+               href="https://artistessansfrontieres.fr/archive/d04-3"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="https://artistessansfrontieres.fr/archive/04-3"/>
     </url>
 
 

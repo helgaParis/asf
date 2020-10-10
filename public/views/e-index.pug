@@ -5,21 +5,38 @@ block main
     section
         header
             h1=title
-        h2 Virtual shows 
+        .row
+            .column
+                h2 New website for our neighborhood council
+                p
+                    | A website for the  
+                    a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') Conseil de Quartier Jean Moulin Porte d'Orléans, 
+                    br
+                    | is our current project, created by
+                    a(href='https://petrovic.ovh', rel='noopener', target='_blank')  Helga Petrovic 
+                    |  and the team of Artistes sans Frontières.
+                    br
+                    | Texts by Zeliha Chaffin.
+            .columncenter
+                a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') 
+                    img.imagefullc(src="/images-news/2020/conseil-jmpo.jpg", title="First version of the website neighborhood counci jmpo" alt="First version of the website  neighborhood council jmpo") 
+                    br
+                    | First version of the websiteneighborhood council jmpo,6 Octobre 2020
+        h2 New film by Fatma-Zohra Zamoum:  Body &amp; Art
         p 
-            | 2020, with the social distancing imposed in the real world,
-            | this is the year of a massive migration to the virtual world of the Internet.
-        p
-            | 2020, it's been 20 years since our team created the first websites  for artists.
+            |Saturday 17 October 2020, 7pm
             br
-            | Friend of the arts, take a walk in the virtual gallery of the AsF website to discover the art works of our members!
-            br
+            | at the ZKM, Zentrum für Kunst und Medien, Karlsruhe, Germany
+        h3 Film and interview with the director Fatma Zohra Zamoum
         p 
-            | Artist, contact us 
-            ul
-                li for a virtual exhibition, 
-                li for a real exhibition as soon as possible,
-                li to create a web site to present your works.
+            | Body &amp; Art is a retrospective of an artistic performance by Gunter Brus
+            | in the streets of Vienna, Austria, in 1965.
+            br
+            |With Gunter Brus, Peter Weibel, Eva Badura Trischka and Yves Michaud. 
+    
+        a(href="https://zkm.de/de/veranstaltung/2020/10/body-art" rel='noopener' target="_blank") Detailled Program  on the ZKM website
+       
+
         h2 Reception in our premises
         p
             | The association's office is small and our team works mainly from their home office.
@@ -31,26 +48,6 @@ block main
                 li take an appointment: 06 32 95 40 90, Tuesday to Saturday, between 1 and 5 p.m.
                 li appointments possible from Tuesday to Saturday from 2 p.m on.
 
-    section
-        #textgauche
-            .row
-                .column
-                    h2 First exhibition in 2020: Doug Petrovic
-                    p Oil paintings and gouaches from Doug Petrovic are visible by appointment (see reception rules above).
-                    p The administrative closure on March 16 canceled the vernissage and the housewarming party after the renovation of our premises.
-                    h3 A private visit by appointment
-                    p offers you the opportunity to discover an artist in an intimate setting, for a time dedicated solely to your discovery.
-                .column
-                    img.imagehalfc(src="/images-news/2020/atelier1.jpg", title="Doug Petrovic, oil on canvas" alt = "Doug Petrovic, oil on canvas")
-            h2 New website - new team members
-            p The new site replaces the old version, the content migration is well advanced and will be finished in May.
-            p
-                | Babacar Seck joined the team on April 1 under particular circumstances: the day of his first visit, lockdown was declared.
-                | His internship started remotely, working in a code language, he did not know before. 
-                | He has already started to migrate the contents of the archive for the years 2005 and 06. He will finish the missing years in May.
-            p 
-                | In May or June, another trainee will join us - his training was interrupted by confinement
-                | and the end date of his training is still subject to change.
         hr.piedvariable
         .piedvariable
             include ../templates/footer.pug
