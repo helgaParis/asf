@@ -37,6 +37,7 @@ router.get('/*',function(req,res) {
                 'rahs','rasmussen','reggaro','schwertfeger','souche','stoulig','sylviaartdeco',
                 'tajuddin','valgallard','villaada','wright','adzak', 'zamoum',
                 'you',
+                'autres',
                 'refweb', 'reflogos', 'refpub', 'refsdc', 'refmhh', 
                 'lepaquet2','lepaquet3',
                 'erguy2', 'erguy3', 'erguy4',
@@ -56,7 +57,7 @@ router.get('/*',function(req,res) {
     It will revert to destinations[0] after the last valid destination
     (idea under discussion: integrate the new independant AsF créated websites in this scroll, by adding an extra index page to them with a small gallery menu)
     */
-    let lastPos=destinations.length-21; //-(1 + number of non-artist pages and seondary pages at the end, after 'you')
+    let lastPos=destinations.length-22; //-(1 + number of non-artist pages and seondary pages at the end, after 'you')
     let firstPos=0; 
 
     // get the name of the artist from the link clicked on nav-galerie or typed in url or search
