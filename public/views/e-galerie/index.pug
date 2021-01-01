@@ -1,14 +1,22 @@
 extends ../../templates/e-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières - the gallery ')
+    meta(name='description' content='Artistes sans Frontières - the gallery, an animation of an art show ')
     meta(name='robots', content='index, follow')
+    link(rel='stylesheet', href='/css/galerie-index.css')
+    link(rel='stylesheet', href='/css/galerie-anim.css')
+    script(src='/js/galerie-index-anim.js')
+    
 block main
     .fond
         section
             #message
                 h3=message
-            h1=title
-            p Discover our artists !
-
-
-        block aside
+            h1 Artistes sans Frontières - The members' gallery
+            h3 Discover our artists !
+            p To see the paintings in bigger size, leaf through the menu Gallery with the arrows or visit the independant websites of the Menu Artists 
+            p If you consult the News pages of past years, you may find the gallery which inspired the drawing
+            
+        #stage
+            canvas#myCanvasBg
+                | Your browser cannot show the canvas
+            canvas#myCanvasFg

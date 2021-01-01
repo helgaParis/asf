@@ -1,14 +1,22 @@
 extends ../../templates/d-layout-galerie-base.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières - die Galerie ')
+    meta(name='description' content='Artistes sans Frontières - die Galerie mit einer Animation einer Ausstellung')
     meta(name='robots', content='index, follow')
+    link(rel='stylesheet', href='/css/galerie-index.css')
+    link(rel='stylesheet', href='/css/galerie-anim.css')
+    script(src='/js/galerie-index-anim.js')
+   
 block main
     .fond
         section
             #message
                 h3=message
-            h1=title
-            p Entdecken Sie unsere Künstler !
+            h1 Artistes sans Frontières - die Galerie der Mitglieder
+            h3 Entdecken Sie unsere Künstler !
+            p Um die Kunstwerke grösser zu sehen, blättern Sie durch das Menu  Galerie mittels der Pfeiltasten und besuchen Sie die Websites im Menu Künstler.
+            p Wenn Sie die News Seiten vergangener Jahre durchwandern, finden Sie vielleicht die Galerie, die die Zeichnung inspiriert hat.
 
-
-        block aside
+            #stage
+                canvas#myCanvasBg
+                    | Ihr Browser kann das canvas Element nicht anzeigen
+                canvas#myCanvasFg
