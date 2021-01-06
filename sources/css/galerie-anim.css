@@ -1,5 +1,7 @@
 #stage {
     position: relative;
+    /* display:block; */
+    min-height: 27vh;
 }
 
 canvas {
@@ -10,6 +12,7 @@ canvas {
     border: 1px solid #A90101;
     background-color: #fffbeb;
     z-index: 2;
+
 }
 
 /*
@@ -29,6 +32,7 @@ https://petrovic.ovh/jeu1/
     #myCanvasFg { width: 100%; }
     #myCanvasBg { width: 100%; }
     /*#myCanvasMg { width: 100%; }*/
+    
 }
 
 @media only screen and (min-width: 600px) {

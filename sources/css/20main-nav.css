@@ -1,9 +1,22 @@
+
+
 /*only the nav-styles common to all sizes */
 
 
 /*************** navigation + nav links */
+/*  correction of browser agent style on some phones ignoring the body stile margins at 0: a blue empty div to cover the whitespace over the blue nav div*/
+.correctionnav{
+   position: absolute;
+   display:block;
+   top: -10px;
+   width: 100%;
+   height: 12px;
+   background-color: #118cff60;
+}
+
 nav {
     background-color : #118cff60;
+    margin-top:0;padding-top:0,border-top:0;
 }
 .menu1 {
 text-align : left;
@@ -152,9 +165,10 @@ a.see{
 **     arrowtexts: invisible on mobile screens
 **************/
 
-/*          < 400              */
+/*  *************        < 400           **************   */
 
 @media only screen and (max-width:400px) {
+  
 	nav {
         border-bottom : 1px dotted #A90101;
         height : 33px;        
@@ -195,7 +209,7 @@ a.see{
     }   
     .start  {
         position : absolute;
-        top : 9px;
+        top : 0px;
         right : 9px;
         width: 41px;
         height : 29px;
@@ -253,10 +267,11 @@ a.see{
 /*************    400 - 600   *************/
 
 @media only screen and (min-width:400px) and (max-width:600px) {
+  
     nav {
         border-bottom : 1px dotted #A90101;
         height : 33px;
-    }
+      }
     nav ul {
         margin-left : 5px;
         margin-right: 30px;
@@ -292,7 +307,7 @@ a.see{
     }
     .start{
         position : absolute;
-        top :11px;
+        top :0px;
         right : 9px;
     }
     .asf {
@@ -340,7 +355,7 @@ a.see{
         /* flagd is visible from now on */        
     }
 }
-/********************* 600 - 792    *********************/
+/********************* 600 - 768    *********************/
 
 @media only screen and (min-width:600px) {
 	nav {
@@ -381,7 +396,7 @@ a.see{
     }
     .start {
         position : absolute;
-        top : 9px;
+        top : 0px;
         right : 9px;
     }
     .asf {
@@ -445,6 +460,9 @@ hidden parts for small screens get a display:inline
 */
 
 @media only screen and (min-width:768px) {
+   .correctionnav{
+      display:none;
+   }
     .min600 {
         display: none;
     }

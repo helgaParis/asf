@@ -1,5 +1,5 @@
 /* ++++++++++ Styles common to all sizes +++++++++++ */
-
+body{margin:0;padding:0;border:0;}
 body {
     font-family : 'Arial', sans-serif;
     font-size: 1em;
@@ -24,6 +24,7 @@ a:hover, a:focus {
 /******* titles and deco elements ***********/
 h1 {
     margin-bottom: 5px;
+    
 }
 h2{
     border-bottom: 1px solid #118cff66; 
@@ -31,6 +32,7 @@ h2{
     padding-left: 15px;
     margin-right:10%;
     margin-left: 5%;
+    
 }
 
 /******* Containers ***********/
@@ -46,7 +48,7 @@ h2{
 .bgsite{
     width: 97%;
     max-width: 800px;
-    margin:1%;
+    /* margin:1%; */
 } 
 .fond{
     /* margin-top:1%; */
@@ -87,7 +89,12 @@ hr.piedvariable, footer hr{
 /********* < 400 ***************/
 
 @media only screen and (max-width:400px) {
-    
+    body{
+        margin-top:0;
+    }
+    h1{
+        font-size: 1.3em;
+    }
     #message{
         margin-top: 22px;
     }
@@ -104,8 +111,9 @@ hr.piedvariable, footer hr{
     .fond{
         /* max-width: 96%;      */
         margin-right: 14%;   
-        border-top: 24px solid white;
-    } 
+        margin-left:1%;
+        border-top: 18px solid white;
+    }             
 }
 
 /*************    400 - 600   *************/
@@ -113,6 +121,7 @@ hr.piedvariable, footer hr{
 @media only screen and (min-width:400px) and (max-width:600px) {
 	body{
 		font-size: 0.8rem;
+        margin-top:0;
     }
     #message{
         margin-top:28px;
@@ -129,7 +138,7 @@ hr.piedvariable, footer hr{
     }
     .fond{
         /* max-width: 89%;      */
-        border-top: 24px solid white;
+        border-top: 20px solid white;
         margin-right:8%;
     } 
 }
@@ -153,7 +162,7 @@ hr.piedvariable, footer hr{
         padding-top: 12px;
     }
     .fond{
-        border-top: 27px solid white;
+        border-top: 18px solid white;
         margin-right: 6%;
     }
     .bgarchive{
@@ -167,6 +176,8 @@ hr.piedvariable, footer hr{
 @media only screen and (min-width:768px) {
 	body{
 		font-size: 0.9rem;
+       
+        
 	}
     main {
         position : absolute;
@@ -190,7 +201,7 @@ hr.piedvariable, footer hr{
         padding-top: 0px;
     }
     .fond{
-        border-top:Opx;
+        border-top:0px;
         padding-top: 3%;
     }
 }

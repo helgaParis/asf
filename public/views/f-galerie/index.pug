@@ -1,8 +1,7 @@
 extends ../../templates/layout-galerie-base.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières - la galerie, petite animation d\'une expo ')
-    meta(name='robots', content='index, follow')
-    link(rel='stylesheet', href='/css/galerie-index.css')
+    meta(name='robots', content='index, follow')   
     link(rel='stylesheet', href='/css/galerie-anim.css')
     script(src='/js/galerie-index-anim.js')
     
@@ -15,7 +14,7 @@ block main
             h3 Decouvrez nos artistes !
             p Trouvez les oeuvres de l'animation - en plus grand - sur les pages des artistes de la Galerie, à parcourir avec les flèches, ou sur les sites independantes des Artistes!
             p Promenez vous dans les pages Actualités des années passées, pour découvrir quelle galérie a inspiré le dessin. 
-            
+           
         #stage
             canvas#myCanvasBg
                 | Votre navigateur ne supporte pas le canvas
