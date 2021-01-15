@@ -32,10 +32,10 @@ const router = express.Router();
 const path = require('path');
 const bodyParser = require('body-parser');
 
-// defining the latest news page as the actuel one with help of archive.js
+// defining the latest news page as the lastnewsel one with help of archive.js
 const archive = require('./archive.js');
-let actu=archive.current;
-//console.log(actu);
+let lastnews=archive.lastnews;
+//console.log(lastnews);
 
 router.get('/*', function(req,res,next){
     // console.log('dans site/*');   
@@ -44,7 +44,7 @@ router.get('/*', function(req,res,next){
 
 var ftargets = [
                 {c:'index',t:'Artistes sans Frontières - notre offre'},
-                {c:'buts'  , t:'Les objéctifs de l\'association AsF'  },{c: 'nous' , t: 'Artistes sans Frontières - Notre Histoire' },
+                {c:'buts', t:'Les objéctifs de l\'association AsF'  },{c: 'nous' , t: 'Artistes sans Frontières - Notre Histoire' },
                 {c: 'contact', t: 'AsF - contactez-nous' },{c:'join', t:  'Devenez membre de l\'association AsF' },
                 {c: 'mentions', t:'AsF - mentions légales'  },{c: 'services' , t:  'Artistes sans Frontières - services' },
                 {c: 'expos', t: 'Exposez vos oeuvres avec Artistes sans Frontières'  },{c: 'sites' , t: 'AsF publie votre site Internet personnalisé' },
@@ -81,7 +81,7 @@ var dtargets = [
   
     //  site/index or site/ This page will be an animation. For now it's a news page.
     if(cible ==='' || cible === 'index.html') {
-        target= { c:'index', t:'Bienvenue sur le site AsF', actu:actu};   
+        target= { c:'index', t:'Bienvenue sur le site AsF', lastnews:lastnews};   
         folder= 'f-site/';
         let pos=0;
         target.pos=pos;
@@ -102,7 +102,7 @@ var dtargets = [
         target.ciblee=etargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='fr'; 
-        target.actu=actu;
+        target.lastnews=lastnews;
         page=target.c ;
     }  
 
@@ -116,7 +116,7 @@ var dtargets = [
         target.ciblef=ftargets[pos].c;
         target.cibled=dtargets[pos].c;
         target.lang='en';   
-        target.actu=actu;
+        target.lastnews=lastnews;
         page=cible.slice(1);
     }
     if (dtargets.find( ({c}) => c ===cible) ){
@@ -127,7 +127,7 @@ var dtargets = [
         target.ciblee=etargets[pos].c;
         target.ciblef=ftargets[pos].c;
         target.lang='de';    
-        target.actu=actu;
+        target.lastnews=lastnews;
         page=cible.slice(1);  
     }
 

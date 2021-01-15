@@ -31,7 +31,7 @@ router.get('/*',function(req,res) {
     //+++ valid internal routes for French galerie - add new navlink names here, non-artist pages after 'you' +++
 
     let destinations=[
-                'amorim','bazencir','champagne','delaney','emory','erguy','frevarias',
+                'amorim','bazencir','champagne','delaney','ellen', 'emory','erguy','frevarias',
                 'gebka', 'gruyters','jalila','kouassi','krive','lepaquet','merle','mohsen','mtm',
                 'nicolas','plazanet','paquetrobert','pillas','pluvinage','quartarone',
                 'rahs','rasmussen','reggaro','schwertfeger','souche','stoulig','sylviaartdeco',

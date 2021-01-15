@@ -1,54 +1,21 @@
 extends ../templates/e-layout.pug
 block extrameta
-    meta(name='description' content='Artistes sans Frontières - Discover the member artist\'s gallery! Creation of individual and artistic websites and apps - Changed reception due to COVID epidemic - ask for a video link to discuss your project !')
+    meta(name='description' content='Artistes sans Frontières - Discover the member artist\'s gallery! Creation of individual and artistic websites and apps - Projects 2021 ')
     meta(name='keywords' content='Association, artists, art, Paris, Alesia, Paris 14, websites creation, developement, art websites, artistic websites, websites for artists, applications web, exhibition, show,art show, art fair,  show in Paris for internationa artist, show in Paris, exhibition in Paris, international art,  small business websites, individual websites, training, internship, Rouet, impasse du Rouet, 75014, Petrovic' )
+    meta(name='author' content='Animation: Babacar et Helga')
+    link(rel='stylesheet', href='css/canvas-anim.css')
+    script(src='js/anim-collage.js')
+    
 block main
     section
         header
             h1=title
-        .row
-            .column
-                h2 New website for our neighborhood council
-                p
-                    | A website for the  
-                    a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') Conseil de Quartier Jean Moulin Porte d'Orléans, 
-                    br
-                    | is our current project, created by
-                    a(href='https://petrovic.ovh', rel='noopener', target='_blank')  Helga Petrovic 
-                    |  and the team of Artistes sans Frontières.
-                    br
-                    | Texts by Zeliha Chaffin.
-            .columncenter
-                a(href='https://conseil-jmpo.fr', rel='noopener', target='_blank') 
-                    img.imagefullc(src="/images-news/2020/conseil-jmpo.jpg", title="First version of the website neighborhood counci jmpo" alt="First version of the website  neighborhood council jmpo") 
-                    br
-                    | First version of the websiteneighborhood council jmpo,6 Octobre 2020
-        h2 New film by Fatma-Zohra Zamoum:  Body &amp; Art
-        p 
-            |Saturday 17 October 2020, 7pm
-            br
-            | at the ZKM, Zentrum für Kunst und Medien, Karlsruhe, Germany
-        h3 Film and interview with the director Fatma Zohra Zamoum
-        p 
-            | Body &amp; Art is a retrospective of an artistic performance by Gunter Brus
-            | in the streets of Vienna, Austria, in 1965.
-            br
-            |With Gunter Brus, Peter Weibel, Eva Badura Trischka and Yves Michaud. 
-    
-        a(href="https://zkm.de/de/veranstaltung/2020/10/body-art" rel='noopener' target="_blank") Detailled Program  on the ZKM website
-       
-
-        h2 Reception in our premises
-        p
-            | The association's office is small and our team works mainly from their home office.
-            | For visits to our premises, new reception rules apply:
-            ul
-                li visits only by appointment
-                li one or two visitors maximum
-                li compulsory wearing of a face mask
-                li take an appointment: 06 32 95 40 90, Tuesday to Saturday, between 1 and 5 p.m.
-                li appointments possible from Tuesday to Saturday from 2 p.m on.
-
-        hr.piedvariable
-        .piedvariable
-            include ../templates/footer.pug
+        #intro
+            p Discover our artists, our offre of individual artistic websites sites or search the News archive for past events.
+            p Last news: 
+                a(href='/archive/actuel') #{lastnews[0]} : #{lastnews[2]}
+    #stage            
+        canvas#canvasBg
+            | Your browser does not support the canvas animation            
+   
+        

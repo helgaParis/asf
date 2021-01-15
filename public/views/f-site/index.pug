@@ -11,8 +11,8 @@ block main
         | la galerie des membres et les événements des dernières années. 
         p Des événements depuis la fondation seront ajoutés progressivement.
         h2 
-        | Actualités les plus récentes (année - numéro de publication)   
-        a(href='/archive/actuel') :  20#{target.actu}
+            | Actualités les plus récentes :  
+            a(href='/archive/actuel') #{target.lastnews}
     footer
         hr
         include ../../templates/footer.pug
