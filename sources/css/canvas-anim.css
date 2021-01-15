@@ -1,51 +1,40 @@
-/* the canvas is responsive within the responsive styles of the website */
+/* the div canvas (container) is responsive within the responsive styles of the website */
+#intro {
+  padding-bottom: 1.5em;
+  font-size:1.2em;
+}
+
 #stage {
     position: relative;
-    margin-top:5%;
 }
+canvas {    position: absolute;}
 
-canvas {
-    position: absolute;
-}
-/* this canvas is visible from the beginning, two others may be used in layers: (deepest) bg-mg-fg (highest) */
-#canvasBg {
-    z-index: 2;
-}
-#canvasMg {
-    z-index: 3;
-}
-#canvasFg {
-    z-index: 4;
-}
+/* responsive styles for #canvasBg (drawing), (vh = % of visible screen height)*/
 
-/* responsive styles */
-
-@media only screen and (max-width: 600px) {
-    #canvasFg, #canvasBg, #canvasMg { width: 100%; }
+@media only screen and (max-width: 400px) {
+   /* body { background: red; } */ 
+   #canvasBg {  max-width:95%; height: 50vh;  }
 }
-
+@media only screen and (min-width: 400px) {
+   /* body { background: grey; } */ 
+   #canvasBg {  max-width:95%; height: 45vh; }
+}
 @media only screen and (min-width: 600px) {
-    /* body { background: yellow; } */
-    #canvasFg, #canvasBg, #canvasMg { width: 95%; }
+   /* body { background: yellow; } */ 
+     #canvasBg { max-width: 95%;   height: 40vh; }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /* body { background: blue; } */
-    #canvasFg, #canvasBg, #canvasMg { width: 90%; }
-}
-
+    #canvasBg{       max-width: 90%;        height: 55vh; padding-left:6vw; }
+  }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    /* body { background: orange; } */
-    #canvasFg, #canvasBg, #canvasMg { width: 90%; }
+  /* body { background: orange; } */ 
+    #canvasBg {        max-width: 90%;    height: 66vh;  padding-left:5vw;} 
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    /* body { background: pink; } */
-    #canvasFg, #canvasBg, #canvasMg {
-        width: 90%;
-        max-width: 1200px;
-    }
+  /* body { background: pink; } */ 
+    #canvasBg {        max-width: 95%;        height: 70vh;    }
 }
