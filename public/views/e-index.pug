@@ -2,20 +2,23 @@ extends ../templates/e-layout.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières - Discover the member artist\'s gallery! Creation of individual and artistic websites and apps - Projects 2021 ')
     meta(name='keywords' content='Association, artists, art, Paris, Alesia, Paris 14, websites creation, developement, art websites, artistic websites, websites for artists, applications web, exhibition, show,art show, art fair,  show in Paris for internationa artist, show in Paris, exhibition in Paris, international art,  small business websites, individual websites, training, internship, Rouet, impasse du Rouet, 75014, Petrovic' )
-    meta(name='author' content='Animation: Babacar et Helga')
-    link(rel='stylesheet', href='css/canvas-anim.css')
-    script(src='js/anim-collage.js')
+    meta(name='author' content='Animation: Babacar (idée) et Helga')
+    link(rel='stylesheet', href='css/transitions.css')
     
 block main
     section
         header
             h1=title
         #intro
-            p Discover our artists, our offre of individual artistic websites sites or search the News archive for past events.
+            p Gallery for artists members - création of individual artistic websites sites - shows and events - trainings 
             p Last news: 
                 a(href='/archive/actuel') #{lastnews[0]} : #{lastnews[2]}
-    #stage            
-        canvas#canvasBg
-            | Your browser does not support the canvas animation            
-   
-        
+    #placeholder 
+        #p1
+        #p2
+        #p3
+        #p4
+        #l1
+        #l2
+        #l3
+        #l4

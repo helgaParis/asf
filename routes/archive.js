@@ -50,7 +50,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const { stringify } = require('querystring');
 
-let lastnews=["No 1 / 2021","Projets 2021", "Projects 2021", "Projekte 2021"];
+let lastnews=["No 2 / 2021","Nouvelle équipe 2021","New team 2021",
+"Neue Mitarbeiter 2021",];
 
 router.get('/*/',function(req,res) {
     // 1. get the name of the archive page from the link clicked on nav-archive or typed in url or search
@@ -62,7 +63,7 @@ router.get('/*/',function(req,res) {
     
     //  !!!!  ATTENTION :  change No of global lastnews variable for export to other routers
     const targets= [
-                '21-1',
+                '21-2','21-1',
                 '20-5','20-4','20-3','20-2','20-1',
                 '19-6','19-5','19-4','19-3','19-2','19-1',    '18-3','18-2','18-1',
                 '17-2','17-1',   '16-3','16-2','16-1',  '15-2','15-1',   '14-3','14-2','14-1',

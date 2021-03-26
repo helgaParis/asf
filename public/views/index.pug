@@ -2,20 +2,27 @@ extends ../templates/layout.pug
 block extrameta
     meta(name='description' content='Artistes sans Frontières - Découvrez la galerie de nos membres artistes ! Création de sites Internet personalisés et stages. Projets 2021 ')    
     meta(name='keywords' content='Association, artistes, art, Paris, Alésia, Paris 14e, création de sites, développement, sites d\'art, sites web d\'art, sites pour artistes, sites web pour artistes, sites internet, sites internet art, sites artistiques, applications web, expositions, portes ouvertes, art international,  sites pour pme, sites individuels, stages, Rouet, impasse du Rouet, 75014, Petrovic' )
-    meta(name='author' content='Animation: Babacar et Helga')
-    link(rel='stylesheet', href='css/canvas-anim.css')
-    script(src='js/anim-collage.js')
+    meta(name='author' content='Animation: Babacar (idée) et Helga')
+    link(rel='stylesheet', href='css/transitions.css')
+
 
 block main
     section
         header
             h1=title
         #intro
-            p Decouvrez nos artistes, notre offre de création de sites Internet artistiques ou fouillez dans l'archive des évenements.
+            p Galerie des artistes membres - création de sites Internet artistiques et individuelles - expositions et évenements - stages
             p Dernères nouvelles : 
                 a(href='/archive/actuel') #{lastnews[0]} : #{lastnews[1]}
-    #stage            
-        canvas#canvasBg
-            | Votre navigateur ne supporte pas le canvas            
+    #placeholder 
+        #p1
+        #p2
+        #p3
+        #p4
+        #l1
+        #l2
+        #l3
+        #l4
+    
        
     

@@ -1,0 +1,234 @@
+
+/* Text div above animation */
+#intro {
+  padding-bottom: 1.5em;
+  font-size:1.2em;
+}
+
+
+@media only screen and (orientation:landscape) {
+  /* the  div serving as the placeholder is responsive within the responsive styles of the website  in percentage of screen height and width*/
+  #placeholder {
+    position: relative;
+    /* border: 1px solid blue; */
+    min-height: 60vh;
+    min-width: 60%;
+  }
+  
+  /*animated divs - portraits*/
+  #p1,#p2, #p3, #p4 {
+    width: 18vh;
+    height: 27vh;
+    background: white;
+    border: 0.3em ridge darkred;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #p1{
+    background-image: url("/images/index/p5.jpg");
+    z-index: 6;
+    animation: movep1 2s linear forwards;
+  }
+  @keyframes movep1 {
+    0% {top: -100vh; left: 10vh;}
+    100% {top: 1vh;left: 3vh;}
+  }
+  
+  #p2{
+    background-image: url("/images/index/p16.jpg");
+    z-index: 8;
+    animation: movep2 5s forwards;
+  }
+  @keyframes movep2 {
+    0% {top: -100vh; left: 10vh;}
+   100% {top: 6vh;left: 87vh;}
+  }
+  
+  #p3{
+    background-image: url("/images/index/p27.jpg");
+    z-index: 3;
+    animation: movep3 2s linear forwards;
+  }
+  @keyframes movep3 {
+    0% {top: -100vh; left: 10vh;}
+    100% {top: 5vh;left: 58vh;}
+  }
+  
+  #p4{
+    background-image: url("/images/index/p8.jpg");
+    z-index: 9;
+    animation: movep4 3s forwards;
+  }
+  @keyframes movep4 {
+   0% {top: -100vh; left: 10vh;}
+    100% {top: 30vh;left:40vh;}
+  }
+  /* landscapes */
+  #l1,#l2, #l3, #l4 {
+    width: 27vh;
+    height: 18vh;
+    background: white;
+    border: 0.3em ridge darkred;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #l1{
+    background-image: url("/images/index/l1.jpg");
+    z-index: 2;
+    animation: movel1 2s linear forwards;
+  }
+  @keyframes movel1 {
+    0% {top: 120vh; left: 210vh;}
+    100% {top: 4vh;left: 25vh;}
+  }
+  
+  #l2{
+    background-image: url("/images/index/l2.jpg");
+    z-index: 7;
+    animation: movel2 4s forwards;
+  }
+  @keyframes movel2 {
+   0% {top: 120vh; left: 210vh;}
+   100% {top: 24vh;left: 14vh;}
+  }
+  
+  #l3{
+    background-image: url("/images/index/l3.jpg");
+    z-index: 4;
+    animation: movel3 2s linear forwards;
+  }
+  @keyframes movel3 {
+    0% {top: 120vh; left: 210vh;}
+    100% {top: 28vh;left: 65vh;}
+  }
+  
+  #l4{
+    background-image: url("/images/index/l21.jpg");
+    z-index: 5;
+    animation: movel4 3s forwards;
+  }
+  @keyframes movel4 {
+   0% {top: 120vh; left: 210vh;}
+    100% {top: 36vh;left:85vh;}
+  }
+}
+
+@media only screen and (orientation:portrait) {
+  /* the  div serving as the placeholder is responsive within the responsive styles of the website  in percentage of screen height and width*/
+  #placeholder {
+    position: relative;
+    /* border: 1px solid blue; */
+    min-height: 60vh;
+    min-width: 60%;
+  }
+  
+  /*animated divs - portraits*/
+  #p1,#p2, #p3, #p4 {
+    width: 18vw;
+    height: 27vw;
+    border: 0.2em ridge darkred;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #p1{
+    background-image: url("/images/index/p5.jpg");
+    z-index: 6;
+    animation: movep1 3s linear forwards;
+  }
+  @keyframes movep1 {
+    0% {top: -100vw; left: 10vw;}
+    100% {top: 1vw;left: 3vw;}
+  }
+  
+  #p2{
+    background-image: url("/images/index/p16.jpg");
+    z-index: 8;
+    animation: movep2 5s forwards;
+  }
+  @keyframes movep2 {
+    0% {top: -100vw; left: 10vw;}
+   100% {top: 52vw;left: 61vw;}
+  }
+  
+  #p3{
+    background-image: url("/images/index/p27.jpg");
+    z-index: 3;
+    animation: movep3 3s linear forwards;
+  }
+  @keyframes movep3 {
+    0% {top: -100vw; left: 10vw;}
+    100% {top: 5vw;left: 58vw;}
+  }
+  
+  #p4{
+    background-image: url("/images/index/p8.jpg");
+    z-index: 9;
+    animation: movep4 3s forwards;
+  }
+  @keyframes movep4 {
+   0% {top: -100vw; left: 10vw;}
+    100% {top: 30vw;left:40vw;}
+  }
+  /* landscapes */
+  #l1,#l2, #l3, #l4 {
+    width: 27vw;
+    height: 18vw;
+    background: white;
+    border: 0.3em ridge darkred;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #l1{
+    background-image: url("/images/index/l1.jpg");
+    z-index: 2;
+    animation: movel1 3s linear forwards;
+  }
+  @keyframes movel1 {
+    0% {top: 120vw; left: 210vw;}
+    100% {top: 4vw;left: 25vw;}
+  }
+  
+  #l2{
+    background-image: url("/images/index/l2.jpg");
+    z-index: 7;
+    animation: movel2 4s forwards;
+  }
+  @keyframes movel2 {
+   0% {top: 120vw; left: 210vw;}
+   100% {top: 26vw;left: 14vw;}
+  }
+  
+  #l3{
+    background-image: url("/images/index/l3.jpg");
+    z-index: 4;
+    animation: movel3 2s linear forwards;
+  }
+  @keyframes movel3 {
+    0% {top: 120vw; left: 210vw;}
+    100% {top: 28vw;left: 64vw;}
+  }
+  
+  #l4{
+    background-image: url("/images/index/l21.jpg");
+    z-index: 5;
+    animation: movel4 3s forwards;
+  }
+  @keyframes movel4 {
+   0% {top: 120vw; left: 210vw;}
+    100% {top: 52vw;left:7vw;}
+  }
+}
+
+
